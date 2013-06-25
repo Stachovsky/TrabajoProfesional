@@ -1,0 +1,10 @@
+
+**** Build of configuration Debug for project TanqueControl ****
+
+make all 
+Building file: ../src/baseboard.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -D__REDLIB__ -I"/home/fanaur/workspacePruebas/CMSISv2p00_LPC17xx/inc" -I"/home/fanaur/workspacePruebas/TanqueControl/src/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/baseboard.d" -MT"src/baseboard.d" -o"src/baseboard.o" "../src/baseboard.c"
+../src/baseboard.c:9:28: fatal error: lpc17xx_pinsel.h: No such file or directory
+compilation terminated.
+make: *** [src/baseboard.o] Error 1

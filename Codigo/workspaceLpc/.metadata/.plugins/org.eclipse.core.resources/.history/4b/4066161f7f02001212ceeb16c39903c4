@@ -1,0 +1,58 @@
+/*
+ * API_Uart.h
+ *
+ *  Created on: 30/04/2012
+ *      Author: Facundo Nahuel Uriel Silva
+ */
+
+#ifndef API_UART_H_
+#define API_UART_H_
+
+#include "LPC17xx.h"
+#include "lpc17xx_pinsel.h"
+#include "lpc17xx_uart.h"
+
+/** \brief
+ *
+ */
+typedef enum{
+	UART_PORT_0 = 0,//!< UART_PORT_0 estoafda
+	UART_PORT_1 = 1,//!< UART_PORT_1 adasd
+	UART_PORT_2 = 2,//!< UART_PORT_2 adasd
+	UART_PORT_3 = 3 //!< UART_PORT_3 adasda
+	} uartPortNumber;
+
+/** \brief essasdasd
+ *
+ */
+typedef struct{
+		LPC_UART_TypeDef*	port;
+		PINSEL_CFG_Type		pin;
+		UART_CFG_Type		config;
+		void (*accionInterruption)(void);
+	} uartPort;
+
+
+/** \brief eszndsdf
+ *
+ * @param portNumber aldkjadkn
+ */
+void API_UartConfig(uartPortNumber portNumber);
+
+/** \brief eszndsdf
+ *  \warning nadnad
+ *
+ * @param portNumber asdasd
+ * @param data adasdas
+ */
+void API_UartSendString(uartPortNumber portNumber,uint8_t* data);
+
+/** \brief
+ *
+ * @param portNumber
+ * @param data
+ */
+void API_UartSendByte(uartPortNumber portNumber,uint8_t data);
+
+
+#endif /* API_UART_H_ */

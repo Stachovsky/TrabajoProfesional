@@ -1,0 +1,21 @@
+************************************************************************************************************************************************************
+************************************************************************************************************************************************************
+Error:
+	En descarga de programa al lcp1769 desde el LpcXpresso
+
+Mensaje de error: 
+
+	Invalid LPC1343 Part ID: 0x3000002B. Known LPC1343 ID(s): 0x3D00002B. 03: Failed on chip setup: Ec(01). Invalid, mismatched, or unknown part
+
+Solucion:
+	Vector catch" is an option in the Code Red IDE which changes the way that the tools handle reset when connecting to a target.
+	It can sometimes allow the debugger to regain control over the target.To enable "vector catch" for the currently selected build configuration...
+	1)	Right click on the project in the Project Explorer view.
+	2)	Select "Launch Configurations -> Open current launch configuration" from the context senstive menu.
+	3)	Click on the "Debugger" tab, then set the "Vector catch" entry to true.
+
+Fuente:
+	http://support.code-red-tech.com/CodeRedWiki/DebugAccessChip
+
+************************************************************************************************************************************************************
+************************************************************************************************************************************************************

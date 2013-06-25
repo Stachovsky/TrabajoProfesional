@@ -1,0 +1,817 @@
+Archive member included because of file (symbol)
+
+/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+                              ./src/cr_startup_lpc176x.o (SystemInit)
+/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(clocking.o)
+                              ./src/main.o (LPC_UseOscillator)
+/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(uart.o)
+                              ./src/main.o (UARTInit)
+/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_small_printf/Debug/liblib_small_printf.a(small_printf_nofloat.o)
+                              ./src/main.o (nsprintf)
+/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_small_printf/Debug/liblib_small_printf.a(small_printf_support.o)
+                              /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_small_printf/Debug/liblib_small_printf.a(small_printf_nofloat.o) (prints)
+/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(sd.o)
+                              ./src/FatFS_support.o (disk_timerproc)
+/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+                              ./src/main.o (f_mount)
+/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(lpc17xx_spi.o)
+                              /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(sd.o) (SPI_Init)
+/usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(__weak__main.o)
+                              ./src/cr_startup_lpc176x.o (__main)
+/usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(strlen.o)
+                              ./src/main.o (strlen)
+/usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(strncmp.o)
+                              ./src/main.o (strncmp)
+/usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(division.o)
+                              /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o) (__aeabi_uldivmod)
+
+Allocating common symbols
+Common symbol       size              file
+
+args                0x8               ./src/main.o
+CardType            0x1               /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(sd.o)
+fs                  0x230             ./src/main.o
+CardConfig          0x70              /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(sd.o)
+UART1Buffer         0x42              /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(uart.o)
+UART0Buffer         0x42              /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(uart.o)
+line                0xff              ./src/main.o
+UART3Buffer         0x42              /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(uart.o)
+Buffer              0x200             ./src/main.o
+str                 0xff              ./src/main.o
+
+Discarded input sections
+
+ .text          0x00000000        0x0 ./src/FatFS_support.o
+ .data          0x00000000        0x0 ./src/FatFS_support.o
+ .bss           0x00000000        0x0 ./src/FatFS_support.o
+ .text          0x00000000        0x0 ./src/cr_startup_lpc176x.o
+ .data          0x00000000        0x0 ./src/cr_startup_lpc176x.o
+ .bss           0x00000000        0x0 ./src/cr_startup_lpc176x.o
+ .text          0x00000000        0x0 ./src/main.o
+ .data          0x00000000        0x0 ./src/main.o
+ .bss           0x00000000        0x0 ./src/main.o
+ .text          0x00000000        0x0 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .data          0x00000000        0x0 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .bss           0x00000000        0x0 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .text.SystemCoreClockUpdate
+                0x00000000       0xf0 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .text          0x00000000        0x0 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(clocking.o)
+ .data          0x00000000        0x0 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(clocking.o)
+ .bss           0x00000000        0x0 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(clocking.o)
+ .text.LPC_EnablePLL1
+                0x00000000       0xf4 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(clocking.o)
+ .text.LPC_DisablePLL1
+                0x00000000       0x7c /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(clocking.o)
+ .text          0x00000000        0x0 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(uart.o)
+ .data          0x00000000        0x0 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(uart.o)
+ .bss           0x00000000        0x0 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(uart.o)
+ .text.UARTBaudrate
+                0x00000000      0x1ec /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(uart.o)
+ .text          0x00000000        0x0 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_small_printf/Debug/liblib_small_printf.a(small_printf_nofloat.o)
+ .data          0x00000000        0x0 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_small_printf/Debug/liblib_small_printf.a(small_printf_nofloat.o)
+ .bss           0x00000000        0x0 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_small_printf/Debug/liblib_small_printf.a(small_printf_nofloat.o)
+ .text.func_printf_nofloat
+                0x00000000       0x2c /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_small_printf/Debug/liblib_small_printf.a(small_printf_nofloat.o)
+ .text          0x00000000        0x0 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_small_printf/Debug/liblib_small_printf.a(small_printf_support.o)
+ .data          0x00000000        0x0 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_small_printf/Debug/liblib_small_printf.a(small_printf_support.o)
+ .bss           0x00000000        0x0 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_small_printf/Debug/liblib_small_printf.a(small_printf_support.o)
+ .text          0x00000000        0x0 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(sd.o)
+ .data          0x00000000        0x0 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(sd.o)
+ .bss           0x00000000        0x0 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(sd.o)
+ .text          0x00000000        0x0 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+ .data          0x00000000        0x0 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+ .bss           0x00000000        0x0 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+ .text.f_lseek  0x00000000      0x2e4 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+ .text.f_stat   0x00000000       0x78 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+ .text.f_getfree
+                0x00000000      0x1dc /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+ .text.f_truncate
+                0x00000000      0x128 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+ .text.f_mkdir  0x00000000      0x364 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+ .text.f_chmod  0x00000000       0xc4 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+ .text.f_utime  0x00000000       0xcc /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+ .text.f_rename
+                0x00000000      0x25c /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+ .text          0x00000000        0x0 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(lpc17xx_spi.o)
+ .data          0x00000000        0x0 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(lpc17xx_spi.o)
+ .bss           0x00000000        0x0 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(lpc17xx_spi.o)
+ .text          0x00000000        0x0 /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(__weak__main.o)
+ .data          0x00000000        0x0 /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(__weak__main.o)
+ .bss           0x00000000        0x0 /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(__weak__main.o)
+ .text          0x00000000        0x0 /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(strlen.o)
+ .data          0x00000000        0x0 /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(strlen.o)
+ .bss           0x00000000        0x0 /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(strlen.o)
+ .text          0x00000000        0x0 /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(strncmp.o)
+ .data          0x00000000        0x0 /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(strncmp.o)
+ .bss           0x00000000        0x0 /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(strncmp.o)
+ .text          0x00000000        0x0 /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(division.o)
+ .data          0x00000000        0x0 /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(division.o)
+ .bss           0x00000000        0x0 /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_idiv
+                0x00000000       0x10 /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_idivmod
+                0x00000000       0x16 /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_uidiv
+                0x00000000       0x10 /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_uidivmod
+                0x00000000       0x16 /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_ldivmod
+                0x00000000       0x26 /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_uldivmod
+                0x00000000      0x174 /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_idiv0
+                0x00000000        0x2 /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_ldiv0
+                0x00000000        0x2 /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(division.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+MFlash512        0x00000000         0x00080000         xr
+RamLoc32         0x10000000         0x00008000         xrw
+RamAHB32         0x2007c000         0x00008000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ./src/FatFS_support.o
+LOAD ./src/cr_startup_lpc176x.o
+LOAD ./src/main.o
+LOAD /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a
+LOAD /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a
+LOAD /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_small_printf/Debug/liblib_small_printf.a
+LOAD /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a
+START GROUP
+LOAD /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a
+LOAD /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a
+END GROUP
+                0x00080000                __top_MFlash512 = 0x80000
+                0x10008000                __top_RamLoc32 = 0x10008000
+                0x20084000                __top_RamAHB32 = 0x20084000
+
+.text           0x00000000     0x6b20
+ FILL mask 0xff
+ *(.isr_vector)
+ .isr_vector    0x00000000       0xcc ./src/cr_startup_lpc176x.o
+                0x00000000                g_pfnVectors
+                0x000000cc                . = ALIGN (0x4)
+                0x000000cc                __section_table_start = .
+                0x000000cc                __data_section_table = .
+                0x000000cc        0x4 LONG 0x6b20 LOADADDR (.data)
+                0x000000d0        0x4 LONG 0x10000000 ADDR (.data)
+                0x000000d4        0x4 LONG 0x170 SIZEOF (.data)
+                0x000000d8        0x4 LONG 0x6b20 LOADADDR (.data_RAM2)
+                0x000000dc        0x4 LONG 0x2007c000 ADDR (.data_RAM2)
+                0x000000e0        0x4 LONG 0x0 SIZEOF (.data_RAM2)
+                0x000000e4                __data_section_table_end = .
+                0x000000e4                __bss_section_table = .
+                0x000000e4        0x4 LONG 0x10000170 ADDR (.bss)
+                0x000000e8        0x4 LONG 0x794 SIZEOF (.bss)
+                0x000000ec        0x4 LONG 0x2007c000 ADDR (.bss_RAM2)
+                0x000000f0        0x4 LONG 0x0 SIZEOF (.bss_RAM2)
+                0x000000f4                __bss_section_table_end = .
+                0x000000f4                __section_table_end = .
+ *(.after_vectors*)
+ .after_vectors
+                0x000000f4       0x78 ./src/cr_startup_lpc176x.o
+                0x000000f4                NMI_Handler
+                0x000000f6                HardFault_Handler
+                0x000000f8                MemManage_Handler
+                0x000000fa                BusFault_Handler
+                0x000000fc                UsageFault_Handler
+                0x000000fe                SVCall_Handler
+                0x00000100                DebugMon_Handler
+                0x00000102                PendSV_Handler
+                0x00000106                data_init
+                0x00000118                bss_init
+                0x00000128                ResetISR
+                0x00000168                TIMER2_IRQHandler
+                0x00000168                RIT_IRQHandler
+                0x00000168                I2C0_IRQHandler
+                0x00000168                USBActivity_IRQHandler
+                0x00000168                PWM1_IRQHandler
+                0x00000168                I2C1_IRQHandler
+                0x00000168                EINT2_IRQHandler
+                0x00000168                EINT3_IRQHandler
+                0x00000168                CANActivity_IRQHandler
+                0x00000168                TIMER3_IRQHandler
+                0x00000168                IntDefaultHandler
+                0x00000168                PLL0_IRQHandler
+                0x00000168                CAN_IRQHandler
+                0x00000168                PLL1_IRQHandler
+                0x00000168                SSP0_IRQHandler
+                0x00000168                I2S_IRQHandler
+                0x00000168                I2C2_IRQHandler
+                0x00000168                RTC_IRQHandler
+                0x00000168                TIMER0_IRQHandler
+                0x00000168                SPI_IRQHandler
+                0x00000168                EINT1_IRQHandler
+                0x00000168                TIMER1_IRQHandler
+                0x00000168                UART2_IRQHandler
+                0x00000168                ADC_IRQHandler
+                0x00000168                SSP1_IRQHandler
+                0x00000168                USB_IRQHandler
+                0x00000168                BOD_IRQHandler
+                0x00000168                WDT_IRQHandler
+                0x00000168                QEI_IRQHandler
+                0x00000168                EINT0_IRQHandler
+                0x00000168                DMA_IRQHandler
+                0x00000168                MCPWM_IRQHandler
+                0x00000168                ENET_IRQHandler
+ *(.text*)
+ .text.get_fattime
+                0x0000016c       0x8c ./src/FatFS_support.o
+                0x0000016c                get_fattime
+ .text.SysTick_Handler
+                0x000001f8       0x48 ./src/FatFS_support.o
+                0x000001f8                SysTick_Handler
+ .text.SetSPIClocks
+                0x00000240       0xb0 ./src/main.o
+ .text.show_res
+                0x000002f0       0x8c ./src/main.o
+ .text.TimerReset
+                0x0000037c       0x58 ./src/main.o
+                0x0000037c                TimerReset
+ .text.TimerStart
+                0x000003d4       0x18 ./src/main.o
+                0x000003d4                TimerStart
+ .text.TimerStop
+                0x000003ec       0x18 ./src/main.o
+                0x000003ec                TimerStop
+ .text.TimerRead
+                0x00000404       0x18 ./src/main.o
+                0x00000404                TimerRead
+ .text.set_speed
+                0x0000041c      0x110 ./src/main.o
+ .text.set_timeout
+                0x0000052c       0xb4 ./src/main.o
+ .text.show_dir
+                0x000005e0      0x160 ./src/main.o
+ .text.write_file
+                0x00000740      0x200 ./src/main.o
+ .text.read_file
+                0x00000940      0x2ac ./src/main.o
+ .text.write_log
+                0x00000bec      0x204 ./src/main.o
+ .text.type_file
+                0x00000df0      0x108 ./src/main.o
+ .text.delete_file
+                0x00000ef8       0x5c ./src/main.o
+ .text.get_line
+                0x00000f54      0x108 ./src/main.o
+                0x00000f54                get_line
+ .text.scan_args
+                0x0000105c       0xc8 ./src/main.o
+                0x0000105c                scan_args
+ .text.main     0x00001124      0x2fc ./src/main.o
+                0x00001124                main
+ .text.SystemInit
+                0x00001420       0xe4 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+                0x00001420                SystemInit
+ .text.LPC_UseOscillator
+                0x00001504      0x1f8 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(clocking.o)
+                0x00001504                LPC_UseOscillator
+ .text.LPC_SetPLL0
+                0x000016fc      0x430 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(clocking.o)
+                0x000016fc                LPC_SetPLL0
+ .text.NVIC_EnableIRQ
+                0x00001b2c       0x38 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(uart.o)
+ .text.fifo_put
+                0x00001b64       0x64 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(uart.o)
+ .text.fifo_get
+                0x00001bc8       0x64 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(uart.o)
+ .text.UART0_IRQHandler
+                0x00001c2c       0x4c /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(uart.o)
+                0x00001c2c                UART0_IRQHandler
+ .text.UART1_IRQHandler
+                0x00001c78       0x4c /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(uart.o)
+                0x00001c78                UART1_IRQHandler
+ .text.UART3_IRQHandler
+                0x00001cc4       0x4c /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(uart.o)
+                0x00001cc4                UART3_IRQHandler
+ .text.UARTInit
+                0x00001d10      0x374 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(uart.o)
+                0x00001d10                UARTInit
+ .text.UARTSend
+                0x00002084       0xe0 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(uart.o)
+                0x00002084                UARTSend
+ .text.UARTSendStr
+                0x00002164      0x128 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(uart.o)
+                0x00002164                UARTSendStr
+ .text.UARTPutChar
+                0x0000228c       0x94 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(uart.o)
+                0x0000228c                UARTPutChar
+ .text.UARTGetChar
+                0x00002320       0x70 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(uart.o)
+                0x00002320                UARTGetChar
+ .text.printf_format_nofloat
+                0x00002390      0x3b0 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_small_printf/Debug/liblib_small_printf.a(small_printf_nofloat.o)
+                0x00002390                printf_format_nofloat
+ .text.nsprintf
+                0x00002740       0x3c /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_small_printf/Debug/liblib_small_printf.a(small_printf_nofloat.o)
+                0x00002740                nsprintf
+ .text.prints   0x0000277c       0xd0 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_small_printf/Debug/liblib_small_printf.a(small_printf_support.o)
+                0x0000277c                prints
+ .text.printi   0x0000284c       0xf4 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_small_printf/Debug/liblib_small_printf.a(small_printf_support.o)
+                0x0000284c                printi
+ .text.nsprintf_write_init
+                0x00002940       0x3c /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_small_printf/Debug/liblib_small_printf.a(small_printf_support.o)
+                0x00002940                nsprintf_write_init
+ .text.nsprintf_write
+                0x0000297c       0x84 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_small_printf/Debug/liblib_small_printf.a(small_printf_support.o)
+                0x0000297c                nsprintf_write
+ .text.disk_initialize
+                0x00002a00       0x5c /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(sd.o)
+                0x00002a00                disk_initialize
+ .text.disk_ioctl
+                0x00002a5c      0x1f0 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(sd.o)
+                0x00002a5c                disk_ioctl
+ .text.disk_read
+                0x00002c4c       0x64 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(sd.o)
+                0x00002c4c                disk_read
+ .text.disk_status
+                0x00002cb0       0x30 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(sd.o)
+                0x00002cb0                disk_status
+ .text.disk_write
+                0x00002ce0       0x64 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(sd.o)
+                0x00002ce0                disk_write
+ .text.disk_timerproc
+                0x00002d44       0x5c /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(sd.o)
+                0x00002d44                disk_timerproc
+ .text.SD_Init  0x00002da0      0x284 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(sd.o)
+                0x00002da0                SD_Init
+ .text.SD_WaitForReady
+                0x00003024       0x40 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(sd.o)
+                0x00003024                SD_WaitForReady
+ .text.SD_SendCommand
+                0x00003064      0x100 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(sd.o)
+                0x00003064                SD_SendCommand
+ .text.SD_SendACommand
+                0x00003164       0x4c /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(sd.o)
+                0x00003164                SD_SendACommand
+ .text.SD_ReadSector
+                0x000031b0       0xe0 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(sd.o)
+                0x000031b0                SD_ReadSector
+ .text.SD_WriteSector
+                0x00003290       0xdc /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(sd.o)
+                0x00003290                SD_WriteSector
+ .text.SD_ReadConfiguration
+                0x0000336c      0x30c /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(sd.o)
+                0x0000336c                SD_ReadConfiguration
+ .text.SD_RecvDataBlock
+                0x00003678       0x64 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(sd.o)
+                0x00003678                SD_RecvDataBlock
+ .text.SD_SendDataBlock
+                0x000036dc       0x8c /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(sd.o)
+                0x000036dc                SD_SendDataBlock
+ .text.mem_cpy  0x00003768       0x50 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+ .text.mem_set  0x000037b8       0x44 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+ .text.mem_cmp  0x000037fc       0x70 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+ .text.chk_chr  0x0000386c       0x38 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+ .text.move_window
+                0x000038a4       0xd4 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+ .text.sync     0x00003978      0x1d0 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+ .text.clust2sect
+                0x00003b48       0x44 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+                0x00003b48                clust2sect
+ .text.get_fat  0x00003b8c      0x1a4 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+                0x00003b8c                get_fat
+ .text.put_fat  0x00003d30      0x264 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+                0x00003d30                put_fat
+ .text.remove_chain
+                0x00003f94       0xb0 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+ .text.create_chain
+                0x00004044      0x12c /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+ .text.dir_sdi  0x00004170      0x118 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+ .text.dir_next
+                0x00004288      0x1dc /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+ .text.dir_find
+                0x00004464       0xa4 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+ .text.dir_read
+                0x00004508       0xa4 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+ .text.dir_register
+                0x000045ac       0xbc /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+ .text.dir_remove
+                0x00004668       0x58 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+ .text.create_name
+                0x000046c0      0x278 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+ .text.get_fileinfo
+                0x00004938      0x15c /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+ .text.follow_path
+                0x00004a94      0x11c /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+ .text.check_fs
+                0x00004bb0      0x108 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+ .text.chk_mounted
+                0x00004cb8      0x66c /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+ .text.validate
+                0x00005324       0x54 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+ .text.f_mount  0x00005378       0x64 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+                0x00005378                f_mount
+ .text.f_open   0x000053dc      0x35c /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+                0x000053dc                f_open
+ .text.f_read   0x00005738      0x2f0 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+                0x00005738                f_read
+ .text.f_write  0x00005a28      0x354 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+                0x00005a28                f_write
+ .text.f_sync   0x00005d7c      0x1c0 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+                0x00005d7c                f_sync
+ .text.f_close  0x00005f3c       0x2c /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+                0x00005f3c                f_close
+ .text.f_opendir
+                0x00005f68       0xe8 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+                0x00005f68                f_opendir
+ .text.f_readdir
+                0x00006050       0x9c /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+                0x00006050                f_readdir
+ .text.f_unlink
+                0x000060ec      0x1ac /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+                0x000060ec                f_unlink
+ .text.SPI_Init
+                0x00006298      0x11c /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(lpc17xx_spi.o)
+                0x00006298                SPI_Init
+ .text.SPI_ConfigClockRate
+                0x000063b4       0x24 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(lpc17xx_spi.o)
+                0x000063b4                SPI_ConfigClockRate
+ .text.SPI_CS_Low
+                0x000063d8       0x24 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(lpc17xx_spi.o)
+                0x000063d8                SPI_CS_Low
+ .text.SPI_CS_High
+                0x000063fc       0x24 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(lpc17xx_spi.o)
+                0x000063fc                SPI_CS_High
+ .text.SPI_SendByte
+                0x00006420       0x44 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(lpc17xx_spi.o)
+                0x00006420                SPI_SendByte
+ .text.SPI_RecvByte
+                0x00006464       0x14 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(lpc17xx_spi.o)
+                0x00006464                SPI_RecvByte
+ .text.SPI_SendBlock_FIFO
+                0x00006478       0xdc /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(lpc17xx_spi.o)
+                0x00006478                SPI_SendBlock_FIFO
+ .text.SPI_RecvBlock_FIFO
+                0x00006554       0xf4 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(lpc17xx_spi.o)
+                0x00006554                SPI_RecvBlock_FIFO
+ .text.__weak_main
+                0x00006648        0x4 /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(__weak__main.o)
+                0x00006648                __main
+                0x00006648                __weak_main
+ .text.strlen   0x0000664c       0x4e /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(strlen.o)
+                0x0000664c                strlen
+ .text.strncmp  0x0000669a       0x58 /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(strncmp.o)
+                0x0000669a                strncmp
+ *(.rodata .rodata.*)
+ *fill*         0x000066f2        0x2 00
+ .rodata        0x000066f4      0x414 ./src/main.o
+ .rodata        0x00006b08        0x8 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_small_printf/Debug/liblib_small_printf.a(small_printf_nofloat.o)
+ .rodata        0x00006b10       0x10 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+                0x00006b20                . = ALIGN (0x4)
+
+.glue_7         0x00006b20        0x0
+ .glue_7        0x00000000        0x0 linker stubs
+
+.glue_7t        0x00006b20        0x0
+ .glue_7t       0x00000000        0x0 linker stubs
+
+.vfp11_veneer   0x00006b20        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x00006b20        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x00006b20                __exidx_start = .
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x00006b20                __exidx_end = .
+                0x00006b20                _etext = .
+
+.data_RAM2      0x2007c000        0x0 load address 0x00006b20
+ FILL mask 0xff
+ *(.data.$RAM2*)
+ *(.data.$RamAHB32*)
+                0x2007c000                . = ALIGN (0x4)
+
+.uninit_RESERVED
+ *(.bss.$RESERVED*)
+
+.data           0x10000000      0x170 load address 0x00006b20
+ FILL mask 0xff
+                0x10000000                _data = .
+ *(vtable)
+ *(.data*)
+ .data.timerproc_interval
+                0x10000000        0x4 ./src/FatFS_support.o
+                0x10000000                timerproc_interval
+ .data.spi_div_low
+                0x10000004        0x1 ./src/main.o
+                0x10000004                spi_div_low
+ .data.spi_div_high
+                0x10000005        0x1 ./src/main.o
+                0x10000005                spi_div_high
+ *fill*         0x10000006        0x2 00
+ .data.SystemCoreClock
+                0x10000008        0x4 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+                0x10000008                SystemCoreClock
+ .data.MainOscPLL0conf
+                0x1000000c       0xb0 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(clocking.o)
+ .data.IntRCOscPLL0conf
+                0x100000bc       0xb0 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(clocking.o)
+ .data.Stat     0x1000016c        0x1 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(sd.o)
+                0x10000170                . = ALIGN (0x4)
+ *fill*         0x1000016d        0x3 ff
+                0x10000170                _edata = .
+
+.bss_RAM2       0x2007c000        0x0
+ *(.bss.$RAM2*)
+ *(.bss.$RamAHB32*)
+                0x2007c000                . = ALIGN (0x4)
+
+.bss            0x10000170      0x794
+                0x10000170                _bss = .
+ *(.bss*)
+ .bss.div10.2315
+                0x10000170        0x4 ./src/FatFS_support.o
+ .bss.nsprintf_buffer
+                0x10000174        0x4 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_small_printf/Debug/liblib_small_printf.a(small_printf_support.o)
+ .bss.nsprintf_buffer_length
+                0x10000178        0x4 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_small_printf/Debug/liblib_small_printf.a(small_printf_support.o)
+ .bss.nsprintf_buffer_index
+                0x1000017c        0x4 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_small_printf/Debug/liblib_small_printf.a(small_printf_support.o)
+ .bss.Timer1    0x10000180        0x2 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(sd.o)
+ .bss.Timer2    0x10000182        0x2 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(sd.o)
+ .bss.FatFs     0x10000184        0x4 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+ .bss.Fsid      0x10000188        0x2 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+ *(COMMON)
+ *fill*         0x1000018a        0x2 00
+ COMMON         0x1000018c      0x637 ./src/main.o
+                0x1000018c                args
+                0x10000194                fs
+                0x100003c4                line
+                0x100004c4                Buffer
+                0x100006c4                str
+ *fill*         0x100007c3        0x1 00
+ COMMON         0x100007c4       0xca /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(uart.o)
+                0x100007c4                UART1Buffer
+                0x10000808                UART0Buffer
+                0x1000084c                UART3Buffer
+ *fill*         0x1000088e        0x2 00
+ COMMON         0x10000890       0x74 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(sd.o)
+                0x10000890                CardType
+                0x10000894                CardConfig
+                0x10000904                . = ALIGN (0x4)
+                0x10000904                _ebss = .
+                0x10000904                PROVIDE (end, .)
+                0x10000904                PROVIDE (_pvHeapStart, .)
+                0x10008000                PROVIDE (_vStackTop, (__top_RamLoc32 - 0x0))
+OUTPUT(test-FatFS.axf elf32-littlearm)
+
+.debug_abbrev   0x00000000     0x105b
+ .debug_abbrev  0x00000000      0x103 ./src/FatFS_support.o
+ .debug_abbrev  0x00000103      0x10f ./src/cr_startup_lpc176x.o
+ .debug_abbrev  0x00000212      0x28e ./src/main.o
+ .debug_abbrev  0x000004a0       0xe3 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .debug_abbrev  0x00000583      0x14a /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(clocking.o)
+ .debug_abbrev  0x000006cd      0x25c /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(uart.o)
+ .debug_abbrev  0x00000929      0x128 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_small_printf/Debug/liblib_small_printf.a(small_printf_nofloat.o)
+ .debug_abbrev  0x00000a51       0xe4 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_small_printf/Debug/liblib_small_printf.a(small_printf_support.o)
+ .debug_abbrev  0x00000b35      0x1d3 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(sd.o)
+ .debug_abbrev  0x00000d08      0x157 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+ .debug_abbrev  0x00000e5f      0x1fc /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(lpc17xx_spi.o)
+
+.debug_info     0x00000000     0x5fa1
+ .debug_info    0x00000000      0x4a2 ./src/FatFS_support.o
+ .debug_info    0x000004a2      0x2e3 ./src/cr_startup_lpc176x.o
+ .debug_info    0x00000785     0x1165 ./src/main.o
+ .debug_info    0x000018ea      0x38f /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .debug_info    0x00001c79      0x53a /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(clocking.o)
+ .debug_info    0x000021b3     0x108d /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(uart.o)
+ .debug_info    0x00003240      0x246 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_small_printf/Debug/liblib_small_printf.a(small_printf_nofloat.o)
+ .debug_info    0x00003486      0x2ab /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_small_printf/Debug/liblib_small_printf.a(small_printf_support.o)
+ .debug_info    0x00003731      0x788 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(sd.o)
+ .debug_info    0x00003eb9     0x16a4 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+ .debug_info    0x0000555d      0xa44 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(lpc17xx_spi.o)
+
+.debug_line     0x00000000     0x439d
+ .debug_line    0x00000000      0x482 ./src/FatFS_support.o
+ .debug_line    0x00000482      0x3fc ./src/cr_startup_lpc176x.o
+ .debug_line    0x0000087e      0x930 ./src/main.o
+ .debug_line    0x000011ae      0x3e7 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .debug_line    0x00001595      0x54e /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(clocking.o)
+ .debug_line    0x00001ae3      0x669 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(uart.o)
+ .debug_line    0x0000214c      0x4c9 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_small_printf/Debug/liblib_small_printf.a(small_printf_nofloat.o)
+ .debug_line    0x00002615      0x4ad /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_small_printf/Debug/liblib_small_printf.a(small_printf_support.o)
+ .debug_line    0x00002ac2      0x7de /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(sd.o)
+ .debug_line    0x000032a0      0xc27 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+ .debug_line    0x00003ec7      0x4d6 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(lpc17xx_spi.o)
+
+.debug_macinfo  0x00000000    0x4184c
+ .debug_macinfo
+                0x00000000     0x7d8c ./src/FatFS_support.o
+ .debug_macinfo
+                0x00007d8c     0x313f ./src/cr_startup_lpc176x.o
+ .debug_macinfo
+                0x0000aecb     0x7fd1 ./src/main.o
+ .debug_macinfo
+                0x00012e9c     0x792b /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .debug_macinfo
+                0x0001a7c7     0x7a75 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(clocking.o)
+ .debug_macinfo
+                0x0002223c     0x779e /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(uart.o)
+ .debug_macinfo
+                0x000299da     0x32a9 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_small_printf/Debug/liblib_small_printf.a(small_printf_nofloat.o)
+ .debug_macinfo
+                0x0002cc83     0x32b8 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_small_printf/Debug/liblib_small_printf.a(small_printf_support.o)
+ .debug_macinfo
+                0x0002ff3b     0x7b93 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(sd.o)
+ .debug_macinfo
+                0x00037ace     0x2589 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+ .debug_macinfo
+                0x0003a057     0x77f5 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(lpc17xx_spi.o)
+
+.debug_loc      0x00000000     0x1869
+ .debug_loc     0x00000000       0x58 ./src/FatFS_support.o
+ .debug_loc     0x00000058      0x1b8 ./src/cr_startup_lpc176x.o
+ .debug_loc     0x00000210      0x392 ./src/main.o
+ .debug_loc     0x000005a2       0x20 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .debug_loc     0x000005c2       0xc8 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(clocking.o)
+ .debug_loc     0x0000068a      0x2a0 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(uart.o)
+ .debug_loc     0x0000092a       0xc1 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_small_printf/Debug/liblib_small_printf.a(small_printf_nofloat.o)
+ .debug_loc     0x000009eb       0xe2 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_small_printf/Debug/liblib_small_printf.a(small_printf_support.o)
+ .debug_loc     0x00000acd      0x33c /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(sd.o)
+ .debug_loc     0x00000e09      0x8d0 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+ .debug_loc     0x000016d9      0x190 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(lpc17xx_spi.o)
+
+.debug_pubnames
+                0x00000000      0x742
+ .debug_pubnames
+                0x00000000       0x4d ./src/FatFS_support.o
+ .debug_pubnames
+                0x0000004d      0x118 ./src/cr_startup_lpc176x.o
+ .debug_pubnames
+                0x00000165       0xbd ./src/main.o
+ .debug_pubnames
+                0x00000222       0x4f /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .debug_pubnames
+                0x00000271       0x5f /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(clocking.o)
+ .debug_pubnames
+                0x000002d0       0xdc /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(uart.o)
+ .debug_pubnames
+                0x000003ac       0x51 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_small_printf/Debug/liblib_small_printf.a(small_printf_nofloat.o)
+ .debug_pubnames
+                0x000003fd       0x53 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_small_printf/Debug/liblib_small_printf.a(small_printf_support.o)
+ .debug_pubnames
+                0x00000450      0x140 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(sd.o)
+ .debug_pubnames
+                0x00000590      0x10c /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+ .debug_pubnames
+                0x0000069c       0xa6 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(lpc17xx_spi.o)
+
+.debug_pubtypes
+                0x00000000      0x519
+ .debug_pubtypes
+                0x00000000       0x62 ./src/FatFS_support.o
+ .debug_pubtypes
+                0x00000062       0x12 ./src/cr_startup_lpc176x.o
+ .debug_pubtypes
+                0x00000074       0xf2 ./src/main.o
+ .debug_pubtypes
+                0x00000166       0x3e /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .debug_pubtypes
+                0x000001a4       0x67 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(clocking.o)
+ .debug_pubtypes
+                0x0000020b       0xe3 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(uart.o)
+ .debug_pubtypes
+                0x000002ee       0x45 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_small_printf/Debug/liblib_small_printf.a(small_printf_nofloat.o)
+ .debug_pubtypes
+                0x00000333       0x2b /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_small_printf/Debug/liblib_small_printf.a(small_printf_support.o)
+ .debug_pubtypes
+                0x0000035e       0xa5 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(sd.o)
+ .debug_pubtypes
+                0x00000403       0x7f /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+ .debug_pubtypes
+                0x00000482       0x97 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(lpc17xx_spi.o)
+
+.debug_aranges  0x00000000      0x4c8
+ .debug_aranges
+                0x00000000       0x28 ./src/FatFS_support.o
+ .debug_aranges
+                0x00000028       0x80 ./src/cr_startup_lpc176x.o
+ .debug_aranges
+                0x000000a8       0xa0 ./src/main.o
+ .debug_aranges
+                0x00000148       0x28 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .debug_aranges
+                0x00000170       0x38 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(clocking.o)
+ .debug_aranges
+                0x000001a8       0x78 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(uart.o)
+ .debug_aranges
+                0x00000220       0x30 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_small_printf/Debug/liblib_small_printf.a(small_printf_nofloat.o)
+ .debug_aranges
+                0x00000250       0x38 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_small_printf/Debug/liblib_small_printf.a(small_printf_support.o)
+ .debug_aranges
+                0x00000288       0x90 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(sd.o)
+ .debug_aranges
+                0x00000318      0x158 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+ .debug_aranges
+                0x00000470       0x58 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(lpc17xx_spi.o)
+
+.debug_ranges   0x00000000      0x418
+ .debug_ranges  0x00000000       0x18 ./src/FatFS_support.o
+ .debug_ranges  0x00000018       0x70 ./src/cr_startup_lpc176x.o
+ .debug_ranges  0x00000088       0x90 ./src/main.o
+ .debug_ranges  0x00000118       0x18 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .debug_ranges  0x00000130       0x28 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(clocking.o)
+ .debug_ranges  0x00000158       0x68 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(uart.o)
+ .debug_ranges  0x000001c0       0x20 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_small_printf/Debug/liblib_small_printf.a(small_printf_nofloat.o)
+ .debug_ranges  0x000001e0       0x28 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_small_printf/Debug/liblib_small_printf.a(small_printf_support.o)
+ .debug_ranges  0x00000208       0x80 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(sd.o)
+ .debug_ranges  0x00000288      0x148 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+ .debug_ranges  0x000003d0       0x48 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(lpc17xx_spi.o)
+
+.debug_str      0x00000000     0x16db
+ .debug_str     0x00000000      0x2d1 ./src/FatFS_support.o
+                                0x31c (size before relaxing)
+ .debug_str     0x000002d1      0x16a ./src/cr_startup_lpc176x.o
+                                0x26f (size before relaxing)
+ .debug_str     0x0000043b      0x55b ./src/main.o
+                                0x769 (size before relaxing)
+ .debug_str     0x00000996       0x9b /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+                                0x298 (size before relaxing)
+ .debug_str     0x00000a31      0x109 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(clocking.o)
+                                0x338 (size before relaxing)
+ .debug_str     0x00000b3a      0x4c2 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(uart.o)
+                                0x764 (size before relaxing)
+ .debug_str     0x00000ffc      0x108 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_small_printf/Debug/liblib_small_printf.a(small_printf_nofloat.o)
+                                0x1c7 (size before relaxing)
+ .debug_str     0x00001104       0xad /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_small_printf/Debug/liblib_small_printf.a(small_printf_support.o)
+                                0x1e4 (size before relaxing)
+ .debug_str     0x000011b1      0x241 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(sd.o)
+                                0x363 (size before relaxing)
+ .debug_str     0x000013f2      0x210 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+                                0x559 (size before relaxing)
+ .debug_str     0x00001602       0xd9 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(lpc17xx_spi.o)
+                                0x583 (size before relaxing)
+
+.comment        0x00000000       0x2a
+ .comment       0x00000000       0x2a ./src/FatFS_support.o
+                                 0x2b (size before relaxing)
+ .comment       0x00000000       0x2b ./src/cr_startup_lpc176x.o
+ .comment       0x00000000       0x2b ./src/main.o
+ .comment       0x00000000       0x2b /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .comment       0x00000000       0x2b /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(clocking.o)
+ .comment       0x00000000       0x2b /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(uart.o)
+ .comment       0x00000000       0x2b /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_small_printf/Debug/liblib_small_printf.a(small_printf_nofloat.o)
+ .comment       0x00000000       0x2b /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_small_printf/Debug/liblib_small_printf.a(small_printf_support.o)
+ .comment       0x00000000       0x2b /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(sd.o)
+ .comment       0x00000000       0x2b /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+ .comment       0x00000000       0x2b /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(lpc17xx_spi.o)
+ .comment       0x00000000       0x2b /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(__weak__main.o)
+ .comment       0x00000000       0x2b /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(strlen.o)
+ .comment       0x00000000       0x2b /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(strncmp.o)
+
+.ARM.attributes
+                0x00000000       0x2f
+ .ARM.attributes
+                0x00000000       0x31 ./src/FatFS_support.o
+ .ARM.attributes
+                0x00000031       0x31 ./src/cr_startup_lpc176x.o
+ .ARM.attributes
+                0x00000062       0x31 ./src/main.o
+ .ARM.attributes
+                0x00000093       0x31 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .ARM.attributes
+                0x000000c4       0x31 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(clocking.o)
+ .ARM.attributes
+                0x000000f5       0x31 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(uart.o)
+ .ARM.attributes
+                0x00000126       0x31 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_small_printf/Debug/liblib_small_printf.a(small_printf_nofloat.o)
+ .ARM.attributes
+                0x00000157       0x31 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_small_printf/Debug/liblib_small_printf.a(small_printf_support.o)
+ .ARM.attributes
+                0x00000188       0x31 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(sd.o)
+ .ARM.attributes
+                0x000001b9       0x31 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+ .ARM.attributes
+                0x000001ea       0x31 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(lpc17xx_spi.o)
+ .ARM.attributes
+                0x0000021b       0x31 /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(__weak__main.o)
+ .ARM.attributes
+                0x0000024c       0x31 /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(strlen.o)
+ .ARM.attributes
+                0x0000027d       0x31 /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(strncmp.o)
+ .ARM.attributes
+                0x000002ae       0x21 /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(division.o)
+
+.debug_frame    0x00000000      0xe48
+ .debug_frame   0x00000000       0x44 ./src/FatFS_support.o
+ .debug_frame   0x00000044       0xf0 ./src/cr_startup_lpc176x.o
+ .debug_frame   0x00000134      0x214 ./src/main.o
+ .debug_frame   0x00000348       0x3c /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .debug_frame   0x00000384       0x78 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(clocking.o)
+ .debug_frame   0x000003fc      0x178 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug/liblib_mcu.a(uart.o)
+ .debug_frame   0x00000574       0x7c /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_small_printf/Debug/liblib_small_printf.a(small_printf_nofloat.o)
+ .debug_frame   0x000005f0       0x98 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_small_printf/Debug/liblib_small_printf.a(small_printf_support.o)
+ .debug_frame   0x00000688      0x1e4 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(sd.o)
+ .debug_frame   0x0000086c      0x4f4 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(ff.o)
+ .debug_frame   0x00000d60       0xe8 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug/liblib_FatFS.a(lpc17xx_spi.o)

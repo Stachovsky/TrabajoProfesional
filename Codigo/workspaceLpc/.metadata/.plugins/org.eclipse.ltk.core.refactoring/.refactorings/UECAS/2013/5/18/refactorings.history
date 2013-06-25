@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;UECAS/src/Tasks/Lcd/main.c&apos; to &apos;taskLcd.c&apos;" description="Rename resource &apos;main.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/Tasks/Lcd/main.c" name="taskLcd.c" stamp="1367690847413" updateReferences="true"/>
+</session>

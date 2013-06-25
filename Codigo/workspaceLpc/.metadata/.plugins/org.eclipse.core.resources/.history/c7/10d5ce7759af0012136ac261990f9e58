@@ -1,0 +1,106 @@
+/*
+ * taskAdc.c
+ *
+ *  Created on: Oct 27, 2012
+ *      Authorint16_t getAdcValue(ADC_type adc);: "Facundo Nahuel Uriel Silva"
+ */
+
+#include "taskAdc.h"
+
+SensorsValues medicion;
+xSemaphoreHandle mutexAdcReady;
+int8_t estado = 0;
+
+extern xQueueHandle queuePcComTX;
+
+/////////////////////////////////////////////////////////////////////////////////
+
+void ADC_IRQHandler(void){
+
+	signed portBASE_TYPE pxHigherPriorityTaskWoken = pdFALSE;
+
+	if(estado == 0){
+		estado = 1;
+		ADC_ChannelCmd(LPC_ADC,ADC_CHANNEL_0,ENABLE);
+		ADC_ChannelCmd(LPC_ADC,ADC_CHANNEL_1,DISABLE);
+		medicion.Adc0Value =  ADC_ChannelGetData(LPC_ADC,ADC_CHANNEL_0);
+
+		ADC_StartCmd(LPC_ADC,ADC_START_NOW);
+
+	}else{
+		estado = 0;
+		ADC_ChannelCmd(LPC_ADC,ADC_CHANNEL_0,DISABLE);
+		ADC_ChannelCmd(LPC_ADC,ADC_CHANNEL_1,ENABLE);
+		medicion.Adc1Value =  ADC_ChannelGetData(LPC_ADC,ADC_CHANNEL_1);
+
+		NVIC_DisableIRQ(ADC_IRQn);
+		xSemaphoreGive(mutexAdcReady);
+	}
+
+
+}
+
+/////////////////////////////////////////////////////////////////////////////////
+
+void taskAdc(void *param){
+
+	msgPcCom msgTXAdc0Value;
+	msgPcCom msgTXAdc1Value;
+
+	const portTickType xDelay = 250 / portTICK_RATE_MS;
+
+	pcComInitMsg(&msgTXAdc0Value.cmd,CMD_PCCOM_READ_ADC_0);
+	msgTXAdc0Value.cmd.len = 2; // data size
+
+	pcComInitMsg(&msgTXAdc1Value.cmd,CMD_PCCOM_READ_ADC_1);
+	msgTXAdc1Value.cmd.len = 2; // data size
+
+	PINSEL_CFG_Type PinCfg;
+
+	mutexAdcReady = xSemaphoreCreateMutex();
+	xSemaphoreTake(mutexAdcReady, portMAX_DELAY);
+
+	PinCfg.Funcnum = 1;
+	PinCfg.OpenDrain = 0;
+	PinCfg.Pinmode = 0;
+	PinCfg.Pinnum = 23;
+	PinCfg.Portnum = 0;
+	PINSEL_ConfigPin(&PinCfg);
+
+	PinCfg.Pinnum = 24;
+	PINSEL_ConfigPin(&PinCfg);
+
+	ADC_Init(LPC_ADC, 5000);
+	ADC_IntConfig(LPC_ADC,ADC_ADINTEN0,ENABLE);
+	ADC_IntConfig(LPC_ADC,ADC_ADINTEN1,ENABLE);
+
+	NVIC_SetPriority(ADC_IRQn, ((0x01<<3)|0x01));
+
+	ADC_ChannelCmd(LPC_ADC,ADC_CHANNEL_0,ENABLE);
+
+	/* Enable ADC in NVIC */
+	NVIC_EnableIRQ(ADC_IRQn);
+
+	// Start conversion
+	ADC_StartCmd(LPC_ADC,ADC_START_CONTINUOUS);
+
+	while(1){
+
+		xSemaphoreTake(mutexAdcReady, portMAX_DELAY);
+
+		msgTXAdc0Value.cmd.data[0] = (uint8_t)(medicion.Adc0Value & 0x000000FF);
+		msgTXAdc0Value.cmd.data[1] = (uint8_t)((medicion.Adc0Value & 0x0000FF00) >> 8);
+		xQueueSend(queuePcComTX,&msgTXAdc0Value,1000);
+
+		msgTXAdc1Value.cmd.data[0] = (uint8_t)(medicion.Adc1Value & 0x000000FF);
+		msgTXAdc1Value.cmd.data[1] = (uint8_t)((medicion.Adc1Value & 0x0000FF00) >> 8);
+		xQueueSend(queuePcComTX,&msgTXAdc1Value,1000);
+
+		vTaskDelay(xDelay);
+
+		NVIC_EnableIRQ(ADC_IRQn);
+//		ADC_StartCmd(LPC_ADC,ADC_START_NOW);
+	}
+
+}
+

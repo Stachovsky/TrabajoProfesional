@@ -1,0 +1,63 @@
+/*
+ * ProtocolPCComunicaction.h
+ *
+ *  Created on: Sep 26, 2012
+ *      Author: Facundo Nahuel Uriel Silva
+ */
+
+#ifndef PROTOCOLPCCOMUNICACTION_H_
+#define PROTOCOLPCCOMUNICACTION_H_
+//
+//#include "LPC17xx.h"
+//#include "lpc_types.h"
+
+#include <string.h>
+
+#define MIN_CMDPCCOM_SIZE_PACKED	7
+#define MAX_CMDPCCOM_SIZE_DATA		20
+
+typedef struct{
+	unsigned char		start;
+	unsigned char		cmdId;
+	unsigned char		len;
+	unsigned char		data[MAX_CMDPCCOM_SIZE_DATA];
+	unsigned short		crc;
+	unsigned char		end;
+
+} cmdPcCom;
+
+#define		CMD_PCCOM_START				0x55
+#define		CMD_PCCOM_END				0xaa
+
+// Codigo de comandos
+#define		CMD_PCCOM_READ_ADC_1		0x01
+
+/** \brief Inicializa los valores del mensaje
+ *
+ * @param msg
+ * @param cmd
+ * @return
+ */
+unsigned char initComMsg(cmdPcCom* msg, unsigned char cmd);
+
+/** \brief
+ *
+ * @param msg
+ * @param buffer
+ * @param lenBuffer
+ * @return
+ */
+unsigned char packPcComMsg(cmdPcCom* msg, unsigned char *buffer, unsigned char lenBuffer);
+
+// Comprobación de redundancia cíclica (CRC)
+#define POLY 0x8408
+
+/** \brief
+ *
+ * @param data_p
+ * @param length
+ */
+unsigned short crc16(char *data_p, unsigned short length);
+
+
+#endif /* PROTOCOLPCCOMUNICACTION_H_ */

@@ -1,0 +1,105 @@
+/*
+ * PcCommunication.c
+ *
+ *  Created on: Sep 26, 2012
+ *      Author: Facundo Nahuel Uriel Silva
+ */
+
+#include "taskPcCommunication.h"
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+// Colas de mensajes
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+xQueueHandle queuePcComTX;
+xQueueHandle queuePcComRX;
+
+xSemaphoreHandle semComRx;
+
+uint8_t byteReceive;
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+void taskPcCommunicationInit(){
+
+	// Se inicializa la uart 3
+	API_UartConfig(UART_PORT_3, interruptUart3);
+
+	// Se inicializa la cola de mensajes de transmision
+	queuePcComTX = xQueueCreate( MAX_SIZE_QUEUE_TX, sizeof( msgPcCom ) );
+
+	// Se inicializa la cola de mensajes de recepcion
+	queuePcComRX = xQueueCreate( MAX_SIZE_QUEUE_RX, sizeof( msgPcCom ) );
+
+	semComRx = xSemaphoreCreateMutex();
+
+	xSemaphoreTake(semComRx,portMAX_DELAY);
+
+	API_UartEnableInterrupt(UART_PORT_3);
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+void taskPcCommunicationTX(void *param){
+
+	msgPcCom	tempRecieve;
+	uint8_t		str[30];
+
+	while (1) {
+
+		if(uxQueueMessagesWaiting(queuePcComTX)){ // se espera hasta que la cola tenga mensajes
+
+			// se intenta leer un mensaje de la cola. El numero de elementos en la cola se decrementa en 1
+			if(xQueueReceive(queuePcComTX,&tempRecieve,5000)){
+
+				sprintf(str,"Msg Id:%.3d", tempRecieve.idMsg);
+				API_UartSendString(UART_PORT_3,str);
+
+			}else{
+				taskYIELD();
+			}
+		}
+	}
+
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+void taskPcCommunicationRX(void *param){
+
+	uint8_t		str[30];
+
+	while (1) {
+
+		if(xSemaphoreTake(semComRx,1000) == pdTRUE){ // se espera a que llegue algo
+
+			if(byteReceive == 0x02){
+				sprintf(str,"Llego Inicio CMD\n");
+				API_UartSendString(UART_PORT_3,str);
+			}
+		}else{
+			taskYIELD();
+		}
+	}
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+void interruptUart3(uint8_t c){
+
+	signed portBASE_TYPE pxHigherPriorityTaskWoken = pdFALSE;
+
+//	API_UartDisableInterrupt(UART_PORT_3);
+	byteReceive = c;
+	// Se cede el semaforo para indicar que llego un byte desde la uart
+	xSemaphoreGiveFromISR(semComRx,&pxHigherPriorityTaskWoken);
+
+//	API_UartEnableInterrupt(UART_PORT_3);
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////

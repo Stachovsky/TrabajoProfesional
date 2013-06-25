@@ -1,0 +1,81 @@
+/*
+ * API_Uart.c
+ *
+ *  Created on: 30/04/2012
+ *      Author: Facundo Nahuel Uriel Silva
+ */
+
+#include "API_Uart.h"
+
+void API_Uart_Config(void){
+	//-----------------------------------------------
+	// Configuracion de los pines para usar la UART3
+	//-----------------------------------------------
+
+	PINSEL_CFG_Type configPinUART;
+
+	configPinUART.Funcnum = PINSEL_FUNC_2;
+	configPinUART.OpenDrain = PINSEL_PINMODE_NORMAL;
+	configPinUART.Pinmode = PINSEL_PINMODE_PULLUP;
+	configPinUART.Pinnum = PINSEL_PIN_0; //TXD3
+	configPinUART.Portnum = PINSEL_PORT_0;
+
+	PINSEL_ConfigPin(&configPinUART);
+
+	configPinUART.Pinnum = PINSEL_PIN_1;
+
+	PINSEL_ConfigPin(&configPinUART); //RXD3
+
+	//-----------------------------------------------
+	// Configuracion de la UART3
+	//-----------------------------------------------
+
+	UART_CFG_Type configCfgUart;
+	configCfgUart.Baud_rate = 115200;
+	configCfgUart.Databits = UART_DATABIT_8;
+	configCfgUart.Parity = UART_PARITY_NONE;
+	configCfgUart.Stopbits = UART_STOPBIT_1;
+
+	UART_Init(LPC_UART3,&configCfgUart);
+	UART_TxCmd(LPC_UART3, ENABLE);
+
+	UART_IntConfig(LPC_UART3, UART_INTCFG_RBR, ENABLE); // Se activa la interrupcion de RXD
+	NVIC_EnableIRQ(UART3_IRQn);
+}
+
+void API_UartSendString(unint_8* str){
+
+	UART_SendString(LPC_UART3,str);
+}
+
+void API_UartSendByte(uint8_t byte){
+
+	UART_SendByte(LPC_UART3,byte);
+}
+
+
+//void UART3_IRQHandler(void){
+//
+////	char c = UART_ReceiveByte(LPC_UART3);
+//
+////	switch(c){
+////	case 'R':
+////		LPC_GPIO2->FIOSET = (1<<0); //red on
+////		break;
+////	case 'r':
+////		LPC_GPIO2->FIOCLR = (1<<0); //red off
+////		break;
+////	case 'B':
+////		LPC_GPIO0->FIOSET = (1<<26); //blue on
+////		break;
+////	case 'b':
+////		LPC_GPIO0->FIOCLR = (1<<26); //blue off
+////		break;
+////	case 'G':
+////		LPC_GPIO2->FIOSET = (1<<1); //green on
+////		break;
+////	case 'g':
+////		LPC_GPIO2->FIOCLR = (1<<1); //green off
+////		break;
+////	}
+//}

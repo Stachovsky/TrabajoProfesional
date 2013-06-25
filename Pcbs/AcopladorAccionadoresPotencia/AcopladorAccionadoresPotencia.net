@@ -1,0 +1,574 @@
+# EESchema Netlist Version 1.1 created  Mon 29 Oct 2012 10:26:31 AM ART
+(
+ ( /507EEE12 $noname  R1 560 {Lib=R}
+  (    1 N-000010 )
+  (    2 +3.3V )
+ )
+ ( /507EEE1F $noname  U1 OPTO-TRIAC {Lib=OPTO-TRIAC}
+  (    1 N-000010 )
+  (    2 N-000016 )
+  (    3 ? )
+  (    4 N-000018 )
+  (    5 ? )
+  (    6 N-000012 )
+ )
+ ( /507EEE48 $noname  U2 TRIAC {Lib=TRIAC}
+  (    1 N-000019 )
+  (    2 /220v+ )
+  (    3 N-000018 )
+ )
+ ( /507EEE5F $noname  R2 180 {Lib=R}
+  (    1 N-000012 )
+  (    2 N-000011 )
+ )
+ ( /507EEE6F $noname  R3 1.2k {Lib=R}
+  (    1 N-000011 )
+  (    2 /220v+ )
+ )
+ ( /507EEEAB $noname  C1 0.1u {Lib=C}
+  (    1 N-000011 )
+  (    2 N-000019 )
+ )
+ ( /507EEF94 $noname  P1 CONN_2 {Lib=CONN_2}
+  (    1 N-000019 )
+  (    2 /220v- )
+ )
+ ( /507EF01F $noname  Q1 MOS_N {Lib=MOS_N}
+  (    D N-000016 )
+  (    G N-000013 )
+  (    S GND )
+ )
+ ( /507EF3EB $noname  P3 CONN_2 {Lib=CONN_2}
+  (    1 +3.3V )
+  (    2 GND )
+ )
+ ( /507EF8EA $noname  R4 560 {Lib=R}
+  (    1 N-000017 )
+  (    2 +3.3V )
+ )
+ ( /507EF907 $noname  D1 LED {Lib=LED}
+  (    1 N-000017 )
+  (    2 N-000016 )
+ )
+ ( /507F0267 $noname  P2 CONN_1 {Lib=CONN_1}
+  (    1 N-000013 )
+ )
+ ( /508191C6 $noname  P4 CONN_2 {Lib=CONN_2}
+  (    1 /220v+ )
+  (    2 /220v- )
+ )
+ ( /508194C7 $noname  R6 560 {Lib=R}
+  (    1 N-000002 )
+  (    2 +3.3V )
+ )
+ ( /508194CD $noname  U3 OPTO-TRIAC {Lib=OPTO-TRIAC}
+  (    1 N-000002 )
+  (    2 N-000001 )
+  (    3 ? )
+  (    4 N-000009 )
+  (    5 ? )
+  (    6 N-000005 )
+ )
+ ( /508194D3 $noname  U4 TRIAC {Lib=TRIAC}
+  (    1 N-000003 )
+  (    2 /220v+ )
+  (    3 N-000009 )
+ )
+ ( /508194D9 $noname  R7 180 {Lib=R}
+  (    1 N-000005 )
+  (    2 N-000004 )
+ )
+ ( /508194DF $noname  R8 1.2k {Lib=R}
+  (    1 N-000004 )
+  (    2 /220v+ )
+ )
+ ( /508194E5 $noname  C2 0.1u {Lib=C}
+  (    1 N-000004 )
+  (    2 N-000003 )
+ )
+ ( /508194EB $noname  P6 CONN_2 {Lib=CONN_2}
+  (    1 N-000003 )
+  (    2 /220v- )
+ )
+ ( /508194F1 $noname  Q2 MOS_N {Lib=MOS_N}
+  (    D N-000001 )
+  (    G N-000025 )
+  (    S GND )
+ )
+ ( /50819503 $noname  R5 560 {Lib=R}
+  (    1 N-000008 )
+  (    2 +3.3V )
+ )
+ ( /50819509 $noname  D2 LED {Lib=LED}
+  (    1 N-000008 )
+  (    2 N-000001 )
+ )
+ ( /5081950F $noname  P5 CONN_1 {Lib=CONN_1}
+  (    1 N-000025 )
+ )
+ ( /50819532 $noname  R10 560 {Lib=R}
+  (    1 N-000030 )
+  (    2 +3.3V )
+ )
+ ( /50819538 $noname  U5 OPTO-TRIAC {Lib=OPTO-TRIAC}
+  (    1 N-000030 )
+  (    2 N-000026 )
+  (    3 ? )
+  (    4 N-000029 )
+  (    5 ? )
+  (    6 N-000007 )
+ )
+ ( /5081953E $noname  U6 TRIAC {Lib=TRIAC}
+  (    1 N-000031 )
+  (    2 /220v+ )
+  (    3 N-000029 )
+ )
+ ( /50819544 $noname  R11 180 {Lib=R}
+  (    1 N-000007 )
+  (    2 N-000006 )
+ )
+ ( /5081954A $noname  R12 1.2k {Lib=R}
+  (    1 N-000006 )
+  (    2 /220v+ )
+ )
+ ( /50819550 $noname  C3 0.1u {Lib=C}
+  (    1 N-000006 )
+  (    2 N-000031 )
+ )
+ ( /50819556 $noname  P8 CONN_2 {Lib=CONN_2}
+  (    1 N-000031 )
+  (    2 /220v- )
+ )
+ ( /5081955C $noname  Q3 MOS_N {Lib=MOS_N}
+  (    D N-000026 )
+  (    G N-000028 )
+  (    S GND )
+ )
+ ( /5081956E $noname  R9 560 {Lib=R}
+  (    1 N-000027 )
+  (    2 +3.3V )
+ )
+ ( /50819574 $noname  D3 LED {Lib=LED}
+  (    1 N-000027 )
+  (    2 N-000026 )
+ )
+ ( /5081957A $noname  P7 CONN_1 {Lib=CONN_1}
+  (    1 N-000028 )
+ )
+ ( /5081959D $noname  R14 560 {Lib=R}
+  (    1 N-000032 )
+  (    2 +3.3V )
+ )
+ ( /508195A3 $noname  U7 OPTO-TRIAC {Lib=OPTO-TRIAC}
+  (    1 N-000032 )
+  (    2 N-000020 )
+  (    3 ? )
+  (    4 N-000022 )
+  (    5 ? )
+  (    6 N-000034 )
+ )
+ ( /508195A9 $noname  U8 TRIAC {Lib=TRIAC}
+  (    1 N-000033 )
+  (    2 /220v+ )
+  (    3 N-000022 )
+ )
+ ( /508195AF $noname  R15 180 {Lib=R}
+  (    1 N-000034 )
+  (    2 N-000023 )
+ )
+ ( /508195B5 $noname  R16 1.2k {Lib=R}
+  (    1 N-000023 )
+  (    2 /220v+ )
+ )
+ ( /508195BB $noname  C4 0.1u {Lib=C}
+  (    1 N-000023 )
+  (    2 N-000033 )
+ )
+ ( /508195C1 $noname  P10 CONN_2 {Lib=CONN_2}
+  (    1 N-000033 )
+  (    2 /220v- )
+ )
+ ( /508195C7 $noname  Q4 MOS_N {Lib=MOS_N}
+  (    D N-000020 )
+  (    G N-000024 )
+  (    S GND )
+ )
+ ( /508195D9 $noname  R13 560 {Lib=R}
+  (    1 N-000021 )
+  (    2 +3.3V )
+ )
+ ( /508195DF $noname  D4 LED {Lib=LED}
+  (    1 N-000021 )
+  (    2 N-000020 )
+ )
+ ( /508195E5 $noname  P9 CONN_1 {Lib=CONN_1}
+  (    1 N-000024 )
+ )
+ ( /508E8503 $noname  R17 10k {Lib=R}
+  (    1 GND )
+  (    2 N-000013 )
+ )
+ ( /508E8600 $noname  R18 10k {Lib=R}
+  (    1 GND )
+  (    2 N-000025 )
+ )
+ ( /508E860D $noname  R20 10k {Lib=R}
+  (    1 GND )
+  (    2 N-000024 )
+ )
+ ( /508E861A $noname  R19 10k {Lib=R}
+  (    1 GND )
+  (    2 N-000028 )
+ )
+)
+*
+{ Allowed footprints by component:
+$component R1
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R2
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R3
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C1
+ SM*
+ C?
+ C1-1
+$endlist
+$component R4
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D1
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R6
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R7
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R8
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C2
+ SM*
+ C?
+ C1-1
+$endlist
+$component R5
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D2
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R10
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R11
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R12
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C3
+ SM*
+ C?
+ C1-1
+$endlist
+$component R9
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D3
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R14
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R15
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R16
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C4
+ SM*
+ C?
+ C1-1
+$endlist
+$component R13
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D4
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R17
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R18
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R20
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R19
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$endfootprintlist
+}
+{ Pin List by Nets
+Net 1 "" ""
+ D2 2
+ Q2 D
+ U3 2
+Net 2 "" ""
+ R6 1
+ U3 1
+Net 3 "" ""
+ C2 2
+ P6 1
+ U4 1
+Net 4 "" ""
+ R7 2
+ R8 1
+ C2 1
+Net 5 "" ""
+ U3 6
+ R7 1
+Net 6 "" ""
+ R12 1
+ C3 1
+ R11 2
+Net 7 "" ""
+ U5 6
+ R11 1
+Net 8 "" ""
+ D2 1
+ R5 1
+Net 9 "" ""
+ U3 4
+ U4 3
+Net 10 "" ""
+ R1 1
+ U1 1
+Net 11 "" ""
+ C1 1
+ R3 1
+ R2 2
+Net 12 "" ""
+ U1 6
+ R2 1
+Net 13 "" ""
+ P2 1
+ Q1 G
+ R17 2
+Net 14 "GND" "GND"
+ R20 1
+ R19 1
+ Q1 S
+ P3 2
+ Q2 S
+ Q3 S
+ R18 1
+ Q4 S
+ R17 1
+Net 15 "/220v-" "220v-"
+ P4 2
+ P1 2
+ P8 2
+ P10 2
+ P6 2
+Net 16 "" ""
+ U1 2
+ Q1 D
+ D1 2
+Net 17 "" ""
+ R4 1
+ D1 1
+Net 18 "" ""
+ U1 4
+ U2 3
+Net 19 "" ""
+ U2 1
+ P1 1
+ C1 2
+Net 20 "" ""
+ D4 2
+ Q4 D
+ U7 2
+Net 21 "" ""
+ D4 1
+ R13 1
+Net 22 "" ""
+ U8 3
+ U7 4
+Net 23 "" ""
+ R15 2
+ C4 1
+ R16 1
+Net 24 "" ""
+ R20 2
+ Q4 G
+ P9 1
+Net 25 "" ""
+ Q2 G
+ P5 1
+ R18 2
+Net 26 "" ""
+ U5 2
+ Q3 D
+ D3 2
+Net 27 "" ""
+ R9 1
+ D3 1
+Net 28 "" ""
+ Q3 G
+ P7 1
+ R19 2
+Net 29 "" ""
+ U5 4
+ U6 3
+Net 30 "" ""
+ U5 1
+ R10 1
+Net 31 "" ""
+ C3 2
+ P8 1
+ U6 1
+Net 32 "" ""
+ R14 1
+ U7 1
+Net 33 "" ""
+ P10 1
+ C4 2
+ U8 1
+Net 34 "" ""
+ U7 6
+ R15 1
+Net 37 "+3.3V" "+3.3V"
+ R13 2
+ R10 2
+ R9 2
+ R5 2
+ R6 2
+ R1 2
+ R4 2
+ P3 1
+ R14 2
+Net 40 "/220v+" "220v+"
+ R12 2
+ P4 1
+ R8 2
+ U4 2
+ R3 2
+ U2 2
+ U8 2
+ R16 2
+ U6 2
+}
+#End

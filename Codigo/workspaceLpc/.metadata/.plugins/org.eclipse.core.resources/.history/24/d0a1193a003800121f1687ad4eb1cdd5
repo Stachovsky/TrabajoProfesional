@@ -1,0 +1,49 @@
+src/Tasks/WebServer/taskWebServer.d src/Tasks/WebServer/taskWebServer.o: \
+ ../src/Tasks/WebServer/taskWebServer.c \
+ ../src/Tasks/WebServer/taskWebServer.h \
+ /home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc/LPC17xx.h \
+ /home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc/core_cm3.h \
+ /home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc/core_cmInstr.h \
+ /home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc/core_cmFunc.h \
+ /home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc/system_LPC17xx.h \
+ ../src/Tasks/WebServer/easyweb.h ../src/Tasks/WebServer/ethmac.h \
+ ../src/Tasks/WebServer/tcpip.h \
+ /home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/libDriversMcuPeripherals/inc/Lib_MCU/lpc_types.h \
+ /home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/SMCED/FreeRTOS_include/FreeRTOS.h \
+ /home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/SMCED/FreeRTOS_include/projdefs.h \
+ /home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/SMCED/src/FreeRTOSConfig.h \
+ /home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/SMCED/FreeRTOS_include/portable.h \
+ /home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/SMCED/FreeRTOS_portable/portmacro.h \
+ /home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/SMCED/FreeRTOS_include/mpu_wrappers.h
+
+../src/Tasks/WebServer/taskWebServer.h:
+
+/home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc/LPC17xx.h:
+
+/home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc/core_cm3.h:
+
+/home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc/core_cmInstr.h:
+
+/home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc/core_cmFunc.h:
+
+/home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc/system_LPC17xx.h:
+
+../src/Tasks/WebServer/easyweb.h:
+
+../src/Tasks/WebServer/ethmac.h:
+
+../src/Tasks/WebServer/tcpip.h:
+
+/home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/libDriversMcuPeripherals/inc/Lib_MCU/lpc_types.h:
+
+/home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/SMCED/FreeRTOS_include/FreeRTOS.h:
+
+/home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/SMCED/FreeRTOS_include/projdefs.h:
+
+/home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/SMCED/src/FreeRTOSConfig.h:
+
+/home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/SMCED/FreeRTOS_include/portable.h:
+
+/home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/SMCED/FreeRTOS_portable/portmacro.h:
+
+/home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/SMCED/FreeRTOS_include/mpu_wrappers.h:

@@ -1,0 +1,66 @@
+/*
+ * API_LcdGrafic.h
+ *
+ *  Created on: Oct 17, 2012
+ *      Author: "Facundo Nahuel Uriel Silva"
+ */
+
+#ifndef API_LCDGRAFIC_H_
+#define API_LCDGRAFIC_H_
+
+#include <string.h>
+
+
+/** Se deben encender las dos memoria: Llamar a la funcion display on/off por cada chip
+ * 	Chip Select: Se puede seleccionar las dos columnas enciendiedo los dos CS o por separado. Para el clea
+ *
+ *
+ */
+
+#define DELAY		50
+#define DELAY_LONG	100
+#define MAX_X		8
+#define MAX_Y		128
+
+#define	DI	(1 << 6) // gpio 0
+#define	RW	(1 << 11) // gpio 0
+#define	E	(1 << 21) // gpio 0
+#define	CS1	(1 << 17) // gpio 0
+#define	CS2	(1 << 16) // gpio 0
+#define	RST	(1 << 4) // gpio 2
+
+typedef struct{
+	int8_t port;
+	int8_t bit;
+
+} LCD_DB;
+
+
+// Se deben hacer dos lecturas consecutivas para obtener el valor de la RAM
+void API_LcdRead(int8_t* data, int8_t command, uint8_t page);
+
+void API_LcdWrite(int8_t data, uint8_t command, uint8_t page);
+
+void API_LcdWriteData(int8_t data, uint8_t page);
+
+void API_LcdWriteInstruction(int8_t data, uint8_t page);
+
+void API_LcdWriteByte(int8_t data, uint8_t x, uint8_t y);
+
+void API_LcdReadByte(int8_t* data, uint8_t x, uint8_t y);
+
+void API_LcdGotoXY(int8_t x, int8_t y);
+
+void API_LcdCleanScreen();
+
+void API_LcdDisplayON();
+
+void API_LcdDisplayOFF();
+
+void API_LcdSetPixel(int8_t x, int8_t y);
+
+void API_LcdUnSetPixel(int8_t x, int8_t y);
+
+void API_writeBlock(int8_t** block,int8_t x, int8_t y, int16_t width, int8_t height);
+
+#endif /* API_LCDGRAFIC_H_ */

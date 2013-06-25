@@ -1,0 +1,186 @@
+/*
+ * taskAdc.c
+ *
+ *  Created on: Oct 27, 2012
+ *      Author: "Facundo Nahuel Uriel Silva"
+ */
+
+#include "taskAdc.h"
+
+xQueueHandle queueSdCardAdc;
+
+// Buffer to contain string version of value read from ADC
+// 4 character, plus zero terminator
+char strbuf [5];
+
+void taskAdc(void *param){
+	uint32_t adval;
+	msgPcCom msgTXAdc0Value;
+	msgPcCom msgTXAdc1Value;
+	msgPcCom msgTXAdc2Value;
+	msgPcCom msgTXAdc3Value;
+	msgPcCom msgTXAdc4Value;
+	msgAdcSdCard msgAdcSDCARD;
+
+	// Se inicializa la cola de mensajes de transmision
+	queueSdCardAdc = xQueueCreate( MAX_SIZE_QUEUE_TX, sizeof( msgPcCom ) );
+
+	const portTickType xDelay = 250 / portTICK_RATE_MS;
+
+	pcComInitMsg(&msgTXAdc0Value.cmd,CMD_PCCOM_READ_ADC_0);
+	msgTXAdc0Value.cmd.len = 2; // data size
+
+	pcComInitMsg(&msgTXAdc1Value.cmd,CMD_PCCOM_READ_ADC_1);
+	msgTXAdc1Value.cmd.len = 2; // data size
+
+	pcComInitMsg(&msgTXAdc2Value.cmd,CMD_PCCOM_READ_ADC_2);
+	msgTXAdc2Value.cmd.len = 2; // data size
+
+	pcComInitMsg(&msgTXAdc3Value.cmd,CMD_PCCOM_READ_ADC_3);
+	msgTXAdc3Value.cmd.len = 2; // data size
+
+	pcComInitMsg(&msgTXAdc4Value.cmd,CMD_PCCOM_READ_ADC_4);
+	msgTXAdc4Value.cmd.len = 2; // data size
+
+	// * Set up ADC
+
+	// Turn on power to ADC block
+	LPC_SC->PCONP |=  ADC_POWERON;
+
+	// Turn on ADC peripheral clock
+	LPC_SC->PCLKSEL0 &= ~(PCLK_ADC_MASK);
+	LPC_SC->PCLKSEL0 |=  (3 << PCLK_ADC);
+
+	// Set P0.23 to AD0.0 in PINSEL1
+//	LPC_PINCON->PINSEL1	|= SELECT_ADC0;
+//	LPC_PINCON->PINSEL1	|= SELECT_ADC1;
+
+	LPC_PINCON->PINSEL0 |= 0x0F000000;	/* P0.12~13, A0.6~7, function 11 */
+	LPC_PINCON->PINSEL1 &= ~0x003FC000;	/* P0.23~26, A0.0~3, function 01 */
+	LPC_PINCON->PINSEL1 |= 0x00154000;
+	LPC_PINCON->PINSEL3 |= 0xF0000000;	/* P1.30~31, A0.4~5, function 11 */
+
+
+	while(1){
+
+		//////////////////////////////////////////////////////////////////////////////
+
+		// Start A/D conversion for on AD0.0
+		LPC_ADC->ADCR = START_ADC | OPERATIONAL_ADC | SEL_AD0 ;
+
+		do {
+			adval = LPC_ADC->ADGDR;            // Read A/D Data Register
+		} while ((adval & ADC_DONE_BIT) == 0); // Wait for end of A/D Conversion
+
+		// Stop A/D Conversion
+		LPC_ADC->ADCR &= ~(START_ADC | OPERATIONAL_ADC | SEL_AD0) ;
+
+		// Extract AD0.0 value - 12 bit result in bits [15:4]
+		adval = (adval >> 4) & 0x0FFF ;
+//		adc0val = (uint8_t)(adval & 0x000000FF);
+
+		msgTXAdc0Value.idMsg++;
+		msgTXAdc0Value.cmd.data[0] = (uint8_t)(adval & 0x000000FF);
+		msgTXAdc0Value.cmd.data[1] = (uint8_t)((adval & 0x0000FF00)>> 8);
+
+		xQueueSend(queuePcComTX,&msgTXAdc0Value,1000);
+
+//		vTaskDelay( xDelay );
+		//////////////////////////////////////////////////////////////////////////////
+
+		// Start A/D conversion for on AD0.1
+		LPC_ADC->ADCR = START_ADC | OPERATIONAL_ADC | SEL_AD1 ;
+
+		do {
+			adval = LPC_ADC->ADGDR;            // Read A/D Data Register
+		} while ((adval & ADC_DONE_BIT) == 0); // Wait for end of A/D Conversion
+
+		// Stop A/D Conversion
+		LPC_ADC->ADCR &= ~(START_ADC | OPERATIONAL_ADC | SEL_AD1) ;
+
+		// Extract AD0.0 value - 12 bit result in bits [15:4]
+		adval = (adval >> 4) & 0x0FFF ;
+//		adc0val = (uint8_t)(adval & 0x000000FF);
+
+		msgTXAdc1Value.idMsg++;
+		msgTXAdc1Value.cmd.data[0] = (uint8_t)(adval & 0x000000FF);
+		msgTXAdc1Value.cmd.data[1] = (uint8_t)((adval & 0x0000FF00)>> 8);
+
+		xQueueSend(queuePcComTX,&msgTXAdc1Value,1000);
+
+//		vTaskDelay( xDelay );
+		//////////////////////////////////////////////////////////////////////////////
+
+		// Start A/D conversion for on AD0.2
+		LPC_ADC->ADCR = START_ADC | OPERATIONAL_ADC | SEL_AD2 ;
+
+		do {
+			adval = LPC_ADC->ADGDR;            // Read A/D Data Register
+		} while ((adval & ADC_DONE_BIT) == 0); // Wait for end of A/D Conversion
+
+		// Stop A/D Conversion
+		LPC_ADC->ADCR &= ~(START_ADC | OPERATIONAL_ADC | SEL_AD2) ;
+
+		// Extract AD0.0 value - 12 bit result in bits [15:4]
+		adval = (adval >> 4) & 0x0FFF ;
+//		adc0val = (uint8_t)(adval & 0x000000FF);
+
+		msgTXAdc2Value.idMsg++;
+		msgTXAdc2Value.cmd.data[0] = (uint8_t)(adval & 0x000000FF);
+		msgTXAdc2Value.cmd.data[1] = (uint8_t)((adval & 0x0000FF00)>> 8);
+
+		xQueueSend(queuePcComTX,&msgTXAdc2Value,1000);
+//		vTaskDelay( xDelay );
+
+		//////////////////////////////////////////////////////////////////////////////
+
+		// Start A/D conversion for on AD0.3
+		LPC_ADC->ADCR = START_ADC | OPERATIONAL_ADC | SEL_AD3 ;
+
+		do {
+			adval = LPC_ADC->ADGDR;            // Read A/D Data Register
+		} while ((adval & ADC_DONE_BIT) == 0); // Wait for end of A/D Conversion
+
+		// Stop A/D Conversion
+		LPC_ADC->ADCR &= ~(START_ADC | OPERATIONAL_ADC | SEL_AD3) ;
+
+		// Extract AD0.0 value - 12 bit result in bits [15:4]
+		adval = (adval >> 4) & 0x0FFF ;
+//		adc0val = (uint8_t)(adval & 0x000000FF);
+
+		msgTXAdc3Value.idMsg++;
+		msgTXAdc3Value.cmd.data[0] = (uint8_t)(adval & 0x000000FF);
+		msgTXAdc3Value.cmd.data[1] = (uint8_t)((adval & 0x0000FF00)>> 8);
+
+		xQueueSend(queuePcComTX,&msgTXAdc3Value,1000);
+
+//		vTaskDelay( xDelay );
+		//////////////////////////////////////////////////////////////////////////////
+
+		// Start A/D conversion for on AD0.4
+		LPC_ADC->ADCR = START_ADC | OPERATIONAL_ADC | SEL_AD4 ;
+
+		do {
+			adval = LPC_ADC->ADGDR;            // Read A/D Data Register
+		} while ((adval & ADC_DONE_BIT) == 0); // Wait for end of A/D Conversion
+
+		// Stop A/D Conversion
+		LPC_ADC->ADCR &= ~(START_ADC | OPERATIONAL_ADC | SEL_AD4) ;
+
+		// Extract AD0.0 value - 12 bit result in bits [15:4]
+		adval = (adval >> 4) & 0x0FFF ;
+//		adc0val = (uint8_t)(adval & 0x000000FF);
+
+		msgTXAdc4Value.idMsg++;
+		msgTXAdc4Value.cmd.data[0] = (uint8_t)(adval & 0x000000FF);
+		msgTXAdc4Value.cmd.data[1] = (uint8_t)((adval & 0x0000FF00)>> 8);
+
+		xQueueSend(queuePcComTX,&msgTXAdc4Value,1000);
+//		vTaskDelay( xDelay );
+		//////////////////////////////////////////////////////////////////////////////
+
+		vTaskDelay( xDelay );
+		taskYIELD();
+	}
+
+}

@@ -1,0 +1,152 @@
+\documentclass[12pt]{article}
+
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenx}
+\usepackage{anysize} 
+\usepackage{amsmath}
+\usepackage{listings}
+%\usepackage{wrapfig} % paquete gráfico... quizás es necesario actualizar paquetes en kile
+\usepackage{hyperref}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\hypersetup{
+    colorlinks,%
+    citecolor=black,%
+    filecolor=black,%
+    linkcolor=black,%
+    urlcolor=black
+}
+\marginsize{2cm}{2cm}{1cm}{1cm} %izq der arriva abajo
+
+\title{Informe preliminar}
+\author{Facundo Nahuel Uriel Silva}
+
+\lhead{ \chaptername }
+
+ 
+\begin{document}
+
+  %Caratula
+  \newpage
+  \thispagestyle{empty}
+  
+  \begin{center}
+    \includegraphics[width=250px]{../../logo_fiuba_alta.jpg} 
+
+  \vspace{100px}
+
+  {\bf \Huge{Trabajo Profesional de Ingeniería Electrónica} }
+  
+  \vspace{50px}
+
+  \huge{ Sistema de control para proceso de sinterizado de nano estructuras }
+
+  \vspace{50px}
+
+  \huge{ \textit{Requerimientos técnicos del cliente} } 
+
+  \end{center}
+
+  \vspace{70px}
+
+   \begin{bf}
+    \begin{Large}
+      \begin{tabbing}
+	\= ----- \= ----- \= --------------------- \= \kill
+	\> Integrantes:\\
+	\\
+	  \>\> Estanislao López Morgan \\
+	  \>\>\>  Padrón:	\> 84546 \\
+	  \>\>\>  Mail:	\>\url{estanux@gmail.com} \\
+	\\
+	  \>\> Facundo Nahuel Uriel Silva\\
+	  \>\>\>  Padrón:	\> 86881 \\
+	  \>\>\>  Mail:	\> \url{fanaur@gmail.com}\\
+      \end{tabbing}
+    \end{Large}
+  \end{bf}
+
+
+
+  %Indice de contenidos
+  \newpage
+  
+  
+  \thispagestyle{empty} \tableofcontents \thispagestyle{empty} %asi se se hace el número de pagina
+
+  %Comienzo
+ 
+  
+  %\section{Introducción}
+   %\newpage
+ \newpage
+\setcounter{page}{1}
+
+\section{Requisitos Técnicos}
+
+\subsection{Preguntas}
+  
+ \begin{enumerate}
+    \item Proceso de sinterizado
+      \subitem ¿Que magnitudes físicas se deben medir?
+      \subitem ¿Cual es el mínima corriente requerida para el proceso?
+      \subitem ¿Cual es el máxima corriente esperada?
+      \subitem ¿Cual es el orden de magnitud de la impedancia eléctrica de la muestra de polvos?
+      \subitem ¿Se experimentará con distintos tipos de polvos?
+      \subitem ¿Existirá un único banco de capacitores (descargar múltiples secuenciales)?
+
+    \item Interfaz de usuario
+      \subitem ¿Cómo se desea visualizar los datos obtenidos del proceso?
+      \subitem ¿Es necesario un que el sistema tenga un display ?¿ Y teclado?
+      
+      \subitem ¿En necesario visualizar los datos en forma remota (via Web)?
+      
+      \subitem Los datos de la experimentación, ¿Deben quedar guardados en el dispositivo o un servidor local?
+      \subitem ¿Se desea genera alguna extensión de archivo en particular?
+      \subitem ¿Cómo desea configurar el sistema de control?
+      \subsubitem ¿Que parámetros del proceso se deben visualizar y cuales almacenar (magnitudes física)?
+      \subsubitem ¿Qué parámetros de control tiene el proceso (condiciones que se deben cumplir para iniciar el proceso. Ejemplo: nivel de carga)?
+      \subsubitem ¿Qué parámetros de control deberían ser establecidos de forma remota y cuales de forma local?
+      \subitem ¿Se necesita accionar en forma manual algún parámetro del proceso?¿Cuál?
+    
+    \item Seguridad
+      \subitem ¿Es necesario algún parámetro de seguridad en especial?¿Qué es lo más crítico del proceso?
+      \subitem ¿El operario estará en el mismo ambiente de la experimentación?
+      \subitem ¿Debe haber elementos contra incendios?
+      \subitem ¿Es necesario una identificación del usuario que va a operar el dispositivo (login)?
+    
+    \item Estrés del proceso de sinterizado
+      \subitem ¿Con qué periocidad se debe realizar el proceso (horas, días, semanas)?
+      \subitem ¿Qué materiales en particular se van utilizar como muestra a sinterizar?
+      \subitem ¿Se proyecta que a futuro se utilice otros materiales?¿Cómo afectaría esto al proceso?
+      \subitem ¿Existe algún proceso por el cual se puede determinar que la muestra está sinteizada correctamente?¿Se desea implementar?
+        
+    \item Compresión mecánica
+      \subitem ¿Qué prensa se utilizará?
+      \subitem ¿El valor de presión que se establece antes de empezar la descarga, debe reajustarse durante el proceso?¿Cual tiene que ser este valor constante?
+
+  \end{itemize}
+
+    
+  \end{enumerate}
+
+
+
+  %Bibliografia
+ % \newpage
+
+  %\begin{thebibliography}{1}
+  %  \bibitem{ ECAS_tecnologys_page } \url{ http://iopscience.iop.org/1468-6996/10/5/053001 }
+  %  \bibitem{ ECAS_tecnologys_pdf } \url{ http://iopscience.iop.org/1468-6996/10/5/053001/pdf/1468-6996_10_5_053001.pdf }
+  %  \bibitem{ ECAS_wiki } \url{ http://en.wikipedia.org/wiki/Capacitor_discharge_sintering }    
+  %  \bibitem{ Capacitores Leyden } \url{ http://www.leyden.com.ar/esp/index.html }
+
+  %\end{thebibliography}
+    
+
+\end{document}

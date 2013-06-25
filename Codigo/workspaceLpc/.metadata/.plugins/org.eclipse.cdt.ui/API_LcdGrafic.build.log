@@ -1,0 +1,67 @@
+
+**** Build of configuration Debug for project API_LcdGrafic ****
+
+make all 
+Building file: ../src/API_LcdGrafic.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -I"/home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/libDriversMcuPeripherals/inc/Lib_EaBaseBoard" -I"/home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/libDriversMcuPeripherals/inc/Lib_MCU" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/API_LcdGrafic.d" -MT"src/API_LcdGrafic.d" -o"src/API_LcdGrafic.o" "../src/API_LcdGrafic.c"
+../src/lcd_buffer.h:69:13: warning: 'down' defined but not used
+Finished building: ../src/API_LcdGrafic.c
+../src/lcd_buffer.h:70:22: warning: 'bitmask' defined but not used
+ 
+Building file: ../src/Driver_LcdGrafic.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -I"/home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/libDriversMcuPeripherals/inc/Lib_EaBaseBoard" -I"/home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/libDriversMcuPeripherals/inc/Lib_MCU" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/Driver_LcdGrafic.d" -MT"src/Driver_LcdGrafic.d" -o"src/Driver_LcdGrafic.o" "../src/Driver_LcdGrafic.c"
+../src/lcd_buffer.c: In function 'BuffGetCharDim':
+../src/lcd_buffer.c:150:17: warning: 'return' with no value, in function returning non-void
+../src/lcd_buffer.c:153:16: warning: 'return' with no value, in function returning non-void
+../src/lcd_buffer.c:206:17: warning: 'return' with no value, in function returning non-void
+../src/main.c: In function 'main':
+../src/main.c:41:3: warning: pointer targets in passing argument 1 of 'API_LcdGraficPrint' differ in signedness
+Finished building: ../src/Driver_LcdGrafic.c
+ 
+Building file: ../src/cr_startup_lpc176x.c
+../src/API_LcdGrafic.h:26:6: note: expected 'char *' but argument is of type 'int8_t *'
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -I"/home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/libDriversMcuPeripherals/inc/Lib_EaBaseBoard" -I"/home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/libDriversMcuPeripherals/inc/Lib_MCU" -Os -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/cr_startup_lpc176x.d" -MT"src/cr_startup_lpc176x.d" -o"src/cr_startup_lpc176x.o" "../src/cr_startup_lpc176x.c"
+../src/main.c: At top level:
+../src/lcd_buffer.h:69:13: warning: 'down' defined but not used
+../src/lcd_buffer.h:70:22: warning: 'bitmask' defined but not used
+Finished building: ../src/cr_startup_lpc176x.c
+ 
+Building file: ../src/lcd_buffer.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -I"/home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/libDriversMcuPeripherals/inc/Lib_EaBaseBoard" -I"/home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/libDriversMcuPeripherals/inc/Lib_MCU" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/lcd_buffer.d" -MT"src/lcd_buffer.d" -o"src/lcd_buffer.o" "../src/lcd_buffer.c"
+Finished building: ../src/lcd_buffer.c
+ 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -I"/home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/libDriversMcuPeripherals/inc/Lib_EaBaseBoard" -I"/home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/libDriversMcuPeripherals/inc/Lib_MCU" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o"src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/Fonts/font_12x24.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -I"/home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/libDriversMcuPeripherals/inc/Lib_EaBaseBoard" -I"/home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/libDriversMcuPeripherals/inc/Lib_MCU" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/Fonts/font_12x24.d" -MT"src/Fonts/font_12x24.d" -o"src/Fonts/font_12x24.o" "../src/Fonts/font_12x24.c"
+Finished building: ../src/Fonts/font_12x24.c
+ 
+Building file: ../src/Fonts/font_7x13B.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -I"/home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/libDriversMcuPeripherals/inc/Lib_EaBaseBoard" -I"/home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/libDriversMcuPeripherals/inc/Lib_MCU" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/Fonts/font_7x13B.d" -MT"src/Fonts/font_7x13B.d" -o"src/Fonts/font_7x13B.o" "../src/Fonts/font_7x13B.c"
+Finished building: ../src/Fonts/font_7x13B.c
+ 
+Building file: ../src/Fonts/font_9x15.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -I"/home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/libDriversMcuPeripherals/inc/Lib_EaBaseBoard" -I"/home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/libDriversMcuPeripherals/inc/Lib_MCU" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/Fonts/font_9x15.d" -MT"src/Fonts/font_9x15.d" -o"src/Fonts/font_9x15.o" "../src/Fonts/font_9x15.c"
+Finished building: ../src/Fonts/font_9x15.c
+ 
+Building target: API_LcdGrafic.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"/home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/Debug" -L"/home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/libDriversMcuPeripherals/Debug" -Xlinker -Map="API_LcdGrafic.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "BaseProject_Debug.ld" -o"API_LcdGrafic.axf"  ./src/API_LcdGrafic.o ./src/Driver_LcdGrafic.o ./src/cr_startup_lpc176x.o ./src/lcd_buffer.o ./src/main.o  ./src/Fonts/font_12x24.o ./src/Fonts/font_7x13B.o ./src/Fonts/font_9x15.o   -lCMSISv2p00_LPC17xx -lDriversMcuPeripherals
+Finished building target: API_LcdGrafic.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "API_LcdGrafic.axf"; # arm-none-eabi-objcopy -O binary "API_LcdGrafic.axf" "API_LcdGrafic.bin" ; checksum -p LPC1769 -d "API_LcdGrafic.bin";
+   text	   data	    bss	    dec	    hex	filename
+  15864	      0	   1452	  17316	   43a4	API_LcdGrafic.axf
+ 

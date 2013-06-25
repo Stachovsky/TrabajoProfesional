@@ -1,0 +1,88 @@
+
+#include "API_LcdGrafic.h"
+
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+
+void API_LcdInit(void){
+
+	LcdGrafic_Init();
+
+}
+
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+
+void API_LcdGraficPrintBuffer(void) {
+
+	LcdGrafic_WriteBuffer(lcd_buffer);
+}
+
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+
+void API_LcdGraficPrint(char * data, unsigned char * font, unsigned char x, unsigned char y) {
+	int lon = strlen(data), i;
+	buf_set_font(font);
+	buf_set_position(x,y);
+	for (i = 0; i < lon; i++) {
+		buf_putchar(data[i]);
+	}
+	API_LcdGraficPrintBuffer();
+}
+
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+
+void API_LcdDrawProgressBar(uint8_t progress) {
+
+	int8_t i;
+	buf_set_position(20,20);
+
+	for(i = 0; i < 50; i++){
+		buf_pixel(50,2);
+	}
+
+	API_LcdGraficPrintBuffer();
+}
+
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+
+void API_LcdGraficCleanScreen(void){
+
+	buf_clear();
+	LcdGrafic_CleanScreen();
+}
+
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+
+void API_LcdGraficCleanScreenSection(unsigned char x, unsigned char y, unsigned char lon, unsigned char height) {
+
+	unsigned char y_shift = y & 0x7, y_abs = y >> 3, h = height;
+	unsigned char * buf = lcd_buffer + x + y_abs * 128;
+	unsigned char i, j;
+	for (i = 0; i < lon; i++) {
+		*buf = *buf & (0xFF >> (8 - y_shift));
+		h -= (8 - y_shift);
+		for (j = 1; h > 0; j++) {
+			if (h > 8) {
+				*(buf + 128 * j) &= 0;
+				h -= 8;
+			} else {
+				if (h > 0) {
+					*(buf + 128 * j) &= 0xFF << h;
+					h = 0;
+				} else
+					break;
+			}
+		}
+		h = height;
+		buf++;
+	}
+
+	API_LcdGraficPrintBuffer();
+//	LcdGrafic_WriteBlock(lcd_buffer, x,y, lon,height);
+
+}

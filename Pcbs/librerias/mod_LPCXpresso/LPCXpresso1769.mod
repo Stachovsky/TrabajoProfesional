@@ -1,0 +1,399 @@
+PCBNEW-LibModule-V1  sáb 11 may 2013 16:20:44 ART
+# encoding utf-8
+Units mm
+$INDEX
+LPC1769
+$EndINDEX
+$MODULE LPC1769
+Po 0 0 0 15 518E9A05 00000000 ~~
+Li LPC1769
+Sc 0
+AR 
+Op 0 0 0
+T0 0 -2 1 1 0 0.15 N V 21 N "STICK LPCXpresso1769"
+T1 0 0 1 1 0 0.15 N I 21 N "VAL**"
+DS 18 0 18 -70 0.15 21
+DS 18 -70 -17 -70 0.15 21
+DS -17 -70 -17 69 0.15 21
+DS -17 69 18 69 0.15 21
+DS 18 69 18 0 0.15 21
+$PAD
+Sh "27" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -11 -69
+$EndPAD
+$PAD
+Sh "26" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -11 -66
+$EndPAD
+$PAD
+Sh "25" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -11 -65
+$EndPAD
+$PAD
+Sh "24" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -11 -63
+$EndPAD
+$PAD
+Sh "23" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -11 -61
+$EndPAD
+$PAD
+Sh "22" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -11 -59
+$EndPAD
+$PAD
+Sh "21" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -11 -57
+$EndPAD
+$PAD
+Sh "20" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -11 -55
+$EndPAD
+$PAD
+Sh "19" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -11 -53
+$EndPAD
+$PAD
+Sh "18" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -11 -51
+$EndPAD
+$PAD
+Sh "17" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -11 -49
+$EndPAD
+$PAD
+Sh "16" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -11 -47
+$EndPAD
+$PAD
+Sh "15" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -11 -45
+$EndPAD
+$PAD
+Sh "14" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -11 -43
+$EndPAD
+$PAD
+Sh "13" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -11 -41
+$EndPAD
+$PAD
+Sh "12" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -11 -39
+$EndPAD
+$PAD
+Sh "11" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -11 -37
+$EndPAD
+$PAD
+Sh "10" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -11 -35
+$EndPAD
+$PAD
+Sh "9" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -11 -33
+$EndPAD
+$PAD
+Sh "8" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -11 -31
+$EndPAD
+$PAD
+Sh "7" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -11 -29
+$EndPAD
+$PAD
+Sh "6" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -11 -27
+$EndPAD
+$PAD
+Sh "5" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -11 -25
+$EndPAD
+$PAD
+Sh "4" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -11 -23
+$EndPAD
+$PAD
+Sh "3" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -11 -21
+$EndPAD
+$PAD
+Sh "2" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -11 -19
+$EndPAD
+$PAD
+Sh "1" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -11 -17
+$EndPAD
+$PAD
+Sh "54" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 12 -17
+$EndPAD
+$PAD
+Sh "28" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 12 -69
+$EndPAD
+$PAD
+Sh "29" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 12 -67
+$EndPAD
+$PAD
+Sh "30" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 12 -65
+$EndPAD
+$PAD
+Sh "31" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 12 -63
+$EndPAD
+$PAD
+Sh "32" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 12 -61
+$EndPAD
+$PAD
+Sh "33" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 12 -59
+$EndPAD
+$PAD
+Sh "34" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 12 -57
+$EndPAD
+$PAD
+Sh "35" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 12 -55
+$EndPAD
+$PAD
+Sh "36" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 12 -53
+$EndPAD
+$PAD
+Sh "37" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 12 -51
+$EndPAD
+$PAD
+Sh "38" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 12 -49
+$EndPAD
+$PAD
+Sh "39" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 12 -47
+$EndPAD
+$PAD
+Sh "40" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 12 -45
+$EndPAD
+$PAD
+Sh "41" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 12 -43
+$EndPAD
+$PAD
+Sh "42" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 12 -41
+$EndPAD
+$PAD
+Sh "43" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 12 -39
+$EndPAD
+$PAD
+Sh "44" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 12 -37
+$EndPAD
+$PAD
+Sh "45" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 12 -35
+$EndPAD
+$PAD
+Sh "46" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 12 -33
+$EndPAD
+$PAD
+Sh "47" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 12 -31
+$EndPAD
+$PAD
+Sh "48" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 12 -29
+$EndPAD
+$PAD
+Sh "49" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 12 -27
+$EndPAD
+$PAD
+Sh "50" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 12 -25
+$EndPAD
+$PAD
+Sh "51" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 12 -23
+$EndPAD
+$PAD
+Sh "52" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 12 -21
+$EndPAD
+$PAD
+Sh "53" R 1.2 1.2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 12 -19
+$EndPAD
+$EndMODULE LPC1769
+$EndLIBRARY

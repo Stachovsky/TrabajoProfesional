@@ -1,0 +1,24 @@
+
+#include "taskLcd.h"
+
+void taskLcd(void *paramametro){
+
+	int32_t n;
+	uint8_t i;
+	int8_t str[30];
+	portTickType xTicksToDelay = 1000;
+
+	API_LcdGraficCleanScreen();
+
+	API_LcdGraficPrint("UECAS",FONT_SMALL,10,10);
+	
+	while(1) {
+
+		API_LcdGraficCleanScreenSection(40,25,20,10);
+		sprintf((char*)str,"-->%d",i++);
+		API_LcdGraficPrint(str,FONT_SMALL,40,25);
+
+		vTaskDelay(xTicksToDelay);
+	}
+
+}

@@ -1,0 +1,186 @@
+# EESchema Netlist Version 1.1 created  Wed 03 Apr 2013 12:11:44 PM ART
+(
+ ( /515C3341 $noname  U1 TL084 {Lib=TL084}
+  (    1 N-000012 )
+  (    2 N-000002 )
+  (    3 /In )
+  (    4 +5V )
+  (    5 GND )
+  (    6 N-000003 )
+  (    7 /Out1 )
+  (    8 /Out2 )
+  (    9 N-000014 )
+  (   10 GND )
+  (   11 -5V )
+  (   12 GND )
+  (   13 N-000015 )
+  (   14 N-000016 )
+ )
+ ( /515C3471 $noname  U3 IL300 {Lib=IL300}
+  (    1 N-000016 )
+  (    2 N-000013 )
+  (    3 N-000015 )
+  (    4 GND )
+  (    5 GND )
+  (    6 N-000014 )
+  (    7 ? )
+  (    8 ? )
+ )
+ ( /515C3492 $noname  U2 IL300 {Lib=IL300}
+  (    1 GND )
+  (    2 N-000001 )
+  (    3 +5V )
+  (    4 N-000002 )
+  (    5 N-000003 )
+  (    6 +5V )
+  (    7 ? )
+  (    8 ? )
+ )
+ ( /515C34AE $noname  K1 CONN_3 {Lib=CONN_3}
+  (    1 +5V )
+  (    2 GND )
+  (    3 -5V )
+ )
+ ( /515C35DF $noname  R1 R {Lib=R}
+  (    1 N-000001 )
+  (    2 N-000012 )
+ )
+ ( /515C3661 $noname  R3 R {Lib=R}
+  (    1 GND )
+  (    2 N-000002 )
+ )
+ ( /515C3786 $noname  R4 R {Lib=R}
+  (    1 /Out1 )
+  (    2 N-000003 )
+ )
+ ( /515C38F6 $noname  R2 10k {Lib=R}
+  (    1 N-000015 )
+  (    2 /In )
+ )
+ ( /515C3BB1 $noname  R6 1k {Lib=R}
+  (    1 N-000013 )
+  (    2 +5V )
+ )
+ ( /515C3EB6 $noname  R5 10k {Lib=R}
+  (    1 /Out2 )
+  (    2 N-000014 )
+ )
+ ( /515C4485 $noname  P1 CONN_2 {Lib=CONN_2}
+  (    1 /Out1 )
+  (    2 /Out2 )
+ )
+ ( /515C44A2 $noname  K2 CONN_3 {Lib=CONN_3}
+  (    1 +5V )
+  (    2 /In )
+  (    3 GND )
+ )
+)
+*
+{ Allowed footprints by component:
+$component R1
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R3
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R4
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R2
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R6
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R5
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$endfootprintlist
+}
+{ Pin List by Nets
+Net 1 "" ""
+ R1 1
+ U2 2
+Net 2 "" ""
+ U2 4
+ R3 2
+ U1 2
+Net 3 "" ""
+ U1 6
+ R4 2
+ U2 5
+Net 8 "/Out2" "Out2"
+ R5 1
+ P1 2
+ U1 8
+Net 9 "+5V" "+5V"
+ U2 3
+ U2 6
+ K1 1
+ U1 4
+ R6 2
+ K2 1
+Net 10 "GND" "GND"
+ K1 2
+ K2 3
+ U1 5
+ R3 1
+ U3 5
+ U1 10
+ U1 12
+ U3 4
+ U2 1
+Net 11 "-5V" "-5V"
+ U1 11
+ K1 3
+Net 12 "" ""
+ U1 1
+ R1 2
+Net 13 "" ""
+ U3 2
+ R6 1
+Net 14 "" ""
+ R5 2
+ U3 6
+ U1 9
+Net 15 "" ""
+ R2 1
+ U3 3
+ U1 13
+Net 16 "" ""
+ U3 1
+ U1 14
+Net 17 "/In" "In"
+ R2 2
+ U1 3
+ K2 2
+Net 18 "/Out1" "Out1"
+ P1 1
+ R4 1
+ U1 7
+}
+#End

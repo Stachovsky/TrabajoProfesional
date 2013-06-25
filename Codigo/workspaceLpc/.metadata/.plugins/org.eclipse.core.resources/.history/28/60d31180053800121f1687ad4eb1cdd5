@@ -1,0 +1,24 @@
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+
+#include "LPC17xx.h"
+#include "easyweb.h"
+#include "ethmac.h"
+#include "tcpip.h"
+
+#include "lpc_types.h"
+#include "FreeRTOS.h"
+
+void taskWebServer (void *param);
+
+void HTTPServer(void);
+
+extern void TCPClockHandler(void);
+
+volatile uint32_t TimeTick = 0;
+volatile uint32_t TimeTick2 = 0;
+
+// ****************
+void taskTcpTick(void);

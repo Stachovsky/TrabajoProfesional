@@ -1,0 +1,35 @@
+/*
+ * lcd.c
+ *
+ *  Created on: Nov 25, 2010
+ *      Author: root
+ */
+
+/*
+ * Método de lectura/escritura
+ *
+ * Bajar PORTlCDe
+ * Setear PORTlCDrW de acuerdo a si quiero leer o escribir
+ * Setear PORTlCDcS1 y PORTlCDcS2 para identificar la zona a escribir
+ * Setear PORTlCDdS para indicar si es comando o escritura
+ * Setear los puertos PORTlCDd0 a PORTlCDd7 con el valor o dejarlos como inputs
+ * para leer
+ * Subir PORTlCDe y bajarlo de nuevo
+ * */
+
+#include "API_LcdGrafic.h"
+
+int API_LcdGraficPrintBuffer(void) {
+
+	LcdGrafic_WriteBuffer(lcd_buffer);
+}
+
+int API_LcdGraficPrint(char * data, unsigned char * font, unsigned char x, unsigned char y) {
+	int lon = strlen(data), i;
+	buf_set_font(font);
+	buf_set_position(x,y);
+	for (i = 0; i < lon; i++) {
+		buf_putchar(data[i]);
+	}
+	LcdImprimeBuffer();
+}

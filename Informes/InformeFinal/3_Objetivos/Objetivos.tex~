@@ -1,0 +1,47 @@
+
+%--------------------------------------------------------------------------------------------------------------------  
+%--------------------------------------------------------------------------------------------------------------------
+
+  \subsection{Finalidad del proyecto (a quien ayuda, para que sirve)}  
+
+ En el laboratorio de sólidos amorfos de la facultad de ingeniería de la universidad de Buenos Aires funciona el 
+ INTECIN y en el mismo el \href{''http://intecin.fi.uba.ar/grupos.php?grupo=12''}{grupo de materiales nanoestructurales}, este grupo prepara y
+ estudia sistemas basados en nanopartículas magnéticas apuntando a las posibles aplicaciones tecnológicas
+ en sensores, remediación ambiental y aplicaciones clínicas. Sus integrantes tienen experiencia en caracterización estructural por difracción, dispersión y absorción
+ de rayos X, espectroscopia Mössbauer, propiedades magnéticas y de magnetotransporte y microscopía electrónica.\newline
+  
+  Para lograr esto se realiza el sintetizado de nano estructuras, obteniendo una cinta metálica con una estructura amorfa (sin estructura cristalina)
+  similar a un vidrio. Mediante un proceso de pulverizado de esta cinta se obtiene un polvo cuyas partículas poseen una estructura nanométrica.
+  Para poder obtener una estructura sólida a partir del polvo se utiliza el proceso de sinterizado. Este proceso
+  logra unificar las particulas del polvo en una sola estructura sólida. Para este fin se necesita que una intensidad de corriente
+  elevada, en el orden de los KA, atraviese la muestra de polvo nonometrico. Esta corriente puede ser provista por un banco de 
+  capacitores (proceso rápido) o una fuente de RF (proceso lento).\newline
+
+  La finalidad de nuestro proyecto es desarrollar una automatización y relevamiento del proceso de sinterizado a partir de la 
+  descarga de un banco de capacitores, realizar recopilación de datos del proceso con la posibilidad de variar alguna variables
+  involucradas en el sitenrizado para evaluar el desempeño del mismo y sus resultados.
+
+  \newpage
+
+
+%--------------------------------------------------------------------------------------------------------------------  
+%--------------------------------------------------------------------------------------------------------------------
+
+  \subsection{Planteamiento del problema a resolver}  
+
+  Para el estudio y desarrollo de cualquier tecnología es indispensable la experimentación, ya que es el medio atraves del cual
+  se puede comprender y validar los desarrollos teóricos del proceso estudiado. La flexibilidad a la hora de la experimentación
+  es factor deseado, entendiendo por flexibilidad la posibilidad de poder modificar parámetros del experimento de forma rapida y
+  sencilla, ya que facilita y ahora tiempos a la hora del desarrollo del conocimiento. La fácil obtención y disponibilidad de 
+  los resultados de la experimentación es otro deseado en la experimentación. \newline
+
+  Para poder estudiar y obtener materiales nanometricos atraves del proceso de sinterizado es necesario contar con un plataforma 
+  que controle y monitoree el proceso de sinterizado de forma flexible y parametrica. La plataforma le debe brindar al investigador
+  la posibilidad de modificar las variables del proceso y obtener los resultados de la experimentacion.
+  El proceso de sinterizado requiere la manipulación de una potencia electrica conciderable, es por ello que la plataforma debe	
+  brindar un manejo seguro de esta potencia , contando con todas medidas de seguridad requeridas para asegurar una segura operación.
+
+  \newpage
+
+%--------------------------------------------------------------------------------------------------------------------  
+%--------------------------------------------------------------------------------------------------------------------

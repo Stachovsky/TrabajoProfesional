@@ -1,0 +1,27 @@
+/*
+ * taskLcd.h
+ *
+ *  Created on: May 4, 2013
+ *      Author: fanaur
+ */
+
+#ifndef TASKLCD_H_
+#define TASKLCD_H_
+
+#include "LPC17xx.h"
+#include "lpc_types.h"
+#include "FreeRTOS.h"
+#include "task.h"
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#include <cr_section_macros.h>
+#include <NXP/crp.h>
+
+#include "API_LcdGrafic.h"
+
+__CRP const unsigned int CRP_WORD = CRP_NO_CRP ;
+
+#endif /* TASKLCD_H_ */

@@ -1,0 +1,17 @@
+/*
+ * cmdPcCom.h
+ *
+ *  Created on: Sep 26, 2012
+ *      Author: "Facundo Nahuel Uriel Silva"
+ */
+
+#ifndef CMDPCCOM_H_
+#define CMDPCCOM_H_
+
+typedef struct{
+	uint8_t		cmd;
+
+} cmdPcCom
+
+
+#endif /* CMDPCCOM_H_ */

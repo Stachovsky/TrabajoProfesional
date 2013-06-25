@@ -1,0 +1,2 @@
+src/Tasks/Core/taskCore.d src/Tasks/Core/taskCore.o: \
+ ../src/Tasks/Core/taskCore.c

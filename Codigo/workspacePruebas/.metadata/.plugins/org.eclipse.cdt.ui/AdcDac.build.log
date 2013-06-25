@@ -1,0 +1,25 @@
+
+**** Build of configuration Debug for project AdcDac ****
+
+make all 
+Building file: ../src/cr_startup_lpc176x.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fanaur/workspacePruebas/CMSISv2p00_LPC17xx/inc" -Os -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/cr_startup_lpc176x.d" -MT"src/cr_startup_lpc176x.d" -o"src/cr_startup_lpc176x.o" "../src/cr_startup_lpc176x.c"
+Finished building: ../src/cr_startup_lpc176x.c
+ 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fanaur/workspacePruebas/CMSISv2p00_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o"src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: AdcDac.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"/home/fanaur/workspacePruebas/CMSISv2p00_LPC17xx/Debug" -Xlinker -Map="AdcDac.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "AdcDac_Debug.ld" -o"AdcDac.axf"  ./src/cr_startup_lpc176x.o ./src/main.o   -lCMSISv2p00_LPC17xx
+Finished building target: AdcDac.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "AdcDac.axf"; # arm-none-eabi-objcopy -O binary "AdcDac.axf" "AdcDac.bin" ; checksum -p LPC1769 -d "AdcDac.bin";
+   text	   data	    bss	    dec	    hex	filename
+    628	      0	      4	    632	    278	AdcDac.axf
+ 

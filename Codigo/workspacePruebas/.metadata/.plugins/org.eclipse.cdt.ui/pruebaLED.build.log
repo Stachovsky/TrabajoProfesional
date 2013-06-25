@@ -1,0 +1,5 @@
+
+**** Build of configuration Default for project pruebaLED ****
+
+make all 
+make: *** No hay ninguna regla para construir el objetivo «all».  Alto.

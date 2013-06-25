@@ -1,0 +1,148 @@
+/*
+ * PcCommunication.c
+ *
+ *  Created on: Sep 26, 2012
+ *      Author: Facundo Nahuel Uriel Silva
+ */
+
+#include "taskPcCommunication.h"
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+// Colas de mensajes
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+xQueueHandle queuePcComTX;
+xQueueHandle queuePcComRX;
+
+xSemaphoreHandle semComRx;
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+void taskPcCommunicationInit(){
+
+	// Se inicializa la uart 3
+	API_UartConfig(UART_PORT_3, interruptUart3);
+
+	// Se inicializa la cola de mensajes de transmision
+	queuePcComTX = xQueueCreate( MAX_SIZE_QUEUE_TX, sizeof( msgPcCom ) );
+
+	// Se inicializa la cola de mensajes de recepcion
+	queuePcComRX = xQueueCreate( MAX_SIZE_QUEUE_RX, sizeof( msgPcCom ) );
+
+	semComRx = xSemaphoreCreateMutex();
+
+	xSemaphoreTake(semComRx,portMAX_DELAY);
+
+	API_UartEnableInterrupt(UART_PORT_3);
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+void taskPcCommunicationTX(void *param){
+
+	msgPcCom	currentMsgTx;
+	uint8_t bufferSend[MAX_CMDPCCOM_SIZE_DATA + MIN_CMDPCCOM_SIZE_PACKED];
+	uint8_t sizeBufferSend = 0;
+
+	while (1) {
+
+		if(uxQueueMessagesWaiting(queuePcComTX)){ // se espera hasta que la cola tenga mensajes
+
+			// se intenta leer un mensaje de la cola. El numero de elementos en la cola se decrementa en 1
+			if(xQueueReceive(queuePcComTX,&currentMsgTx,5000)){
+
+				// Se carga buffer con el mensaje a enviar
+				sizeBufferSend = pcComPackMsg(&currentMsgTx.cmd,bufferSend, MAX_CMDPCCOM_SIZE_DATA + MIN_CMDPCCOM_SIZE_PACKED);
+
+				API_UartSendBytes(UART_PORT_3,bufferSend, sizeBufferSend);
+			}
+		}
+
+		taskYIELD();
+
+	}
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+void taskPcCommunicationRX(void *param){
+
+	uint8_t		byteReceive; // byte recibido
+	msgPcCom	currentMsgRx;
+	stateReceptionMsg stateMsgRx = SRM_WAITING_START;
+
+	while (1) {
+
+		if(xSemaphoreTake(semComRx,1000) == pdTRUE){ // se espera a que llegue algo
+
+			byteReceive = API_UartGetLastByteReceive(UART_PORT_3);
+
+			switch(stateMsgRx){
+
+				case SRM_RECEIVING_START:
+
+					stateMsgRx = SRM_RECEIVING_CMD_TYPE;
+
+					break;
+
+				case SRM_RECEIVING_CMD_TYPE:
+
+					stateMsgRx = SRM_RECEIVING_DATA_LEN;
+
+					break;
+
+				case SRM_RECEIVING_DATA_LEN:
+
+					if(byteReceive == 0x00)
+						stateMsgRx = SRM_RECEIVING_CMD_DATA;
+					else
+
+					break;
+
+				case SRM_RECEIVING_MSG_DATA:
+					break;
+
+				case SRM_RECEIVE_CRC:
+					break;
+
+				case SRM_RECEIVE_END:
+
+					if(byteReceive == PCCOM_END_BYTE)
+						stateMsgRx = SRM_WAITING_START;
+
+					break;
+			}
+
+			if(byteReceive == 0x02){
+//				sprintf(str,"Llego Inicio CMD\n");
+//				API_UartSendString(UART_PORT_3,str);
+			}
+		}
+
+		taskYIELD();
+	}
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+//void interruptUart3(uint8_t c){
+void interruptUart3(){
+
+	signed portBASE_TYPE pxHigherPriorityTaskWoken = pdFALSE;
+
+//	API_UartDisableInterrupt(UART_PORT_3);
+	// Se lee el byte recivido
+	API_UartReceiveByte(UART_PORT_3);
+
+	// Se cede el semaforo para indicar que llego un byte desde la uart
+	xSemaphoreGiveFromISR(semComRx,&pxHigherPriorityTaskWoken);
+
+//	API_UartEnableInterrupt(UART_PORT_3);
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////

@@ -1,0 +1,49 @@
+PCBNEW-LibModule-V1  jue 28 mar 2013 15:27:46 ART
+# encoding utf-8
+Units mm
+$INDEX
+c_elec_10x20
+$EndINDEX
+$MODULE c_elec_10x20
+Po 0 0 0 15 51548B8F 00000000 ~~
+Li c_elec_10x20
+Cd SMT capacitor, aluminium electrolytic, 10x10.5
+Sc 0
+AR 
+Op 0 0 0
+T0 0 -14 0.50038 0.50038 0 0.11938 N V 21 N "c_elec_10x120"
+T1 0 12 0.50038 0.50038 0 0.11938 N I 21 N "C***"
+DS -11 -11 9 -11 0.381 21
+DS 9 -11 11 -9 0.381 21
+DS 11 -9 11 8 0.381 21
+DS 11 8 9 11 0.381 21
+DS 9 11 -11 11 0.381 21
+DS -11 11 -11 -11 0.381 21
+DS 8 -4 8 -2 0.381 21
+DS 7 -3 9 -3 0.381 21
+DC 0 0 -2 -10 0.381 21
+DS 11 5 11 -5 0.381 21
+DS 11 -5 11 -4 0.381 21
+DS -11 -5 -11 5 0.381 21
+$PAD
+Sh "1" R 9.0005 4.4003 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 10 0
+$EndPAD
+$PAD
+Sh "2" R 9.0005 4.4003 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -10 0
+$EndPAD
+$SHAPE3D
+Na "walter\\smd_cap\\c_elec_10x10_5.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$EndMODULE c_elec_10x20
+$EndLIBRARY

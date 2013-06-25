@@ -1,0 +1,31 @@
+FreeRTOS_src/timers.d FreeRTOS_src/timers.o: ../FreeRTOS_src/timers.c \
+ /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/FreeRTOS.h \
+ /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/projdefs.h \
+ /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/src/FreeRTOSConfig.h \
+ /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/portable.h \
+ /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_portable/portmacro.h \
+ /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/mpu_wrappers.h \
+ /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/task.h \
+ /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/list.h \
+ /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/queue.h \
+ /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/timers.h
+
+/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/FreeRTOS.h:
+
+/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/projdefs.h:
+
+/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/src/FreeRTOSConfig.h:
+
+/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/portable.h:
+
+/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_portable/portmacro.h:
+
+/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/mpu_wrappers.h:
+
+/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/task.h:
+
+/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/list.h:
+
+/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/queue.h:
+
+/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/timers.h:

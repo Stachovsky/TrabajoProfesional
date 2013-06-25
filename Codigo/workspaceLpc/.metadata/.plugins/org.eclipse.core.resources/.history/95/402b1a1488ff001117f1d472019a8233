@@ -1,0 +1,92 @@
+/*
+ * API_Uart.c
+ *
+ *  Created on: 30/04/2012
+ *      Author: Facundo Nahuel Uriel Silva
+ */
+
+#include "API_Uart.h"
+
+uartPort control_uarts[4];
+
+void API_Uart_Config(uartPortNumber portNumber){
+
+	switch (portNumber) {
+		case UART_PORT_0:
+			control_uarts[portNumber].port = LPC_UART0;
+			break;
+		case UART_PORT_1:
+			control_uarts[portNumber].port = LPC_UART1;
+			break;
+		case UART_PORT_2:
+			control_uarts[portNumber].port = LPC_UART2;
+			break;
+		case UART_PORT_3:
+			control_uarts[portNumber].port = LPC_UART3;
+			break;
+	}
+
+	// Configuracion de los pines de la uart
+	control_uarts[portNumber].pin.Funcnum = PINSEL_FUNC_2;
+	control_uarts[portNumber].pin.OpenDrain = PINSEL_PINMODE_NORMAL;
+	control_uarts[portNumber].pin.Pinmode = PINSEL_PINMODE_PULLUP;
+	control_uarts[portNumber].pin.Pinnum = PINSEL_PIN_0; //TXD3
+	control_uarts[portNumber].pin.Portnum = PINSEL_PORT_0;
+
+	PINSEL_ConfigPin(&control_uarts[portNumber].pin);
+	control_uarts[portNumber].pin.Pinnum = PINSEL_PIN_1;
+	PINSEL_ConfigPin(&control_uarts[portNumber].pin); //RXD3
+
+	// Configuracion de la UART
+	control_uarts[portNumber].config.Baud_rate = 115200;
+	control_uarts[portNumber].config.Databits = UART_DATABIT_8;
+	control_uarts[portNumber].config.Parity = UART_PARITY_NONE;
+	control_uarts[portNumber].config.Stopbits = UART_STOPBIT_1;
+
+	UART_Init(control_uarts[portNumber].port ,&control_uarts[3].config);
+	UART_TxCmd(control_uarts[portNumber].port, ENABLE);
+
+	UART_IntConfig(control_uarts[portNumber].port, UART_INTCFG_RBR, ENABLE); // Se activa la interrupcion de RXD
+
+
+	//	NVIC_EnableIRQ(UART3_IRQn);
+
+
+}
+
+void API_UartSendString(uartPortNumber portNumber,uint_8* buffer){
+
+	UART_SendString(control_uarts[portNumber].port,(uint8_t*)buffer);
+}
+
+void API_UartSendByte(uint8_t data){
+
+	UART_SendString(control_uarts[portNumber].port,(uint8_t*)data);
+}
+
+
+//void UART3_IRQHandler(void){
+//
+////	char c = UART_ReceiveByte(LPC_UART3);
+//
+////	switch(c){
+////	case 'R':
+////		LPC_GPIO2->FIOSET = (1<<0); //red on
+////		break;
+////	case 'r':
+////		LPC_GPIO2->FIOCLR = (1<<0); //red off
+////		break;
+////	case 'B':
+////		LPC_GPIO0->FIOSET = (1<<26); //blue on
+////		break;
+////	case 'b':
+////		LPC_GPIO0->FIOCLR = (1<<26); //blue off
+////		break;
+////	case 'G':
+////		LPC_GPIO2->FIOSET = (1<<1); //green on
+////		break;
+////	case 'g':
+////		LPC_GPIO2->FIOCLR = (1<<1); //green off
+////		break;
+////	}
+//}

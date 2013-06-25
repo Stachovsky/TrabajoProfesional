@@ -1,0 +1,467 @@
+/*
+===============================================================================
+ Name        : main.c
+ Author      : 
+ Version     :
+ Copyright   : Copyright (C) 
+ Description : main definition
+===============================================================================
+*/
+
+#ifdef __USE_CMSIS
+#include "LPC17xx.h"
+#endif
+
+#include <cr_section_macros.h>
+#include <NXP/crp.h>
+
+// Variable to store CRP value in. Will be placed automatically
+// by the linker when "Enable Code Read Protect" selected.
+// See crp.h header for more information
+__CRP const unsigned int CRP_WORD = CRP_NO_CRP ;
+
+
+/** Se deben encender las dos memoria: Llamar a la funcion display on/off por cada chip
+ * 	Chip Select: Se puede seleccionar las dos columnas enciendiedo los dos CS o por separado. Para el clea
+ *
+ *
+ */
+
+#define DELAY		50
+#define DELAY_LONG	100
+#define MAX_X		8
+#define MAX_Y		128
+
+#define	DI	(1 << 6) // gpio 0
+#define	RW	(1 << 11) // gpio 0
+#define	E	(1 << 21) // gpio 0
+#define	CS1	(1 << 17) // gpio 0
+#define	CS2	(1 << 16) // gpio 0
+#define	RST	(1 << 4) // gpio 2
+
+typedef struct{
+	int8_t port;
+	int8_t bit;
+
+} LCD_DB;
+
+
+LCD_DB* dataLcd[8];
+
+LPC_GPIO_TypeDef* port[4];
+
+// Se deben hacer dos lecturas consecutivas para obtener el valor de la RAM
+
+void API_LcdRead(int8_t* data, int8_t command, uint8_t page){
+	int32_t i;
+	int32_t temp;
+	int8_t tempData;
+
+	// Se configuran como entradas los pines del BUS
+	for(i=0; i < 8; i++){
+		port[dataLcd[i]->port]->FIODIR &= ~(1 << dataLcd[i]->bit);
+	}
+
+	LPC_GPIO0->FIOCLR = CS1; // CS1
+	LPC_GPIO0->FIOCLR = CS2; // CS2
+
+	LPC_GPIO0->FIOCLR = RW; // R/W
+	LPC_GPIO0->FIOSET = E; // E
+
+	for(i = 0; i < DELAY_LONG; i++);
+
+	LPC_GPIO0->FIOCLR = E; // E
+	for(i = 0; i < DELAY; i++);
+
+	LPC_GPIO0->FIOSET = RW; // R/W
+
+	if(page == 1){// if(page == 2){
+		LPC_GPIO0->FIOSET = CS1; // CS2
+	}
+	else if(page == 2){// if(page == 2){
+		LPC_GPIO0->FIOSET = CS2; // CS2
+	}
+
+	if(command == 1)
+		LPC_GPIO0->FIOCLR = DI; // D/I
+	else
+		LPC_GPIO0->FIOSET = DI; // D/I
+
+	for(i = 0; i < DELAY; i++);
+
+
+	LPC_GPIO0->FIOSET = E; // E
+
+	for(i = 0; i < DELAY; i++);
+
+	LPC_GPIO0->FIOCLR = E; // E
+
+	for(i = 0; i < DELAY; i++);
+
+	LPC_GPIO0->FIOSET = E; // E
+
+	for(i = 0; i < DELAY; i++);
+
+	LPC_GPIO0->FIOCLR = E; // E
+
+	for(i = 0; i < DELAY; i++);
+
+	LPC_GPIO0->FIOSET = E; // E
+
+	for(i = 0; i < DELAY; i++);
+
+	tempData = 0;
+	for(i=0; i < 8; i++){
+		temp = port[dataLcd[i]->port]->FIOPIN & (1 << dataLcd[i]->bit);
+
+		if(temp != 0){
+			tempData |= (1 << i);
+		}
+	}
+
+	*data = tempData;
+
+}
+
+
+
+
+void API_LcdWrite(int8_t data, uint8_t command, uint8_t page){
+	int32_t i;
+	int8_t temp;
+	int8_t mask = 1;
+
+	// Se configuran como salidas los pines del BUS
+	for(i=0; i < 8; i++){
+		port[dataLcd[i]->port]->FIODIR |= (1 << dataLcd[i]->bit);
+	}
+
+	LPC_GPIO0->FIOCLR = CS1; // CS1
+	LPC_GPIO0->FIOCLR = CS2; // CS2
+
+	LPC_GPIO0->FIOSET = RW; // R/W
+	LPC_GPIO0->FIOSET = E; // E
+
+	for(i = 0; i < DELAY_LONG; i++);
+
+	LPC_GPIO0->FIOCLR = E; // E
+	for(i = 0; i < DELAY; i++);
+
+	LPC_GPIO0->FIOCLR = RW; // R/W
+
+	if(page == 0){
+		LPC_GPIO0->FIOSET = CS1; // CS1
+		LPC_GPIO0->FIOSET = CS2; // CS2
+	}
+	else if(page == 1){// if(page == 2){
+		LPC_GPIO0->FIOSET = CS1; // CS2
+	}
+	else if(page == 2){// if(page == 2){
+		LPC_GPIO0->FIOSET = CS2; // CS2
+	}
+
+
+	if(command == 1)
+		LPC_GPIO0->FIOCLR = DI; // D/I
+	else
+		LPC_GPIO0->FIOSET = DI; // D/I
+
+	for(i = 0; i < DELAY; i++);
+
+	LPC_GPIO0->FIOSET = E; // E
+
+	for(i=0; i < 8; i++){
+		temp = data & mask;
+		mask = (1 << (i + 1));
+
+		if(temp == 0){
+			port[dataLcd[i]->port]->FIOCLR = (1 << dataLcd[i]->bit);
+		}
+		else{
+			port[dataLcd[i]->port]->FIOSET = (1 << dataLcd[i]->bit);
+		}
+	}
+
+	for(i = 0; i < DELAY; i++);
+
+	LPC_GPIO0->FIOCLR = E; // E
+
+
+}
+
+void API_LcdWriteData(int8_t data, uint8_t page){
+	API_LcdWrite(data, 0, page );
+}
+
+void API_LcdWriteInstruction(int8_t data, uint8_t page){
+	API_LcdWrite(data, 1, page);
+}
+
+void API_LcdWriteByte(int8_t data, uint8_t x, uint8_t y){
+
+	int8_t page;
+	// se calcula la pagina
+	if(y<64){
+		page = 1;
+	}else{
+		page = 2;
+		y -= 64;
+	}
+
+	API_LcdWriteInstruction(0xb8 + x, page); // X
+	API_LcdWriteInstruction(0x40 + y, page); // Y
+
+	API_LcdWrite(data, 0, page);
+}
+
+void API_LcdReadByte(int8_t* data, uint8_t x, uint8_t y){
+
+	int8_t page;
+	// se calcula la pagina
+	if(y<64){
+		page = 1;
+	}else{
+		page = 2;
+		y -= 64;
+	}
+
+	// Se resta 1 para que en la segunda lectura lea el valor correcto
+	y = (y == 0)?63:y-1;
+	API_LcdWriteInstruction(0x40 + y, page); // Y
+	API_LcdWriteInstruction(0xb8 + x, page); // X
+	API_LcdRead(data, 0, page);
+
+}
+
+
+
+void API_LcdGotoXY(int8_t x, int8_t y){
+	int8_t page;
+	page = (y<64)?1:2; // se calcula la pagina
+
+	API_LcdWriteInstruction(0xb8 + x, page); // X
+	API_LcdWriteInstruction(0x40 + y, page); // Y
+}
+
+// clean screen
+void API_LcdCleanScreen(){
+	int8_t x;
+	int8_t y;
+
+	for(x=0; x < 8; x++){
+		API_LcdWriteInstruction(0xb8 + x, 0); // X: page
+		for(y=0; y < 64; y++){
+			API_LcdWriteInstruction(0x40 + y, 0); // Y: index
+			API_LcdWriteData(0x00,0);
+		}
+	}
+}
+
+void API_LcdDisplayON(){
+	API_LcdWriteInstruction(0x3f,1); // Display On
+	API_LcdWriteInstruction(0x3f,2); // Display On
+	API_LcdWriteInstruction(0xc0 + 0, 0); // Z: star line
+}
+
+void API_LcdDisplayOFF(){
+	API_LcdWriteInstruction(0x3e,0); // Display Off
+}
+
+// x=[0:63] y=[0:127]
+void API_LcdSetPixel(int8_t x, int8_t y){
+
+	int8_t dataRead;
+	int8_t temp;
+
+	API_LcdReadByte(&dataRead, x/8, y);
+	temp = x - (x/8)*8;
+	dataRead |= (1 << temp);
+
+	API_LcdWriteByte(dataRead, x/8, y);
+
+}
+
+// x=[0:63] y=[0:127]
+void API_LcdUnSetPixel(int8_t x, int8_t y){
+
+	int8_t dataRead;
+	int8_t temp;
+
+	API_LcdReadByte(&dataRead, x/8, y);
+	temp = x - (x/8)*8;
+	dataRead &= ~(1 << temp);
+
+	API_LcdWriteByte(dataRead, x/8, y);
+
+}
+
+int main(void) {
+	int32_t i;
+
+	int8_t offsetX;
+	int8_t offsetY;
+
+	int8_t x;
+	int8_t y;
+
+	LCD_DB db0;
+	LCD_DB db1;
+	LCD_DB db2;
+	LCD_DB db3;
+	LCD_DB db4;
+	LCD_DB db5;
+	LCD_DB db6;
+	LCD_DB db7;
+
+
+ 	port[0] = LPC_GPIO0;
+	port[1] = LPC_GPIO1;
+	port[2] = LPC_GPIO2;
+	port[3] = LPC_GPIO3;
+
+	///////////////////////////////////
+
+	db0.port = 0;
+	db0.bit = 8;
+	dataLcd[0] = &db0;
+	//LPC_GPIO0->FIODIR |= (1 << 8);
+
+	db1.port = 0;
+	db1.bit = 22;
+	dataLcd[1] = &db1;
+	//LPC_GPIO0->FIODIR |= (1 << 22);
+
+	db2.port = 0;
+	db2.bit = 24;
+	dataLcd[2] = &db2;
+	//LPC_GPIO0->FIODIR |= (1 << 24);
+
+	db3.port = 0;
+	db3.bit = 26;
+	dataLcd[3] = &db3;
+	//LPC_GPIO0->FIODIR |= (1 << 26);
+
+	db4.port = 1;
+	db4.bit = 31;
+	dataLcd[4] = &db4;
+	//LPC_GPIO1->FIODIR |= (1 << 31);
+
+	db5.port = 0;
+	db5.bit = 1;
+	dataLcd[5] = &db5;
+	//LPC_GPIO0->FIODIR |= (1 << 1);
+
+	db6.port = 0;
+	db6.bit = 3;
+	dataLcd[6] = &db6;
+	//LPC_GPIO0->FIODIR |= (1 << 3);
+
+	db7.port = 2;
+	db7.bit = 1;
+	dataLcd[7] = &db7;
+	//LPC_GPIO2->FIODIR |= (1 << 1);
+
+
+
+	//GPIO 0
+	LPC_GPIO0->FIODIR |= DI; // D/I
+	LPC_GPIO0->FIODIR |= RW; // R/W
+	LPC_GPIO0->FIODIR |= E; // E
+	LPC_GPIO0->FIODIR |= CS1; // CS1
+	LPC_GPIO0->FIODIR |= CS2; // CS2
+	LPC_GPIO2->FIODIR |= RST; // RST
+
+	LPC_GPIO0->FIOCLR = CS1; // CS1
+	LPC_GPIO0->FIOCLR = CS2; // CS2
+	LPC_GPIO0->FIOSET = E; // CS2
+	LPC_GPIO0->FIOSET = RW; // R/W
+
+	///////////////////////////////////
+	//reset
+	///////////////////////////////////
+
+	LPC_GPIO2->FIOCLR = RST;
+	for(i = 0; i < DELAY_LONG; i++);
+	LPC_GPIO2->FIOSET = RST;
+
+	///////////////////////////////////
+
+	API_LcdDisplayON();
+	API_LcdCleanScreen();
+
+	///////////////////////////////////
+//
+//	for(i=0; i < MAX_X; i++){
+//		for(j=0; j < MAX_Y; j++){
+//			API_LcdWriteByte(0xff,i,j);
+//		}
+//	}
+
+	///////////////////////////////////
+
+//	API_LcdWriteByte(0x55,0,0);
+//	API_LcdWriteByte(0x66,0,1);
+//
+//	API_LcdReadByte(&data,0,0);
+
+	///////////////////////////////////
+
+//	API_LcdSetPixel(0,0);
+//	API_LcdSetPixel(0,1);
+//	API_LcdSetPixel(0,2);
+//	API_LcdSetPixel(0,4);
+//
+//	API_LcdSetPixel(1,0);
+//	API_LcdSetPixel(1,1);
+//	API_LcdSetPixel(1,2);
+//	API_LcdSetPixel(1,4);
+
+//	API_LcdSetPixel(1,0);
+//	API_LcdSetPixel(2,0);
+//	API_LcdSetPixel(3,0);
+//	API_LcdSetPixel(4,0);
+//	API_LcdSetPixel(5,0);
+//	API_LcdSetPixel(6,0);
+//
+//	API_LcdSetPixel(0,1);
+//	API_LcdSetPixel(1,1);
+//	API_LcdSetPixel(2,1);
+//	API_LcdSetPixel(3,1);
+//	API_LcdSetPixel(4,1);
+//	API_LcdSetPixel(5,1);
+//	API_LcdSetPixel(6,1);
+
+
+
+	// cuadrado de 4x4
+	for(x=0; x < 4; x++){
+		for(y=0; y < 4; y++){
+			API_LcdSetPixel(x,y);
+		}
+	}
+
+	///////////////////////////////////
+
+	offsetX = 0;
+	offsetY = 0;
+
+	while(1) {
+
+
+		for(offsetX=0;offsetX < 128 ; offsetX +=4 ){
+			for(offsetY=0;offsetY < 128 ; offsetY +=4){
+				// cuadrado de 4x4
+				for(x=0; x < 4; x++){
+					for(y=0; y < 4; y++){
+						API_LcdSetPixel(x + offsetX, y + offsetY);
+					}
+				}
+				for(i=0; i <5000000; i++);
+			}
+		}
+
+
+	}
+
+	return 0 ;
+}

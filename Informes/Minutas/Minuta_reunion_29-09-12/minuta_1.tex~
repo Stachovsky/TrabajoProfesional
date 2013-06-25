@@ -1,0 +1,84 @@
+\documentclass[12pt]{article}
+
+\usepackage{graphicx}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenx}
+\usepackage{anysize} 
+\usepackage{amsmath}
+\usepackage{listings}
+\marginsize{1cm}{1cm}{1cm}{1cm} %izq der arriba abajo
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks,%
+    citecolor=black,%
+    filecolor=black,%
+    linkcolor=black,%
+    urlcolor=black
+}
+
+\title{Minuta}
+\author{Facundo Nahuel Uriel Silva}
+
+\begin{document}
+
+  \thispagestyle{empty}
+
+
+  \begin{tabular}{|p{100px}|p{100px}|p{150px}|p{80px}|}
+    \hline
+      \textbf{Fecha:}\newline 29 de Julio del 2012 & % Fecha
+      \textbf{Hora:}\newline 17:00hs a 18:15hs & % Hora
+      \textbf{Lugar:}\newline \vspace{5px} Laboratorio de sólidos \newline \vspace{5px} amorfos &  % Lugar
+      \textbf{Nro. Páginas:}\newline 1 \\  % Numero de paginas de la minuta
+    \hline
+      \multicolumn{4}{|p{450px}|}{ 
+	\textbf{ Tema:} \newline \vspace{5px}  % Tema
+	Definición de las especificaciones para el proyecto de control del proceso de sinterizado de nano polvos
+      }\\
+    \hline
+      \multicolumn{2}{ |p{200px}| }{
+	\textbf{ Participantes:} \newline \vspace{5px}  -Dr. Saccone Fabio  -Ing. Nítoli Mónica -Ing. Mariano Malmoria 
+				 \newline  -Sr. Facundo Nahuel Uriel Silva \newline -Sr. López Morgan Estanilao
+      }&
+\multicolumn{2}{ |p{200px}| }{
+	\textbf{ Cliente:} \newline \vspace{5px} Laboratorio de Sólidos Amorfos - Facultad de Ingeniería - Universidad de Buenos Aires
+				 
+      }\\
+% \newline  % Participantes
+      %&
+%       \multicolumn{2}{ p{200px}| }{
+% 	\textbf{ Compañía:}  \newline  % Compañía	
+%       } \\ 
+    \hline
+    \multicolumn{4}{|p{450px}|}{ 
+      \textbf{Inicio para del proyecto:\hspace{15px}  16/03/2012} \newline
+      \textbf{Fin de la primera etapa: \hspace{15px}  30/08/2012} \newline
+      El día de la fecha se llevó a cabo la reunión para definir las especificaciones técnicas a tener en cuenta en el desarrollo del proyecto para la automatización
+      del proceso de sinterizado de nano estructuras. \newline
+      
+      \textbf{Referentes:} \newline
+      Los referentes del lado del cliente es el Dr. Fabio Saccone y el Ing. Mariano Malmoria.
+      Los referentes a cargo del desarrollo es el Sr. Facundo Nahuel Uriel Silva y el Sr. Estanilao López Morgan, los cuales serán supervisado por la 
+      Ing. Mónica Nítoli represetando a la cátedra Trabajo Profesional de la Facultad de Ingeniería de la Universidad de Buenos Aires.\newline
+      
+      \textbf{Agenda:} \newline
+      Durante el encuentro, se plantearon las especificaciones técnicas finales a tener en cuenta en el desarrollo del proyecto para la automatización
+      del proceso de sinterizado de nano estructuras como así también sus limitaciones, definiendo así su alcance. Se siguió una serie de preguntas 
+      para encuestar al cliente sobre detalles del procesos, preferencias en cuanto a la visualización de los datos, parámetros de seguridad, regularidad 
+      con la que se realiza el proceso, etc. Se adjuntan las preguntas realizadas en la reunión con sus respectivas respuestas por los anteriormente mencionados.
+     
+
+
+
+	} \\
+%       \multicolumn{1}{|p{100px}|}{
+% 	\textbf{ Responsable:}  \newline  % Responsables
+%       } \\ 
+    \hline
+    
+  \end{tabular}
+
+
+
+\end{document}

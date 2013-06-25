@@ -1,0 +1,80 @@
+/**
+ * Name        : main.c
+ * Version     :
+ * Description : main definition for FreeRTOS application
+ */
+
+/*
+ * FreeRTOS includes
+ */
+#include "FreeRTOS.h"
+#include "task.h"
+#include "queue.h"
+#include "semphr.h"
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#include "Tasks/KeepAlive/taskKeepAlive.h"
+#include "Tasks/PcCommunication/taskPcCommunication.h"
+#include "Tasks/Adc/taskAdc.h"
+#include "Tasks/SerialMemory/taskSerialMemory.h"
+#include "Tasks/Core/taskCore.h"
+#include "Tasks/SdCard/taskSdCard.h"
+#include "Tasks/WebServer/taskWebServer.h"
+
+#define USERTASK_STACK_SIZE configMINIMAL_STACK_SIZE
+
+void __error__(char *pcFilename, unsigned long ulLine) {
+}
+
+static void setupHardware(void) {
+	// Se configuran los perifericos por defecto
+	SystemInit();
+
+	// Se inicializa las task de comunicaciones
+	taskPcCommunicationInit();
+
+	// Salida control actuadores
+	LPC_GPIO2->FIODIR |= (1<<8);  // act 0
+	LPC_GPIO2->FIODIR |= (1<<10); // act 1
+	LPC_GPIO2->FIODIR |= (1<<7); // act 2
+	LPC_GPIO2->FIODIR |= (1<<4); // act 3
+
+	LPC_GPIO2->FIOCLR = (1<<8);  // act 0
+	LPC_GPIO2->FIOCLR = (1<<10); // act 1
+	LPC_GPIO2->FIOCLR = (1<<7); // act 2
+	LPC_GPIO2->FIOCLR = (1<<4); // act 3
+
+//	TCPLowLevelInit();
+}
+
+/**
+ * Program entry point 
+ */
+int main(void) {
+
+	setupHardware();
+
+	xTaskCreate( taskKeepAlive			, (signed portCHAR *) "KeepAlive"	, 240, (int32_t*)1000,	1, NULL );
+
+	xTaskCreate( taskSdCard				, (signed portCHAR *) "SdCard"		, 240, NULL,			2, NULL );
+//	xTaskCreate( taskCore				, (signed portCHAR *) "Core"		, 240, NULL,			2, NULL );
+
+//	xTaskCreate( taskWebServer			, (signed portCHAR *) "WebServer"		, 240, NULL,			2, NULL );
+//	xTaskCreate( taskTcpTick			, (signed portCHAR *) "taskTcpTick"		, 240, NULL,			2, NULL );
+
+//	xTaskCreate( taskPcCommunicationTX	, (signed portCHAR *) "PcComTx"		, 240, NULL,			2, NULL );
+
+//	xTaskCreate( taskPcCommunicationRX	, (signed portCHAR *) "PcComRx"		, 240, NULL,			3, NULL );
+//	xTaskCreate( taskAdc				, (signed portCHAR *) "Adc"			, 240, NULL,			3, NULL );
+
+
+
+	/* Start the scheduler. */
+	vTaskStartScheduler();
+
+	/* Will only get here if there was insufficient memory to create the idle task. */
+	return 1;
+}

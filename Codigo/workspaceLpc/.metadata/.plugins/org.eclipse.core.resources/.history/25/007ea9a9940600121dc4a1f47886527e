@@ -1,0 +1,19 @@
+/*
+ * taskKeepAlibe.c
+ *
+ *  Created on: Sep 24, 2012
+ *      Author: "Facundo Nahuel Uriel Silva"
+ */
+
+
+void taskKeepAlive(void * blinkPeriode){
+
+	const portTickType periode = (uint8_t)blinkPeriode / portTICK_RATE_MS;
+
+	while(1){
+
+		vTaskDelay( periode );
+	}
+
+
+}

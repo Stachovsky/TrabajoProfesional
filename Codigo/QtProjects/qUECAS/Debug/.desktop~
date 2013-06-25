@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Wallpaper Changer
+GenericName=Wallpaper Changer
+Comment=Change your desktop wallpapers whenever you want!
+Icon=./tux.png
+Exec=wallch
+Terminal=false
+Type=Application
+Categories=Qt;Utility;

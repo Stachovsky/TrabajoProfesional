@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="312" key="DIALOG_WIDTH"/>
+		<item value="0" key="DIALOG_Y_ORIGIN"/>
+		<item value="437" key="DIALOG_HEIGHT"/>
+		<item value="790" key="DIALOG_X_ORIGIN"/>
+		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="true" key="wrap"/>
+		<item value="false" key="isRegEx"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wholeword"/>
+		<item value="ADC_START_CONTINUOUS)" key="selection"/>
+		<list key="findhistory">
+			<item value="ADC_START_CONTINUOUS)"/>
+			<item value="off"/>
+			<item value="aisEsperandoFlanco"/>
+			<item value="critical"/>
+			<item value="tasInicializandoSensadoCorriente"/>
+			<item value="mutexSensadoCorrienteReady"/>
+			<item value="ADC_IntConfig"/>
+			<item value="ADC_BurstCmd"/>
+		</list>
+		<list key="replacehistory">
+			<item value="mutexSensadoCorrienteReady"/>
+			<item value=""/>
+			<item value="valueData"/>
+			<item value="//ADC_StartCmd(LPC_ADC,ADC_START_NOW);"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item value="244" key="DIALOG_Y_ORIGIN"/>
+		<item value="381" key="DIALOG_X_ORIGIN"/>
+	</section>
+</section>

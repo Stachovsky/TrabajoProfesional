@@ -1,0 +1,11 @@
+
+**** Build of configuration Debug for project Lib_CMSIS ****
+
+make all 
+Building file: ../Drivers/source/debug_frmwrk.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -I"/home/fanaur/workspaceLpc/USB_workspace/Lib_CMSIS/Debug" -I"/home/fanaur/workspaceLpc/USB_workspace/Lib_CMSIS/Drivers/include" -I"/home/fanaur/workspaceLpc/USB_workspace/Lib_CMSIS/Core/CM3/CoreSupport" -I"/home/fanaur/workspaceLpc/USB_workspace/Lib_CMSIS/Core/CM3/DeviceSupport/NXP/LPC17xx" -O0 -g3 -Wall -c -fmessage-length=0 -mcpu=cortex-m3 -mthumb -MMD -MP -MF"Drivers/source/debug_frmwrk.d" -MT"Drivers/source/debug_frmwrk.d" -o"Drivers/source/debug_frmwrk.o" "../Drivers/source/debug_frmwrk.c"
+In file included from ../Drivers/source/debug_frmwrk.c:21:0:
+/home/fanaur/workspaceLpc/USB_workspace/Lib_CMSIS/Drivers/include/lpc17xx_pinsel.h:31:21: fatal error: lpc17xx.h: No such file or directory
+compilation terminated.
+make: *** [Drivers/source/debug_frmwrk.o] Error 1

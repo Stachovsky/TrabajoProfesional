@@ -1,0 +1,73 @@
+/*
+ * taskAdc.h
+ *
+ *  Created on: Oct 27, 2012
+ *      Author: "Facundo Nahuel Uriel Silva"
+ */
+
+#ifndef TASKADC_H_
+#define TASKADC_H_
+
+#include "LPC17xx.h"
+
+#include "lpc17xx_pinsel.h"
+#include "lpc17xx_adc.h"
+#include "lpc17xx_rtc.h"
+
+#include <math.h>
+
+#include "stdio.h"
+#include "stdlib.h"
+#include "string.h"
+
+#include "FreeRTOS.h"
+#include "task.h"
+
+extern FATFS fs;
+
+#define LAST_SAMPLES_FILE "samples.csv"
+#define MEDICION_FILE "medicion.csv"
+#define HEADER_CSV_FILE "Tension[V];Corriente[A];Factor Potencia;frecuencia[Hz];Energia[W/h];\n"
+
+typedef enum{
+	ADC_0,
+	ADC_1,
+	ADC_2,
+	ADC_3,
+	ADC_4
+} ADC_type;
+
+typedef struct{
+	int32_t Adc0Value;
+	int32_t Adc1Value;
+} SensorsValues;
+
+typedef enum{
+	ADC_SINCRONIZE,
+	ADC_SINCRONIZING_DESC_START,
+	ADC_SINCRONIZING_DESC_WAIT_FIRST,
+	ADC_SINCRONIZING_DESC_WAIT_SECOND,
+	ADC_SINCRONIZING_ASC_WAIT_FIRST,
+	ADC_SINCRONIZING_ASC_WAIT_SECOND,
+	ADC_START,
+	ADC_GET_ADC0_SAMPLE,
+	ADC_GET_ADC1_SAMPLE,
+	ADC_GIVE_MUTEX
+} ADC_states;
+
+
+/** \brief
+ *
+ * @param param
+ */
+void taskAdc(void *param);
+
+int16_t getAdcValue(ADC_type adc);
+
+void synchronize();
+
+void synchronizeNextSampling();
+
+void ADC_IRQHandler(void);
+
+#endif /* TASKADC_H_ */

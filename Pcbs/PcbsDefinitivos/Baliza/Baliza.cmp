@@ -1,0 +1,129 @@
+Cmp-Mod V01 Created by CvPcb (2013-mar-13)-testing date = mié 22 may 2013 23:27:48 ART
+
+BeginCmp
+TimeStamp = /519CD5FE;
+Reference = D1;
+ValeurCmp = DIODE;
+IdModule  = SM1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /519CDB45;
+Reference = D2;
+ValeurCmp = DIODE;
+IdModule  = SM1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /519CDB54;
+Reference = D3;
+ValeurCmp = DIODE;
+IdModule  = SM1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /519CDB63;
+Reference = D4;
+ValeurCmp = DIODE;
+IdModule  = SM1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /519CE0B5;
+Reference = P1;
+ValeurCmp = CONN_6;
+IdModule  = SIL-6;
+EndCmp
+
+BeginCmp
+TimeStamp = /519CE470;
+Reference = P2;
+ValeurCmp = CONN_5;
+IdModule  = bornier5;
+EndCmp
+
+BeginCmp
+TimeStamp = /519CD14C;
+Reference = Q1;
+ValeurCmp = MOS_N;
+IdModule  = SOT23;
+EndCmp
+
+BeginCmp
+TimeStamp = /519CD16A;
+Reference = Q2;
+ValeurCmp = MOS_N;
+IdModule  = SOT23;
+EndCmp
+
+BeginCmp
+TimeStamp = /519CD179;
+Reference = Q3;
+ValeurCmp = MOS_N;
+IdModule  = SOT23;
+EndCmp
+
+BeginCmp
+TimeStamp = /519CD188;
+Reference = Q4;
+ValeurCmp = MOS_N;
+IdModule  = SOT23;
+EndCmp
+
+BeginCmp
+TimeStamp = /519CD556;
+Reference = R1;
+ValeurCmp = R;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /519CD529;
+Reference = R2;
+ValeurCmp = R;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /519CD547;
+Reference = R3;
+ValeurCmp = R;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /519CD538;
+Reference = R4;
+ValeurCmp = R;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /519CDA6E;
+Reference = RLY1;
+ValeurCmp = RELAY_T9AS5X1;
+IdModule  = relay_JQC-3F-1C;
+EndCmp
+
+BeginCmp
+TimeStamp = /519CDA41;
+Reference = RLY2;
+ValeurCmp = RELAY_T9AS5X1;
+IdModule  = relay_JQC-3F-1C;
+EndCmp
+
+BeginCmp
+TimeStamp = /519CDA5F;
+Reference = RLY3;
+ValeurCmp = RELAY_T9AS5X1;
+IdModule  = relay_JQC-3F-1C;
+EndCmp
+
+BeginCmp
+TimeStamp = /519CDA50;
+Reference = RLY4;
+ValeurCmp = RELAY_T9AS5X1;
+IdModule  = relay_JQC-3F-1C;
+EndCmp
+
+EndListe

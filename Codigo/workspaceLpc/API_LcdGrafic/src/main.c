@@ -1,0 +1,47 @@
+/*
+===============================================================================
+ Name        : main.c
+ Author      : 
+ Version     :
+ Copyright   : Copyright (C) 
+ Description : main definition
+===============================================================================
+*/
+
+#ifdef __USE_CMSIS
+#include "LPC17xx.h"
+#endif
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#include <cr_section_macros.h>
+#include <NXP/crp.h>
+
+#include "API_LcdGrafic.h"
+
+__CRP const unsigned int CRP_WORD = CRP_NO_CRP ;
+
+int main(void) {
+
+	int32_t n;
+	uint8_t i;
+	int8_t str[30];
+
+	API_LcdInit();
+
+	API_LcdGraficPrint("Test",FONT_SMALL,10,10);
+	
+	while(1) {
+
+//		API_LcdGraficCleanScreen();
+		API_LcdGraficCleanScreenSection(40,25,20,10);
+		sprintf((char*)str,"%d",i++);
+		API_LcdGraficPrint(str,FONT_SMALL,40,25);
+
+		for(n = 0; n < 10000000; n++);
+	}
+
+	return 0 ;
+}

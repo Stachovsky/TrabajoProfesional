@@ -1,0 +1,14 @@
+/*
+ * Core.h
+ *
+ *  Created on: Sep 26, 2012
+ *      Author: "Facundo Nahuel Uriel Silva"
+ */
+
+#ifndef CORE_H_
+#define CORE_H_
+
+#include "Tasks/PcCommunicaction/cmdPcCom.h"
+
+
+#endif /* CORE_H_ */

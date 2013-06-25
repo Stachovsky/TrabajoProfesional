@@ -1,0 +1,2202 @@
+Archive member included because of file (symbol)
+
+/home/fanaur/workspacePruebas/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+                              ./src/cr_startup_lpc176x.o (SystemInit)
+/usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(__weak__main.o)
+                              ./src/cr_startup_lpc176x.o (__main)
+/usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(strlen.o)
+                              ./src/Lib_MCU/src/lpc17xx_uart.o (strlen)
+/usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(memcpy.o)
+                              ./src/Lib_EaBaseBoard/src/eeprom.o (memcpy)
+/usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(memset.o)
+                              ./src/Lib_EaBaseBoard/src/oled.o (memset)
+/usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(division.o)
+                              ./src/Lib_MCU/src/lpc17xx_pwm.o (__aeabi_uldivmod)
+/usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(float.o)
+                              ./src/Lib_MCU/src/lpc17xx_systick.o (__aeabi_ui2f)
+/usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(memcpy.o)
+                              /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(memcpy.o) (__aeabi_memcpy)
+
+Allocating common symbols
+Common symbol       size              file
+
+FULLCAN_ENABLE      0x1               ./src/Lib_MCU/src/lpc17xx_can.o
+
+Discarded input sections
+
+ .text          0x00000000        0x0 ./src/cr_startup_lpc176x.o
+ .data          0x00000000        0x0 ./src/cr_startup_lpc176x.o
+ .bss           0x00000000        0x0 ./src/cr_startup_lpc176x.o
+ .text          0x00000000        0x0 ./src/main.o
+ .data          0x00000000        0x0 ./src/main.o
+ .bss           0x00000000        0x0 ./src/main.o
+ .text          0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_adc.o
+ .data          0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_adc.o
+ .bss           0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_adc.o
+ .rodata        0x00000000       0x24 ./src/Lib_MCU/src/lpc17xx_adc.o
+ .text.ADC_Init
+                0x00000000       0xb4 ./src/Lib_MCU/src/lpc17xx_adc.o
+ .text.ADC_DeInit
+                0x00000000       0x48 ./src/Lib_MCU/src/lpc17xx_adc.o
+ .text.ADC_GetData
+                0x00000000       0x38 ./src/Lib_MCU/src/lpc17xx_adc.o
+ .text.ADC_StartCmd
+                0x00000000       0x90 ./src/Lib_MCU/src/lpc17xx_adc.o
+ .text.ADC_BurstCmd
+                0x00000000       0x50 ./src/Lib_MCU/src/lpc17xx_adc.o
+ .text.ADC_PowerdownCmd
+                0x00000000       0x50 ./src/Lib_MCU/src/lpc17xx_adc.o
+ .text.ADC_EdgeStartConfig
+                0x00000000       0x6c ./src/Lib_MCU/src/lpc17xx_adc.o
+ .text.ADC_IntConfig
+                0x00000000       0xb4 ./src/Lib_MCU/src/lpc17xx_adc.o
+ .text.ADC_ChannelCmd
+                0x00000000       0x70 ./src/Lib_MCU/src/lpc17xx_adc.o
+ .text.ADC_ChannelGetData
+                0x00000000       0x58 ./src/Lib_MCU/src/lpc17xx_adc.o
+ .text.ADC_ChannelGetStatus
+                0x00000000       0x8c ./src/Lib_MCU/src/lpc17xx_adc.o
+ .text.ADC_GlobalGetData
+                0x00000000       0x34 ./src/Lib_MCU/src/lpc17xx_adc.o
+ .text.ADC_GlobalGetStatus
+                0x00000000       0x7c ./src/Lib_MCU/src/lpc17xx_adc.o
+ .text          0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_can.o
+ .data          0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_can.o
+ .bss           0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_can.o
+ .bss.CANAF_FullCAN_cnt
+                0x00000000        0x2 ./src/Lib_MCU/src/lpc17xx_can.o
+ .bss.CANAF_std_cnt
+                0x00000000        0x2 ./src/Lib_MCU/src/lpc17xx_can.o
+ .bss.CANAF_gstd_cnt
+                0x00000000        0x2 ./src/Lib_MCU/src/lpc17xx_can.o
+ .bss.CANAF_ext_cnt
+                0x00000000        0x2 ./src/Lib_MCU/src/lpc17xx_can.o
+ .bss.CANAF_gext_cnt
+                0x00000000        0x2 ./src/Lib_MCU/src/lpc17xx_can.o
+ .rodata        0x00000000       0x24 ./src/Lib_MCU/src/lpc17xx_can.o
+ .text.can_SetBaudrate
+                0x00000000      0x138 ./src/Lib_MCU/src/lpc17xx_can.o
+ .text.CAN_Init
+                0x00000000      0x150 ./src/Lib_MCU/src/lpc17xx_can.o
+ .text.CAN_DeInit
+                0x00000000       0x64 ./src/Lib_MCU/src/lpc17xx_can.o
+ .text.CAN_SetupAFLUT
+                0x00000000      0xbbc ./src/Lib_MCU/src/lpc17xx_can.o
+ .text.CAN_LoadExplicitEntry
+                0x00000000      0x724 ./src/Lib_MCU/src/lpc17xx_can.o
+ .text.CAN_LoadFullCANEntry
+                0x00000000      0x6fc ./src/Lib_MCU/src/lpc17xx_can.o
+ .text.CAN_LoadGroupEntry
+                0x00000000      0x704 ./src/Lib_MCU/src/lpc17xx_can.o
+ .text.CAN_RemoveEntry
+                0x00000000      0xa2c ./src/Lib_MCU/src/lpc17xx_can.o
+ .text.CAN_SendMsg
+                0x00000000      0x38c ./src/Lib_MCU/src/lpc17xx_can.o
+ .text.CAN_ReceiveMsg
+                0x00000000      0x140 ./src/Lib_MCU/src/lpc17xx_can.o
+ .text.FCAN_ReadObj
+                0x00000000      0x200 ./src/Lib_MCU/src/lpc17xx_can.o
+ .text.CAN_GetCTRLStatus
+                0x00000000       0x90 ./src/Lib_MCU/src/lpc17xx_can.o
+ .text.CAN_GetCRStatus
+                0x00000000       0x74 ./src/Lib_MCU/src/lpc17xx_can.o
+ .text.CAN_IRQCmd
+                0x00000000      0x154 ./src/Lib_MCU/src/lpc17xx_can.o
+ .text.CAN_SetAFMode
+                0x00000000       0xa0 ./src/Lib_MCU/src/lpc17xx_can.o
+ .text.CAN_ModeConfig
+                0x00000000      0x1f8 ./src/Lib_MCU/src/lpc17xx_can.o
+ .text.CAN_SetCommand
+                0x00000000       0x4c ./src/Lib_MCU/src/lpc17xx_can.o
+ .text.CAN_IntGetStatus
+                0x00000000       0x44 ./src/Lib_MCU/src/lpc17xx_can.o
+ .text.CAN_FullCANIntGetStatus
+                0x00000000       0x44 ./src/Lib_MCU/src/lpc17xx_can.o
+ .text.CAN_FullCANPendGetStatus
+                0x00000000       0x60 ./src/Lib_MCU/src/lpc17xx_can.o
+ COMMON         0x00000000        0x1 ./src/Lib_MCU/src/lpc17xx_can.o
+ .text          0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_clkpwr.o
+ .data          0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_clkpwr.o
+ .bss           0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_clkpwr.o
+ .text.CLKPWR_SetPCLKDiv
+                0x00000000       0xd4 ./src/Lib_MCU/src/lpc17xx_clkpwr.o
+ .text.CLKPWR_Sleep
+                0x00000000       0x1c ./src/Lib_MCU/src/lpc17xx_clkpwr.o
+ .text.CLKPWR_DeepSleep
+                0x00000000       0x2c ./src/Lib_MCU/src/lpc17xx_clkpwr.o
+ .text.CLKPWR_PowerDown
+                0x00000000       0x2c ./src/Lib_MCU/src/lpc17xx_clkpwr.o
+ .text.CLKPWR_DeepPowerDown
+                0x00000000       0x2c ./src/Lib_MCU/src/lpc17xx_clkpwr.o
+ .text          0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_dac.o
+ .data          0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_dac.o
+ .bss           0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_dac.o
+ .rodata        0x00000000       0x24 ./src/Lib_MCU/src/lpc17xx_dac.o
+ .text.DAC_Init
+                0x00000000       0x40 ./src/Lib_MCU/src/lpc17xx_dac.o
+ .text.DAC_UpdateValue
+                0x00000000       0x58 ./src/Lib_MCU/src/lpc17xx_dac.o
+ .text.DAC_SetBias
+                0x00000000       0x4c ./src/Lib_MCU/src/lpc17xx_dac.o
+ .text.DAC_ConfigDAConverterControl
+                0x00000000       0x78 ./src/Lib_MCU/src/lpc17xx_dac.o
+ .text.DAC_SetDMATimeOut
+                0x00000000       0x38 ./src/Lib_MCU/src/lpc17xx_dac.o
+ .text          0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_emac.o
+ .data          0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_emac.o
+ .bss           0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_emac.o
+ .rodata.EMAC_clkdiv
+                0x00000000        0x8 ./src/Lib_MCU/src/lpc17xx_emac.o
+ .bss.Rx_Desc   0x00000000       0x20 ./src/Lib_MCU/src/lpc17xx_emac.o
+ .bss.Rx_Stat   0x00000000       0x20 ./src/Lib_MCU/src/lpc17xx_emac.o
+ .bss.Tx_Desc   0x00000000       0x18 ./src/Lib_MCU/src/lpc17xx_emac.o
+ .bss.Tx_Stat   0x00000000        0xc ./src/Lib_MCU/src/lpc17xx_emac.o
+ .bss.rx_buf    0x00000000     0x1800 ./src/Lib_MCU/src/lpc17xx_emac.o
+ .bss.tx_buf    0x00000000     0x1200 ./src/Lib_MCU/src/lpc17xx_emac.o
+ .text.rx_descr_init
+                0x00000000       0xcc ./src/Lib_MCU/src/lpc17xx_emac.o
+ .text.tx_descr_init
+                0x00000000       0xb0 ./src/Lib_MCU/src/lpc17xx_emac.o
+ .text.write_PHY
+                0x00000000       0x68 ./src/Lib_MCU/src/lpc17xx_emac.o
+ .text.read_PHY
+                0x00000000       0x74 ./src/Lib_MCU/src/lpc17xx_emac.o
+ .text.setEmacAddr
+                0x00000000       0x68 ./src/Lib_MCU/src/lpc17xx_emac.o
+ .text.emac_CRCCalc
+                0x00000000      0x130 ./src/Lib_MCU/src/lpc17xx_emac.o
+ .text.EMAC_Init
+                0x00000000      0x1e4 ./src/Lib_MCU/src/lpc17xx_emac.o
+ .text.EMAC_DeInit
+                0x00000000       0x2c ./src/Lib_MCU/src/lpc17xx_emac.o
+ .text.EMAC_CheckPHYStatus
+                0x00000000       0x64 ./src/Lib_MCU/src/lpc17xx_emac.o
+ .text.EMAC_SetPHYMode
+                0x00000000      0x108 ./src/Lib_MCU/src/lpc17xx_emac.o
+ .text.EMAC_UpdatePHYStatus
+                0x00000000       0xb4 ./src/Lib_MCU/src/lpc17xx_emac.o
+ .text.EMAC_SetHashFilter
+                0x00000000       0xa0 ./src/Lib_MCU/src/lpc17xx_emac.o
+ .text.EMAC_SetFilterMode
+                0x00000000       0x54 ./src/Lib_MCU/src/lpc17xx_emac.o
+ .text.EMAC_GetWoLStatus
+                0x00000000       0x3c ./src/Lib_MCU/src/lpc17xx_emac.o
+ .text.EMAC_WritePacketBuffer
+                0x00000000       0x88 ./src/Lib_MCU/src/lpc17xx_emac.o
+ .text.EMAC_ReadPacketBuffer
+                0x00000000       0x70 ./src/Lib_MCU/src/lpc17xx_emac.o
+ .text.EMAC_IntCmd
+                0x00000000       0x54 ./src/Lib_MCU/src/lpc17xx_emac.o
+ .text.EMAC_IntGetStatus
+                0x00000000       0x3c ./src/Lib_MCU/src/lpc17xx_emac.o
+ .text.EMAC_CheckReceiveIndex
+                0x00000000       0x2c ./src/Lib_MCU/src/lpc17xx_emac.o
+ .text.EMAC_CheckTransmitIndex
+                0x00000000       0x3c ./src/Lib_MCU/src/lpc17xx_emac.o
+ .text.EMAC_CheckReceiveDataStatus
+                0x00000000       0x3c ./src/Lib_MCU/src/lpc17xx_emac.o
+ .text.EMAC_GetReceiveDataSize
+                0x00000000       0x34 ./src/Lib_MCU/src/lpc17xx_emac.o
+ .text.EMAC_UpdateRxConsumeIndex
+                0x00000000       0x38 ./src/Lib_MCU/src/lpc17xx_emac.o
+ .text.EMAC_UpdateTxProduceIndex
+                0x00000000       0x38 ./src/Lib_MCU/src/lpc17xx_emac.o
+ .text          0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_exti.o
+ .data          0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_exti.o
+ .bss           0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_exti.o
+ .text.EXTI_Init
+                0x00000000       0x3c ./src/Lib_MCU/src/lpc17xx_exti.o
+ .text.EXTI_DeInit
+                0x00000000        0xc ./src/Lib_MCU/src/lpc17xx_exti.o
+ .text.EXTI_Config
+                0x00000000       0x40 ./src/Lib_MCU/src/lpc17xx_exti.o
+ .text.EXTI_SetMode
+                0x00000000       0x7c ./src/Lib_MCU/src/lpc17xx_exti.o
+ .text.EXTI_SetPolarity
+                0x00000000       0x7c ./src/Lib_MCU/src/lpc17xx_exti.o
+ .text.EXTI_ClearEXTIFlag
+                0x00000000       0x3c ./src/Lib_MCU/src/lpc17xx_exti.o
+ .text          0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_gpdma.o
+ .data          0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_gpdma.o
+ .bss           0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_gpdma.o
+ .rodata.GPDMA_LUTPerAddr
+                0x00000000       0x60 ./src/Lib_MCU/src/lpc17xx_gpdma.o
+ .data.pGPDMACh
+                0x00000000       0x20 ./src/Lib_MCU/src/lpc17xx_gpdma.o
+ .rodata.GPDMA_LUTPerBurst
+                0x00000000       0x18 ./src/Lib_MCU/src/lpc17xx_gpdma.o
+ .rodata.GPDMA_LUTPerWid
+                0x00000000       0x18 ./src/Lib_MCU/src/lpc17xx_gpdma.o
+ .text.GPDMA_Init
+                0x00000000       0xa0 ./src/Lib_MCU/src/lpc17xx_gpdma.o
+ .text.GPDMA_Setup
+                0x00000000      0x434 ./src/Lib_MCU/src/lpc17xx_gpdma.o
+ .text.GPDMA_ChannelCmd
+                0x00000000       0x48 ./src/Lib_MCU/src/lpc17xx_gpdma.o
+ .rodata        0x00000000       0x24 ./src/Lib_MCU/src/lpc17xx_gpdma.o
+ .text.GPDMA_IntGetStatus
+                0x00000000      0x194 ./src/Lib_MCU/src/lpc17xx_gpdma.o
+ .text.GPDMA_ClearIntPending
+                0x00000000       0x80 ./src/Lib_MCU/src/lpc17xx_gpdma.o
+ .text          0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_gpio.o
+ .data          0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_gpio.o
+ .bss           0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_gpio.o
+ .text.FIO_HalfWordGetPointer
+                0x00000000       0x7c ./src/Lib_MCU/src/lpc17xx_gpio.o
+ .text.FIO_ByteGetPointer
+                0x00000000       0x7c ./src/Lib_MCU/src/lpc17xx_gpio.o
+ .text.GPIO_ReadValue
+                0x00000000       0x30 ./src/Lib_MCU/src/lpc17xx_gpio.o
+ .text.GPIO_IntCmd
+                0x00000000       0x84 ./src/Lib_MCU/src/lpc17xx_gpio.o
+ .text.GPIO_GetIntStatus
+                0x00000000       0xc0 ./src/Lib_MCU/src/lpc17xx_gpio.o
+ .text.GPIO_ClearInt
+                0x00000000       0x40 ./src/Lib_MCU/src/lpc17xx_gpio.o
+ .text.FIO_SetDir
+                0x00000000       0x28 ./src/Lib_MCU/src/lpc17xx_gpio.o
+ .text.FIO_SetValue
+                0x00000000       0x20 ./src/Lib_MCU/src/lpc17xx_gpio.o
+ .text.FIO_ClearValue
+                0x00000000       0x20 ./src/Lib_MCU/src/lpc17xx_gpio.o
+ .text.FIO_ReadValue
+                0x00000000       0x20 ./src/Lib_MCU/src/lpc17xx_gpio.o
+ .text.FIO_IntCmd
+                0x00000000       0x28 ./src/Lib_MCU/src/lpc17xx_gpio.o
+ .text.FIO_GetIntStatus
+                0x00000000       0x2c ./src/Lib_MCU/src/lpc17xx_gpio.o
+ .text.FIO_ClearInt
+                0x00000000       0x20 ./src/Lib_MCU/src/lpc17xx_gpio.o
+ .text.FIO_SetMask
+                0x00000000       0x50 ./src/Lib_MCU/src/lpc17xx_gpio.o
+ .text.FIO_HalfWordSetDir
+                0x00000000       0x9c ./src/Lib_MCU/src/lpc17xx_gpio.o
+ .text.FIO_HalfWordSetMask
+                0x00000000       0x9c ./src/Lib_MCU/src/lpc17xx_gpio.o
+ .text.FIO_HalfWordSetValue
+                0x00000000       0x40 ./src/Lib_MCU/src/lpc17xx_gpio.o
+ .text.FIO_HalfWordClearValue
+                0x00000000       0x40 ./src/Lib_MCU/src/lpc17xx_gpio.o
+ .text.FIO_HalfWordReadValue
+                0x00000000       0x44 ./src/Lib_MCU/src/lpc17xx_gpio.o
+ .text.FIO_ByteSetDir
+                0x00000000       0x70 ./src/Lib_MCU/src/lpc17xx_gpio.o
+ .text.FIO_ByteSetMask
+                0x00000000       0x78 ./src/Lib_MCU/src/lpc17xx_gpio.o
+ .text.FIO_ByteSetValue
+                0x00000000       0x3c ./src/Lib_MCU/src/lpc17xx_gpio.o
+ .text.FIO_ByteClearValue
+                0x00000000       0x3c ./src/Lib_MCU/src/lpc17xx_gpio.o
+ .text.FIO_ByteReadValue
+                0x00000000       0x40 ./src/Lib_MCU/src/lpc17xx_gpio.o
+ .text          0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_i2c.o
+ .data          0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_i2c.o
+ .bss           0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_i2c.o
+ .text.NVIC_EnableIRQ
+                0x00000000       0x38 ./src/Lib_MCU/src/lpc17xx_i2c.o
+ .text.NVIC_DisableIRQ
+                0x00000000       0x3c ./src/Lib_MCU/src/lpc17xx_i2c.o
+ .bss.i2cdat    0x00000000       0x18 ./src/Lib_MCU/src/lpc17xx_i2c.o
+ .bss.I2C_MasterComplete
+                0x00000000        0xc ./src/Lib_MCU/src/lpc17xx_i2c.o
+ .bss.I2C_SlaveComplete
+                0x00000000        0xc ./src/Lib_MCU/src/lpc17xx_i2c.o
+ .bss.I2C_MonitorBufferIndex
+                0x00000000        0x4 ./src/Lib_MCU/src/lpc17xx_i2c.o
+ .text.I2C_getNum
+                0x00000000       0x54 ./src/Lib_MCU/src/lpc17xx_i2c.o
+ .text.I2C_Start
+                0x00000000       0x44 ./src/Lib_MCU/src/lpc17xx_i2c.o
+ .text.I2C_Stop
+                0x00000000       0x38 ./src/Lib_MCU/src/lpc17xx_i2c.o
+ .text.I2C_SendByte
+                0x00000000       0x50 ./src/Lib_MCU/src/lpc17xx_i2c.o
+ .text.I2C_GetByte
+                0x00000000       0x5c ./src/Lib_MCU/src/lpc17xx_i2c.o
+ .rodata        0x00000000       0x24 ./src/Lib_MCU/src/lpc17xx_i2c.o
+ .text.I2C_SetClock
+                0x00000000       0xc8 ./src/Lib_MCU/src/lpc17xx_i2c.o
+ .text.I2C_Init
+                0x00000000       0xd8 ./src/Lib_MCU/src/lpc17xx_i2c.o
+ .text.I2C_DeInit
+                0x00000000       0xa4 ./src/Lib_MCU/src/lpc17xx_i2c.o
+ .text.I2C_Cmd  0x00000000       0x84 ./src/Lib_MCU/src/lpc17xx_i2c.o
+ .text.I2C_IntCmd
+                0x00000000       0xa8 ./src/Lib_MCU/src/lpc17xx_i2c.o
+ .text.I2C_MasterHandler
+                0x00000000      0x3d8 ./src/Lib_MCU/src/lpc17xx_i2c.o
+ .text.I2C_SlaveHandler
+                0x00000000      0x1d8 ./src/Lib_MCU/src/lpc17xx_i2c.o
+ .text.I2C_MasterTransferData
+                0x00000000      0x33c ./src/Lib_MCU/src/lpc17xx_i2c.o
+ .text.I2C_SlaveTransferData
+                0x00000000      0x268 ./src/Lib_MCU/src/lpc17xx_i2c.o
+ .text.I2C_SetOwnSlaveAddr
+                0x00000000      0x118 ./src/Lib_MCU/src/lpc17xx_i2c.o
+ .text.I2C_MonitorModeConfig
+                0x00000000       0x9c ./src/Lib_MCU/src/lpc17xx_i2c.o
+ .text.I2C_MonitorModeCmd
+                0x00000000       0xb0 ./src/Lib_MCU/src/lpc17xx_i2c.o
+ .text.I2C_MonitorGetDatabuffer
+                0x00000000       0x54 ./src/Lib_MCU/src/lpc17xx_i2c.o
+ .text.I2C_MonitorHandler
+                0x00000000       0x6c ./src/Lib_MCU/src/lpc17xx_i2c.o
+ .text.I2C_MasterTransferComplete
+                0x00000000       0x40 ./src/Lib_MCU/src/lpc17xx_i2c.o
+ .text.I2C_SlaveTransferComplete
+                0x00000000       0x40 ./src/Lib_MCU/src/lpc17xx_i2c.o
+ .text          0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_i2s.o
+ .data          0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_i2s.o
+ .bss           0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_i2s.o
+ .rodata        0x00000000       0x24 ./src/Lib_MCU/src/lpc17xx_i2s.o
+ .text.i2s_GetWordWidth
+                0x00000000       0x8c ./src/Lib_MCU/src/lpc17xx_i2s.o
+ .text.i2s_GetChannel
+                0x00000000       0x84 ./src/Lib_MCU/src/lpc17xx_i2s.o
+ .text.I2S_Init
+                0x00000000       0x54 ./src/Lib_MCU/src/lpc17xx_i2s.o
+ .text.I2S_Config
+                0x00000000      0x168 ./src/Lib_MCU/src/lpc17xx_i2s.o
+ .text.I2S_DeInit
+                0x00000000       0x3c ./src/Lib_MCU/src/lpc17xx_i2s.o
+ .text.I2S_GetLevel
+                0x00000000       0x6c ./src/Lib_MCU/src/lpc17xx_i2s.o
+ .text.I2S_Start
+                0x00000000       0x50 ./src/Lib_MCU/src/lpc17xx_i2s.o
+ .text.I2S_Send
+                0x00000000       0x38 ./src/Lib_MCU/src/lpc17xx_i2s.o
+ .text.I2S_Receive
+                0x00000000       0x34 ./src/Lib_MCU/src/lpc17xx_i2s.o
+ .text.I2S_Pause
+                0x00000000       0x70 ./src/Lib_MCU/src/lpc17xx_i2s.o
+ .text.I2S_Mute
+                0x00000000       0x70 ./src/Lib_MCU/src/lpc17xx_i2s.o
+ .text.I2S_Stop
+                0x00000000       0x94 ./src/Lib_MCU/src/lpc17xx_i2s.o
+ .text.I2S_FreqConfig
+                0x00000000      0x110 ./src/Lib_MCU/src/lpc17xx_i2s.o
+ .text.I2S_SetBitRate
+                0x00000000       0x7c ./src/Lib_MCU/src/lpc17xx_i2s.o
+ .text.I2S_ModeConfig
+                0x00000000      0x148 ./src/Lib_MCU/src/lpc17xx_i2s.o
+ .text.I2S_DMAConfig
+                0x00000000       0xec ./src/Lib_MCU/src/lpc17xx_i2s.o
+ .text.I2S_DMACmd
+                0x00000000      0x120 ./src/Lib_MCU/src/lpc17xx_i2s.o
+ .text.I2S_IRQConfig
+                0x00000000       0x94 ./src/Lib_MCU/src/lpc17xx_i2s.o
+ .text.I2S_IRQCmd
+                0x00000000       0x9c ./src/Lib_MCU/src/lpc17xx_i2s.o
+ .text.I2S_GetIRQStatus
+                0x00000000       0x58 ./src/Lib_MCU/src/lpc17xx_i2s.o
+ .text.I2S_GetIRQDepth
+                0x00000000       0x50 ./src/Lib_MCU/src/lpc17xx_i2s.o
+ .text          0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_libcfg_default.o
+ .data          0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_libcfg_default.o
+ .bss           0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_libcfg_default.o
+ .text          0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_mcpwm.o
+ .data          0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_mcpwm.o
+ .bss           0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_mcpwm.o
+ .text.MCPWM_Init
+                0x00000000       0x34 ./src/Lib_MCU/src/lpc17xx_mcpwm.o
+ .text.MCPWM_ConfigChannel
+                0x00000000      0x228 ./src/Lib_MCU/src/lpc17xx_mcpwm.o
+ .text.MCPWM_WriteToShadow
+                0x00000000       0x5c ./src/Lib_MCU/src/lpc17xx_mcpwm.o
+ .text.MCPWM_ConfigCapture
+                0x00000000      0x1a0 ./src/Lib_MCU/src/lpc17xx_mcpwm.o
+ .text.MCPWM_ClearCapture
+                0x00000000       0x30 ./src/Lib_MCU/src/lpc17xx_mcpwm.o
+ .text.MCPWM_GetCapture
+                0x00000000       0x40 ./src/Lib_MCU/src/lpc17xx_mcpwm.o
+ .text.MCPWM_CountConfig
+                0x00000000      0x154 ./src/Lib_MCU/src/lpc17xx_mcpwm.o
+ .text.MCPWM_Start
+                0x00000000       0x5c ./src/Lib_MCU/src/lpc17xx_mcpwm.o
+ .text.MCPWM_Stop
+                0x00000000       0x5c ./src/Lib_MCU/src/lpc17xx_mcpwm.o
+ .text.MCPWM_ACMode
+                0x00000000       0x2c ./src/Lib_MCU/src/lpc17xx_mcpwm.o
+ .text.MCPWM_DCMode
+                0x00000000       0x50 ./src/Lib_MCU/src/lpc17xx_mcpwm.o
+ .text.MCPWM_IntConfig
+                0x00000000       0x2c ./src/Lib_MCU/src/lpc17xx_mcpwm.o
+ .text.MCPWM_IntSet
+                0x00000000       0x1c ./src/Lib_MCU/src/lpc17xx_mcpwm.o
+ .text.MCPWM_IntClear
+                0x00000000       0x1c ./src/Lib_MCU/src/lpc17xx_mcpwm.o
+ .text.MCPWM_GetIntStatus
+                0x00000000       0x2c ./src/Lib_MCU/src/lpc17xx_mcpwm.o
+ .text          0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_nvic.o
+ .data          0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_nvic.o
+ .bss           0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_nvic.o
+ .text.NVIC_DeInit
+                0x00000000       0x7c ./src/Lib_MCU/src/lpc17xx_nvic.o
+ .text.NVIC_SCBDeInit
+                0x00000000       0xbc ./src/Lib_MCU/src/lpc17xx_nvic.o
+ .text.NVIC_SetVTOR
+                0x00000000       0x20 ./src/Lib_MCU/src/lpc17xx_nvic.o
+ .text          0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_pinsel.o
+ .data          0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_pinsel.o
+ .bss           0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_pinsel.o
+ .text.PINSEL_ConfigTraceFunc
+                0x00000000       0x54 ./src/Lib_MCU/src/lpc17xx_pinsel.o
+ .text.PINSEL_SetI2C0Pins
+                0x00000000       0x3c ./src/Lib_MCU/src/lpc17xx_pinsel.o
+ .text          0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_pwm.o
+ .data          0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_pwm.o
+ .bss           0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_pwm.o
+ .rodata        0x00000000       0x24 ./src/Lib_MCU/src/lpc17xx_pwm.o
+ .text.PWM_GetIntStatus
+                0x00000000       0x94 ./src/Lib_MCU/src/lpc17xx_pwm.o
+ .text.PWM_ClearIntPending
+                0x00000000       0x84 ./src/Lib_MCU/src/lpc17xx_pwm.o
+ .text.PWM_ConfigStructInit
+                0x00000000       0x68 ./src/Lib_MCU/src/lpc17xx_pwm.o
+ .text.PWM_Init
+                0x00000000      0x1b4 ./src/Lib_MCU/src/lpc17xx_pwm.o
+ .text.PWM_DeInit
+                0x00000000       0x44 ./src/Lib_MCU/src/lpc17xx_pwm.o
+ .text.PWM_Cmd  0x00000000       0x70 ./src/Lib_MCU/src/lpc17xx_pwm.o
+ .text.PWM_CounterCmd
+                0x00000000       0x70 ./src/Lib_MCU/src/lpc17xx_pwm.o
+ .text.PWM_ResetCounter
+                0x00000000       0x48 ./src/Lib_MCU/src/lpc17xx_pwm.o
+ .text.PWM_ConfigMatch
+                0x00000000      0x1fc ./src/Lib_MCU/src/lpc17xx_pwm.o
+ .text.PWM_ConfigCapture
+                0x00000000      0x1f8 ./src/Lib_MCU/src/lpc17xx_pwm.o
+ .text.PWM_GetCaptureValue
+                0x00000000       0x6c ./src/Lib_MCU/src/lpc17xx_pwm.o
+ .text.PWM_MatchUpdate
+                0x00000000      0x108 ./src/Lib_MCU/src/lpc17xx_pwm.o
+ .text.PWM_MultiMatchUpdate
+                0x00000000       0xfc ./src/Lib_MCU/src/lpc17xx_pwm.o
+ .text.PWM_ChannelConfig
+                0x00000000       0xd0 ./src/Lib_MCU/src/lpc17xx_pwm.o
+ .text.PWM_ChannelCmd
+                0x00000000       0xbc ./src/Lib_MCU/src/lpc17xx_pwm.o
+ .text          0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_qei.o
+ .data          0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_qei.o
+ .bss           0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_qei.o
+ .rodata        0x00000000       0x24 ./src/Lib_MCU/src/lpc17xx_qei.o
+ .text.QEI_Reset
+                0x00000000       0x60 ./src/Lib_MCU/src/lpc17xx_qei.o
+ .text.QEI_Init
+                0x00000000      0x15c ./src/Lib_MCU/src/lpc17xx_qei.o
+ .text.QEI_DeInit
+                0x00000000       0x3c ./src/Lib_MCU/src/lpc17xx_qei.o
+ .text.QEI_ConfigStructInit
+                0x00000000       0x3c ./src/Lib_MCU/src/lpc17xx_qei.o
+ .text.QEI_GetStatus
+                0x00000000       0x60 ./src/Lib_MCU/src/lpc17xx_qei.o
+ .text.QEI_GetPosition
+                0x00000000       0x34 ./src/Lib_MCU/src/lpc17xx_qei.o
+ .text.QEI_SetMaxPosition
+                0x00000000       0x38 ./src/Lib_MCU/src/lpc17xx_qei.o
+ .text.QEI_SetPositionComp
+                0x00000000       0x6c ./src/Lib_MCU/src/lpc17xx_qei.o
+ .text.QEI_GetIndex
+                0x00000000       0x34 ./src/Lib_MCU/src/lpc17xx_qei.o
+ .text.QEI_SetIndexComp
+                0x00000000       0x38 ./src/Lib_MCU/src/lpc17xx_qei.o
+ .text.QEI_SetTimerReload
+                0x00000000       0xb8 ./src/Lib_MCU/src/lpc17xx_qei.o
+ .text.QEI_GetTimer
+                0x00000000       0x34 ./src/Lib_MCU/src/lpc17xx_qei.o
+ .text.QEI_GetVelocity
+                0x00000000       0x34 ./src/Lib_MCU/src/lpc17xx_qei.o
+ .text.QEI_GetVelocityCap
+                0x00000000       0x34 ./src/Lib_MCU/src/lpc17xx_qei.o
+ .text.QEI_SetVelocityComp
+                0x00000000       0x38 ./src/Lib_MCU/src/lpc17xx_qei.o
+ .text.QEI_SetDigiFilter
+                0x00000000       0x38 ./src/Lib_MCU/src/lpc17xx_qei.o
+ .text.QEI_GetIntStatus
+                0x00000000       0xb4 ./src/Lib_MCU/src/lpc17xx_qei.o
+ .text.QEI_IntCmd
+                0x00000000       0xd0 ./src/Lib_MCU/src/lpc17xx_qei.o
+ .text.QEI_IntSet
+                0x00000000       0xa0 ./src/Lib_MCU/src/lpc17xx_qei.o
+ .text.QEI_IntClear
+                0x00000000       0xa0 ./src/Lib_MCU/src/lpc17xx_qei.o
+ .text.QEI_CalculateRPM
+                0x00000000       0xe4 ./src/Lib_MCU/src/lpc17xx_qei.o
+ .text          0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_rit.o
+ .data          0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_rit.o
+ .bss           0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_rit.o
+ .rodata        0x00000000       0x24 ./src/Lib_MCU/src/lpc17xx_rit.o
+ .text.RIT_Init
+                0x00000000       0x5c ./src/Lib_MCU/src/lpc17xx_rit.o
+ .text.RIT_DeInit
+                0x00000000       0x5c ./src/Lib_MCU/src/lpc17xx_rit.o
+ .text.RIT_TimerConfig
+                0x00000000       0x6c ./src/Lib_MCU/src/lpc17xx_rit.o
+ .text.RIT_Cmd  0x00000000       0x78 ./src/Lib_MCU/src/lpc17xx_rit.o
+ .text.RIT_TimerDebugCmd
+                0x00000000       0x78 ./src/Lib_MCU/src/lpc17xx_rit.o
+ .text.RIT_GetIntStatus
+                0x00000000       0x60 ./src/Lib_MCU/src/lpc17xx_rit.o
+ .text          0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_rtc.o
+ .data          0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_rtc.o
+ .bss           0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_rtc.o
+ .rodata        0x00000000       0x24 ./src/Lib_MCU/src/lpc17xx_rtc.o
+ .text.RTC_Init
+                0x00000000       0x64 ./src/Lib_MCU/src/lpc17xx_rtc.o
+ .text.RTC_DeInit
+                0x00000000       0x44 ./src/Lib_MCU/src/lpc17xx_rtc.o
+ .text.RTC_ResetClockTickCounter
+                0x00000000       0x50 ./src/Lib_MCU/src/lpc17xx_rtc.o
+ .text.RTC_Cmd  0x00000000       0x78 ./src/Lib_MCU/src/lpc17xx_rtc.o
+ .text.RTC_CntIncrIntConfig
+                0x00000000      0x218 ./src/Lib_MCU/src/lpc17xx_rtc.o
+ .text.RTC_AlarmIntConfig
+                0x00000000      0x218 ./src/Lib_MCU/src/lpc17xx_rtc.o
+ .text.RTC_SetTime
+                0x00000000      0x1fc ./src/Lib_MCU/src/lpc17xx_rtc.o
+ .text.RTC_GetTime
+                0x00000000      0x118 ./src/Lib_MCU/src/lpc17xx_rtc.o
+ .text.RTC_SetFullTime
+                0x00000000       0xc4 ./src/Lib_MCU/src/lpc17xx_rtc.o
+ .text.RTC_GetFullTime
+                0x00000000       0xb4 ./src/Lib_MCU/src/lpc17xx_rtc.o
+ .text.RTC_SetAlarmTime
+                0x00000000      0x1c0 ./src/Lib_MCU/src/lpc17xx_rtc.o
+ .text.RTC_GetAlarmTime
+                0x00000000       0xc0 ./src/Lib_MCU/src/lpc17xx_rtc.o
+ .text.RTC_SetFullAlarmTime
+                0x00000000       0xc8 ./src/Lib_MCU/src/lpc17xx_rtc.o
+ .text.RTC_GetFullAlarmTime
+                0x00000000       0xb8 ./src/Lib_MCU/src/lpc17xx_rtc.o
+ .text.RTC_GetIntPending
+                0x00000000       0x68 ./src/Lib_MCU/src/lpc17xx_rtc.o
+ .text.RTC_ClearIntPending
+                0x00000000       0x60 ./src/Lib_MCU/src/lpc17xx_rtc.o
+ .text.RTC_CalibCounterCmd
+                0x00000000       0x78 ./src/Lib_MCU/src/lpc17xx_rtc.o
+ .text.RTC_CalibConfig
+                0x00000000       0x94 ./src/Lib_MCU/src/lpc17xx_rtc.o
+ .text.RTC_WriteGPREG
+                0x00000000       0x64 ./src/Lib_MCU/src/lpc17xx_rtc.o
+ .text.RTC_ReadGPREG
+                0x00000000       0x68 ./src/Lib_MCU/src/lpc17xx_rtc.o
+ .text          0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_spi.o
+ .data          0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_spi.o
+ .bss           0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_spi.o
+ .rodata        0x00000000       0x24 ./src/Lib_MCU/src/lpc17xx_spi.o
+ .text.SPI_SetClock
+                0x00000000       0x84 ./src/Lib_MCU/src/lpc17xx_spi.o
+ .text.SPI_DeInit
+                0x00000000       0x48 ./src/Lib_MCU/src/lpc17xx_spi.o
+ .text.SPI_GetDataSize
+                0x00000000       0x40 ./src/Lib_MCU/src/lpc17xx_spi.o
+ .text.SPI_Init
+                0x00000000       0xa0 ./src/Lib_MCU/src/lpc17xx_spi.o
+ .text.SPI_ConfigStructInit
+                0x00000000       0x48 ./src/Lib_MCU/src/lpc17xx_spi.o
+ .text.SPI_SendData
+                0x00000000       0x38 ./src/Lib_MCU/src/lpc17xx_spi.o
+ .text.SPI_ReceiveData
+                0x00000000       0x38 ./src/Lib_MCU/src/lpc17xx_spi.o
+ .text.SPI_ReadWrite
+                0x00000000      0x1f4 ./src/Lib_MCU/src/lpc17xx_spi.o
+ .text.SPI_IntCmd
+                0x00000000       0x74 ./src/Lib_MCU/src/lpc17xx_spi.o
+ .text.SPI_GetIntStatus
+                0x00000000       0x3c ./src/Lib_MCU/src/lpc17xx_spi.o
+ .text.SPI_ClearIntPending
+                0x00000000       0x38 ./src/Lib_MCU/src/lpc17xx_spi.o
+ .text.SPI_GetStatus
+                0x00000000       0x38 ./src/Lib_MCU/src/lpc17xx_spi.o
+ .text.SPI_CheckStatus
+                0x00000000       0x58 ./src/Lib_MCU/src/lpc17xx_spi.o
+ .text          0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_ssp.o
+ .data          0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_ssp.o
+ .bss           0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_ssp.o
+ .text.SSP_DeInit
+                0x00000000       0x74 ./src/Lib_MCU/src/lpc17xx_ssp.o
+ .text.SSP_LoopBackCmd
+                0x00000000       0x7c ./src/Lib_MCU/src/lpc17xx_ssp.o
+ .text.SSP_SlaveOutputCmd
+                0x00000000       0x7c ./src/Lib_MCU/src/lpc17xx_ssp.o
+ .text.SSP_GetStatus
+                0x00000000       0x84 ./src/Lib_MCU/src/lpc17xx_ssp.o
+ .text.SSP_IntConfig
+                0x00000000       0x70 ./src/Lib_MCU/src/lpc17xx_ssp.o
+ .text.SSP_GetRawIntStatus
+                0x00000000       0x80 ./src/Lib_MCU/src/lpc17xx_ssp.o
+ .text.SSP_GetRawIntStatusReg
+                0x00000000       0x44 ./src/Lib_MCU/src/lpc17xx_ssp.o
+ .text.SSP_GetIntStatus
+                0x00000000       0x80 ./src/Lib_MCU/src/lpc17xx_ssp.o
+ .text.SSP_ClearIntPending
+                0x00000000       0x60 ./src/Lib_MCU/src/lpc17xx_ssp.o
+ .text.SSP_DMACmd
+                0x00000000       0xa8 ./src/Lib_MCU/src/lpc17xx_ssp.o
+ .text          0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_systick.o
+ .data          0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_systick.o
+ .bss           0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_systick.o
+ .text.SYSTICK_InternalInit
+                0x00000000       0xb0 ./src/Lib_MCU/src/lpc17xx_systick.o
+ .text.SYSTICK_ExternalInit
+                0x00000000       0xc4 ./src/Lib_MCU/src/lpc17xx_systick.o
+ .rodata        0x00000000       0x28 ./src/Lib_MCU/src/lpc17xx_systick.o
+ .text.SYSTICK_Cmd
+                0x00000000       0x68 ./src/Lib_MCU/src/lpc17xx_systick.o
+ .text.SYSTICK_IntCmd
+                0x00000000       0x68 ./src/Lib_MCU/src/lpc17xx_systick.o
+ .text.SYSTICK_GetCurrentValue
+                0x00000000       0x18 ./src/Lib_MCU/src/lpc17xx_systick.o
+ .text.SYSTICK_ClearCounterFlag
+                0x00000000       0x24 ./src/Lib_MCU/src/lpc17xx_systick.o
+ .text          0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_timer.o
+ .data          0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_timer.o
+ .bss           0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_timer.o
+ .text.getPClock
+                0x00000000       0x60 ./src/Lib_MCU/src/lpc17xx_timer.o
+ .text.converUSecToVal
+                0x00000000       0x64 ./src/Lib_MCU/src/lpc17xx_timer.o
+ .text.converPtrToTimeNum
+                0x00000000       0x74 ./src/Lib_MCU/src/lpc17xx_timer.o
+ .rodata        0x00000000       0x24 ./src/Lib_MCU/src/lpc17xx_timer.o
+ .text.TIM_GetIntStatus
+                0x00000000       0xbc ./src/Lib_MCU/src/lpc17xx_timer.o
+ .text.TIM_GetIntCaptureStatus
+                0x00000000       0xc0 ./src/Lib_MCU/src/lpc17xx_timer.o
+ .text.TIM_ClearIntPending
+                0x00000000       0xa0 ./src/Lib_MCU/src/lpc17xx_timer.o
+ .text.TIM_ClearIntCapturePending
+                0x00000000       0xa4 ./src/Lib_MCU/src/lpc17xx_timer.o
+ .text.TIM_ConfigStructInit
+                0x00000000       0x40 ./src/Lib_MCU/src/lpc17xx_timer.o
+ .text.TIM_Init
+                0x00000000      0x1d8 ./src/Lib_MCU/src/lpc17xx_timer.o
+ .text.TIM_DeInit
+                0x00000000       0xd0 ./src/Lib_MCU/src/lpc17xx_timer.o
+ .text.TIM_Cmd  0x00000000       0x7c ./src/Lib_MCU/src/lpc17xx_timer.o
+ .text.TIM_ResetCounter
+                0x00000000       0x70 ./src/Lib_MCU/src/lpc17xx_timer.o
+ .text.TIM_ConfigMatch
+                0x00000000      0x1d0 ./src/Lib_MCU/src/lpc17xx_timer.o
+ .text.TIM_UpdateMatchValue
+                0x00000000       0xa0 ./src/Lib_MCU/src/lpc17xx_timer.o
+ .text.TIM_ConfigCapture
+                0x00000000      0x110 ./src/Lib_MCU/src/lpc17xx_timer.o
+ .text.TIM_GetCaptureValue
+                0x00000000       0x8c ./src/Lib_MCU/src/lpc17xx_timer.o
+ .text.Timer0_Wait
+                0x00000000       0xa0 ./src/Lib_MCU/src/lpc17xx_timer.o
+ .text.Timer0_us_Wait
+                0x00000000       0xa0 ./src/Lib_MCU/src/lpc17xx_timer.o
+ .text          0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_uart.o
+ .data          0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_uart.o
+ .bss           0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_uart.o
+ .text.uart_set_divisors
+                0x00000000      0x314 ./src/Lib_MCU/src/lpc17xx_uart.o
+ .rodata        0x00000000       0x24 ./src/Lib_MCU/src/lpc17xx_uart.o
+ .text.UART_Init
+                0x00000000      0x368 ./src/Lib_MCU/src/lpc17xx_uart.o
+ .text.UART_DeInit
+                0x00000000       0xcc ./src/Lib_MCU/src/lpc17xx_uart.o
+ .text.UART_ConfigStructInit
+                0x00000000       0x34 ./src/Lib_MCU/src/lpc17xx_uart.o
+ .text.UART_SendByte
+                0x00000000       0x78 ./src/Lib_MCU/src/lpc17xx_uart.o
+ .text.UART_ReceiveByte
+                0x00000000       0x78 ./src/Lib_MCU/src/lpc17xx_uart.o
+ .text.UART_Send
+                0x00000000      0x10c ./src/Lib_MCU/src/lpc17xx_uart.o
+ .text.UART_Receive
+                0x00000000       0xd8 ./src/Lib_MCU/src/lpc17xx_uart.o
+ .text.UART_ForceBreak
+                0x00000000       0x88 ./src/Lib_MCU/src/lpc17xx_uart.o
+ .text.UART_IntConfig
+                0x00000000      0x1d0 ./src/Lib_MCU/src/lpc17xx_uart.o
+ .text.UART_GetLineStatus
+                0x00000000       0x7c ./src/Lib_MCU/src/lpc17xx_uart.o
+ .text.UART_GetIntId
+                0x00000000       0x68 ./src/Lib_MCU/src/lpc17xx_uart.o
+ .text.UART_CheckBusy
+                0x00000000       0x2c ./src/Lib_MCU/src/lpc17xx_uart.o
+ .text.UART_FIFOConfig
+                0x00000000      0x184 ./src/Lib_MCU/src/lpc17xx_uart.o
+ .text.UART_FIFOConfigStructInit
+                0x00000000       0x34 ./src/Lib_MCU/src/lpc17xx_uart.o
+ .text.UART_ABCmd
+                0x00000000      0x15c ./src/Lib_MCU/src/lpc17xx_uart.o
+ .text.UART_ABClearIntPending
+                0x00000000       0x88 ./src/Lib_MCU/src/lpc17xx_uart.o
+ .text.UART_TxCmd
+                0x00000000       0xe8 ./src/Lib_MCU/src/lpc17xx_uart.o
+ .text.UART_IrDAInvtInputCmd
+                0x00000000       0x84 ./src/Lib_MCU/src/lpc17xx_uart.o
+ .text.UART_IrDACmd
+                0x00000000       0x80 ./src/Lib_MCU/src/lpc17xx_uart.o
+ .text.UART_IrDAPulseDivConfig
+                0x00000000       0xac ./src/Lib_MCU/src/lpc17xx_uart.o
+ .text.UART_FullModemForcePinState
+                0x00000000       0xcc ./src/Lib_MCU/src/lpc17xx_uart.o
+ .text.UART_FullModemConfigMode
+                0x00000000       0xd8 ./src/Lib_MCU/src/lpc17xx_uart.o
+ .text.UART_FullModemGetStatus
+                0x00000000       0x38 ./src/Lib_MCU/src/lpc17xx_uart.o
+ .text.UART_RS485Config
+                0x00000000      0x1bc ./src/Lib_MCU/src/lpc17xx_uart.o
+ .text.UART_RS485ReceiverCmd
+                0x00000000       0x48 ./src/Lib_MCU/src/lpc17xx_uart.o
+ .text.UART_RS485Send
+                0x00000000       0x84 ./src/Lib_MCU/src/lpc17xx_uart.o
+ .text.UART_RS485SendSlvAddr
+                0x00000000       0x28 ./src/Lib_MCU/src/lpc17xx_uart.o
+ .text.UART_RS485SendData
+                0x00000000       0x28 ./src/Lib_MCU/src/lpc17xx_uart.o
+ .text.UART_SendString
+                0x00000000       0x2c ./src/Lib_MCU/src/lpc17xx_uart.o
+ .text          0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_wdt.o
+ .data          0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_wdt.o
+ .bss           0x00000000        0x0 ./src/Lib_MCU/src/lpc17xx_wdt.o
+ .text.WDT_SetTimeOut
+                0x00000000      0x1a4 ./src/Lib_MCU/src/lpc17xx_wdt.o
+ .rodata        0x00000000       0x24 ./src/Lib_MCU/src/lpc17xx_wdt.o
+ .text.WDT_Init
+                0x00000000       0xa0 ./src/Lib_MCU/src/lpc17xx_wdt.o
+ .text.WDT_Start
+                0x00000000       0x44 ./src/Lib_MCU/src/lpc17xx_wdt.o
+ .text.WDT_ReadTimeOutFlag
+                0x00000000       0x20 ./src/Lib_MCU/src/lpc17xx_wdt.o
+ .text.WDT_ClrTimeOutFlag
+                0x00000000       0x20 ./src/Lib_MCU/src/lpc17xx_wdt.o
+ .text.WDT_UpdateTimeOut
+                0x00000000       0x30 ./src/Lib_MCU/src/lpc17xx_wdt.o
+ .text.WDT_Feed
+                0x00000000       0x24 ./src/Lib_MCU/src/lpc17xx_wdt.o
+ .text.WDT_GetCurrentCount
+                0x00000000       0x14 ./src/Lib_MCU/src/lpc17xx_wdt.o
+ .text          0x00000000        0x0 ./src/Lib_EaBaseBoard/src/acc.o
+ .data          0x00000000        0x0 ./src/Lib_EaBaseBoard/src/acc.o
+ .bss           0x00000000        0x0 ./src/Lib_EaBaseBoard/src/acc.o
+ .text.I2CRead  0x00000000       0x5c ./src/Lib_EaBaseBoard/src/acc.o
+ .text.I2CWrite
+                0x00000000       0x5c ./src/Lib_EaBaseBoard/src/acc.o
+ .text.getStatus
+                0x00000000       0x3c ./src/Lib_EaBaseBoard/src/acc.o
+ .text.getModeControl
+                0x00000000       0x3c ./src/Lib_EaBaseBoard/src/acc.o
+ .text.setModeControl
+                0x00000000       0x30 ./src/Lib_EaBaseBoard/src/acc.o
+ .text.acc_init
+                0x00000000       0x10 ./src/Lib_EaBaseBoard/src/acc.o
+ .text.acc_read
+                0x00000000       0xbc ./src/Lib_EaBaseBoard/src/acc.o
+ .text.acc_setRange
+                0x00000000       0x44 ./src/Lib_EaBaseBoard/src/acc.o
+ .text.acc_setMode
+                0x00000000       0x3c ./src/Lib_EaBaseBoard/src/acc.o
+ .text          0x00000000        0x0 ./src/Lib_EaBaseBoard/src/eeprom.o
+ .data          0x00000000        0x0 ./src/Lib_EaBaseBoard/src/eeprom.o
+ .bss           0x00000000        0x0 ./src/Lib_EaBaseBoard/src/eeprom.o
+ .text.I2CRead  0x00000000       0x5c ./src/Lib_EaBaseBoard/src/eeprom.o
+ .text.I2CWrite
+                0x00000000       0x5c ./src/Lib_EaBaseBoard/src/eeprom.o
+ .text.eepromDelay
+                0x00000000       0x34 ./src/Lib_EaBaseBoard/src/eeprom.o
+ .text.eeprom_init
+                0x00000000        0xc ./src/Lib_EaBaseBoard/src/eeprom.o
+ .text.eeprom_read
+                0x00000000       0x9c ./src/Lib_EaBaseBoard/src/eeprom.o
+ .text.eeprom_write
+                0x00000000      0x114 ./src/Lib_EaBaseBoard/src/eeprom.o
+ .text          0x00000000        0x0 ./src/Lib_EaBaseBoard/src/flash.o
+ .data          0x00000000        0x0 ./src/Lib_EaBaseBoard/src/flash.o
+ .bss           0x00000000        0x0 ./src/Lib_EaBaseBoard/src/flash.o
+ .bss.pageSize  0x00000000        0x2 ./src/Lib_EaBaseBoard/src/flash.o
+ .bss.pageOffset
+                0x00000000        0x2 ./src/Lib_EaBaseBoard/src/flash.o
+ .bss.pageIsPow2
+                0x00000000        0x1 ./src/Lib_EaBaseBoard/src/flash.o
+ .bss.pageSizeChanged
+                0x00000000        0x1 ./src/Lib_EaBaseBoard/src/flash.o
+ .bss.flashTotalSize
+                0x00000000        0x4 ./src/Lib_EaBaseBoard/src/flash.o
+ .rodata        0x00000000        0xc ./src/Lib_EaBaseBoard/src/flash.o
+ .data.flash_devices
+                0x00000000       0x50 ./src/Lib_EaBaseBoard/src/flash.o
+ .text.SSPSend  0x00000000       0x38 ./src/Lib_EaBaseBoard/src/flash.o
+ .text.SSPReceive
+                0x00000000       0x38 ./src/Lib_EaBaseBoard/src/flash.o
+ .text.exitDeepPowerDown
+                0x00000000       0x3c ./src/Lib_EaBaseBoard/src/flash.o
+ .text.readDeviceId
+                0x00000000       0x48 ./src/Lib_EaBaseBoard/src/flash.o
+ .text.readStatus
+                0x00000000       0x54 ./src/Lib_EaBaseBoard/src/flash.o
+ .text.pollIsBusy
+                0x00000000       0x44 ./src/Lib_EaBaseBoard/src/flash.o
+ .text.setAddressBytes
+                0x00000000      0x130 ./src/Lib_EaBaseBoard/src/flash.o
+ .text.flash_init
+                0x00000000      0x1c0 ./src/Lib_EaBaseBoard/src/flash.o
+ .text.flash_write
+                0x00000000      0x148 ./src/Lib_EaBaseBoard/src/flash.o
+ .text.flash_read
+                0x00000000       0xa0 ./src/Lib_EaBaseBoard/src/flash.o
+ .text.flash_getPageSize
+                0x00000000       0x18 ./src/Lib_EaBaseBoard/src/flash.o
+ .text.flash_setToBinaryPageSize
+                0x00000000       0x6c ./src/Lib_EaBaseBoard/src/flash.o
+ .text          0x00000000        0x0 ./src/Lib_EaBaseBoard/src/font5x7.o
+ .data          0x00000000        0x0 ./src/Lib_EaBaseBoard/src/font5x7.o
+ .bss           0x00000000        0x0 ./src/Lib_EaBaseBoard/src/font5x7.o
+ .rodata.font5x7
+                0x00000000      0x300 ./src/Lib_EaBaseBoard/src/font5x7.o
+ .text          0x00000000        0x0 ./src/Lib_EaBaseBoard/src/joystick.o
+ .data          0x00000000        0x0 ./src/Lib_EaBaseBoard/src/joystick.o
+ .bss           0x00000000        0x0 ./src/Lib_EaBaseBoard/src/joystick.o
+ .text.joystick_init
+                0x00000000       0x28 ./src/Lib_EaBaseBoard/src/joystick.o
+ .text.joystick_read
+                0x00000000       0x94 ./src/Lib_EaBaseBoard/src/joystick.o
+ .text          0x00000000        0x0 ./src/Lib_EaBaseBoard/src/led7seg.o
+ .data          0x00000000        0x0 ./src/Lib_EaBaseBoard/src/led7seg.o
+ .bss           0x00000000        0x0 ./src/Lib_EaBaseBoard/src/led7seg.o
+ .text          0x00000000        0x0 ./src/Lib_EaBaseBoard/src/light.o
+ .data          0x00000000        0x0 ./src/Lib_EaBaseBoard/src/light.o
+ .bss           0x00000000        0x0 ./src/Lib_EaBaseBoard/src/light.o
+ .data.range    0x00000000        0x4 ./src/Lib_EaBaseBoard/src/light.o
+ .data.width    0x00000000        0x4 ./src/Lib_EaBaseBoard/src/light.o
+ .text.I2CRead  0x00000000       0x5c ./src/Lib_EaBaseBoard/src/light.o
+ .text.I2CWrite
+                0x00000000       0x5c ./src/Lib_EaBaseBoard/src/light.o
+ .text.readCommandReg
+                0x00000000       0x3c ./src/Lib_EaBaseBoard/src/light.o
+ .text.readControlReg
+                0x00000000       0x3c ./src/Lib_EaBaseBoard/src/light.o
+ .text.light_init
+                0x00000000        0xc ./src/Lib_EaBaseBoard/src/light.o
+ .text.light_enable
+                0x00000000       0x48 ./src/Lib_EaBaseBoard/src/light.o
+ .text.light_read
+                0x00000000       0x94 ./src/Lib_EaBaseBoard/src/light.o
+ .text.light_setMode
+                0x00000000       0x50 ./src/Lib_EaBaseBoard/src/light.o
+ .text.light_setWidth
+                0x00000000       0xa4 ./src/Lib_EaBaseBoard/src/light.o
+ .text.light_setRange
+                0x00000000       0xac ./src/Lib_EaBaseBoard/src/light.o
+ .text.light_setHiThreshold
+                0x00000000       0x58 ./src/Lib_EaBaseBoard/src/light.o
+ .text.light_setLoThreshold
+                0x00000000       0x58 ./src/Lib_EaBaseBoard/src/light.o
+ .text.light_setIrqInCycles
+                0x00000000       0x48 ./src/Lib_EaBaseBoard/src/light.o
+ .text.light_getIrqStatus
+                0x00000000       0x28 ./src/Lib_EaBaseBoard/src/light.o
+ .text.light_clearIrqStatus
+                0x00000000       0x3c ./src/Lib_EaBaseBoard/src/light.o
+ .text.light_shutdown
+                0x00000000       0x60 ./src/Lib_EaBaseBoard/src/light.o
+ .text          0x00000000        0x0 ./src/Lib_EaBaseBoard/src/oled.o
+ .data          0x00000000        0x0 ./src/Lib_EaBaseBoard/src/oled.o
+ .bss           0x00000000        0x0 ./src/Lib_EaBaseBoard/src/oled.o
+ .bss.shadowFB  0x00000000      0x300 ./src/Lib_EaBaseBoard/src/oled.o
+ .rodata.font_mask
+                0x00000000        0x8 ./src/Lib_EaBaseBoard/src/oled.o
+ .text.writeCommand
+                0x00000000       0x60 ./src/Lib_EaBaseBoard/src/oled.o
+ .text.writeData
+                0x00000000       0x60 ./src/Lib_EaBaseBoard/src/oled.o
+ .text.writeDataLen
+                0x00000000       0x8c ./src/Lib_EaBaseBoard/src/oled.o
+ .text.runInitSequence
+                0x00000000      0x118 ./src/Lib_EaBaseBoard/src/oled.o
+ .text.hLine    0x00000000       0x4c ./src/Lib_EaBaseBoard/src/oled.o
+ .text.vLine    0x00000000       0x4c ./src/Lib_EaBaseBoard/src/oled.o
+ .text.oled_init
+                0x00000000       0x9c ./src/Lib_EaBaseBoard/src/oled.o
+ .text.oled_putPixel
+                0x00000000      0x18c ./src/Lib_EaBaseBoard/src/oled.o
+ .text.oled_line
+                0x00000000      0x1d4 ./src/Lib_EaBaseBoard/src/oled.o
+ .text.oled_circle
+                0x00000000      0x32c ./src/Lib_EaBaseBoard/src/oled.o
+ .text.oled_rect
+                0x00000000       0x48 ./src/Lib_EaBaseBoard/src/oled.o
+ .text.oled_fillRect
+                0x00000000       0x90 ./src/Lib_EaBaseBoard/src/oled.o
+ .text.oled_clearScreen
+                0x00000000       0x74 ./src/Lib_EaBaseBoard/src/oled.o
+ .text.oled_putChar
+                0x00000000       0xf0 ./src/Lib_EaBaseBoard/src/oled.o
+ .text.oled_putString
+                0x00000000       0x54 ./src/Lib_EaBaseBoard/src/oled.o
+ .text          0x00000000        0x0 ./src/Lib_EaBaseBoard/src/pca9532.o
+ .data          0x00000000        0x0 ./src/Lib_EaBaseBoard/src/pca9532.o
+ .bss           0x00000000        0x0 ./src/Lib_EaBaseBoard/src/pca9532.o
+ .bss.blink0Shadow
+                0x00000000        0x2 ./src/Lib_EaBaseBoard/src/pca9532.o
+ .bss.blink1Shadow
+                0x00000000        0x2 ./src/Lib_EaBaseBoard/src/pca9532.o
+ .bss.ledStateShadow
+                0x00000000        0x2 ./src/Lib_EaBaseBoard/src/pca9532.o
+ .text.I2CRead  0x00000000       0x5c ./src/Lib_EaBaseBoard/src/pca9532.o
+ .text.I2CWrite
+                0x00000000       0x5c ./src/Lib_EaBaseBoard/src/pca9532.o
+ .text.setLsStates
+                0x00000000       0xcc ./src/Lib_EaBaseBoard/src/pca9532.o
+ .text.setLeds  0x00000000       0xa0 ./src/Lib_EaBaseBoard/src/pca9532.o
+ .text.pca9532_init
+                0x00000000        0xc ./src/Lib_EaBaseBoard/src/pca9532.o
+ .text.pca9532_getLedState
+                0x00000000       0xc0 ./src/Lib_EaBaseBoard/src/pca9532.o
+ .text.pca9532_setLeds
+                0x00000000       0xa8 ./src/Lib_EaBaseBoard/src/pca9532.o
+ .text.pca9532_setBlink0Period
+                0x00000000       0x30 ./src/Lib_EaBaseBoard/src/pca9532.o
+ .text.pca9532_setBlink0Duty
+                0x00000000       0x58 ./src/Lib_EaBaseBoard/src/pca9532.o
+ .text.pca9532_setBlink0Leds
+                0x00000000       0x34 ./src/Lib_EaBaseBoard/src/pca9532.o
+ .text.pca9532_setBlink1Period
+                0x00000000       0x30 ./src/Lib_EaBaseBoard/src/pca9532.o
+ .text.pca9532_setBlink1Duty
+                0x00000000       0x58 ./src/Lib_EaBaseBoard/src/pca9532.o
+ .text.pca9532_setBlink1Leds
+                0x00000000       0x34 ./src/Lib_EaBaseBoard/src/pca9532.o
+ .text          0x00000000        0x0 ./src/Lib_EaBaseBoard/src/rgb.o
+ .data          0x00000000        0x0 ./src/Lib_EaBaseBoard/src/rgb.o
+ .bss           0x00000000        0x0 ./src/Lib_EaBaseBoard/src/rgb.o
+ .text.rgb_init
+                0x00000000       0x38 ./src/Lib_EaBaseBoard/src/rgb.o
+ .text.rgb_setLeds
+                0x00000000       0x80 ./src/Lib_EaBaseBoard/src/rgb.o
+ .text          0x00000000        0x0 ./src/Lib_EaBaseBoard/src/rotary.o
+ .data          0x00000000        0x0 ./src/Lib_EaBaseBoard/src/rotary.o
+ .bss           0x00000000        0x0 ./src/Lib_EaBaseBoard/src/rotary.o
+ .text.rotary_init
+                0x00000000       0x18 ./src/Lib_EaBaseBoard/src/rotary.o
+ .text.rotary_read
+                0x00000000       0xf4 ./src/Lib_EaBaseBoard/src/rotary.o
+ .text          0x00000000        0x0 ./src/Lib_EaBaseBoard/src/temp.o
+ .data          0x00000000        0x0 ./src/Lib_EaBaseBoard/src/temp.o
+ .bss           0x00000000        0x0 ./src/Lib_EaBaseBoard/src/temp.o
+ .bss.getTicks  0x00000000        0x4 ./src/Lib_EaBaseBoard/src/temp.o
+ .text.temp_init
+                0x00000000       0x2c ./src/Lib_EaBaseBoard/src/temp.o
+ .text.temp_read
+                0x00000000      0x108 ./src/Lib_EaBaseBoard/src/temp.o
+ .text          0x00000000        0x0 ./src/Lib_EaBaseBoard/src/uart2.o
+ .data          0x00000000        0x0 ./src/Lib_EaBaseBoard/src/uart2.o
+ .bss           0x00000000        0x0 ./src/Lib_EaBaseBoard/src/uart2.o
+ .bss.channel   0x00000000        0x1 ./src/Lib_EaBaseBoard/src/uart2.o
+ .text.I2CRead  0x00000000       0x5c ./src/Lib_EaBaseBoard/src/uart2.o
+ .text.I2CWrite
+                0x00000000       0x5c ./src/Lib_EaBaseBoard/src/uart2.o
+ .text.writeReg
+                0x00000000       0x58 ./src/Lib_EaBaseBoard/src/uart2.o
+ .text.readReg  0x00000000       0x64 ./src/Lib_EaBaseBoard/src/uart2.o
+ .text.uart2_init
+                0x00000000       0x68 ./src/Lib_EaBaseBoard/src/uart2.o
+ .text.uart2_setBaudRate
+                0x00000000       0x74 ./src/Lib_EaBaseBoard/src/uart2.o
+ .text.uart2_send
+                0x00000000       0x54 ./src/Lib_EaBaseBoard/src/uart2.o
+ .text.uart2_sendString
+                0x00000000       0x50 ./src/Lib_EaBaseBoard/src/uart2.o
+ .text.uart2_receive
+                0x00000000       0xb4 ./src/Lib_EaBaseBoard/src/uart2.o
+ .text.uart2_getModemStatus
+                0x00000000       0x14 ./src/Lib_EaBaseBoard/src/uart2.o
+ .text.uart2_setModemStatus
+                0x00000000       0x20 ./src/Lib_EaBaseBoard/src/uart2.o
+ .text          0x00000000        0x0 /home/fanaur/workspacePruebas/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .data          0x00000000        0x0 /home/fanaur/workspacePruebas/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .bss           0x00000000        0x0 /home/fanaur/workspacePruebas/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .text.SystemCoreClockUpdate
+                0x00000000       0xf0 /home/fanaur/workspacePruebas/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .text          0x00000000        0x0 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(__weak__main.o)
+ .data          0x00000000        0x0 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(__weak__main.o)
+ .bss           0x00000000        0x0 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(__weak__main.o)
+ .text          0x00000000        0x0 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(strlen.o)
+ .data          0x00000000        0x0 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(strlen.o)
+ .bss           0x00000000        0x0 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(strlen.o)
+ .text.strlen   0x00000000       0x4e /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(strlen.o)
+ .text          0x00000000        0x0 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(memcpy.o)
+ .data          0x00000000        0x0 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(memcpy.o)
+ .bss           0x00000000        0x0 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(memcpy.o)
+ .text.memcpy   0x00000000        0x4 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(memcpy.o)
+ .text          0x00000000        0x0 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(memset.o)
+ .data          0x00000000        0x0 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(memset.o)
+ .bss           0x00000000        0x0 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(memset.o)
+ .text.memset   0x00000000        0x4 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(memset.o)
+ .text          0x00000000        0x0 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(division.o)
+ .data          0x00000000        0x0 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(division.o)
+ .bss           0x00000000        0x0 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_idiv
+                0x00000000       0x10 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_idivmod
+                0x00000000       0x16 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_uidiv
+                0x00000000       0x10 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_uidivmod
+                0x00000000       0x16 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_ldivmod
+                0x00000000       0x26 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_uldivmod
+                0x00000000      0x174 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_idiv0
+                0x00000000        0x2 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_ldiv0
+                0x00000000        0x2 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(division.o)
+ .text          0x00000000        0x0 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(float.o)
+ .data          0x00000000        0x0 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(float.o)
+ .bss           0x00000000        0x0 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(float.o)
+ .text.__aeabi_fmul
+                0x00000000       0xbc /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(float.o)
+ .text.__aeabi_fdiv
+                0x00000000       0xe8 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(float.o)
+ .text.__aeabi_fsub
+                0x00000000       0xe0 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(float.o)
+ .text.__aeabi_frsub
+                0x00000000        0xc /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(float.o)
+ .text.__aeabi_fadd
+                0x00000000       0xa4 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(float.o)
+ .text.__aeabi_fneg
+                0x00000000        0x6 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(float.o)
+ .text.__aeabi_f2iz
+                0x00000000       0x34 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(float.o)
+ .text.__aeabi_f2uiz
+                0x00000000       0x26 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(float.o)
+ .text.__aeabi_f2lz
+                0x00000000       0x5a /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(float.o)
+ .text.__aeabi_f2ulz
+                0x00000000       0x3c /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(float.o)
+ .text.__bhs_ui2f
+                0x00000000       0x26 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(float.o)
+ .text.__bhs_ul2f
+                0x00000000       0x4a /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(float.o)
+ .text.__aeabi_i2f
+                0x00000000       0x10 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(float.o)
+ .text.__aeabi_ui2f
+                0x00000000        0x8 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(float.o)
+ .text.__aeabi_l2f
+                0x00000000       0x16 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(float.o)
+ .text.__aeabi_ul2f
+                0x00000000        0x8 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(float.o)
+ .text.__aeabi_f2d
+                0x00000000       0x38 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(float.o)
+ .text.__aeabi_fcmpeq
+                0x00000000       0x1e /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(float.o)
+ .text.__aeabi_fcmplt
+                0x00000000       0x3a /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(float.o)
+ .text.__aeabi_fcmpgt
+                0x00000000       0x3a /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(float.o)
+ .text.__aeabi_fcmple
+                0x00000000       0x40 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(float.o)
+ .text.__aeabi_fcmpge
+                0x00000000       0x40 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(float.o)
+ .text.__aeabi_fcmpun
+                0x00000000       0x1a /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(float.o)
+ .text.__aeabi_cfcmple
+                0x00000000       0x24 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(float.o)
+ .text.__aeabi_cfrcmple
+                0x00000000        0xa /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(float.o)
+ .text          0x00000000        0x0 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(memcpy.o)
+ .data          0x00000000        0x0 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(memcpy.o)
+ .bss           0x00000000        0x0 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(memcpy.o)
+ .text.__aeabi_memcpy
+                0x00000000       0x26 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(memcpy.o)
+ .text.__aeabi_memmove
+                0x00000000       0x1c /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(memcpy.o)
+ .text.__aeabi_memset_lowlevel
+                0x00000000       0x24 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(memcpy.o)
+ .text.__aeabi_memclr
+                0x00000000        0x8 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(memcpy.o)
+ .text.__aeabi_memset
+                0x00000000        0xa /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(memcpy.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+MFlash512        0x00000000         0x00080000         xr
+RamLoc32         0x10000000         0x00008000         xrw
+RamAHB32         0x2007c000         0x00008000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ./src/cr_startup_lpc176x.o
+LOAD ./src/main.o
+LOAD ./src/Lib_MCU/src/lpc17xx_adc.o
+LOAD ./src/Lib_MCU/src/lpc17xx_can.o
+LOAD ./src/Lib_MCU/src/lpc17xx_clkpwr.o
+LOAD ./src/Lib_MCU/src/lpc17xx_dac.o
+LOAD ./src/Lib_MCU/src/lpc17xx_emac.o
+LOAD ./src/Lib_MCU/src/lpc17xx_exti.o
+LOAD ./src/Lib_MCU/src/lpc17xx_gpdma.o
+LOAD ./src/Lib_MCU/src/lpc17xx_gpio.o
+LOAD ./src/Lib_MCU/src/lpc17xx_i2c.o
+LOAD ./src/Lib_MCU/src/lpc17xx_i2s.o
+LOAD ./src/Lib_MCU/src/lpc17xx_libcfg_default.o
+LOAD ./src/Lib_MCU/src/lpc17xx_mcpwm.o
+LOAD ./src/Lib_MCU/src/lpc17xx_nvic.o
+LOAD ./src/Lib_MCU/src/lpc17xx_pinsel.o
+LOAD ./src/Lib_MCU/src/lpc17xx_pwm.o
+LOAD ./src/Lib_MCU/src/lpc17xx_qei.o
+LOAD ./src/Lib_MCU/src/lpc17xx_rit.o
+LOAD ./src/Lib_MCU/src/lpc17xx_rtc.o
+LOAD ./src/Lib_MCU/src/lpc17xx_spi.o
+LOAD ./src/Lib_MCU/src/lpc17xx_ssp.o
+LOAD ./src/Lib_MCU/src/lpc17xx_systick.o
+LOAD ./src/Lib_MCU/src/lpc17xx_timer.o
+LOAD ./src/Lib_MCU/src/lpc17xx_uart.o
+LOAD ./src/Lib_MCU/src/lpc17xx_wdt.o
+LOAD ./src/Lib_EaBaseBoard/src/acc.o
+LOAD ./src/Lib_EaBaseBoard/src/eeprom.o
+LOAD ./src/Lib_EaBaseBoard/src/flash.o
+LOAD ./src/Lib_EaBaseBoard/src/font5x7.o
+LOAD ./src/Lib_EaBaseBoard/src/joystick.o
+LOAD ./src/Lib_EaBaseBoard/src/led7seg.o
+LOAD ./src/Lib_EaBaseBoard/src/light.o
+LOAD ./src/Lib_EaBaseBoard/src/oled.o
+LOAD ./src/Lib_EaBaseBoard/src/pca9532.o
+LOAD ./src/Lib_EaBaseBoard/src/rgb.o
+LOAD ./src/Lib_EaBaseBoard/src/rotary.o
+LOAD ./src/Lib_EaBaseBoard/src/temp.o
+LOAD ./src/Lib_EaBaseBoard/src/uart2.o
+LOAD /home/fanaur/workspacePruebas/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a
+START GROUP
+LOAD /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a
+LOAD /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a
+END GROUP
+                0x00080000                __top_MFlash512 = 0x80000
+                0x10008000                __top_RamLoc32 = 0x10008000
+                0x20084000                __top_RamAHB32 = 0x20084000
+
+.text           0x00000000     0x1248
+ FILL mask 0xff
+ *(.isr_vector)
+ .isr_vector    0x00000000       0xcc ./src/cr_startup_lpc176x.o
+                0x00000000                g_pfnVectors
+                0x000000cc                . = ALIGN (0x4)
+                0x000000cc                __section_table_start = .
+                0x000000cc                __data_section_table = .
+                0x000000cc        0x4 LONG 0x1248 LOADADDR (.data)
+                0x000000d0        0x4 LONG 0x10000000 ADDR (.data)
+                0x000000d4        0x4 LONG 0x58 SIZEOF (.data)
+                0x000000d8        0x4 LONG 0x1248 LOADADDR (.data_RAM2)
+                0x000000dc        0x4 LONG 0x2007c000 ADDR (.data_RAM2)
+                0x000000e0        0x4 LONG 0x0 SIZEOF (.data_RAM2)
+                0x000000e4                __data_section_table_end = .
+                0x000000e4                __bss_section_table = .
+                0x000000e4        0x4 LONG 0x10000058 ADDR (.bss)
+                0x000000e8        0x4 LONG 0x8 SIZEOF (.bss)
+                0x000000ec        0x4 LONG 0x2007c000 ADDR (.bss_RAM2)
+                0x000000f0        0x4 LONG 0x0 SIZEOF (.bss_RAM2)
+                0x000000f4                __bss_section_table_end = .
+                0x000000f4                __section_table_end = .
+ *(.after_vectors*)
+ .after_vectors
+                0x000000f4       0x78 ./src/cr_startup_lpc176x.o
+                0x000000f4                NMI_Handler
+                0x000000f6                HardFault_Handler
+                0x000000f8                MemManage_Handler
+                0x000000fa                BusFault_Handler
+                0x000000fc                UsageFault_Handler
+                0x000000fe                SVC_Handler
+                0x00000100                DebugMon_Handler
+                0x00000102                PendSV_Handler
+                0x00000106                data_init
+                0x00000118                bss_init
+                0x00000128                ResetISR
+                0x00000168                TIMER2_IRQHandler
+                0x00000168                RIT_IRQHandler
+                0x00000168                I2C0_IRQHandler
+                0x00000168                USBActivity_IRQHandler
+                0x00000168                PWM1_IRQHandler
+                0x00000168                I2C1_IRQHandler
+                0x00000168                EINT2_IRQHandler
+                0x00000168                UART1_IRQHandler
+                0x00000168                EINT3_IRQHandler
+                0x00000168                CANActivity_IRQHandler
+                0x00000168                TIMER3_IRQHandler
+                0x00000168                UART0_IRQHandler
+                0x00000168                IntDefaultHandler
+                0x00000168                PLL0_IRQHandler
+                0x00000168                CAN_IRQHandler
+                0x00000168                PLL1_IRQHandler
+                0x00000168                SSP0_IRQHandler
+                0x00000168                I2S_IRQHandler
+                0x00000168                I2C2_IRQHandler
+                0x00000168                RTC_IRQHandler
+                0x00000168                TIMER0_IRQHandler
+                0x00000168                SPI_IRQHandler
+                0x00000168                EINT1_IRQHandler
+                0x00000168                TIMER1_IRQHandler
+                0x00000168                UART2_IRQHandler
+                0x00000168                ADC_IRQHandler
+                0x00000168                SSP1_IRQHandler
+                0x00000168                USB_IRQHandler
+                0x00000168                BOD_IRQHandler
+                0x00000168                WDT_IRQHandler
+                0x00000168                QEI_IRQHandler
+                0x00000168                EINT0_IRQHandler
+                0x00000168                DMA_IRQHandler
+                0x00000168                UART3_IRQHandler
+                0x00000168                MCPWM_IRQHandler
+                0x00000168                ENET_IRQHandler
+                0x000002fc                . = 0x2fc
+ *fill*         0x0000016c      0x190 ff
+                0x000002fc                PROVIDE (__CRP_WORD_START__, .)
+ *(.crp)
+ .crp           0x000002fc        0x4 ./src/main.o
+                0x000002fc                CRP_WORD
+                0x00000300                PROVIDE (__CRP_WORD_END__, .)
+                0x00000001                ASSERT (! ((__CRP_WORD_START__ == __CRP_WORD_END__)), Linker CRP Enabled, but no CRP_WORD provided within application)
+ *(.text*)
+ .text.NVIC_SetPriority
+                0x00000300       0x5c ./src/main.o
+ .text.SysTick_Config
+                0x0000035c       0x64 ./src/main.o
+ .text.init_ssp
+                0x000003c0       0x98 ./src/main.o
+ .text.SysTick_Handler
+                0x00000458       0x88 ./src/main.o
+                0x00000458                SysTick_Handler
+ .text.main     0x000004e0       0x48 ./src/main.o
+                0x000004e0                main
+ .text.CLKPWR_GetPCLKSEL
+                0x00000528       0x54 ./src/Lib_MCU/src/lpc17xx_clkpwr.o
+                0x00000528                CLKPWR_GetPCLKSEL
+ .text.CLKPWR_GetPCLK
+                0x0000057c       0x70 ./src/Lib_MCU/src/lpc17xx_clkpwr.o
+                0x0000057c                CLKPWR_GetPCLK
+ .text.CLKPWR_ConfigPPWR
+                0x000005ec       0x80 ./src/Lib_MCU/src/lpc17xx_clkpwr.o
+                0x000005ec                CLKPWR_ConfigPPWR
+ .text.GPIO_GetPointer
+                0x0000066c       0x7c ./src/Lib_MCU/src/lpc17xx_gpio.o
+ .text.GPIO_SetDir
+                0x000006e8       0x50 ./src/Lib_MCU/src/lpc17xx_gpio.o
+                0x000006e8                GPIO_SetDir
+ .text.GPIO_SetValue
+                0x00000738       0x2c ./src/Lib_MCU/src/lpc17xx_gpio.o
+                0x00000738                GPIO_SetValue
+ .text.GPIO_ClearValue
+                0x00000764       0x2c ./src/Lib_MCU/src/lpc17xx_gpio.o
+                0x00000764                GPIO_ClearValue
+ .text.check_failed
+                0x00000790        0xc ./src/Lib_MCU/src/lpc17xx_libcfg_default.o
+                0x00000790                check_failed
+ .text.set_PinFunc
+                0x0000079c       0xa0 ./src/Lib_MCU/src/lpc17xx_pinsel.o
+ .text.set_ResistorMode
+                0x0000083c       0xa0 ./src/Lib_MCU/src/lpc17xx_pinsel.o
+ .text.set_OpenDrainMode
+                0x000008dc       0x80 ./src/Lib_MCU/src/lpc17xx_pinsel.o
+ .text.PINSEL_ConfigPin
+                0x0000095c       0x54 ./src/Lib_MCU/src/lpc17xx_pinsel.o
+                0x0000095c                PINSEL_ConfigPin
+ .text.setSSPclock
+                0x000009b0       0xf8 ./src/Lib_MCU/src/lpc17xx_ssp.o
+ .text.SSP_Init
+                0x00000aa8       0xbc ./src/Lib_MCU/src/lpc17xx_ssp.o
+                0x00000aa8                SSP_Init
+ .text.SSP_GetDataSize
+                0x00000b64       0x4c ./src/Lib_MCU/src/lpc17xx_ssp.o
+                0x00000b64                SSP_GetDataSize
+ .text.SSP_ConfigStructInit
+                0x00000bb0       0x48 ./src/Lib_MCU/src/lpc17xx_ssp.o
+                0x00000bb0                SSP_ConfigStructInit
+ .text.SSP_Cmd  0x00000bf8       0x7c ./src/Lib_MCU/src/lpc17xx_ssp.o
+                0x00000bf8                SSP_Cmd
+ .text.SSP_SendData
+                0x00000c74       0x48 ./src/Lib_MCU/src/lpc17xx_ssp.o
+                0x00000c74                SSP_SendData
+ .text.SSP_ReceiveData
+                0x00000cbc       0x44 ./src/Lib_MCU/src/lpc17xx_ssp.o
+                0x00000cbc                SSP_ReceiveData
+ .text.SSP_ReadWrite
+                0x00000d00      0x390 ./src/Lib_MCU/src/lpc17xx_ssp.o
+                0x00000d00                SSP_ReadWrite
+ .text.led7seg_init
+                0x00001090       0x24 ./src/Lib_EaBaseBoard/src/led7seg.o
+                0x00001090                led7seg_init
+ .text.led7seg_setChar
+                0x000010b4       0x88 ./src/Lib_EaBaseBoard/src/led7seg.o
+                0x000010b4                led7seg_setChar
+ .text.SystemInit
+                0x0000113c       0xe4 /home/fanaur/workspacePruebas/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+                0x0000113c                SystemInit
+ .text.__weak_main
+                0x00001220        0x4 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(__weak__main.o)
+                0x00001220                __main
+                0x00001220                __weak_main
+ *(.rodata .rodata.*)
+ .rodata        0x00001224       0x24 ./src/Lib_MCU/src/lpc17xx_ssp.o
+                0x00001248                . = ALIGN (0x4)
+
+.glue_7         0x00001248        0x0
+ .glue_7        0x00000000        0x0 linker stubs
+
+.glue_7t        0x00001248        0x0
+ .glue_7t       0x00000000        0x0 linker stubs
+
+.vfp11_veneer   0x00001248        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x00001248        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x00001248                __exidx_start = .
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x00001248                __exidx_end = .
+                0x00001248                _etext = .
+
+.data_RAM2      0x2007c000        0x0 load address 0x00001248
+ FILL mask 0xff
+ *(.data.$RAM2*)
+ *(.data.$RamAHB32*)
+                0x2007c000                . = ALIGN (0x4)
+
+.uninit_RESERVED
+ *(.bss.$RESERVED*)
+
+.data           0x10000000       0x58 load address 0x00001248
+ FILL mask 0xff
+                0x10000000                _data = .
+ *(vtable)
+ *(.data*)
+ .data.ch7seg   0x10000000        0x1 ./src/main.o
+ *fill*         0x10000001        0x3 00
+ .data.chars    0x10000004       0x50 ./src/Lib_EaBaseBoard/src/led7seg.o
+ .data.SystemCoreClock
+                0x10000054        0x4 /home/fanaur/workspacePruebas/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+                0x10000054                SystemCoreClock
+                0x10000058                . = ALIGN (0x4)
+                0x10000058                _edata = .
+
+.bss_RAM2       0x2007c000        0x0
+ *(.bss.$RAM2*)
+ *(.bss.$RamAHB32*)
+                0x2007c000                . = ALIGN (0x4)
+
+.bss            0x10000058        0x8
+                0x10000058                _bss = .
+ *(.bss*)
+ .bss.contador  0x10000058        0x2 ./src/main.o
+                0x10000058                contador
+ *fill*         0x1000005a        0x2 00
+ .bss.i.2244    0x1000005c        0x4 ./src/main.o
+ *(COMMON)
+                0x10000060                . = ALIGN (0x4)
+                0x10000060                _ebss = .
+                0x10000060                PROVIDE (end, .)
+                0x10000060                PROVIDE (_pvHeapStart, .)
+                0x10008000                PROVIDE (_vStackTop, (__top_RamLoc32 - 0x0))
+OUTPUT(display7Seg.axf elf32-littlearm)
+
+.debug_abbrev   0x00000000     0x3615
+ .debug_abbrev  0x00000000      0x10f ./src/cr_startup_lpc176x.o
+ .debug_abbrev  0x0000010f      0x1c6 ./src/main.o
+ .debug_abbrev  0x000002d5      0x13f ./src/Lib_MCU/src/lpc17xx_adc.o
+ .debug_abbrev  0x00000414      0x1ef ./src/Lib_MCU/src/lpc17xx_can.o
+ .debug_abbrev  0x00000603      0x197 ./src/Lib_MCU/src/lpc17xx_clkpwr.o
+ .debug_abbrev  0x0000079a       0xec ./src/Lib_MCU/src/lpc17xx_dac.o
+ .debug_abbrev  0x00000886      0x1e6 ./src/Lib_MCU/src/lpc17xx_emac.o
+ .debug_abbrev  0x00000a6c       0xfe ./src/Lib_MCU/src/lpc17xx_exti.o
+ .debug_abbrev  0x00000b6a      0x1f0 ./src/Lib_MCU/src/lpc17xx_gpdma.o
+ .debug_abbrev  0x00000d5a      0x1cb ./src/Lib_MCU/src/lpc17xx_gpio.o
+ .debug_abbrev  0x00000f25      0x1ff ./src/Lib_MCU/src/lpc17xx_i2c.o
+ .debug_abbrev  0x00001124      0x176 ./src/Lib_MCU/src/lpc17xx_i2s.o
+ .debug_abbrev  0x0000129a       0x6a ./src/Lib_MCU/src/lpc17xx_libcfg_default.o
+ .debug_abbrev  0x00001304      0x154 ./src/Lib_MCU/src/lpc17xx_mcpwm.o
+ .debug_abbrev  0x00001458      0x10d ./src/Lib_MCU/src/lpc17xx_nvic.o
+ .debug_abbrev  0x00001565      0x11f ./src/Lib_MCU/src/lpc17xx_pinsel.o
+ .debug_abbrev  0x00001684      0x1a7 ./src/Lib_MCU/src/lpc17xx_pwm.o
+ .debug_abbrev  0x0000182b      0x1ad ./src/Lib_MCU/src/lpc17xx_qei.o
+ .debug_abbrev  0x000019d8      0x104 ./src/Lib_MCU/src/lpc17xx_rit.o
+ .debug_abbrev  0x00001adc      0x16b ./src/Lib_MCU/src/lpc17xx_rtc.o
+ .debug_abbrev  0x00001c47      0x189 ./src/Lib_MCU/src/lpc17xx_spi.o
+ .debug_abbrev  0x00001dd0      0x19d ./src/Lib_MCU/src/lpc17xx_ssp.o
+ .debug_abbrev  0x00001f6d      0x11a ./src/Lib_MCU/src/lpc17xx_systick.o
+ .debug_abbrev  0x00002087      0x1b6 ./src/Lib_MCU/src/lpc17xx_timer.o
+ .debug_abbrev  0x0000223d      0x1e6 ./src/Lib_MCU/src/lpc17xx_uart.o
+ .debug_abbrev  0x00002423      0x15b ./src/Lib_MCU/src/lpc17xx_wdt.o
+ .debug_abbrev  0x0000257e      0x15c ./src/Lib_EaBaseBoard/src/acc.o
+ .debug_abbrev  0x000026da      0x15e ./src/Lib_EaBaseBoard/src/eeprom.o
+ .debug_abbrev  0x00002838      0x20a ./src/Lib_EaBaseBoard/src/flash.o
+ .debug_abbrev  0x00002a42       0x4b ./src/Lib_EaBaseBoard/src/font5x7.o
+ .debug_abbrev  0x00002a8d       0x90 ./src/Lib_EaBaseBoard/src/joystick.o
+ .debug_abbrev  0x00002b1d      0x129 ./src/Lib_EaBaseBoard/src/led7seg.o
+ .debug_abbrev  0x00002c46      0x1bd ./src/Lib_EaBaseBoard/src/light.o
+ .debug_abbrev  0x00002e03      0x1db ./src/Lib_EaBaseBoard/src/oled.o
+ .debug_abbrev  0x00002fde      0x1aa ./src/Lib_EaBaseBoard/src/pca9532.o
+ .debug_abbrev  0x00003188       0x8e ./src/Lib_EaBaseBoard/src/rgb.o
+ .debug_abbrev  0x00003216       0x9f ./src/Lib_EaBaseBoard/src/rotary.o
+ .debug_abbrev  0x000032b5       0xc2 ./src/Lib_EaBaseBoard/src/temp.o
+ .debug_abbrev  0x00003377      0x1bb ./src/Lib_EaBaseBoard/src/uart2.o
+ .debug_abbrev  0x00003532       0xe3 /home/fanaur/workspacePruebas/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+
+.debug_info     0x00000000    0x10c18
+ .debug_info    0x00000000      0x2e3 ./src/cr_startup_lpc176x.o
+ .debug_info    0x000002e3      0x7f5 ./src/main.o
+ .debug_info    0x00000ad8      0x626 ./src/Lib_MCU/src/lpc17xx_adc.o
+ .debug_info    0x000010fe     0x1218 ./src/Lib_MCU/src/lpc17xx_can.o
+ .debug_info    0x00002316      0x6d7 ./src/Lib_MCU/src/lpc17xx_clkpwr.o
+ .debug_info    0x000029ed      0x290 ./src/Lib_MCU/src/lpc17xx_dac.o
+ .debug_info    0x00002c7d      0xd83 ./src/Lib_MCU/src/lpc17xx_emac.o
+ .debug_info    0x00003a00      0x4e1 ./src/Lib_MCU/src/lpc17xx_exti.o
+ .debug_info    0x00003ee1     0x113b ./src/Lib_MCU/src/lpc17xx_gpdma.o
+ .debug_info    0x0000501c      0xe29 ./src/Lib_MCU/src/lpc17xx_gpio.o
+ .debug_info    0x00005e45      0xdb5 ./src/Lib_MCU/src/lpc17xx_i2c.o
+ .debug_info    0x00006bfa      0x896 ./src/Lib_MCU/src/lpc17xx_i2s.o
+ .debug_info    0x00007490       0xcd ./src/Lib_MCU/src/lpc17xx_libcfg_default.o
+ .debug_info    0x0000755d      0x81a ./src/Lib_MCU/src/lpc17xx_mcpwm.o
+ .debug_info    0x00007d77      0x417 ./src/Lib_MCU/src/lpc17xx_nvic.o
+ .debug_info    0x0000818e      0x4b9 ./src/Lib_MCU/src/lpc17xx_pinsel.o
+ .debug_info    0x00008647      0x8da ./src/Lib_MCU/src/lpc17xx_pwm.o
+ .debug_info    0x00008f21      0x85b ./src/Lib_MCU/src/lpc17xx_qei.o
+ .debug_info    0x0000977c      0x2c6 ./src/Lib_MCU/src/lpc17xx_rit.o
+ .debug_info    0x00009a42      0xa1e ./src/Lib_MCU/src/lpc17xx_rtc.o
+ .debug_info    0x0000a460      0x5d0 ./src/Lib_MCU/src/lpc17xx_spi.o
+ .debug_info    0x0000aa30      0x785 ./src/Lib_MCU/src/lpc17xx_ssp.o
+ .debug_info    0x0000b1b5      0x260 ./src/Lib_MCU/src/lpc17xx_systick.o
+ .debug_info    0x0000b415      0x93b ./src/Lib_MCU/src/lpc17xx_timer.o
+ .debug_info    0x0000bd50     0x132a ./src/Lib_MCU/src/lpc17xx_uart.o
+ .debug_info    0x0000d07a      0x37a ./src/Lib_MCU/src/lpc17xx_wdt.o
+ .debug_info    0x0000d3f4      0x548 ./src/Lib_EaBaseBoard/src/acc.o
+ .debug_info    0x0000d93c      0x4d7 ./src/Lib_EaBaseBoard/src/eeprom.o
+ .debug_info    0x0000de13      0x63f ./src/Lib_EaBaseBoard/src/flash.o
+ .debug_info    0x0000e452       0x65 ./src/Lib_EaBaseBoard/src/font5x7.o
+ .debug_info    0x0000e4b7      0x11a ./src/Lib_EaBaseBoard/src/joystick.o
+ .debug_info    0x0000e5d1      0x280 ./src/Lib_EaBaseBoard/src/led7seg.o
+ .debug_info    0x0000e851      0x76e ./src/Lib_EaBaseBoard/src/light.o
+ .debug_info    0x0000efbf      0x97b ./src/Lib_EaBaseBoard/src/oled.o
+ .debug_info    0x0000f93a      0x64d ./src/Lib_EaBaseBoard/src/pca9532.o
+ .debug_info    0x0000ff87       0xef ./src/Lib_EaBaseBoard/src/rgb.o
+ .debug_info    0x00010076      0x10d ./src/Lib_EaBaseBoard/src/rotary.o
+ .debug_info    0x00010183      0x154 ./src/Lib_EaBaseBoard/src/temp.o
+ .debug_info    0x000102d7      0x5b2 ./src/Lib_EaBaseBoard/src/uart2.o
+ .debug_info    0x00010889      0x38f /home/fanaur/workspacePruebas/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+
+.debug_line     0x00000000     0xf0f9
+ .debug_line    0x00000000      0x3d1 ./src/cr_startup_lpc176x.o
+ .debug_line    0x000003d1      0x575 ./src/main.o
+ .debug_line    0x00000946      0x625 ./src/Lib_MCU/src/lpc17xx_adc.o
+ .debug_line    0x00000f6b      0xcd0 ./src/Lib_MCU/src/lpc17xx_can.o
+ .debug_line    0x00001c3b      0x4f6 ./src/Lib_MCU/src/lpc17xx_clkpwr.o
+ .debug_line    0x00002131      0x4bc ./src/Lib_MCU/src/lpc17xx_dac.o
+ .debug_line    0x000025ed      0x781 ./src/Lib_MCU/src/lpc17xx_emac.o
+ .debug_line    0x00002d6e      0x493 ./src/Lib_MCU/src/lpc17xx_exti.o
+ .debug_line    0x00003201      0x585 ./src/Lib_MCU/src/lpc17xx_gpdma.o
+ .debug_line    0x00003786      0x6d3 ./src/Lib_MCU/src/lpc17xx_gpio.o
+ .debug_line    0x00003e59      0x908 ./src/Lib_MCU/src/lpc17xx_i2c.o
+ .debug_line    0x00004761      0x819 ./src/Lib_MCU/src/lpc17xx_i2s.o
+ .debug_line    0x00004f7a      0x39f ./src/Lib_MCU/src/lpc17xx_libcfg_default.o
+ .debug_line    0x00005319      0x7d9 ./src/Lib_MCU/src/lpc17xx_mcpwm.o
+ .debug_line    0x00005af2      0x463 ./src/Lib_MCU/src/lpc17xx_nvic.o
+ .debug_line    0x00005f55      0x48e ./src/Lib_MCU/src/lpc17xx_pinsel.o
+ .debug_line    0x000063e3      0x7ea ./src/Lib_MCU/src/lpc17xx_pwm.o
+ .debug_line    0x00006bcd      0x808 ./src/Lib_MCU/src/lpc17xx_qei.o
+ .debug_line    0x000073d5      0x502 ./src/Lib_MCU/src/lpc17xx_rit.o
+ .debug_line    0x000078d7      0x8b7 ./src/Lib_MCU/src/lpc17xx_rtc.o
+ .debug_line    0x0000818e      0x60a ./src/Lib_MCU/src/lpc17xx_spi.o
+ .debug_line    0x00008798      0x7b7 ./src/Lib_MCU/src/lpc17xx_ssp.o
+ .debug_line    0x00008f4f      0x4d8 ./src/Lib_MCU/src/lpc17xx_systick.o
+ .debug_line    0x00009427      0x7fc ./src/Lib_MCU/src/lpc17xx_timer.o
+ .debug_line    0x00009c23      0xb50 ./src/Lib_MCU/src/lpc17xx_uart.o
+ .debug_line    0x0000a773      0x539 ./src/Lib_MCU/src/lpc17xx_wdt.o
+ .debug_line    0x0000acac      0x51c ./src/Lib_EaBaseBoard/src/acc.o
+ .debug_line    0x0000b1c8      0x544 ./src/Lib_EaBaseBoard/src/eeprom.o
+ .debug_line    0x0000b70c      0x5d4 ./src/Lib_EaBaseBoard/src/flash.o
+ .debug_line    0x0000bce0       0x97 ./src/Lib_EaBaseBoard/src/font5x7.o
+ .debug_line    0x0000bd77      0x487 ./src/Lib_EaBaseBoard/src/joystick.o
+ .debug_line    0x0000c1fe      0x497 ./src/Lib_EaBaseBoard/src/led7seg.o
+ .debug_line    0x0000c695      0x5c8 ./src/Lib_EaBaseBoard/src/light.o
+ .debug_line    0x0000cc5d      0x7a2 ./src/Lib_EaBaseBoard/src/oled.o
+ .debug_line    0x0000d3ff      0x5b3 ./src/Lib_EaBaseBoard/src/pca9532.o
+ .debug_line    0x0000d9b2      0x474 ./src/Lib_EaBaseBoard/src/rgb.o
+ .debug_line    0x0000de26      0x49d ./src/Lib_EaBaseBoard/src/rotary.o
+ .debug_line    0x0000e2c3      0x495 ./src/Lib_EaBaseBoard/src/temp.o
+ .debug_line    0x0000e758      0x5ba ./src/Lib_EaBaseBoard/src/uart2.o
+ .debug_line    0x0000ed12      0x3e7 /home/fanaur/workspacePruebas/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+
+.debug_macinfo  0x00000000   0x153114
+ .debug_macinfo
+                0x00000000     0x313f ./src/cr_startup_lpc176x.o
+ .debug_macinfo
+                0x0000313f     0x9135 ./src/main.o
+ .debug_macinfo
+                0x0000c274     0x947b ./src/Lib_MCU/src/lpc17xx_adc.o
+ .debug_macinfo
+                0x000156ef     0xa7da ./src/Lib_MCU/src/lpc17xx_can.o
+ .debug_macinfo
+                0x0001fec9     0x8b35 ./src/Lib_MCU/src/lpc17xx_clkpwr.o
+ .debug_macinfo
+                0x000289fe     0x8e94 ./src/Lib_MCU/src/lpc17xx_dac.o
+ .debug_macinfo
+                0x00031892     0xab64 ./src/Lib_MCU/src/lpc17xx_emac.o
+ .debug_macinfo
+                0x0003c3f6     0x7a25 ./src/Lib_MCU/src/lpc17xx_exti.o
+ .debug_macinfo
+                0x00043e1b     0xa0aa ./src/Lib_MCU/src/lpc17xx_gpdma.o
+ .debug_macinfo
+                0x0004dec5     0x7bf3 ./src/Lib_MCU/src/lpc17xx_gpio.o
+ .debug_macinfo
+                0x00055ab8     0x9b0c ./src/Lib_MCU/src/lpc17xx_i2c.o
+ .debug_macinfo
+                0x0005f5c4     0x9b60 ./src/Lib_MCU/src/lpc17xx_i2s.o
+ .debug_macinfo
+                0x00069124     0x3424 ./src/Lib_MCU/src/lpc17xx_libcfg_default.o
+ .debug_macinfo
+                0x0006c548     0x9695 ./src/Lib_MCU/src/lpc17xx_mcpwm.o
+ .debug_macinfo
+                0x00075bdd     0x782f ./src/Lib_MCU/src/lpc17xx_nvic.o
+ .debug_macinfo
+                0x0007d40c     0x7d10 ./src/Lib_MCU/src/lpc17xx_pinsel.o
+ .debug_macinfo
+                0x0008511c     0x95bd ./src/Lib_MCU/src/lpc17xx_pwm.o
+ .debug_macinfo
+                0x0008e6d9     0xa554 ./src/Lib_MCU/src/lpc17xx_qei.o
+ .debug_macinfo
+                0x00098c2d     0x8dbb ./src/Lib_MCU/src/lpc17xx_rit.o
+ .debug_macinfo
+                0x000a19e8     0x958e ./src/Lib_MCU/src/lpc17xx_rtc.o
+ .debug_macinfo
+                0x000aaf76     0x9748 ./src/Lib_MCU/src/lpc17xx_spi.o
+ .debug_macinfo
+                0x000b46be     0x9dfe ./src/Lib_MCU/src/lpc17xx_ssp.o
+ .debug_macinfo
+                0x000be4bc     0x8eae ./src/Lib_MCU/src/lpc17xx_systick.o
+ .debug_macinfo
+                0x000c736a     0x9a0d ./src/Lib_MCU/src/lpc17xx_timer.o
+ .debug_macinfo
+                0x000d0d77     0xa58b ./src/Lib_MCU/src/lpc17xx_uart.o
+ .debug_macinfo
+                0x000db302     0x94f2 ./src/Lib_MCU/src/lpc17xx_wdt.o
+ .debug_macinfo
+                0x000e47f4     0x845b ./src/Lib_EaBaseBoard/src/acc.o
+ .debug_macinfo
+                0x000ecc4f     0x8498 ./src/Lib_EaBaseBoard/src/eeprom.o
+ .debug_macinfo
+                0x000f50e7     0x8d48 ./src/Lib_EaBaseBoard/src/flash.o
+ .debug_macinfo
+                0x000fde2f     0x2745 ./src/Lib_EaBaseBoard/src/font5x7.o
+ .debug_macinfo
+                0x00100574     0x7acb ./src/Lib_EaBaseBoard/src/joystick.o
+ .debug_macinfo
+                0x0010803f     0x8bda ./src/Lib_EaBaseBoard/src/led7seg.o
+ .debug_macinfo
+                0x00110c19     0x837a ./src/Lib_EaBaseBoard/src/light.o
+ .debug_macinfo
+                0x00118f93     0x9679 ./src/Lib_EaBaseBoard/src/oled.o
+ .debug_macinfo
+                0x0012260c     0x8399 ./src/Lib_EaBaseBoard/src/pca9532.o
+ .debug_macinfo
+                0x0012a9a5     0x7a8c ./src/Lib_EaBaseBoard/src/rgb.o
+ .debug_macinfo
+                0x00132431     0x7b07 ./src/Lib_EaBaseBoard/src/rotary.o
+ .debug_macinfo
+                0x00139f38     0x7b26 ./src/Lib_EaBaseBoard/src/temp.o
+ .debug_macinfo
+                0x00141a5e     0x9d8b ./src/Lib_EaBaseBoard/src/uart2.o
+ .debug_macinfo
+                0x0014b7e9     0x792b /home/fanaur/workspacePruebas/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+
+.debug_loc      0x00000000     0x5eb6
+ .debug_loc     0x00000000      0x1b8 ./src/cr_startup_lpc176x.o
+ .debug_loc     0x000001b8      0x100 ./src/main.o
+ .debug_loc     0x000002b8      0x2d8 ./src/Lib_MCU/src/lpc17xx_adc.o
+ .debug_loc     0x00000590      0x464 ./src/Lib_MCU/src/lpc17xx_can.o
+ .debug_loc     0x000009f4      0x190 ./src/Lib_MCU/src/lpc17xx_clkpwr.o
+ .debug_loc     0x00000b84      0x118 ./src/Lib_MCU/src/lpc17xx_dac.o
+ .debug_loc     0x00000c9c      0x528 ./src/Lib_MCU/src/lpc17xx_emac.o
+ .debug_loc     0x000011c4      0x138 ./src/Lib_MCU/src/lpc17xx_exti.o
+ .debug_loc     0x000012fc      0x10c ./src/Lib_MCU/src/lpc17xx_gpdma.o
+ .debug_loc     0x00001408      0x620 ./src/Lib_MCU/src/lpc17xx_gpio.o
+ .debug_loc     0x00001a28      0x508 ./src/Lib_MCU/src/lpc17xx_i2c.o
+ .debug_loc     0x00001f30      0x498 ./src/Lib_MCU/src/lpc17xx_i2s.o
+ .debug_loc     0x000023c8       0x38 ./src/Lib_MCU/src/lpc17xx_libcfg_default.o
+ .debug_loc     0x00002400      0x348 ./src/Lib_MCU/src/lpc17xx_mcpwm.o
+ .debug_loc     0x00002748       0xa8 ./src/Lib_MCU/src/lpc17xx_nvic.o
+ .debug_loc     0x000027f0      0x150 ./src/Lib_MCU/src/lpc17xx_pinsel.o
+ .debug_loc     0x00002940      0x348 ./src/Lib_MCU/src/lpc17xx_pwm.o
+ .debug_loc     0x00002c88      0x49a ./src/Lib_MCU/src/lpc17xx_qei.o
+ .debug_loc     0x00003122      0x150 ./src/Lib_MCU/src/lpc17xx_rit.o
+ .debug_loc     0x00003272      0x460 ./src/Lib_MCU/src/lpc17xx_rtc.o
+ .debug_loc     0x000036d2      0x2d8 ./src/Lib_MCU/src/lpc17xx_spi.o
+ .debug_loc     0x000039aa      0x3f0 ./src/Lib_MCU/src/lpc17xx_ssp.o
+ .debug_loc     0x00003d9a      0x138 ./src/Lib_MCU/src/lpc17xx_systick.o
+ .debug_loc     0x00003ed2      0x3f0 ./src/Lib_MCU/src/lpc17xx_timer.o
+ .debug_loc     0x000042c2      0x692 ./src/Lib_MCU/src/lpc17xx_uart.o
+ .debug_loc     0x00004954      0x190 ./src/Lib_MCU/src/lpc17xx_wdt.o
+ .debug_loc     0x00004ae4      0x1f0 ./src/Lib_EaBaseBoard/src/acc.o
+ .debug_loc     0x00004cd4      0x148 ./src/Lib_EaBaseBoard/src/eeprom.o
+ .debug_loc     0x00004e1c      0x294 ./src/Lib_EaBaseBoard/src/flash.o
+ .debug_loc     0x000050b0       0x64 ./src/Lib_EaBaseBoard/src/joystick.o
+ .debug_loc     0x00005114       0x64 ./src/Lib_EaBaseBoard/src/led7seg.o
+ .debug_loc     0x00005178      0x378 ./src/Lib_EaBaseBoard/src/light.o
+ .debug_loc     0x000054f0      0x33e ./src/Lib_EaBaseBoard/src/oled.o
+ .debug_loc     0x0000582e      0x2d0 ./src/Lib_EaBaseBoard/src/pca9532.o
+ .debug_loc     0x00005afe       0x64 ./src/Lib_EaBaseBoard/src/rgb.o
+ .debug_loc     0x00005b62       0x64 ./src/Lib_EaBaseBoard/src/rotary.o
+ .debug_loc     0x00005bc6       0x70 ./src/Lib_EaBaseBoard/src/temp.o
+ .debug_loc     0x00005c36      0x260 ./src/Lib_EaBaseBoard/src/uart2.o
+ .debug_loc     0x00005e96       0x20 /home/fanaur/workspacePruebas/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+
+.debug_pubnames
+                0x00000000     0x2196
+ .debug_pubnames
+                0x00000000      0x115 ./src/cr_startup_lpc176x.o
+ .debug_pubnames
+                0x00000115       0x49 ./src/main.o
+ .debug_pubnames
+                0x0000015e      0x110 ./src/Lib_MCU/src/lpc17xx_adc.o
+ .debug_pubnames
+                0x0000026e      0x205 ./src/Lib_MCU/src/lpc17xx_can.o
+ .debug_pubnames
+                0x00000473       0xbb ./src/Lib_MCU/src/lpc17xx_clkpwr.o
+ .debug_pubnames
+                0x0000052e       0x7a ./src/Lib_MCU/src/lpc17xx_dac.o
+ .debug_pubnames
+                0x000005a8      0x1d3 ./src/Lib_MCU/src/lpc17xx_emac.o
+ .debug_pubnames
+                0x0000077b       0x7d ./src/Lib_MCU/src/lpc17xx_exti.o
+ .debug_pubnames
+                0x000007f8       0xc3 ./src/Lib_MCU/src/lpc17xx_gpdma.o
+ .debug_pubnames
+                0x000008bb      0x203 ./src/Lib_MCU/src/lpc17xx_gpio.o
+ .debug_pubnames
+                0x00000abe      0x163 ./src/Lib_MCU/src/lpc17xx_i2c.o
+ .debug_pubnames
+                0x00000c21      0x145 ./src/Lib_MCU/src/lpc17xx_i2s.o
+ .debug_pubnames
+                0x00000d66       0x23 ./src/Lib_MCU/src/lpc17xx_libcfg_default.o
+ .debug_pubnames
+                0x00000d89      0x13b ./src/Lib_MCU/src/lpc17xx_mcpwm.o
+ .debug_pubnames
+                0x00000ec4       0x46 ./src/Lib_MCU/src/lpc17xx_nvic.o
+ .debug_pubnames
+                0x00000f0a       0x59 ./src/Lib_MCU/src/lpc17xx_pinsel.o
+ .debug_pubnames
+                0x00000f63      0x140 ./src/Lib_MCU/src/lpc17xx_pwm.o
+ .debug_pubnames
+                0x000010a3      0x1aa ./src/Lib_MCU/src/lpc17xx_qei.o
+ .debug_pubnames
+                0x0000124d       0x79 ./src/Lib_MCU/src/lpc17xx_rit.o
+ .debug_pubnames
+                0x000012c6      0x1ab ./src/Lib_MCU/src/lpc17xx_rtc.o
+ .debug_pubnames
+                0x00001471      0x105 ./src/Lib_MCU/src/lpc17xx_spi.o
+ .debug_pubnames
+                0x00001576      0x15c ./src/Lib_MCU/src/lpc17xx_ssp.o
+ .debug_pubnames
+                0x000016d2       0xa0 ./src/Lib_MCU/src/lpc17xx_systick.o
+ .debug_pubnames
+                0x00001772      0x14e ./src/Lib_MCU/src/lpc17xx_timer.o
+ .debug_pubnames
+                0x000018c0      0x285 ./src/Lib_MCU/src/lpc17xx_uart.o
+ .debug_pubnames
+                0x00001b45       0x97 ./src/Lib_MCU/src/lpc17xx_wdt.o
+ .debug_pubnames
+                0x00001bdc       0x4d ./src/Lib_EaBaseBoard/src/acc.o
+ .debug_pubnames
+                0x00001c29       0x43 ./src/Lib_EaBaseBoard/src/eeprom.o
+ .debug_pubnames
+                0x00001c6c       0x83 ./src/Lib_EaBaseBoard/src/flash.o
+ .debug_pubnames
+                0x00001cef       0x1e ./src/Lib_EaBaseBoard/src/font5x7.o
+ .debug_pubnames
+                0x00001d0d       0x36 ./src/Lib_EaBaseBoard/src/joystick.o
+ .debug_pubnames
+                0x00001d43       0x37 ./src/Lib_EaBaseBoard/src/led7seg.o
+ .debug_pubnames
+                0x00001d7a      0x107 ./src/Lib_EaBaseBoard/src/light.o
+ .debug_pubnames
+                0x00001e81       0xa9 ./src/Lib_EaBaseBoard/src/oled.o
+ .debug_pubnames
+                0x00001f2a       0xef ./src/Lib_EaBaseBoard/src/pca9532.o
+ .debug_pubnames
+                0x00002019       0x2f ./src/Lib_EaBaseBoard/src/rgb.o
+ .debug_pubnames
+                0x00002048       0x32 ./src/Lib_EaBaseBoard/src/rotary.o
+ .debug_pubnames
+                0x0000207a       0x2e ./src/Lib_EaBaseBoard/src/temp.o
+ .debug_pubnames
+                0x000020a8       0x9f ./src/Lib_EaBaseBoard/src/uart2.o
+ .debug_pubnames
+                0x00002147       0x4f /home/fanaur/workspacePruebas/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+
+.debug_pubtypes
+                0x00000000     0x18e9
+ .debug_pubtypes
+                0x00000000       0x12 ./src/cr_startup_lpc176x.o
+ .debug_pubtypes
+                0x00000012       0xc0 ./src/main.o
+ .debug_pubtypes
+                0x000000d2       0x90 ./src/Lib_MCU/src/lpc17xx_adc.o
+ .debug_pubtypes
+                0x00000162      0x1fe ./src/Lib_MCU/src/lpc17xx_can.o
+ .debug_pubtypes
+                0x00000360       0x6b ./src/Lib_MCU/src/lpc17xx_clkpwr.o
+ .debug_pubtypes
+                0x000003cb       0x73 ./src/Lib_MCU/src/lpc17xx_dac.o
+ .debug_pubtypes
+                0x0000043e       0xf8 ./src/Lib_MCU/src/lpc17xx_emac.o
+ .debug_pubtypes
+                0x00000536       0x90 ./src/Lib_MCU/src/lpc17xx_exti.o
+ .debug_pubtypes
+                0x000005c6      0x1a2 ./src/Lib_MCU/src/lpc17xx_gpdma.o
+ .debug_pubtypes
+                0x00000768       0xb5 ./src/Lib_MCU/src/lpc17xx_gpio.o
+ .debug_pubtypes
+                0x0000081d      0x113 ./src/Lib_MCU/src/lpc17xx_i2c.o
+ .debug_pubtypes
+                0x00000930       0xa6 ./src/Lib_MCU/src/lpc17xx_i2s.o
+ .debug_pubtypes
+                0x000009d6       0x2b ./src/Lib_MCU/src/lpc17xx_libcfg_default.o
+ .debug_pubtypes
+                0x00000a01       0xb3 ./src/Lib_MCU/src/lpc17xx_mcpwm.o
+ .debug_pubtypes
+                0x00000ab4       0x52 ./src/Lib_MCU/src/lpc17xx_nvic.o
+ .debug_pubtypes
+                0x00000b06       0x76 ./src/Lib_MCU/src/lpc17xx_pinsel.o
+ .debug_pubtypes
+                0x00000b7c       0xf5 ./src/Lib_MCU/src/lpc17xx_pwm.o
+ .debug_pubtypes
+                0x00000c71       0xb7 ./src/Lib_MCU/src/lpc17xx_qei.o
+ .debug_pubtypes
+                0x00000d28       0x6d ./src/Lib_MCU/src/lpc17xx_rit.o
+ .debug_pubtypes
+                0x00000d95       0x8c ./src/Lib_MCU/src/lpc17xx_rtc.o
+ .debug_pubtypes
+                0x00000e21       0xc8 ./src/Lib_MCU/src/lpc17xx_spi.o
+ .debug_pubtypes
+                0x00000ee9       0xc8 ./src/Lib_MCU/src/lpc17xx_ssp.o
+ .debug_pubtypes
+                0x00000fb1       0x5c ./src/Lib_MCU/src/lpc17xx_systick.o
+ .debug_pubtypes
+                0x0000100d      0x113 ./src/Lib_MCU/src/lpc17xx_timer.o
+ .debug_pubtypes
+                0x00001120      0x248 ./src/Lib_MCU/src/lpc17xx_uart.o
+ .debug_pubtypes
+                0x00001368       0x7b ./src/Lib_MCU/src/lpc17xx_wdt.o
+ .debug_pubtypes
+                0x000013e3       0x8a ./src/Lib_EaBaseBoard/src/acc.o
+ .debug_pubtypes
+                0x0000146d       0x79 ./src/Lib_EaBaseBoard/src/eeprom.o
+ .debug_pubtypes
+                0x000014e6       0x80 ./src/Lib_EaBaseBoard/src/flash.o
+ .debug_pubtypes
+                0x00001566       0x37 ./src/Lib_EaBaseBoard/src/joystick.o
+ .debug_pubtypes
+                0x0000159d       0x63 ./src/Lib_EaBaseBoard/src/led7seg.o
+ .debug_pubtypes
+                0x00001600       0xa7 ./src/Lib_EaBaseBoard/src/light.o
+ .debug_pubtypes
+                0x000016a7       0x98 ./src/Lib_EaBaseBoard/src/oled.o
+ .debug_pubtypes
+                0x0000173f       0x6d ./src/Lib_EaBaseBoard/src/pca9532.o
+ .debug_pubtypes
+                0x000017ac       0x2a ./src/Lib_EaBaseBoard/src/rgb.o
+ .debug_pubtypes
+                0x000017d6       0x2a ./src/Lib_EaBaseBoard/src/rotary.o
+ .debug_pubtypes
+                0x00001800       0x37 ./src/Lib_EaBaseBoard/src/temp.o
+ .debug_pubtypes
+                0x00001837       0x74 ./src/Lib_EaBaseBoard/src/uart2.o
+ .debug_pubtypes
+                0x000018ab       0x3e /home/fanaur/workspacePruebas/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+
+.debug_aranges  0x00000000     0x1190
+ .debug_aranges
+                0x00000000       0x80 ./src/cr_startup_lpc176x.o
+ .debug_aranges
+                0x00000080       0x40 ./src/main.o
+ .debug_aranges
+                0x000000c0       0x80 ./src/Lib_MCU/src/lpc17xx_adc.o
+ .debug_aranges
+                0x00000140       0xb8 ./src/Lib_MCU/src/lpc17xx_can.o
+ .debug_aranges
+                0x000001f8       0x58 ./src/Lib_MCU/src/lpc17xx_clkpwr.o
+ .debug_aranges
+                0x00000250       0x40 ./src/Lib_MCU/src/lpc17xx_dac.o
+ .debug_aranges
+                0x00000290       0xd8 ./src/Lib_MCU/src/lpc17xx_emac.o
+ .debug_aranges
+                0x00000368       0x48 ./src/Lib_MCU/src/lpc17xx_exti.o
+ .debug_aranges
+                0x000003b0       0x40 ./src/Lib_MCU/src/lpc17xx_gpdma.o
+ .debug_aranges
+                0x000003f0       0xf8 ./src/Lib_MCU/src/lpc17xx_gpio.o
+ .debug_aranges
+                0x000004e8       0xd0 ./src/Lib_MCU/src/lpc17xx_i2c.o
+ .debug_aranges
+                0x000005b8       0xc0 ./src/Lib_MCU/src/lpc17xx_i2s.o
+ .debug_aranges
+                0x00000678       0x20 ./src/Lib_MCU/src/lpc17xx_libcfg_default.o
+ .debug_aranges
+                0x00000698       0x90 ./src/Lib_MCU/src/lpc17xx_mcpwm.o
+ .debug_aranges
+                0x00000728       0x30 ./src/Lib_MCU/src/lpc17xx_nvic.o
+ .debug_aranges
+                0x00000758       0x48 ./src/Lib_MCU/src/lpc17xx_pinsel.o
+ .debug_aranges
+                0x000007a0       0x90 ./src/Lib_MCU/src/lpc17xx_pwm.o
+ .debug_aranges
+                0x00000830       0xc0 ./src/Lib_MCU/src/lpc17xx_qei.o
+ .debug_aranges
+                0x000008f0       0x48 ./src/Lib_MCU/src/lpc17xx_rit.o
+ .debug_aranges
+                0x00000938       0xb8 ./src/Lib_MCU/src/lpc17xx_rtc.o
+ .debug_aranges
+                0x000009f0       0x80 ./src/Lib_MCU/src/lpc17xx_spi.o
+ .debug_aranges
+                0x00000a70       0xa8 ./src/Lib_MCU/src/lpc17xx_ssp.o
+ .debug_aranges
+                0x00000b18       0x48 ./src/Lib_MCU/src/lpc17xx_systick.o
+ .debug_aranges
+                0x00000b60       0xa8 ./src/Lib_MCU/src/lpc17xx_timer.o
+ .debug_aranges
+                0x00000c08      0x108 ./src/Lib_MCU/src/lpc17xx_uart.o
+ .debug_aranges
+                0x00000d10       0x58 ./src/Lib_MCU/src/lpc17xx_wdt.o
+ .debug_aranges
+                0x00000d68       0x60 ./src/Lib_EaBaseBoard/src/acc.o
+ .debug_aranges
+                0x00000dc8       0x48 ./src/Lib_EaBaseBoard/src/eeprom.o
+ .debug_aranges
+                0x00000e10       0x78 ./src/Lib_EaBaseBoard/src/flash.o
+ .debug_aranges
+                0x00000e88       0x28 ./src/Lib_EaBaseBoard/src/joystick.o
+ .debug_aranges
+                0x00000eb0       0x28 ./src/Lib_EaBaseBoard/src/led7seg.o
+ .debug_aranges
+                0x00000ed8       0x98 ./src/Lib_EaBaseBoard/src/light.o
+ .debug_aranges
+                0x00000f70       0x90 ./src/Lib_EaBaseBoard/src/oled.o
+ .debug_aranges
+                0x00001000       0x80 ./src/Lib_EaBaseBoard/src/pca9532.o
+ .debug_aranges
+                0x00001080       0x28 ./src/Lib_EaBaseBoard/src/rgb.o
+ .debug_aranges
+                0x000010a8       0x28 ./src/Lib_EaBaseBoard/src/rotary.o
+ .debug_aranges
+                0x000010d0       0x28 ./src/Lib_EaBaseBoard/src/temp.o
+ .debug_aranges
+                0x000010f8       0x70 ./src/Lib_EaBaseBoard/src/uart2.o
+ .debug_aranges
+                0x00001168       0x28 /home/fanaur/workspacePruebas/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+
+.debug_ranges   0x00000000      0xf20
+ .debug_ranges  0x00000000       0x70 ./src/cr_startup_lpc176x.o
+ .debug_ranges  0x00000070       0x30 ./src/main.o
+ .debug_ranges  0x000000a0       0x70 ./src/Lib_MCU/src/lpc17xx_adc.o
+ .debug_ranges  0x00000110       0xa8 ./src/Lib_MCU/src/lpc17xx_can.o
+ .debug_ranges  0x000001b8       0x48 ./src/Lib_MCU/src/lpc17xx_clkpwr.o
+ .debug_ranges  0x00000200       0x30 ./src/Lib_MCU/src/lpc17xx_dac.o
+ .debug_ranges  0x00000230       0xc8 ./src/Lib_MCU/src/lpc17xx_emac.o
+ .debug_ranges  0x000002f8       0x38 ./src/Lib_MCU/src/lpc17xx_exti.o
+ .debug_ranges  0x00000330       0x30 ./src/Lib_MCU/src/lpc17xx_gpdma.o
+ .debug_ranges  0x00000360       0xe8 ./src/Lib_MCU/src/lpc17xx_gpio.o
+ .debug_ranges  0x00000448       0xc0 ./src/Lib_MCU/src/lpc17xx_i2c.o
+ .debug_ranges  0x00000508       0xb0 ./src/Lib_MCU/src/lpc17xx_i2s.o
+ .debug_ranges  0x000005b8       0x10 ./src/Lib_MCU/src/lpc17xx_libcfg_default.o
+ .debug_ranges  0x000005c8       0x80 ./src/Lib_MCU/src/lpc17xx_mcpwm.o
+ .debug_ranges  0x00000648       0x20 ./src/Lib_MCU/src/lpc17xx_nvic.o
+ .debug_ranges  0x00000668       0x38 ./src/Lib_MCU/src/lpc17xx_pinsel.o
+ .debug_ranges  0x000006a0       0x80 ./src/Lib_MCU/src/lpc17xx_pwm.o
+ .debug_ranges  0x00000720       0xb0 ./src/Lib_MCU/src/lpc17xx_qei.o
+ .debug_ranges  0x000007d0       0x38 ./src/Lib_MCU/src/lpc17xx_rit.o
+ .debug_ranges  0x00000808       0xa8 ./src/Lib_MCU/src/lpc17xx_rtc.o
+ .debug_ranges  0x000008b0       0x70 ./src/Lib_MCU/src/lpc17xx_spi.o
+ .debug_ranges  0x00000920       0x98 ./src/Lib_MCU/src/lpc17xx_ssp.o
+ .debug_ranges  0x000009b8       0x38 ./src/Lib_MCU/src/lpc17xx_systick.o
+ .debug_ranges  0x000009f0       0x98 ./src/Lib_MCU/src/lpc17xx_timer.o
+ .debug_ranges  0x00000a88       0xf8 ./src/Lib_MCU/src/lpc17xx_uart.o
+ .debug_ranges  0x00000b80       0x48 ./src/Lib_MCU/src/lpc17xx_wdt.o
+ .debug_ranges  0x00000bc8       0x50 ./src/Lib_EaBaseBoard/src/acc.o
+ .debug_ranges  0x00000c18       0x38 ./src/Lib_EaBaseBoard/src/eeprom.o
+ .debug_ranges  0x00000c50       0x68 ./src/Lib_EaBaseBoard/src/flash.o
+ .debug_ranges  0x00000cb8       0x18 ./src/Lib_EaBaseBoard/src/joystick.o
+ .debug_ranges  0x00000cd0       0x18 ./src/Lib_EaBaseBoard/src/led7seg.o
+ .debug_ranges  0x00000ce8       0x88 ./src/Lib_EaBaseBoard/src/light.o
+ .debug_ranges  0x00000d70       0x80 ./src/Lib_EaBaseBoard/src/oled.o
+ .debug_ranges  0x00000df0       0x70 ./src/Lib_EaBaseBoard/src/pca9532.o
+ .debug_ranges  0x00000e60       0x18 ./src/Lib_EaBaseBoard/src/rgb.o
+ .debug_ranges  0x00000e78       0x18 ./src/Lib_EaBaseBoard/src/rotary.o
+ .debug_ranges  0x00000e90       0x18 ./src/Lib_EaBaseBoard/src/temp.o
+ .debug_ranges  0x00000ea8       0x60 ./src/Lib_EaBaseBoard/src/uart2.o
+ .debug_ranges  0x00000f08       0x18 /home/fanaur/workspacePruebas/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+
+.debug_str      0x00000000     0x5ad9
+ .debug_str     0x00000000      0x20a ./src/cr_startup_lpc176x.o
+                                0x232 (size before relaxing)
+ .debug_str     0x0000020a      0x40e ./src/main.o
+                                0x500 (size before relaxing)
+ .debug_str     0x00000618      0x380 ./src/Lib_MCU/src/lpc17xx_adc.o
+                                0x4a2 (size before relaxing)
+ .debug_str     0x00000998      0x8a6 ./src/Lib_MCU/src/lpc17xx_can.o
+                                0xa02 (size before relaxing)
+ .debug_str     0x0000123e      0x1ea ./src/Lib_MCU/src/lpc17xx_clkpwr.o
+                                0x387 (size before relaxing)
+ .debug_str     0x00001428      0x13a ./src/Lib_MCU/src/lpc17xx_dac.o
+                                0x223 (size before relaxing)
+ .debug_str     0x00001562      0x482 ./src/Lib_MCU/src/lpc17xx_emac.o
+                                0x68d (size before relaxing)
+ .debug_str     0x000019e4      0x19b ./src/Lib_MCU/src/lpc17xx_exti.o
+                                0x3cb (size before relaxing)
+ .debug_str     0x00001b7f      0x454 ./src/Lib_MCU/src/lpc17xx_gpdma.o
+                                0x792 (size before relaxing)
+ .debug_str     0x00001fd3      0x430 ./src/Lib_MCU/src/lpc17xx_gpio.o
+                                0x54c (size before relaxing)
+ .debug_str     0x00002403      0x48f ./src/Lib_MCU/src/lpc17xx_i2c.o
+                                0x847 (size before relaxing)
+ .debug_str     0x00002892      0x1eb ./src/Lib_MCU/src/lpc17xx_i2s.o
+                                0x3cc (size before relaxing)
+ .debug_str     0x00002a7d       0x3e ./src/Lib_MCU/src/lpc17xx_libcfg_default.o
+                                0x10e (size before relaxing)
+ .debug_str     0x00002abb      0x3ff ./src/Lib_MCU/src/lpc17xx_mcpwm.o
+                                0x525 (size before relaxing)
+ .debug_str     0x00002eba       0x4a ./src/Lib_MCU/src/lpc17xx_nvic.o
+                                0x1e2 (size before relaxing)
+ .debug_str     0x00002f04      0x207 ./src/Lib_MCU/src/lpc17xx_pinsel.o
+                                0x360 (size before relaxing)
+ .debug_str     0x0000310b      0x466 ./src/Lib_MCU/src/lpc17xx_pwm.o
+                                0x5ee (size before relaxing)
+ .debug_str     0x00003571      0x35d ./src/Lib_MCU/src/lpc17xx_qei.o
+                                0x4a7 (size before relaxing)
+ .debug_str     0x000038ce       0xca ./src/Lib_MCU/src/lpc17xx_rit.o
+                                0x1f3 (size before relaxing)
+ .debug_str     0x00003998      0x3af ./src/Lib_MCU/src/lpc17xx_rtc.o
+                                0x576 (size before relaxing)
+ .debug_str     0x00003d47      0x1fd ./src/Lib_MCU/src/lpc17xx_spi.o
+                                0x393 (size before relaxing)
+ .debug_str     0x00003f44      0x1ca ./src/Lib_MCU/src/lpc17xx_ssp.o
+                                0x3ee (size before relaxing)
+ .debug_str     0x0000410e       0xb3 ./src/Lib_MCU/src/lpc17xx_systick.o
+                                0x1ed (size before relaxing)
+ .debug_str     0x000041c1      0x368 ./src/Lib_MCU/src/lpc17xx_timer.o
+                                0x5b9 (size before relaxing)
+ .debug_str     0x00004529      0x8dc ./src/Lib_MCU/src/lpc17xx_uart.o
+                                0xb23 (size before relaxing)
+ .debug_str     0x00004e05      0x177 ./src/Lib_MCU/src/lpc17xx_wdt.o
+                                0x2aa (size before relaxing)
+ .debug_str     0x00004f7c      0x11e ./src/Lib_EaBaseBoard/src/acc.o
+                                0x364 (size before relaxing)
+ .debug_str     0x0000509a       0x62 ./src/Lib_EaBaseBoard/src/eeprom.o
+                                0x2e7 (size before relaxing)
+ .debug_str     0x000050fc      0x172 ./src/Lib_EaBaseBoard/src/flash.o
+                                0x315 (size before relaxing)
+ .debug_str     0x0000526e       0x2d ./src/Lib_EaBaseBoard/src/font5x7.o
+                                 0x84 (size before relaxing)
+ .debug_str     0x0000529b       0x4e ./src/Lib_EaBaseBoard/src/joystick.o
+                                0x135 (size before relaxing)
+ .debug_str     0x000052e9       0x50 ./src/Lib_EaBaseBoard/src/led7seg.o
+                                0x1c7 (size before relaxing)
+ .debug_str     0x00005339      0x258 ./src/Lib_EaBaseBoard/src/light.o
+                                0x4c9 (size before relaxing)
+ .debug_str     0x00005591      0x1d2 ./src/Lib_EaBaseBoard/src/oled.o
+                                0x378 (size before relaxing)
+ .debug_str     0x00005763      0x14a ./src/Lib_EaBaseBoard/src/pca9532.o
+                                0x3bb (size before relaxing)
+ .debug_str     0x000058ad       0x36 ./src/Lib_EaBaseBoard/src/rgb.o
+                                0x115 (size before relaxing)
+ .debug_str     0x000058e3       0x48 ./src/Lib_EaBaseBoard/src/rotary.o
+                                0x11f (size before relaxing)
+ .debug_str     0x0000592b       0x4a ./src/Lib_EaBaseBoard/src/temp.o
+                                0x130 (size before relaxing)
+ .debug_str     0x00005975       0xf4 ./src/Lib_EaBaseBoard/src/uart2.o
+                                0x36a (size before relaxing)
+ .debug_str     0x00005a69       0x70 /home/fanaur/workspacePruebas/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+                                0x26d (size before relaxing)
+
+.comment        0x00000000       0x2a
+ .comment       0x00000000       0x2a ./src/cr_startup_lpc176x.o
+                                 0x2b (size before relaxing)
+ .comment       0x00000000       0x2b ./src/main.o
+ .comment       0x00000000       0x2b ./src/Lib_MCU/src/lpc17xx_adc.o
+ .comment       0x00000000       0x2b ./src/Lib_MCU/src/lpc17xx_can.o
+ .comment       0x00000000       0x2b ./src/Lib_MCU/src/lpc17xx_clkpwr.o
+ .comment       0x00000000       0x2b ./src/Lib_MCU/src/lpc17xx_dac.o
+ .comment       0x00000000       0x2b ./src/Lib_MCU/src/lpc17xx_emac.o
+ .comment       0x00000000       0x2b ./src/Lib_MCU/src/lpc17xx_exti.o
+ .comment       0x00000000       0x2b ./src/Lib_MCU/src/lpc17xx_gpdma.o
+ .comment       0x00000000       0x2b ./src/Lib_MCU/src/lpc17xx_gpio.o
+ .comment       0x00000000       0x2b ./src/Lib_MCU/src/lpc17xx_i2c.o
+ .comment       0x00000000       0x2b ./src/Lib_MCU/src/lpc17xx_i2s.o
+ .comment       0x00000000       0x2b ./src/Lib_MCU/src/lpc17xx_libcfg_default.o
+ .comment       0x00000000       0x2b ./src/Lib_MCU/src/lpc17xx_mcpwm.o
+ .comment       0x00000000       0x2b ./src/Lib_MCU/src/lpc17xx_nvic.o
+ .comment       0x00000000       0x2b ./src/Lib_MCU/src/lpc17xx_pinsel.o
+ .comment       0x00000000       0x2b ./src/Lib_MCU/src/lpc17xx_pwm.o
+ .comment       0x00000000       0x2b ./src/Lib_MCU/src/lpc17xx_qei.o
+ .comment       0x00000000       0x2b ./src/Lib_MCU/src/lpc17xx_rit.o
+ .comment       0x00000000       0x2b ./src/Lib_MCU/src/lpc17xx_rtc.o
+ .comment       0x00000000       0x2b ./src/Lib_MCU/src/lpc17xx_spi.o
+ .comment       0x00000000       0x2b ./src/Lib_MCU/src/lpc17xx_ssp.o
+ .comment       0x00000000       0x2b ./src/Lib_MCU/src/lpc17xx_systick.o
+ .comment       0x00000000       0x2b ./src/Lib_MCU/src/lpc17xx_timer.o
+ .comment       0x00000000       0x2b ./src/Lib_MCU/src/lpc17xx_uart.o
+ .comment       0x00000000       0x2b ./src/Lib_MCU/src/lpc17xx_wdt.o
+ .comment       0x00000000       0x2b ./src/Lib_EaBaseBoard/src/acc.o
+ .comment       0x00000000       0x2b ./src/Lib_EaBaseBoard/src/eeprom.o
+ .comment       0x00000000       0x2b ./src/Lib_EaBaseBoard/src/flash.o
+ .comment       0x00000000       0x2b ./src/Lib_EaBaseBoard/src/font5x7.o
+ .comment       0x00000000       0x2b ./src/Lib_EaBaseBoard/src/joystick.o
+ .comment       0x00000000       0x2b ./src/Lib_EaBaseBoard/src/led7seg.o
+ .comment       0x00000000       0x2b ./src/Lib_EaBaseBoard/src/light.o
+ .comment       0x00000000       0x2b ./src/Lib_EaBaseBoard/src/oled.o
+ .comment       0x00000000       0x2b ./src/Lib_EaBaseBoard/src/pca9532.o
+ .comment       0x00000000       0x2b ./src/Lib_EaBaseBoard/src/rgb.o
+ .comment       0x00000000       0x2b ./src/Lib_EaBaseBoard/src/rotary.o
+ .comment       0x00000000       0x2b ./src/Lib_EaBaseBoard/src/temp.o
+ .comment       0x00000000       0x2b ./src/Lib_EaBaseBoard/src/uart2.o
+ .comment       0x00000000       0x2b /home/fanaur/workspacePruebas/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .comment       0x00000000       0x2b /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(__weak__main.o)
+ .comment       0x00000000       0x2b /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(strlen.o)
+ .comment       0x00000000       0x2b /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(memcpy.o)
+ .comment       0x00000000       0x2b /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(memset.o)
+ .comment       0x00000000       0x2b /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(float.o)
+
+.ARM.attributes
+                0x00000000       0x2f
+ .ARM.attributes
+                0x00000000       0x31 ./src/cr_startup_lpc176x.o
+ .ARM.attributes
+                0x00000031       0x31 ./src/main.o
+ .ARM.attributes
+                0x00000062       0x31 ./src/Lib_MCU/src/lpc17xx_adc.o
+ .ARM.attributes
+                0x00000093       0x31 ./src/Lib_MCU/src/lpc17xx_can.o
+ .ARM.attributes
+                0x000000c4       0x31 ./src/Lib_MCU/src/lpc17xx_clkpwr.o
+ .ARM.attributes
+                0x000000f5       0x31 ./src/Lib_MCU/src/lpc17xx_dac.o
+ .ARM.attributes
+                0x00000126       0x31 ./src/Lib_MCU/src/lpc17xx_emac.o
+ .ARM.attributes
+                0x00000157       0x31 ./src/Lib_MCU/src/lpc17xx_exti.o
+ .ARM.attributes
+                0x00000188       0x31 ./src/Lib_MCU/src/lpc17xx_gpdma.o
+ .ARM.attributes
+                0x000001b9       0x31 ./src/Lib_MCU/src/lpc17xx_gpio.o
+ .ARM.attributes
+                0x000001ea       0x31 ./src/Lib_MCU/src/lpc17xx_i2c.o
+ .ARM.attributes
+                0x0000021b       0x31 ./src/Lib_MCU/src/lpc17xx_i2s.o
+ .ARM.attributes
+                0x0000024c       0x31 ./src/Lib_MCU/src/lpc17xx_libcfg_default.o
+ .ARM.attributes
+                0x0000027d       0x31 ./src/Lib_MCU/src/lpc17xx_mcpwm.o
+ .ARM.attributes
+                0x000002ae       0x31 ./src/Lib_MCU/src/lpc17xx_nvic.o
+ .ARM.attributes
+                0x000002df       0x31 ./src/Lib_MCU/src/lpc17xx_pinsel.o
+ .ARM.attributes
+                0x00000310       0x31 ./src/Lib_MCU/src/lpc17xx_pwm.o
+ .ARM.attributes
+                0x00000341       0x31 ./src/Lib_MCU/src/lpc17xx_qei.o
+ .ARM.attributes
+                0x00000372       0x31 ./src/Lib_MCU/src/lpc17xx_rit.o
+ .ARM.attributes
+                0x000003a3       0x31 ./src/Lib_MCU/src/lpc17xx_rtc.o
+ .ARM.attributes
+                0x000003d4       0x31 ./src/Lib_MCU/src/lpc17xx_spi.o
+ .ARM.attributes
+                0x00000405       0x31 ./src/Lib_MCU/src/lpc17xx_ssp.o
+ .ARM.attributes
+                0x00000436       0x31 ./src/Lib_MCU/src/lpc17xx_systick.o
+ .ARM.attributes
+                0x00000467       0x31 ./src/Lib_MCU/src/lpc17xx_timer.o
+ .ARM.attributes
+                0x00000498       0x31 ./src/Lib_MCU/src/lpc17xx_uart.o
+ .ARM.attributes
+                0x000004c9       0x31 ./src/Lib_MCU/src/lpc17xx_wdt.o
+ .ARM.attributes
+                0x000004fa       0x31 ./src/Lib_EaBaseBoard/src/acc.o
+ .ARM.attributes
+                0x0000052b       0x31 ./src/Lib_EaBaseBoard/src/eeprom.o
+ .ARM.attributes
+                0x0000055c       0x31 ./src/Lib_EaBaseBoard/src/flash.o
+ .ARM.attributes
+                0x0000058d       0x31 ./src/Lib_EaBaseBoard/src/font5x7.o
+ .ARM.attributes
+                0x000005be       0x31 ./src/Lib_EaBaseBoard/src/joystick.o
+ .ARM.attributes
+                0x000005ef       0x31 ./src/Lib_EaBaseBoard/src/led7seg.o
+ .ARM.attributes
+                0x00000620       0x31 ./src/Lib_EaBaseBoard/src/light.o
+ .ARM.attributes
+                0x00000651       0x31 ./src/Lib_EaBaseBoard/src/oled.o
+ .ARM.attributes
+                0x00000682       0x31 ./src/Lib_EaBaseBoard/src/pca9532.o
+ .ARM.attributes
+                0x000006b3       0x31 ./src/Lib_EaBaseBoard/src/rgb.o
+ .ARM.attributes
+                0x000006e4       0x31 ./src/Lib_EaBaseBoard/src/rotary.o
+ .ARM.attributes
+                0x00000715       0x31 ./src/Lib_EaBaseBoard/src/temp.o
+ .ARM.attributes
+                0x00000746       0x31 ./src/Lib_EaBaseBoard/src/uart2.o
+ .ARM.attributes
+                0x00000777       0x31 /home/fanaur/workspacePruebas/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .ARM.attributes
+                0x000007a8       0x31 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(__weak__main.o)
+ .ARM.attributes
+                0x000007d9       0x31 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(strlen.o)
+ .ARM.attributes
+                0x0000080a       0x31 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(memcpy.o)
+ .ARM.attributes
+                0x0000083b       0x31 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(memset.o)
+ .ARM.attributes
+                0x0000086c       0x21 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(division.o)
+ .ARM.attributes
+                0x0000088d       0x31 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(float.o)
+ .ARM.attributes
+                0x000008be       0x21 /usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(memcpy.o)
+
+.debug_frame    0x00000000     0x376c
+ .debug_frame   0x00000000       0xf0 ./src/cr_startup_lpc176x.o
+ .debug_frame   0x000000f0       0xa4 ./src/main.o
+ .debug_frame   0x00000194      0x1ac ./src/Lib_MCU/src/lpc17xx_adc.o
+ .debug_frame   0x00000340      0x294 ./src/Lib_MCU/src/lpc17xx_can.o
+ .debug_frame   0x000005d4       0xe4 ./src/Lib_MCU/src/lpc17xx_clkpwr.o
+ .debug_frame   0x000006b8       0xb0 ./src/Lib_MCU/src/lpc17xx_dac.o
+ .debug_frame   0x00000768      0x2c0 ./src/Lib_MCU/src/lpc17xx_emac.o
+ .debug_frame   0x00000a28       0xb4 ./src/Lib_MCU/src/lpc17xx_exti.o
+ .debug_frame   0x00000adc       0xa4 ./src/Lib_MCU/src/lpc17xx_gpdma.o
+ .debug_frame   0x00000b80      0x378 ./src/Lib_MCU/src/lpc17xx_gpio.o
+ .debug_frame   0x00000ef8      0x2d0 ./src/Lib_MCU/src/lpc17xx_i2c.o
+ .debug_frame   0x000011c8      0x2ac ./src/Lib_MCU/src/lpc17xx_i2s.o
+ .debug_frame   0x00001474       0x2c ./src/Lib_MCU/src/lpc17xx_libcfg_default.o
+ .debug_frame   0x000014a0      0x1b8 ./src/Lib_MCU/src/lpc17xx_mcpwm.o
+ .debug_frame   0x00001658       0x64 ./src/Lib_MCU/src/lpc17xx_nvic.o
+ .debug_frame   0x000016bc       0xbc ./src/Lib_MCU/src/lpc17xx_pinsel.o
+ .debug_frame   0x00001778      0x1f0 ./src/Lib_MCU/src/lpc17xx_pwm.o
+ .debug_frame   0x00001968      0x2b0 ./src/Lib_MCU/src/lpc17xx_qei.o
+ .debug_frame   0x00001c18       0xd0 ./src/Lib_MCU/src/lpc17xx_rit.o
+ .debug_frame   0x00001ce8      0x28c ./src/Lib_MCU/src/lpc17xx_rtc.o
+ .debug_frame   0x00001f74      0x1ac ./src/Lib_MCU/src/lpc17xx_spi.o
+ .debug_frame   0x00002120      0x24c ./src/Lib_MCU/src/lpc17xx_ssp.o
+ .debug_frame   0x0000236c       0xc0 ./src/Lib_MCU/src/lpc17xx_systick.o
+ .debug_frame   0x0000242c      0x248 ./src/Lib_MCU/src/lpc17xx_timer.o
+ .debug_frame   0x00002674      0x3cc ./src/Lib_MCU/src/lpc17xx_uart.o
+ .debug_frame   0x00002a40       0xf0 ./src/Lib_MCU/src/lpc17xx_wdt.o
+ .debug_frame   0x00002b30      0x12c ./src/Lib_EaBaseBoard/src/acc.o
+ .debug_frame   0x00002c5c       0xc4 ./src/Lib_EaBaseBoard/src/eeprom.o
+ .debug_frame   0x00002d20      0x188 ./src/Lib_EaBaseBoard/src/flash.o
+ .debug_frame   0x00002ea8       0x4c ./src/Lib_EaBaseBoard/src/joystick.o
+ .debug_frame   0x00002ef4       0x4c ./src/Lib_EaBaseBoard/src/led7seg.o
+ .debug_frame   0x00002f40      0x208 ./src/Lib_EaBaseBoard/src/light.o
+ .debug_frame   0x00003148      0x1ec ./src/Lib_EaBaseBoard/src/oled.o
+ .debug_frame   0x00003334      0x1a8 ./src/Lib_EaBaseBoard/src/pca9532.o
+ .debug_frame   0x000034dc       0x4c ./src/Lib_EaBaseBoard/src/rgb.o
+ .debug_frame   0x00003528       0x4c ./src/Lib_EaBaseBoard/src/rotary.o
+ .debug_frame   0x00003574       0x50 ./src/Lib_EaBaseBoard/src/temp.o
+ .debug_frame   0x000035c4      0x16c ./src/Lib_EaBaseBoard/src/uart2.o
+ .debug_frame   0x00003730       0x3c /home/fanaur/workspacePruebas/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)

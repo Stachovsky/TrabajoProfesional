@@ -1,0 +1,88 @@
+src/Tasks/Core/taskCore.d src/Tasks/Core/taskCore.o: \
+ ../src/Tasks/Core/taskCore.c ../src/Tasks/Core/taskCore.h \
+ /home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc/LPC17xx.h \
+ /home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc/core_cm3.h \
+ /home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc/core_cmInstr.h \
+ /home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc/core_cmFunc.h \
+ /home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc/system_LPC17xx.h \
+ /home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libDriversMcuPeripherals/inc/Lib_MCU/lpc_types.h \
+ /home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/FreeRTOS.h \
+ /home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/projdefs.h \
+ /home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/src/FreeRTOSConfig.h \
+ /home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/portable.h \
+ /home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_portable/portmacro.h \
+ /home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/mpu_wrappers.h \
+ /home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/task.h \
+ /home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/list.h \
+ /home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/src/Tasks/PcCommunication/taskPcCommunication.h \
+ /home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/queue.h \
+ /home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/semphr.h \
+ /home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/queue.h \
+ /home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/src/Tasks/PcCommunication/API_Uart.h \
+ /home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libDriversMcuPeripherals/inc/Lib_MCU/lpc17xx_pinsel.h \
+ /home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libDriversMcuPeripherals/inc/Lib_MCU/lpc_types.h \
+ /home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libDriversMcuPeripherals/inc/Lib_MCU/lpc17xx_uart.h \
+ /home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libDriversMcuPeripherals/inc/Lib_MCU/lpc17xx_clkpwr.h \
+ /home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/src/Tasks/PcCommunication/ProtocolPCComunication.h \
+ /home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/src/Tasks/PcCommunication/ProtocolPCComunication.h \
+ /home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/src/Tasks/SdCard/ff.h \
+ /home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/src/Tasks/SdCard/integer.h \
+ /home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/src/Tasks/SdCard/ffconf.h
+
+../src/Tasks/Core/taskCore.h:
+
+/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc/LPC17xx.h:
+
+/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc/core_cm3.h:
+
+/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc/core_cmInstr.h:
+
+/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc/core_cmFunc.h:
+
+/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc/system_LPC17xx.h:
+
+/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libDriversMcuPeripherals/inc/Lib_MCU/lpc_types.h:
+
+/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/FreeRTOS.h:
+
+/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/projdefs.h:
+
+/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/src/FreeRTOSConfig.h:
+
+/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/portable.h:
+
+/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_portable/portmacro.h:
+
+/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/mpu_wrappers.h:
+
+/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/task.h:
+
+/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/list.h:
+
+/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/src/Tasks/PcCommunication/taskPcCommunication.h:
+
+/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/queue.h:
+
+/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/semphr.h:
+
+/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/queue.h:
+
+/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/src/Tasks/PcCommunication/API_Uart.h:
+
+/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libDriversMcuPeripherals/inc/Lib_MCU/lpc17xx_pinsel.h:
+
+/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libDriversMcuPeripherals/inc/Lib_MCU/lpc_types.h:
+
+/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libDriversMcuPeripherals/inc/Lib_MCU/lpc17xx_uart.h:
+
+/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libDriversMcuPeripherals/inc/Lib_MCU/lpc17xx_clkpwr.h:
+
+/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/src/Tasks/PcCommunication/ProtocolPCComunication.h:
+
+/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/src/Tasks/PcCommunication/ProtocolPCComunication.h:
+
+/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/src/Tasks/SdCard/ff.h:
+
+/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/src/Tasks/SdCard/integer.h:
+
+/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/src/Tasks/SdCard/ffconf.h:

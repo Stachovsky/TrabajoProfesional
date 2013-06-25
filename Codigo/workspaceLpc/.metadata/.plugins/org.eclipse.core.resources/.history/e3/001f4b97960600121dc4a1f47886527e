@@ -1,0 +1,17 @@
+/*
+ * taskKeepAlibe.h
+ *
+ *  Created on: Sep 24, 2012
+ *      Author: "Facundo Nahuel Uriel Silva"
+ */
+
+#ifndef TASKKEEPALIBE_H_
+#define TASKKEEPALIBE_H_
+
+#include "LPC17xx.h"
+#include "FreeRTOS.h"
+#include "task.h"
+
+void taskKeepAlive(void * blinkPeriode);
+
+#endif /* TASKKEEPALIBE_H_ */

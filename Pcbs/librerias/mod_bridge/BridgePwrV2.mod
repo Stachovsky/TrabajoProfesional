@@ -1,0 +1,52 @@
+PCBNEW-LibModule-V1  dom 17 mar 2013 22:41:22 ART
+# encoding utf-8
+Units mm
+$INDEX
+BridgePwr
+$EndINDEX
+$MODULE BridgePwr
+Po 0 0 0 15 51467061 00000000 ~~
+Li BridgePwr
+Sc 0
+AR 
+Op 0 0 0
+T0 -11 -16 1.524 1.524 0 0.3048 N V 21 N "BridgePwr"
+T1 -14 -13.5 1.524 1.524 0 0.3048 N I 21 N "Pwr"
+DS -16 17 -16 15 0.381 21
+DS -16 17 8.5 17 0.381 21
+DS 8.5 17 12 12 0.381 21
+DS -16 -12 -12 -12 0.381 21
+DS -16 -12 -16 16.5 0.381 21
+DS 12 12 12 -12 0.381 21
+DS 12 -12 -12 -12 0.381 21
+DC -2.5 2.5 0 3.5 0.381 21
+$PAD
+Sh "1" C 1.524 1.524 0 0 0
+Dr 0 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7 -6
+$EndPAD
+$PAD
+Sh "2" C 1.524 1.524 0 0 0
+Dr 0 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -11 -6
+$EndPAD
+$PAD
+Sh "3" C 1.524 1.524 0 0 0
+Dr 0 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -11 12
+$EndPAD
+$PAD
+Sh "5" C 1.524 1.524 0 0 0
+Dr 0 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 0.5 12
+$EndPAD
+$EndMODULE BridgePwr
+$EndLIBRARY

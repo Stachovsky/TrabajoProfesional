@@ -1,0 +1,121 @@
+/*
+ * API_Uart.c
+ *
+ *  Created on: 30/04/2012
+ *      Author: Facundo Nahuel Uriel Silva
+ */
+
+#include "API_Uart.h"
+
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+
+// Variables globales de la API_UART
+uartPort control_uarts[4];
+
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+
+void API_UartConfig(uartPortNumber portNumber, void(*ifh)(void)){
+
+	switch (portNumber) {
+		case UART_PORT_0:
+			control_uarts[portNumber].port = (LPC_UART_TypeDef*)LPC_UART0;
+			break;
+		case UART_PORT_1:
+			control_uarts[portNumber].port = (LPC_UART_TypeDef*)LPC_UART1; //  FULL MODEM
+			break;
+		case UART_PORT_2:
+			control_uarts[portNumber].port = (LPC_UART_TypeDef*)LPC_UART2;
+			break;
+		case UART_PORT_3:
+			control_uarts[portNumber].port = (LPC_UART_TypeDef*)LPC_UART3;
+			break;
+	}
+
+	control_uarts[portNumber].accionInterruption = ifh;
+
+	// Configuracion de los pines de la uart
+	control_uarts[portNumber].pin.Funcnum = PINSEL_FUNC_2;
+	control_uarts[portNumber].pin.OpenDrain = PINSEL_PINMODE_NORMAL;
+	control_uarts[portNumber].pin.Pinmode = PINSEL_PINMODE_PULLUP;
+	control_uarts[portNumber].pin.Pinnum = PINSEL_PIN_0; //TXD3
+	control_uarts[portNumber].pin.Portnum = PINSEL_PORT_0;
+
+	PINSEL_ConfigPin(&control_uarts[portNumber].pin);
+	control_uarts[portNumber].pin.Pinnum = PINSEL_PIN_1;
+	PINSEL_ConfigPin(&control_uarts[portNumber].pin); //RXD3
+
+	// Configuracion de la UART
+	control_uarts[portNumber].config.Baud_rate = 115200;
+	control_uarts[portNumber].config.Databits = UART_DATABIT_8;
+	control_uarts[portNumber].config.Parity = UART_PARITY_NONE;
+	control_uarts[portNumber].config.Stopbits = UART_STOPBIT_1;
+
+	UART_Init(control_uarts[portNumber].port ,&control_uarts[3].config);
+	UART_TxCmd(control_uarts[portNumber].port, ENABLE);
+
+	UART_IntConfig(control_uarts[portNumber].port, UART_INTCFG_RBR, ENABLE); // Se activa la interrupcion de RXD
+
+
+//	NVIC_EnableIRQ(UART3_IRQn);
+
+}
+
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+
+void API_UartSendString(uartPortNumber portNumber,uint8_t* data){
+
+	UART_SendString(control_uarts[portNumber].port,(uint8_t*)data);
+}
+
+void API_UartSendByte(uartPortNumber portNumber,uint8_t data){
+
+	UART_SendString(control_uarts[portNumber].port,(uint8_t*)&data);
+}
+
+
+//////////////////////////////////////////////////////////////////////////////
+// Handlers de las interrupciones de las uarts
+//////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+
+void UART0_IRQHandler(void){
+
+	if(control_uarts[UART_PORT_0].accionInterruption != NULL)
+		control_uarts[UART_PORT_0].accionInterruption(control_uarts[UART_PORT_0].port->RBR);
+}
+
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+
+void UART1_IRQHandler(void){
+
+	if(control_uarts[UART_PORT_1].accionInterruption != NULL)
+		control_uarts[UART_PORT_1].accionInterruption();
+}
+
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+
+void UART2_IRQHandler(void){
+
+	if(control_uarts[UART_PORT_2].accionInterruption != NULL)
+		control_uarts[UART_PORT_2].accionInterruption();
+}
+
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+
+void UART3_IRQHandler(void){
+
+	if(control_uarts[UART_PORT_3].accionInterruption != NULL)
+		control_uarts[UART_PORT_3].accionInterruption();
+
+}
+
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////

@@ -1,0 +1,28 @@
+/*
+ * taskPcCommunication.h
+ *
+ *  Created on: Sep 26, 2012
+ *      Author: "Facundo Nahuel Uriel Silva"
+ */
+
+#ifndef TASKPCCOMMUNICATION_H_
+#define TASKPCCOMMUNICATION_H_
+
+#include "FreeRTOS.h"
+#include "task.h"
+#include "queue.h"
+#include "semphr.h"
+
+#include "LPC17xx.h"
+#include "lpc_types.h"
+
+#include "API_Uart.h"
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+void taskPcCommunication(void *paramametro);
+void interruptUart3(uint8_t c);
+
+#endif /* TASKPCCOMMUNICATION_H_ */

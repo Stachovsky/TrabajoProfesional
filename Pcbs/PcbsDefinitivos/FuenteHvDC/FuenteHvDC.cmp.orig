@@ -1,0 +1,339 @@
+Cmp-Mod V01 Created by CvPcb (2013-mar-13)-testing date = Tue 09 Apr 2013 08:08:16 PM ART
+
+BeginCmp
+TimeStamp = /512271B0;
+Reference = 1N4148;
+ValeurCmp = DIODE;
+IdModule  = SM0603_Capa;
+EndCmp
+
+BeginCmp
+TimeStamp = /51239DC7;
+Reference = C1;
+ValeurCmp = 2200uF;
+IdModule  = c_elec_10x20;
+EndCmp
+
+BeginCmp
+TimeStamp = /51262A4E;
+Reference = C2;
+ValeurCmp = 330uF;
+IdModule  = SMDHD/VF;
+EndCmp
+
+BeginCmp
+TimeStamp = /512384AE;
+Reference = D1;
+ValeurCmp = BU2010;
+IdModule  = bridge_1KV_TH;
+EndCmp
+
+BeginCmp
+TimeStamp = /51239696;
+Reference = D2;
+ValeurCmp = LMB2S;
+IdModule  = bridge_1A;
+EndCmp
+
+BeginCmp
+TimeStamp = /5126262F;
+Reference = D3;
+ValeurCmp = DIODESCH;
+IdModule  = SM1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /51369BD4;
+Reference = D4;
+ValeurCmp = LED;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /51369BE1;
+Reference = D5;
+ValeurCmp = HV_PRESENT;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /5122641E;
+Reference = F1;
+ValeurCmp = FUSE;
+IdModule  = FUSE_1KV_TH;
+EndCmp
+
+BeginCmp
+TimeStamp = /512D0533;
+Reference = K1;
+ValeurCmp = CONN_3;
+IdModule  = bornier3;
+EndCmp
+
+BeginCmp
+TimeStamp = /51262939;
+Reference = L1;
+ValeurCmp = 300mH;
+IdModule  = SMD_inductor;
+EndCmp
+
+BeginCmp
+TimeStamp = /5122420E;
+Reference = P1;
+ValeurCmp = CONN_2;
+IdModule  = bornier2;
+EndCmp
+
+BeginCmp
+TimeStamp = /5136925A;
+Reference = P2;
+ValeurCmp = CONN_2;
+IdModule  = PIN_ARRAY_2X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /5122685A;
+Reference = P3;
+ValeurCmp = CONN_2;
+IdModule  = bornier2;
+EndCmp
+
+BeginCmp
+TimeStamp = /51226860;
+Reference = P4;
+ValeurCmp = CONN_2;
+IdModule  = bornier2;
+EndCmp
+
+BeginCmp
+TimeStamp = /51408BF9;
+Reference = P5;
+ValeurCmp = CONN_2;
+IdModule  = 2PIN_6mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /5122670B;
+Reference = P6;
+ValeurCmp = CONN_2;
+IdModule  = PIN_ARRAY_2X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /51326D67;
+Reference = P7;
+ValeurCmp = Sirena;
+IdModule  = bornier2;
+EndCmp
+
+BeginCmp
+TimeStamp = /513273E5;
+Reference = P8;
+ValeurCmp = CONN_1;
+IdModule  = 1pin;
+EndCmp
+
+BeginCmp
+TimeStamp = /5132751C;
+Reference = P9;
+ValeurCmp = CONN_1;
+IdModule  = 1pin;
+EndCmp
+
+BeginCmp
+TimeStamp = /51369A5F;
+Reference = P10;
+ValeurCmp = CONN_8;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /51201F96;
+Reference = R1;
+ValeurCmp = 10k;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /51201EB5;
+Reference = R2;
+ValeurCmp = 1k;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /51201EC6;
+Reference = R3;
+ValeurCmp = 10k;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /5120288E;
+Reference = R4;
+ValeurCmp = 1k;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /5120288C;
+Reference = R5;
+ValeurCmp = 10k;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /5120288D;
+Reference = R6;
+ValeurCmp = 10k;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /5122633D;
+Reference = R7;
+ValeurCmp = R;
+IdModule  = SM0603_Resistor;
+EndCmp
+
+BeginCmp
+TimeStamp = /51228251;
+Reference = R8;
+ValeurCmp = 560;
+IdModule  = SM0603_Resistor;
+EndCmp
+
+BeginCmp
+TimeStamp = /51326D29;
+Reference = R9;
+ValeurCmp = 560;
+IdModule  = SM0603_Resistor;
+EndCmp
+
+BeginCmp
+TimeStamp = /51336D9D;
+Reference = R10;
+ValeurCmp = 10k;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /51336DA3;
+Reference = R11;
+ValeurCmp = 22K;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /51336DA9;
+Reference = R12;
+ValeurCmp = 10M;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /51336DAF;
+Reference = R13;
+ValeurCmp = 22K;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /51369A7B;
+Reference = R14;
+ValeurCmp = 560;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /513688AB;
+Reference = R15;
+ValeurCmp = 5.6k;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /51369A88;
+Reference = R16;
+ValeurCmp = 270;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /513688A5;
+Reference = R17;
+ValeurCmp = 3.3k;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /51239037;
+Reference = Rele1;
+ValeurCmp = IM03DGR;
+IdModule  = relay_gq-smd-s;
+EndCmp
+
+BeginCmp
+TimeStamp = /5133B132;
+Reference = Rele2;
+ValeurCmp = RELEDOBLE;
+IdModule  = relay_gq-smd-s;
+EndCmp
+
+BeginCmp
+TimeStamp = /5122351C;
+Reference = U1;
+ValeurCmp = TL082;
+IdModule  = SO8E;
+EndCmp
+
+BeginCmp
+TimeStamp = /51201E11;
+Reference = U2;
+ValeurCmp = IL300;
+IdModule  = DIP-8__300_ELL;
+EndCmp
+
+BeginCmp
+TimeStamp = /51223574;
+Reference = U3;
+ValeurCmp = TL082;
+IdModule  = SO8E;
+EndCmp
+
+BeginCmp
+TimeStamp = /5120288F;
+Reference = U4;
+ValeurCmp = IL300;
+IdModule  = DIP-8__300_ELL;
+EndCmp
+
+BeginCmp
+TimeStamp = /512298A6;
+Reference = U5;
+ValeurCmp = 4N28;
+IdModule  = DIP-6__300_ELL;
+EndCmp
+
+BeginCmp
+TimeStamp = /51262338;
+Reference = U6;
+ValeurCmp = 10M;
+IdModule  = TO263-5;
+EndCmp
+
+BeginCmp
+TimeStamp = /51326D16;
+Reference = U7;
+ValeurCmp = DIODE;
+IdModule  = SM0603_Capa;
+EndCmp
+
+BeginCmp
+TimeStamp = /51326D30;
+Reference = U8;
+ValeurCmp = 1n4148;
+IdModule  = DIP-6__300_ELL;
+EndCmp
+
+EndListe

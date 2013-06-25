@@ -1,0 +1,61 @@
+# EESchema Netlist Version 1.1 created  Tue 23 Oct 2012 11:06:12 AM ART
+(
+ ( /5086A263 $noname  RV1 POT {Lib=POT}
+  (    1 GND )
+  (    2 /D )
+  (    3 +3.3V )
+ )
+ ( /5086A275 $noname  RV2 POT {Lib=POT}
+  (    1 GND )
+  (    2 /C )
+  (    3 +3.3V )
+ )
+ ( /5086A27B $noname  RV3 POT {Lib=POT}
+  (    1 GND )
+  (    2 /B )
+  (    3 +3.3V )
+ )
+ ( /5086A281 $noname  RV4 POT {Lib=POT}
+  (    1 GND )
+  (    2 /A )
+  (    3 +3.3V )
+ )
+ ( /5086A301 $noname  P1 CONN_2 {Lib=CONN_2}
+  (    1 +3.3V )
+  (    2 GND )
+ )
+ ( /5086A3EE $noname  P2 CONN_4 {Lib=CONN_4}
+  (    1 /A )
+  (    2 /B )
+  (    3 /C )
+  (    4 /D )
+ )
+)
+*
+{ Pin List by Nets
+Net 1 "GND" "GND"
+ P1 2
+ RV4 1
+ RV3 1
+ RV2 1
+ RV1 1
+Net 2 "+3.3V" "+3.3V"
+ RV2 3
+ RV3 3
+ RV4 3
+ P1 1
+ RV1 3
+Net 3 "/A" "A"
+ P2 1
+ RV4 2
+Net 4 "/B" "B"
+ P2 2
+ RV3 2
+Net 5 "/C" "C"
+ P2 3
+ RV2 2
+Net 6 "/D" "D"
+ P2 4
+ RV1 2
+}
+#End

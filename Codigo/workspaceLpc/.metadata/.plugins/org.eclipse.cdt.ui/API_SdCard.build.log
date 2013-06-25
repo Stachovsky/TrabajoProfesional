@@ -1,0 +1,110 @@
+
+**** Build of configuration Debug for project API_SdCard ****
+
+make all 
+Building file: ../src/cr_startup_lpc176x.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/API_SdCard/inc" -O0 -Os -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/cr_startup_lpc176x.d" -MT"src/cr_startup_lpc176x.d" -o"src/cr_startup_lpc176x.o" "../src/cr_startup_lpc176x.c"
+Finished building: ../src/cr_startup_lpc176x.c
+ 
+Building file: ../src/debug.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/API_SdCard/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/debug.d" -MT"src/debug.d" -o"src/debug.o" "../src/debug.c"
+Finished building: ../src/debug.c
+ 
+Building file: ../src/dir.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/API_SdCard/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/dir.d" -MT"src/dir.d" -o"src/dir.o" "../src/dir.c"
+Finished building: ../src/dir.c
+ 
+Building file: ../src/disc.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/API_SdCard/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/disc.d" -MT"src/disc.d" -o"src/disc.o" "../src/disc.c"
+Finished building: ../src/disc.c
+ 
+Building file: ../src/efs.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/API_SdCard/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/efs.d" -MT"src/efs.d" -o"src/efs.o" "../src/efs.c"
+Finished building: ../src/efs.c
+ 
+Building file: ../src/extract.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/API_SdCard/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/extract.d" -MT"src/extract.d" -o"src/extract.o" "../src/extract.c"
+Finished building: ../src/extract.c
+ 
+Building file: ../src/fat.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/API_SdCard/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/fat.d" -MT"src/fat.d" -o"src/fat.o" "../src/fat.c"
+Finished building: ../src/fat.c
+ 
+Building file: ../src/file.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/API_SdCard/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/file.d" -MT"src/file.d" -o"src/file.o" "../src/file.c"
+Finished building: ../src/file.c
+ 
+Building file: ../src/fs.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/API_SdCard/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/fs.d" -MT"src/fs.d" -o"src/fs.o" "../src/fs.c"
+Finished building: ../src/fs.c
+ 
+Building file: ../src/ioman.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/API_SdCard/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/ioman.d" -MT"src/ioman.d" -o"src/ioman.o" "../src/ioman.c"
+Finished building: ../src/ioman.c
+ 
+Building file: ../src/ls.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/API_SdCard/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/ls.d" -MT"src/ls.d" -o"src/ls.o" "../src/ls.c"
+Finished building: ../src/ls.c
+ 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/API_SdCard/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o"src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/mkfs.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/API_SdCard/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/mkfs.d" -MT"src/mkfs.d" -o"src/mkfs.o" "../src/mkfs.c"
+Finished building: ../src/mkfs.c
+ 
+Building file: ../src/partition.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/API_SdCard/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/partition.d" -MT"src/partition.d" -o"src/partition.o" "../src/partition.c"
+Finished building: ../src/partition.c
+ 
+Building file: ../src/plibc.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/API_SdCard/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/plibc.d" -MT"src/plibc.d" -o"src/plibc.o" "../src/plibc.c"
+Finished building: ../src/plibc.c
+ 
+Building file: ../src/rdb1768_spi.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/API_SdCard/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/rdb1768_spi.d" -MT"src/rdb1768_spi.d" -o"src/rdb1768_spi.o" "../src/rdb1768_spi.c"
+Finished building: ../src/rdb1768_spi.c
+ 
+Building file: ../src/sd.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/API_SdCard/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/sd.d" -MT"src/sd.d" -o"src/sd.o" "../src/sd.c"
+Finished building: ../src/sd.c
+ 
+Building file: ../src/time.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/API_SdCard/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/time.d" -MT"src/time.d" -o"src/time.o" "../src/time.c"
+Finished building: ../src/time.c
+ 
+Building file: ../src/ui.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/API_SdCard/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/ui.d" -MT"src/ui.d" -o"src/ui.o" "../src/ui.c"
+Finished building: ../src/ui.c
+ 
+Building target: API_SdCard.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/Debug" -Xlinker -Map="API_SdCard.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "API_SdCard_Debug.ld" -o"API_SdCard.axf"  ./src/cr_startup_lpc176x.o ./src/debug.o ./src/dir.o ./src/disc.o ./src/efs.o ./src/extract.o ./src/fat.o ./src/file.o ./src/fs.o ./src/ioman.o ./src/ls.o ./src/main.o ./src/mkfs.o ./src/partition.o ./src/plibc.o ./src/rdb1768_spi.o ./src/sd.o ./src/time.o ./src/ui.o   -lCMSISv2p00_LPC17xx
+Finished building target: API_SdCard.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "API_SdCard.axf"; # arm-none-eabi-objcopy -O binary "API_SdCard.axf" "API_SdCard.bin" ; checksum -p LPC1769 -d "API_SdCard.bin";
+   text	   data	    bss	    dec	    hex	filename
+  25456	      0	   4496	  29952	   7500	API_SdCard.axf
+ 

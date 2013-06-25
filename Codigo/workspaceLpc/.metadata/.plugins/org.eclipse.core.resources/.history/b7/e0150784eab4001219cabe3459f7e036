@@ -1,0 +1,24 @@
+/*
+ * taskLcd.h
+ *
+ *  Created on: May 4, 2013
+ *      Author: fanaur
+ */
+
+#ifndef TASKLCD_H_
+#define TASKLCD_H_
+
+#include "LPC17xx.h"
+#include "lpc_types.h"
+#include "FreeRTOS.h"
+#include "task.h"
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#include "API_LcdGrafic.h"
+
+void taskLcd(void *paramametro);
+
+#endif /* TASKLCD_H_ */

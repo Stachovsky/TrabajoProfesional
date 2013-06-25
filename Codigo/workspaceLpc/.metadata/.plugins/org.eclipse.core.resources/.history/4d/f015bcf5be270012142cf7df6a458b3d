@@ -1,0 +1,169 @@
+/*
+ * Core.c
+ *
+ *  Created on: Sep 26, 2012
+ *      Author: "Facundo Nahuel Uriel Silva"
+ */
+
+#include "taskCore.h"
+#include "Tasks/SdCard/ff.h"
+
+FATFS fs;
+uint8_t spi_div_low = 250;
+uint8_t spi_div_high = 10;
+
+#define KHZ(x) (x * 1000)
+#define MHZ(x) (x * 1000000)
+
+#define SSEL 2
+#define SSEL_GPIO LPC_GPIO2
+
+static void init_ssp(void)
+{
+	SSP_CFG_Type SSP_ConfigStruct;
+	PINSEL_CFG_Type PinCfg;
+
+	/*
+	 * Initialize SPI pin connect
+	 * P0.7 - SCK;
+	 * P0.8 - MISO
+	 * P0.9 - MOSI
+	 * P2.2 - SSEL - used as GPIO
+	 */
+	PinCfg.Funcnum = 2;
+	PinCfg.OpenDrain = 0;
+	PinCfg.Pinmode = 0;
+	PinCfg.Portnum = 0;
+	PinCfg.Pinnum = 7;
+	PINSEL_ConfigPin(&PinCfg);
+	PinCfg.Pinnum = 8;
+	PINSEL_ConfigPin(&PinCfg);
+	PinCfg.Pinnum = 9;
+	PINSEL_ConfigPin(&PinCfg);
+	PinCfg.Funcnum = 0;
+	PinCfg.Portnum = 2;
+	PinCfg.Pinnum = 2;
+	PINSEL_ConfigPin(&PinCfg);
+
+	SSP_ConfigStructInit(&SSP_ConfigStruct);
+
+	// Initialize SSP peripheral with parameter given in structure above
+	SSP_Init(LPC_SSP1, &SSP_ConfigStruct);
+
+	// Enable SSP peripheral
+	SSP_Cmd(LPC_SSP1, ENABLE);
+
+}
+
+static void SetSPIClocks(uint32_t low, uint32_t high)
+{
+	spi_div_low  = SystemCoreClock / low;
+	spi_div_high = (SystemCoreClock+high-1) / high;
+
+	if(spi_div_low & 1) spi_div_low++;
+	if(spi_div_high & 1) spi_div_high++;
+}
+
+void taskCore(void *paramametro){
+
+	const portTickType xDelay = 2000 / portTICK_RATE_MS;
+
+//	msgPcCom msgTX;
+	msgPcCom msgRX;
+	msgPcCom msgTXAck;
+
+	FIL file;
+	FRESULT res;
+	UINT written;
+
+	init_ssp(void);
+//
+//	LPC_GPIO0->FIODIR |= 1<<22;
+//	LPC_GPIO0->FIOCLR |= 1<<22;
+//
+//	LPC_SC->PCLKSEL0 &= ~(3<<2);
+//	LPC_SC->PCLKSEL0 |= 1<<2;
+
+//	SetSPIClocks(KHZ(400), MHZ(1));
+
+	LPC_SC->PCLKSEL1 = (LPC_SC->PCLKSEL1 & ~(3<<18)) | (1<<18);
+
+	res = f_mount(0, &fs);
+	res = f_open(&file, "Facundo.txt", FA_CREATE_NEW | FA_WRITE);
+	res = f_write(&file, "Hello world!!!", strlen("Hello world!!!"), &written);
+	res = f_close(&file);
+
+	// Se inicializa el mensaje
+//	pcComInitMsg(&msgTX.cmd,CMD_PCCOM_READ_ADC_1);
+	pcComInitMsg(&msgTXAck.cmd,CMD_PCCOM_ACK);
+
+//	msgTX.cmd.data[0] = 0x00;
+//	msgTX.cmd.len = 1;
+
+	while(1){
+
+
+//
+//		// Start A/D conversion for on AD0.0
+//		LPC_ADC->ADCR = START_ADC | OPERATIONAL_ADC | SEL_AD0 ;
+//
+//		do {
+//			adval = LPC_ADC->ADGDR;            // Read A/D Data Register
+//		} while ((adval & ADC_DONE_BIT) == 0); // Wait for end of A/D Conversion
+//
+//		// Stop A/D Conversion
+//		LPC_ADC->ADCR &= ~(START_ADC | OPERATIONAL_ADC | SEL_AD0) ;
+//
+//		// Extract AD0.0 value - 12 bit result in bits [15:4]
+////		adval = (adval >> 4) & 0x0FFF ;
+//		adc0val = (uint8_t)(adval & 0x000000FF);
+//
+//		msgTX.idMsg++;
+//		msgTX.cmd.data[0] = adc0val;
+//
+//
+//		xQueueSend(queuePcComTX,&msgTX,1000);
+
+		// se intenta leer un mensaje de la cola. El numero de elementos en la cola se decrementa en 1
+		if(xQueueReceive(queuePcComRX,&msgRX,1000)){
+
+			xQueueSend(queuePcComTX,&msgTXAck,1000);
+
+			switch(msgRX.cmd.cmdId){
+
+				case CMD_PCCOM_LED_RED_ON:
+					LPC_GPIO2->FIOSET = (1<<0); // red
+					break;
+
+				case CMD_PCCOM_LED_RED_OFF:
+					LPC_GPIO2->FIOCLR = (1<<0); // red
+					break;
+
+				case CMD_PCCOM_LED_BLUE_ON:
+					LPC_GPIO0->FIOSET = (1<<26); // blue
+					break;
+
+				case CMD_PCCOM_LED_BLUE_OFF:
+					LPC_GPIO0->FIOCLR = (1<<26); // blue
+					break;
+
+				case CMD_PCCOM_LED_GREEN_ON:
+					LPC_GPIO2->FIOSET = (1<<1); // green
+					break;
+
+				case CMD_PCCOM_LED_GREEN_OFF:
+					LPC_GPIO2->FIOCLR = (1<<1); // green
+					break;
+			}
+
+
+		}
+
+		vTaskDelay( xDelay );
+
+//		msgTX.idMsg++;
+//		msgTX.cmd.data[0]++;
+
+		taskYIELD();
+	}
+}

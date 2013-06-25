@@ -1,0 +1,14 @@
+/*
+ * taskKeepAlibe.h
+ *
+ *  Created on: Sep 24, 2012
+ *      Author: "Facundo Nahuel Uriel Silva"
+ */
+
+#ifndef TASKKEEPALIBE_H_
+#define TASKKEEPALIBE_H_
+
+
+void taskKeepAlive(void);
+
+#endif /* TASKKEEPALIBE_H_ */

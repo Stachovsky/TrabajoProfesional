@@ -1,0 +1,47 @@
+
+#include "lcd_buffer.h"
+#include "lcd_fonts.h"
+#include "Driver_LcdGrafic.h"
+
+#ifndef LCD_H_
+#define LCD_H_
+
+#define F4X6		font_4x6
+#define F5X7		font_5x7
+#define F6X10		font_6x10
+#define F6X13B		font_6x13B
+#define F7X13B		font_7x13B
+#define F9X15		font_9x15
+#define FLUBI19		font_lubI19
+#define FLUBS24		font_luBS14
+#define FTIMBI24	font_timBI24
+#define FTIMR14		font_timR14
+
+#define FtITLE		FLUBI19
+#define FsUBtITLE	F7X13B
+#define FtIME		F6X10
+
+//#define OFFSETtIMEy		64-11+1
+//#define OFFSETtITLE 	+1
+//#define OFFSETsUBtITLE1	25
+//#define OFFSETsUBtITLE2	38
+
+// *********************
+
+int LcdByte ( unsigned char );
+int LcdWritePoints (void);
+int LcdWrite ( unsigned char );
+int LcdDisplayStartLine ( unsigned char );
+int LcdSetPage ( unsigned char );
+int LcdSetAddress ( unsigned char );
+void LcdTransmit (void);
+int LcdPowerOff (void);
+int LcdPowerOn (void);
+int LcdInit(void);
+int LcdBorrarPantalla ( void );
+int LcdImprimeBuffer (void);
+unsigned char LcdGetBuffDim ( char * , unsigned char *);
+int LcdPrint(char * , unsigned char * , unsigned char , unsigned char );
+int LcdBorraBuffer (unsigned char , unsigned char , unsigned char , unsigned char );
+
+#endif /* LCD_H_ */

@@ -1,0 +1,72 @@
+PCBNEW-LibModule-V1  mié 22 may 2013 23:24:15 ART
+# encoding utf-8
+Units mm
+$INDEX
+relay_JQC-3F-1C
+$EndINDEX
+$MODULE relay_JQC-3F-1C
+Po 0 0 0 15 519D7CA6 00000000 ~~
+Li relay_JQC-3F-1C
+Sc 0
+AR 
+Op 0 0 0
+T0 0 -4 1 1 0 0.15 N V 21 N "relay_JQC-3F-1C"
+T1 0 -2.5 1 1 0 0.15 N I 21 N "VAL**"
+DS 5 0.5 6.5 2 0.15 21
+DS 6.5 3 6.5 4.5 0.15 21
+DS 6.5 -4.5 6.5 -3 0.15 21
+DC 6.5 -2.5 6.5 -3 0.15 21
+DC 6.5 2.5 6.5 2 0.15 21
+DC 6.5 -5 6.5 -4.5 0.15 21
+DC 4.5 0 5 0 0.15 21
+DC 6.5 5 6.5 4.5 0.15 21
+DS -7.5 0 4 0 0.15 21
+DS -6.5 2.5 -6.5 5.5 0.15 21
+DS -6.5 -2 -6.5 -5.5 0.15 21
+DS -7.5 -2 -5.5 2.5 0.15 21
+DS -7.5 0 -7.5 -2 0.15 21
+DS -7.5 -2 -5.5 -2 0.15 21
+DS -5.5 -2 -5.5 2.5 0.15 21
+DS -5.5 2.5 -7.5 2.5 0.15 21
+DS -7.5 2.5 -7.5 0 0.15 21
+DS 9.5 7.5 -9.5 7.5 0.15 21
+DS -9.5 7.5 -9.5 -7.5 0.15 21
+DS -9.5 -7.5 9.5 -7.5 0.15 21
+DS 9.5 -7.5 9.5 7.5 0.15 21
+$PAD
+Sh "1" C 1 1 0 0 0
+Dr 0.6 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -6.5 6
+$EndPAD
+$PAD
+Sh "2" C 1 1 0 0 0
+Dr 0.6 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -6.5 -6
+$EndPAD
+$PAD
+Sh "3" C 1 1 0 0 0
+Dr 0.6 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -8.5 0
+$EndPAD
+$PAD
+Sh "4" C 1 1 0 0 0
+Dr 0.6 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 6.5 -6
+$EndPAD
+$PAD
+Sh "5" C 1 1 0 0 0
+Dr 0.6 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 6.5 6
+$EndPAD
+$EndMODULE relay_JQC-3F-1C
+$EndLIBRARY

@@ -1,0 +1,13 @@
+/*
+ * PcCommunication.h
+ *
+ *  Created on: Sep 26, 2012
+ *      Author: Facundo Nahuel Uriel Silva
+ */
+
+#ifndef PCCOMMUNICATION_H_
+#define PCCOMMUNICATION_H_
+
+void taskPcCommunication(void *param) {
+
+#endif /* PCCOMMUNICATION_H_ */

@@ -1,0 +1,47 @@
+
+#include "taskLcd.h"
+
+void taskLcd(void *paramametro){
+
+	uint8_t i,j = 0;
+	int8_t str[30];
+
+	unsigned char *p;
+	unsigned char mask;
+	unsigned char xi,yi,xf,yf;
+
+	const portTickType xDelay = 1000 / portTICK_RATE_MS;
+
+//	API_LcdGraficPrint("UECAS",FONT_SMALL,50,0);
+
+	API_LcdGraficFillDisplay();
+
+	xi=0;
+	yi=1;
+	xf=128;
+	yf=3;
+
+	p = lcd_buffer;
+
+	for(i=xi; i < xf; i++){
+		for(j=yi; j < yf; j++){
+			*(p + i + (j/8)*128) &= ~(1 << j%8);
+		}
+	}
+
+	API_LcdGraficPrintBuffer();
+
+	while(1) {
+
+//		buf_clear();
+//		sprintf((char*)str,"Carga: %%%d   ",i);//		API_LcdGraficPrint(str,FONT_SMALL,12,14);
+//		API_LcdDrawProgressBar(i);//
+//		i++;
+//		if(i >100){
+//			i = 0;
+//			API_LcdCleanScreen();
+//		}
+
+		vTaskDelay(xDelay);
+	}
+}

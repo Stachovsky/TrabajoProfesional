@@ -1,0 +1,21 @@
+/*
+ * ProtocolPCComunicaction.h
+ *
+ *  Created on: Sep 26, 2012
+ *      Author: Facundo Nahuel Uriel Silva
+ */
+
+#ifndef PROTOCOLPCCOMUNICACTION_H_
+#define PROTOCOLPCCOMUNICACTION_H_
+
+#include "LPC17xx.h"
+#include "lpc_types.h"
+
+typedef{
+
+	uint_8	id;
+
+
+} msgPcCom;
+
+#endif /* PROTOCOLPCCOMUNICACTION_H_ */

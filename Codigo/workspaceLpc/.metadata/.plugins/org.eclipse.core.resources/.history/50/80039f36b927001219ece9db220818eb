@@ -1,0 +1,9 @@
+src/Tasks/SdCard/syscall.d src/Tasks/SdCard/syscall.o: \
+ ../src/Tasks/SdCard/syscall.c ../src/Tasks/SdCard/ff.h \
+ ../src/Tasks/SdCard/integer.h ../src/Tasks/SdCard/ffconf.h
+
+../src/Tasks/SdCard/ff.h:
+
+../src/Tasks/SdCard/integer.h:
+
+../src/Tasks/SdCard/ffconf.h:

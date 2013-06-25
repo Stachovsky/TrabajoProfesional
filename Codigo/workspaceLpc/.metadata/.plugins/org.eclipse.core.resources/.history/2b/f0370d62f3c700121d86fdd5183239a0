@@ -1,0 +1,276 @@
+/*
+ * taskAdc.c
+ *
+ *  Created on: Oct 27, 2012
+ *      Authorint16_t getAdcValue(ADC_type adc);: "Facundo Nahuel Uriel Silva"
+ */
+
+#include "taskAdc.h"
+
+xSemaphoreHandle mutexAdcReady;
+volatile SensorsValues medicion;
+volatile ADC_type currentAdc;
+volatile AdcInterruptMode interruptAdcMode;
+
+extern xQueueHandle queueAcdToCore;
+extern xQueueHandle queueCoreToAcd;
+
+
+/////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////
+
+void taskAdc(void *param){
+
+	AdcTaskState adcState = tasMonitoreando;
+	msgAdcCore msgToCore;
+	msgAdcCore msgFromCore;
+	PINSEL_CFG_Type PinCfg;
+	const portTickType xDelay = 500 / portTICK_RATE_MS;
+
+	mutexAdcReady = xSemaphoreCreateMutex();
+	xSemaphoreTake(mutexAdcReady, portMAX_DELAY);
+
+	PinCfg.Funcnum = 1;
+	PinCfg.OpenDrain = 0;
+	PinCfg.Pinmode = 0;
+
+	// Adc 0
+	PinCfg.Portnum = 0;
+	PinCfg.Pinnum = 23;
+	PINSEL_ConfigPin(&PinCfg);
+
+	// Adc 1
+	PinCfg.Portnum = 0;
+	PinCfg.Pinnum = 24;
+	PINSEL_ConfigPin(&PinCfg);
+
+	// Adc 2
+	PinCfg.Portnum = 0;
+	PinCfg.Pinnum = 25;
+	PINSEL_ConfigPin(&PinCfg);
+
+	// Adc 3
+	PinCfg.Portnum = 0;
+	PinCfg.Pinnum = 26;
+	PINSEL_ConfigPin(&PinCfg);
+
+	// Adc 4
+	PinCfg.Portnum = 1;
+	PinCfg.Pinnum = 30;
+	PINSEL_ConfigPin(&PinCfg);
+
+	ADC_Init(LPC_ADC, 20000);
+	ADC_IntConfig(LPC_ADC,ADC_ADINTEN2,ENABLE);
+	ADC_EdgeStartConfig(LPC_ADC,ADC_START_ON_FALLING);
+
+	ADC_ChannelCmd(LPC_ADC,ADC_CHANNEL_0,ENABLE);
+	ADC_ChannelCmd(LPC_ADC,ADC_CHANNEL_1,DISABLE);
+	ADC_ChannelCmd(LPC_ADC,ADC_CHANNEL_2,DISABLE);
+	ADC_ChannelCmd(LPC_ADC,ADC_CHANNEL_3,DISABLE);
+	ADC_ChannelCmd(LPC_ADC,ADC_CHANNEL_4,DISABLE);
+	currentAdc = ADC_0;
+
+	NVIC_SetPriority(ADC_IRQn, ((0x01<<3)|0x01));
+
+	interruptAdcMode = aisSensadoTensiones;
+
+	/* Enable ADC in NVIC */
+	NVIC_EnableIRQ(ADC_IRQn);
+
+	// Start conversion
+	ADC_StartCmd(LPC_ADC,ADC_START_NOW);
+
+	while(1){
+
+		switch(adcState){
+
+			//////////////////////////////////////////////////////
+
+			case tasMonitoreando:
+
+				xSemaphoreTake(mutexAdcReady, portMAX_DELAY);
+
+				msgToCore.currentState = adcState;
+
+				msgToCore.adc = ADC_0;
+				msgToCore.valueArray[0] = (uint8_t)(medicion.Adc0Value & 0x000000FF);
+				msgToCore.valueArray[1] = (uint8_t)((medicion.Adc0Value & 0x0000FF00) >> 8);
+				xQueueSend(queueAcdToCore,&msgToCore,100);
+
+				msgToCore.adc = ADC_1;
+				msgToCore.valueArray[0] = (uint8_t)(medicion.Adc1Value & 0x000000FF);
+				msgToCore.valueArray[1] = (uint8_t)((medicion.Adc1Value & 0x0000FF00) >> 8);
+				xQueueSend(queueAcdToCore,&msgToCore,100);
+
+				msgToCore.adc = ADC_2;
+				msgToCore.valueArray[0] = (uint8_t)(medicion.Adc2Value & 0x000000FF);
+				msgToCore.valueArray[1] = (uint8_t)((medicion.Adc2Value & 0x0000FF00) >> 8);
+				xQueueSend(queueAcdToCore,&msgToCore,100);
+
+				msgToCore.adc = ADC_3;
+				msgToCore.valueArray[0] = (uint8_t)(medicion.Adc3Value & 0x000000FF);
+				msgToCore.valueArray[1] = (uint8_t)((medicion.Adc3Value & 0x0000FF00) >> 8);
+				xQueueSend(queueAcdToCore,&msgToCore,100);
+
+				msgToCore.adc = ADC_4;
+				msgToCore.valueArray[0] = (uint8_t)(medicion.Adc4Value & 0x000000FF);
+				msgToCore.valueArray[1] = (uint8_t)((medicion.Adc4Value & 0x0000FF00) >> 8);
+				xQueueSend(queueAcdToCore,&msgToCore,100);
+
+				vTaskDelay(xDelay);
+
+				NVIC_EnableIRQ(ADC_IRQn);
+				ADC_StartCmd(LPC_ADC,ADC_START_NOW);
+
+				break;
+
+			//////////////////////////////////////////////////////
+
+			case tasInicializandoSensadoCorriente:
+
+				// Se configura la logica de la interrupcion para sensar el sensor de corriente a 150KHZ
+
+				NVIC_DisableIRQ(ADC_IRQn);
+
+				adcState = tasEsperandoInicioSensandoCorriente;
+
+//				// Se informa el estado actual
+//				msgToCore.currentState = adcState;
+//				msgToCore.adc = ADC_None;
+//				xQueueSend(queueAcdToCore,&msgToCore,100);
+
+				break;
+
+			//////////////////////////////////////////////////////
+
+			case tasEsperandoInicioSensandoCorriente:
+				break;
+
+			//////////////////////////////////////////////////////
+
+			case tasSensandoCorriente:
+				NVIC_EnableIRQ(ADC_IRQn);
+				ADC_StartCmd(LPC_ADC,ADC_START_NOW);
+				interruptAdcMode = aisSensandoCorriente;
+
+				break;
+
+			//////////////////////////////////////////////////////
+
+			case tasEnviadoDatosCorriente:
+				break;
+
+			//////////////////////////////////////////////////////
+		}
+
+		// se intenta leer un mensaje de la cola de mensajes del adc
+		if(uxQueueMessagesWaiting(queueCoreToAcd) > 0){
+
+			if(xQueueReceive(queueCoreToAcd,&msgFromCore,( portTickType ) 0) == pdTRUE){
+
+				adcState = msgFromCore.nextState;
+
+			}
+		}
+
+	}
+
+}
+
+/////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////
+
+void ADC_IRQHandler(void){
+
+	signed portBASE_TYPE pxHigherPriorityTaskWoken = pdFALSE;
+
+	NVIC_DisableIRQ(ADC_IRQn);
+
+	switch(interruptAdcMode){
+
+		case aisSensadoTensiones:
+			switch(currentAdc){
+
+				case ADC_0:
+					medicion.Adc0Value =  ADC_GetData(ADC_CHANNEL_0);
+					currentAdc = ADC_1;
+					ADC_ChannelCmd(LPC_ADC,ADC_CHANNEL_0,DISABLE);
+					ADC_ChannelCmd(LPC_ADC,ADC_CHANNEL_1,ENABLE);
+					ADC_ChannelCmd(LPC_ADC,ADC_CHANNEL_2,DISABLE);
+					ADC_ChannelCmd(LPC_ADC,ADC_CHANNEL_3,DISABLE);
+					ADC_ChannelCmd(LPC_ADC,ADC_CHANNEL_4,DISABLE);
+					NVIC_EnableIRQ(ADC_IRQn);
+					ADC_StartCmd(LPC_ADC,ADC_START_NOW);
+					break;
+
+				case ADC_1:
+					medicion.Adc1Value =  ADC_GetData(ADC_CHANNEL_1);
+					currentAdc = ADC_2;
+					ADC_ChannelCmd(LPC_ADC,ADC_CHANNEL_0,DISABLE);
+					ADC_ChannelCmd(LPC_ADC,ADC_CHANNEL_1,DISABLE);
+					ADC_ChannelCmd(LPC_ADC,ADC_CHANNEL_2,ENABLE);
+					ADC_ChannelCmd(LPC_ADC,ADC_CHANNEL_3,DISABLE);
+					ADC_ChannelCmd(LPC_ADC,ADC_CHANNEL_4,DISABLE);
+					NVIC_EnableIRQ(ADC_IRQn);
+					ADC_StartCmd(LPC_ADC,ADC_START_NOW);
+					break;
+
+				case ADC_2:
+					medicion.Adc2Value =  ADC_GetData(ADC_CHANNEL_2);
+					currentAdc = ADC_3;
+					ADC_ChannelCmd(LPC_ADC,ADC_CHANNEL_0,DISABLE);
+					ADC_ChannelCmd(LPC_ADC,ADC_CHANNEL_1,DISABLE);
+					ADC_ChannelCmd(LPC_ADC,ADC_CHANNEL_2,DISABLE);
+					ADC_ChannelCmd(LPC_ADC,ADC_CHANNEL_3,ENABLE);
+					ADC_ChannelCmd(LPC_ADC,ADC_CHANNEL_4,DISABLE);
+					NVIC_EnableIRQ(ADC_IRQn);
+					ADC_StartCmd(LPC_ADC,ADC_START_NOW);
+					break;
+
+				case ADC_3:
+					medicion.Adc3Value =  ADC_GetData(ADC_CHANNEL_3);
+					currentAdc = ADC_4;
+					ADC_ChannelCmd(LPC_ADC,ADC_CHANNEL_0,DISABLE);
+					ADC_ChannelCmd(LPC_ADC,ADC_CHANNEL_1,DISABLE);
+					ADC_ChannelCmd(LPC_ADC,ADC_CHANNEL_2,DISABLE);
+					ADC_ChannelCmd(LPC_ADC,ADC_CHANNEL_3,DISABLE);
+					ADC_ChannelCmd(LPC_ADC,ADC_CHANNEL_4,ENABLE);
+					NVIC_EnableIRQ(ADC_IRQn);
+					ADC_StartCmd(LPC_ADC,ADC_START_NOW);
+					break;
+
+				case ADC_4:
+					medicion.Adc4Value =  ADC_GetData(ADC_CHANNEL_4);
+					currentAdc = ADC_0;
+					ADC_ChannelCmd(LPC_ADC,ADC_CHANNEL_0,ENABLE);
+					ADC_ChannelCmd(LPC_ADC,ADC_CHANNEL_1,DISABLE);
+					ADC_ChannelCmd(LPC_ADC,ADC_CHANNEL_2,DISABLE);
+					ADC_ChannelCmd(LPC_ADC,ADC_CHANNEL_3,DISABLE);
+					ADC_ChannelCmd(LPC_ADC,ADC_CHANNEL_4,DISABLE);
+					ADC_StartCmd(LPC_ADC,ADC_START_NOW);
+
+					xSemaphoreGiveFromISR(mutexAdcReady,&pxHigherPriorityTaskWoken);
+					break;
+
+				case ADC_None:
+					break;
+			}
+
+			break;
+
+		////////////////////////////////////////////////////////
+
+		case aisSensandoCorriente:
+
+			break;
+
+		////////////////////////////////////////////////////////
+
+		}
+
+
+
+}
+
+/////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////

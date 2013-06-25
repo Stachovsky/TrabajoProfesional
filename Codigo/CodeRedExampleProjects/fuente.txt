@@ -1,0 +1,3 @@
+http://ics.nxp.com/support/lpcxpresso/
+http://support.code-red-tech.com/CodeRedWiki/RDB1768cmsisExampleProjects
+http://bikealive.nl/fatfs.html

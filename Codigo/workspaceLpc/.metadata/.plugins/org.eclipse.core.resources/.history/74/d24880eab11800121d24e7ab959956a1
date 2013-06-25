@@ -1,0 +1,3 @@
+src/font_7x13.d src/font_7x13.o: ../src/font_7x13.c ../src/fonts.h
+
+../src/fonts.h:

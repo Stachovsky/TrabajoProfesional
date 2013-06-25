@@ -1,0 +1,14 @@
+/*
+ * taskPcCommunication.h
+ *
+ *  Created on: Sep 26, 2012
+ *      Author: "Facundo Nahuel Uriel Silva"
+ */
+
+#ifndef TASKPCCOMMUNICATION_H_
+#define TASKPCCOMMUNICATION_H_
+
+void taskPcCommunication(void *paramametro)
+void interruptUart3(uint8_t c);
+
+#endif /* TASKPCCOMMUNICATION_H_ */

@@ -1,0 +1,242 @@
+EESchema Schematic File Version 2  date Tue 23 Oct 2012 02:11:56 PM ART
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 43  0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "23 oct 2012"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L POT RV1
+U 1 1 5086A263
+P 3950 2650
+F 0 "RV1" H 3950 2550 50  0000 C CNN
+F 1 "POT" H 3950 2650 50  0000 C CNN
+	1    3950 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L POT RV2
+U 1 1 5086A275
+P 4550 2650
+F 0 "RV2" H 4550 2550 50  0000 C CNN
+F 1 "POT" H 4550 2650 50  0000 C CNN
+	1    4550 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L POT RV3
+U 1 1 5086A27B
+P 5150 2650
+F 0 "RV3" H 5150 2550 50  0000 C CNN
+F 1 "POT" H 5150 2650 50  0000 C CNN
+	1    5150 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L POT RV4
+U 1 1 5086A281
+P 5700 2650
+F 0 "RV4" H 5700 2550 50  0000 C CNN
+F 1 "POT" H 5700 2650 50  0000 C CNN
+	1    5700 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_2 P1
+U 1 1 5086A301
+P 6900 1700
+F 0 "P1" V 6850 1700 40  0000 C CNN
+F 1 "CONN_2" V 6950 1700 40  0000 C CNN
+	1    6900 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR01
+U 1 1 5086A310
+P 6550 1550
+F 0 "#PWR01" H 6550 1510 30  0001 C CNN
+F 1 "+3.3V" H 6550 1660 30  0000 C CNN
+	1    6550 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR02
+U 1 1 5086A327
+P 5700 2300
+F 0 "#PWR02" H 5700 2260 30  0001 C CNN
+F 1 "+3.3V" H 5700 2410 30  0000 C CNN
+	1    5700 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR03
+U 1 1 5086A32D
+P 5150 2300
+F 0 "#PWR03" H 5150 2260 30  0001 C CNN
+F 1 "+3.3V" H 5150 2410 30  0000 C CNN
+	1    5150 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR04
+U 1 1 5086A333
+P 4550 2300
+F 0 "#PWR04" H 4550 2260 30  0001 C CNN
+F 1 "+3.3V" H 4550 2410 30  0000 C CNN
+	1    4550 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR05
+U 1 1 5086A339
+P 3950 2300
+F 0 "#PWR05" H 3950 2260 30  0001 C CNN
+F 1 "+3.3V" H 3950 2410 30  0000 C CNN
+	1    3950 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 5086A341
+P 6550 1900
+F 0 "#PWR06" H 6550 1900 30  0001 C CNN
+F 1 "GND" H 6550 1830 30  0001 C CNN
+	1    6550 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 5086A34E
+P 5700 3000
+F 0 "#PWR07" H 5700 3000 30  0001 C CNN
+F 1 "GND" H 5700 2930 30  0001 C CNN
+	1    5700 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 5086A354
+P 5150 3000
+F 0 "#PWR08" H 5150 3000 30  0001 C CNN
+F 1 "GND" H 5150 2930 30  0001 C CNN
+	1    5150 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR09
+U 1 1 5086A35A
+P 4550 3000
+F 0 "#PWR09" H 4550 3000 30  0001 C CNN
+F 1 "GND" H 4550 2930 30  0001 C CNN
+	1    4550 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR010
+U 1 1 5086A360
+P 3950 3000
+F 0 "#PWR010" H 3950 3000 30  0001 C CNN
+F 1 "GND" H 3950 2930 30  0001 C CNN
+	1    3950 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_4 P2
+U 1 1 5086A3EE
+P 6950 2650
+F 0 "P2" V 6900 2650 50  0000 C CNN
+F 1 "CONN_4" V 7000 2650 50  0000 C CNN
+	1    6950 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 2900 3950 3000
+Wire Wire Line
+	4550 2900 4550 3000
+Wire Wire Line
+	5150 2900 5150 3000
+Wire Wire Line
+	5700 2900 5700 3000
+Wire Wire Line
+	5700 2300 5700 2400
+Wire Wire Line
+	5150 2300 5150 2400
+Wire Wire Line
+	4550 2300 4550 2400
+Wire Wire Line
+	3950 2300 3950 2400
+Wire Wire Line
+	6550 1800 6550 1900
+Wire Wire Line
+	6550 1600 6550 1550
+Wire Wire Line
+	3800 2650 3550 2650
+Wire Wire Line
+	4400 2650 4150 2650
+Wire Wire Line
+	5000 2650 4750 2650
+Wire Wire Line
+	5550 2650 5350 2650
+Wire Wire Line
+	6600 2500 6350 2500
+Wire Wire Line
+	6600 2600 6350 2600
+Wire Wire Line
+	6600 2700 6350 2700
+Wire Wire Line
+	6600 2800 6350 2800
+Text Label 6450 2500 0    60   ~ 0
+A
+Text Label 5450 2650 0    60   ~ 0
+A
+Text Label 6450 2600 0    60   ~ 0
+B
+Text Label 6450 2700 0    60   ~ 0
+C
+Text Label 6450 2800 0    60   ~ 0
+D
+Text Label 4900 2650 0    60   ~ 0
+B
+Text Label 4250 2650 0    60   ~ 0
+C
+Text Label 3650 2650 0    60   ~ 0
+D
+$EndSCHEMATC

@@ -1,0 +1,20 @@
+Drill report for /home/estanux/Documentos/repo/trabajoprofesional/Pcbs/PcbsDefinitivos/DisplayGraficoConectorUSB/DisplayGraficoConectorUSB.brd
+Created on Mon 10 Jun 2013 16:38:03 ART
+Drill report for plated through holes :
+T1  0,64mm  0,025"  (12 holes)
+T2  0,81mm  0,032"  (2 holes)
+T3  0,90mm  0,035"  (3 holes)
+T4  0,95mm  0,037"  (4 holes)
+T5  1,00mm  0,039"  (2 holes)
+T6  1,00mm  0,039"  (40 holes)
+T7  2,30mm  0,091"  (4 holes)
+T8  3,50mm  0,138"  (4 holes)
+
+Total plated holes count 71
+
+
+Drill report for unplated through holes :
+
+Total unplated holes count 0
+
+

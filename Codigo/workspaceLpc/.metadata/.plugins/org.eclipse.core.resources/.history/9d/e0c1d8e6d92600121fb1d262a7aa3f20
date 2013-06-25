@@ -1,0 +1,55 @@
+/*
+ * taskAdc.c
+ *
+ *  Created on: Oct 27, 2012
+ *      Author: "Facundo Nahuel Uriel Silva"
+ */
+
+#include "taskAdc.h"
+
+// Buffer to contain string version of value read from ADC
+// 4 character, plus zero terminator
+char strbuf [5];
+
+void taskAdc(void *param){
+	uint32_t adval;
+	uint16_t adc0val;
+	// ************
+	// * Set up ADC
+	// ************
+
+	// Turn on power to ADC block
+	LPC_SC->PCONP |=  ADC_POWERON;
+
+	// Turn on ADC peripheral clock
+	LPC_SC->PCLKSEL0 &= ~(PCLK_ADC_MASK);
+	LPC_SC->PCLKSEL0 |=  (3 << PCLK_ADC);
+
+	// Set P0.23 to AD0.0 in PINSEL1
+	LPC_PINCON->PINSEL1	|= SELECT_ADC0;
+
+	while(1){
+
+		// Start A/D conversion for on AD0.0
+		LPC_ADC->ADCR = START_ADC | OPERATIONAL_ADC | SEL_AD0 ;
+
+		do {
+			adval = LPC_ADC->ADGDR;            // Read A/D Data Register
+		} while ((adval & ADC_DONE_BIT) == 0); // Wait for end of A/D Conversion
+
+		// Stop A/D Conversion
+		LPC_ADC->ADCR &= ~(START_ADC | OPERATIONAL_ADC | SEL_AD0) ;
+
+		// Extract AD0.0 value - 12 bit result in bits [15:4]
+//		adval = (adval >> 4) & 0x0FFF ;
+		adc0val = (uint8_t)(adval & 0x000000FF);
+
+		msgTX.idMsg++;
+		msgTX.cmd.data[0] = adc0val;
+
+		xQueueSend(queuePcComTX,&msgTX,1000);
+
+
+	}
+
+}

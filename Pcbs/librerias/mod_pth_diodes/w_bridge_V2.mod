@@ -1,0 +1,90 @@
+PCBNEW-LibModule-V1  vie 29 mar 2013 17:55:11 ART
+# encoding utf-8
+Units mm
+$INDEX
+LMB2S
+bridge_1A
+$EndINDEX
+$MODULE LMB2S
+Po 0 0 0 15 5154AC47 00000000 ~~
+Li LMB2S
+Sc 0
+AR 
+Op 0 0 0
+T0 0 -6 1.524 1.524 0 0.3048 N V 21 N "LMB2S"
+T1 0 7 1.524 1.524 0 0.3048 N I 21 N "VAL**"
+DS 2.5 2.5 2.5 -2.5 0.381 21
+DS 2.5 -2.5 -2.5 -2.5 0.381 21
+DS -2.5 -2.5 -2.5 2.5 0.381 21
+DS -2.5 2.5 2.5 2.5 0.381 21
+$PAD
+Sh "5" T 1.5 3 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 1.5 -3
+$EndPAD
+$PAD
+Sh "6" T 1.5 3 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -1.5 -3
+$EndPAD
+$PAD
+Sh "7" T 1.5 3 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -1.5 3.5
+$EndPAD
+$PAD
+Sh "8" T 1.5 3 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 1.5 3.5
+$EndPAD
+$EndMODULE LMB2S
+$MODULE bridge_1A
+Po 0 0 0 15 5155FF82 00000000 ~~
+Li bridge_1A
+Sc 0
+AR 
+Op 0 0 0
+T0 0 -6 1.524 1.524 0 0.3048 N V 21 N "bridge_1A"
+T1 0 7 1.524 1.524 0 0.3048 N I 21 N "VAL**"
+DS 2.5 2.5 2.5 -2.5 0.381 21
+DS 2.5 -2.5 -2.5 -2.5 0.381 21
+DS -2.5 -2.5 -2.5 2.5 0.381 21
+DS -2.5 2.5 2.5 2.5 0.381 21
+$PAD
+Sh "2" T 1.5 3 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 1.5 -3
+$EndPAD
+$PAD
+Sh "4" T 1.5 3 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -1.5 -3
+$EndPAD
+$PAD
+Sh "3" T 1.5 3 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -1.5 3.5
+$EndPAD
+$PAD
+Sh "1" T 1.5 3 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 1.5 3.5
+$EndPAD
+$EndMODULE bridge_1A
+$EndLIBRARY

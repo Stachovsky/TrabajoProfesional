@@ -1,0 +1,72 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../src/Tasks/SdCard/debug.c \
+../src/Tasks/SdCard/dir.c \
+../src/Tasks/SdCard/disc.c \
+../src/Tasks/SdCard/efs.c \
+../src/Tasks/SdCard/extract.c \
+../src/Tasks/SdCard/fat.c \
+../src/Tasks/SdCard/file.c \
+../src/Tasks/SdCard/fs.c \
+../src/Tasks/SdCard/ioman.c \
+../src/Tasks/SdCard/ioman_v2.c \
+../src/Tasks/SdCard/ls.c \
+../src/Tasks/SdCard/mkfs.c \
+../src/Tasks/SdCard/partition.c \
+../src/Tasks/SdCard/plibc.c \
+../src/Tasks/SdCard/regressiontest.c \
+../src/Tasks/SdCard/time.c \
+../src/Tasks/SdCard/ui.c 
+
+OBJS += \
+./src/Tasks/SdCard/debug.o \
+./src/Tasks/SdCard/dir.o \
+./src/Tasks/SdCard/disc.o \
+./src/Tasks/SdCard/efs.o \
+./src/Tasks/SdCard/extract.o \
+./src/Tasks/SdCard/fat.o \
+./src/Tasks/SdCard/file.o \
+./src/Tasks/SdCard/fs.o \
+./src/Tasks/SdCard/ioman.o \
+./src/Tasks/SdCard/ioman_v2.o \
+./src/Tasks/SdCard/ls.o \
+./src/Tasks/SdCard/mkfs.o \
+./src/Tasks/SdCard/partition.o \
+./src/Tasks/SdCard/plibc.o \
+./src/Tasks/SdCard/regressiontest.o \
+./src/Tasks/SdCard/time.o \
+./src/Tasks/SdCard/ui.o 
+
+C_DEPS += \
+./src/Tasks/SdCard/debug.d \
+./src/Tasks/SdCard/dir.d \
+./src/Tasks/SdCard/disc.d \
+./src/Tasks/SdCard/efs.d \
+./src/Tasks/SdCard/extract.d \
+./src/Tasks/SdCard/fat.d \
+./src/Tasks/SdCard/file.d \
+./src/Tasks/SdCard/fs.d \
+./src/Tasks/SdCard/ioman.d \
+./src/Tasks/SdCard/ioman_v2.d \
+./src/Tasks/SdCard/ls.d \
+./src/Tasks/SdCard/mkfs.d \
+./src/Tasks/SdCard/partition.d \
+./src/Tasks/SdCard/plibc.d \
+./src/Tasks/SdCard/regressiontest.d \
+./src/Tasks/SdCard/time.d \
+./src/Tasks/SdCard/ui.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+src/Tasks/SdCard/%.o: ../src/Tasks/SdCard/%.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: MCU C Compiler'
+	arm-none-eabi-gcc -D__NEWLIB__ -DDEBUG -D__CODE_RED -DPACK_STRUCT_END=__attribute\(\(packed\)\) -DGCC_ARMCM3 -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/src/Tasks/SerialMemory" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/src/Tasks/Adc" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libDriversMcuPeripherals/inc/Lib_MCU" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libDriversMcuPeripherals/inc/Lib_EaBaseBoard" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/src" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/src/Tasks" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_portable" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o"$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

@@ -1,0 +1,4 @@
+\select@language {spanish}
+\contentsline {section}{\numberline {1}Requisitos T\IeC {\'e}cnicos}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}Preguntas}{1}{subsection.1.1}
+\contentsline {section}{\numberline {2}Diagrama en bloque de la soluci\IeC {\'o}n propuesta}{4}{section.2}

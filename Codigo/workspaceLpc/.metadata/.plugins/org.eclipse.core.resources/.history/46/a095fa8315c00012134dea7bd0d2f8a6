@@ -1,0 +1,64 @@
+/*
+ * Core.h
+ *
+ *  Created on: Sep 26, 2012
+ *      Author: "Facundo Nahuel Uriel Silva"
+ */
+
+#ifndef CORE_H_
+#define CORE_H_
+
+#include "LPC17xx.h"
+#include "lpc_types.h"
+#include "FreeRTOS.h"
+#include "task.h"
+#include "queue.h"
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#include "Tasks/KeepAlive/taskKeepAlive.h"
+#include "Tasks/PcCommunication/taskPcCommunication.h"
+#include "Tasks/PcCommunication/ProtocolPCComunication.h"
+#include "Tasks/Adc/taskAdc.h"
+#include "Tasks/Lcd/taskLcd.h"
+#include "Tasks/SdCard/taskSdCard.h"
+
+#define MAX_SIZE_QUEUE_RX			20
+#define MAX_SIZE_QUEUE_TX			20
+#define MAX_SIZE_QUEUE_ADC_CORE		20
+
+#define MAX_COUNT_KEEP_ALIVE		65000
+
+#define CONTACTOR_1_LOCATION	(1<<8)	//< GPIO Conctactor 1
+#define CONTACTOR_2_LOCATION	(1<<10)	//< GPIO Conctactor 2
+#define CONTACTOR_3_LOCATION	(1<<12)	//< GPIO Conctactor 3
+
+/** Enumeracion que representa los estados del task Core
+ *
+ */
+typedef enum {
+	csIniciando,   //!< csIniciando
+	csSincronizando,//!< csSincronizando
+	csIdle,//!< csIdle
+	csProcesoEnCurso//!< csProcesoEnCurso
+
+} CoreState;
+
+/**
+ *
+ * @param paramametro
+ */
+void taskCore(void *paramametro);
+
+/**
+ *
+ */
+void taskCoreInit();
+
+
+void initContactores();
+void setContactorON(Contactor contactor);
+void setContactorOFF(Contactor contactor);
+#endif /* CORE_H_ */

@@ -1,0 +1,15 @@
+
+**** Build of configuration Debug for project test-FatFS ****
+
+make all 
+Building target: test-FatFS.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/Debug" -L"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_mcu/Debug" -L"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_small_printf/Debug" -L"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/Debug" -Xlinker -Map="test-FatFS.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "test-FatFS_Debug.ld" -o"test-FatFS.axf"  ./src/FatFS_support.o ./src/cr_startup_lpc176x.o ./src/main.o   -lCMSISv2p00_LPC17xx -llib_mcu -llib_small_printf -llib_FatFS
+Finished building target: test-FatFS.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "test-FatFS.axf"; # arm-none-eabi-objcopy -O binary "test-FatFS.axf" "test-FatFS.bin" ; checksum -p LPC1769 -d "test-FatFS.bin";
+   text	   data	    bss	    dec	    hex	filename
+  27424	    368	   1940	  29732	   7424	test-FatFS.axf
+ 

@@ -1,0 +1,178 @@
+\documentclass[12pt]{article}
+
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenx}
+\usepackage{anysize} 
+\usepackage{amsmath}
+\usepackage{listings}
+%\usepackage{wrapfig} % paquete gráfico... quizás es necesario actualizar paquetes en kile
+\usepackage{hyperref}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\hypersetup{
+    colorlinks,%
+    citecolor=black,%
+    filecolor=black,%
+    linkcolor=black,%
+    urlcolor=black
+}
+\marginsize{1cm}{1cm}{1cm}{1cm} %izq der arriva abajo
+
+\title{Informe preliminar}
+\author{Facundo Nahuel Uriel Silva}
+
+\lhead{ Anexo 1 }
+ 
+\begin{document}
+
+  \section{Anexo}
+
+\section{Requisitos Técnicos}
+
+\subsection{Preguntas}
+  
+ \begin{enumerate} 
+      \item \textbf{ Proceso de sinterizado }
+	\begin{enumerate}
+	  \item \textbf{ ¿Que magnitudes físicas se deben medir? }
+		\subitem	\textit{ Las magnitudes que el sistema de debe medir son: corriente que circula en el momento de la descarga y 
+					tensión sobre la muestra. Se evaluará la posibilidad de medir temperatura sobre la muestra de existir un
+					sensor de temperatura con una respuesta temporal adecuada.
+			}
+
+	  \item \textbf{ ¿Cual es el mínima corriente requerida para el proceso? }
+		\subitem	\textit{ La importancia radica en la corriente de pico al momento de la descarga.
+				}
+
+	  \item \textbf{ ¿Cual es el máxima corriente de pico esperada? }
+		\subitem	\textit{ La magnitud del pico de corriente eléctrica en la descarga estará comprendido entre 1KA y 10KA.
+				}
+
+	  \item \textbf{ ¿Cual es el orden de magnitud de la impedancia eléctrica de la muestra de polvos? }
+		\subitem	\textit{ La muestra estará constituida por un material metálico por lo que su impedancia estará en el orden los los m$\Omega$.
+				}
+
+	  \item \textbf{ ¿Se experimentará con distintos tipos de polvos? }
+		\subitem	\textit{ No, solo se utilizaran polvos de materiales metálicos.
+				}
+
+          \item \textbf{ ¿Qué materiales en particular se van utilizar como muestra a sinterizar? }
+		\subitem	\textit{ Se utilizaran materiales basados en hierro (Fe).
+				}
+
+          \item \textbf{ ¿Se proyecta que a futuro se utilice otros materiales?¿Cómo afectaría esto al proceso? }
+		\subitem	\textit{ No, este tipo de tecnología solo se puede aplicar a materiales de tipo metálico.
+				}
+
+          \item \textbf{ ¿Existe algún proceso por el cual se puede determinar que la muestra está sinterizada correctamente?¿Se desea implementar? }
+		\subitem	\textit{ El resultado del proceso se validará con una batería de pruebas y estudios externos al proceso
+					  que se le realizaran a la muestra.
+				}
+
+	  \item \textbf{ ¿Existirá un único banco de capacitores (descargar múltiples secuenciales)? }
+		\subitem	\textit{ El sistema debe poder ser escalable. Se debe especificar que cambios se deben hacer en caso de decir escalar
+					la capacidad de corriente del sistema en los cables de conexión , sensores y  en los contactores del dispositivo.
+				}
+
+	  \item \textbf{ ¿Con qué periodicidad se estima realizar el proceso (horas, días, semanas)? }
+		\subitem	\textit{ Se estima unos 60 usos por mes.
+				}
+
+	  \item \textbf{ ¿En cuanto a la compresión mecánica, qué prensa se utilizará? }
+		\subitem	\textit{ Se utilizara un prensado manual o automático, pero en ambos casos el proceso de prensado será externo al dispositivo.
+				}
+
+	  \item \textbf{ ¿El valor de presión que se establece antes de empezar la descarga, debe reajustarse durante el proceso?¿Cual tiene que ser este valor constante? }
+		\subitem	\textit{ No, la muestra del polvo a sinterizar se compactar antes de la descarga.
+				}
+
+
+	\end{enumerate}
+	  
+      \item \textbf{ Interfaz de usuario }
+	\begin{enumerate}
+	  \item \textbf{ ¿Cómo se desea visualizar los datos obtenidos del proceso? }
+		\subitem	\textit{ Se desea tener una aplicación de PC dedicada al monitoreo, control y administración del sistema.
+					 La aplicación debe poder funcionar en las plataformas Windows y Linux.
+				}
+
+	  \item \textbf{ ¿Es necesario un que el sistema tenga un display ?¿ Y teclado? }
+		\subitem	\textit{ Si para la administración básica del dispositivo. La administración y gestion compleja del dispositivo se hará
+					 a traves de la PC.
+				}
+
+	  \item \textbf{ ¿Se necesita accionar en forma manual algún parámetro del proceso, Cuál? }
+		\subitem	\textit{ No, la totalidad del proceso de sinterizado y el monitoreo de las magnitudes deber ser automático.
+				}
+
+	  \item \textbf{ ¿En necesario visualizar los datos en forma remota (vía Web)? }
+		\subitem	\textit{ No es necesario ya que no seria de utilidad.
+				}
+
+	  \item \textbf{ ¿Se cuenta con bocas de red cerca de la zona de emplazamiento del dispositivo?¿Se planea hacerlo? }
+		\subitem	\textit{ No.
+				} 
+
+	  \item \textbf{ Los datos de la experimentación, ¿Deben quedar guardados en el dispositivo o un servidor local? }
+		\subitem	\textit{ Si, los datos se almacenaran en el dispositivo hasta su descarga mediante el programa de PC.
+				}
+
+	  \item \textbf{ ¿Es necesario tener la posibilidad de guardar los datos en un pendrive? }
+		\subitem	\textit{ Si es de utilidad.
+				}
+
+	  \item \textbf{ ¿Se desea genera alguna extensión de archivo en particular? }
+		\subitem	\textit{ Es deseable el formato CSV.
+				}
+
+	  \item \textbf{ ¿Cómo desea configurar el sistema de control? }
+		\subitem	\textit{ -------------
+				}
+
+	  \item \textbf{ ¿Que parámetros del proceso se deben visualizar y cuales almacenar (magnitudes física)? }
+		\subitem	\textit{ Se mostraran el estado de los parámetros en el display pero los datos relevados de la experimentación se
+					  obtendrán mediante el programa de PC.
+				}
+
+	  \item \textbf{ ¿Qué parámetros de control tiene el proceso (condiciones que se deben cumplir para iniciar el proceso. Ejemplo: nivel de carga)? }
+		\subitem	\textit{ -------------
+				}
+
+	  \item \textbf{ ¿Qué parámetros de control deberían ser establecidos de forma remota y cuales de forma local? }
+		\subitem	\textit{ La configuración del sistema será mediante el programa de PC.
+				}
+
+	  \item \textbf{ ¿Se necesita accionar en forma manual algún parámetro del proceso?¿Cuál? }
+		\subitem	\textit{ No.
+				}
+
+	\end{enumerate}
+      
+      \item \textbf{ Seguridad }
+	\begin{enumerate}
+	  \item \textbf{ ¿Es necesario algún parámetro de seguridad en especial?¿Qué es lo más crítico del proceso? }
+		\subitem	\textit{ Debe cumplir la normativa de seguridad impuesta en el laboratorio.
+				}
+
+	  \item \textbf{ ¿El operario estará en el mismo ambiente de la experimentación? }
+		\subitem	\textit{ Si.
+				}
+
+	  \item \textbf{ ¿Debe haber elementos contra incendios? }
+		\subitem	\textit{ No son necesarios.
+				}
+
+	  \item \textbf{ ¿Es necesario un nivel de autorización para operar el dispositivo (login)? }
+		\subitem	\textit{ Si.
+				}
+
+	\end{enumerate}
+      
+    \end{enumerate}
+
+\end{document}

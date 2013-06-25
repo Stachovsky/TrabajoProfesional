@@ -1,0 +1,13 @@
+/*
+ * taskSerialMemory.c
+ *
+ *  Created on: Oct 27, 2012
+ *      Author: "Facundo Nahuel Uriel Silva"
+ */
+
+#include "taskSerialMemory.h"
+
+void taskSerialMemory(void *param){
+
+
+}

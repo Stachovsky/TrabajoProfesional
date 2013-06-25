@@ -1,0 +1,87 @@
+Cmp-Mod V01 Created by CvPcb (2011-nov-30)-testing date = Wed 03 Apr 2013 12:09:16 PM ART
+
+BeginCmp
+TimeStamp = /515C34AE;
+Reference = K1;
+ValeurCmp = CONN_3;
+IdModule  = SIL-3;
+EndCmp
+
+BeginCmp
+TimeStamp = /515C44A2;
+Reference = K2;
+ValeurCmp = CONN_3;
+IdModule  = bornier3;
+EndCmp
+
+BeginCmp
+TimeStamp = /515C4485;
+Reference = P1;
+ValeurCmp = CONN_2;
+IdModule  = SIL-2;
+EndCmp
+
+BeginCmp
+TimeStamp = /515C35DF;
+Reference = R1;
+ValeurCmp = R;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /515C38F6;
+Reference = R2;
+ValeurCmp = 10k;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /515C3661;
+Reference = R3;
+ValeurCmp = R;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /515C3786;
+Reference = R4;
+ValeurCmp = R;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /515C3EB6;
+Reference = R5;
+ValeurCmp = 10k;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /515C3BB1;
+Reference = R6;
+ValeurCmp = 1k;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /515C3341;
+Reference = U1;
+ValeurCmp = TL084;
+IdModule  = SO14E;
+EndCmp
+
+BeginCmp
+TimeStamp = /515C3492;
+Reference = U2;
+ValeurCmp = IL300;
+IdModule  = DIP-8__300;
+EndCmp
+
+BeginCmp
+TimeStamp = /515C3471;
+Reference = U3;
+ValeurCmp = IL300;
+IdModule  = DIP-8__300;
+EndCmp
+
+EndListe

@@ -1,0 +1,20 @@
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+
+#include "LPC17xx.h"
+#include "lpc_types.h"
+
+#include "easyweb.h"
+#include "ethmac.h"
+#include "tcpip.h"
+
+#include "FreeRTOS.h"
+#include "task.h"
+
+void taskWebServer (void *param);
+
+void HTTPServer(void);
+
+void taskTcpTick(void *param);

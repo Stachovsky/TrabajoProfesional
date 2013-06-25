@@ -1,0 +1,48 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../src/Tasks/SdCard/interfaces/at91_spi.c \
+../src/Tasks/SdCard/interfaces/atmega128.c \
+../src/Tasks/SdCard/interfaces/dsp67xx.c \
+../src/Tasks/SdCard/interfaces/efsl_dbg_printf_arm.c \
+../src/Tasks/SdCard/interfaces/helper.c \
+../src/Tasks/SdCard/interfaces/linuxfile.c \
+../src/Tasks/SdCard/interfaces/lpc2000_spi.c \
+../src/Tasks/SdCard/interfaces/nios2.c \
+../src/Tasks/SdCard/interfaces/sd.c 
+
+OBJS += \
+./src/Tasks/SdCard/interfaces/at91_spi.o \
+./src/Tasks/SdCard/interfaces/atmega128.o \
+./src/Tasks/SdCard/interfaces/dsp67xx.o \
+./src/Tasks/SdCard/interfaces/efsl_dbg_printf_arm.o \
+./src/Tasks/SdCard/interfaces/helper.o \
+./src/Tasks/SdCard/interfaces/linuxfile.o \
+./src/Tasks/SdCard/interfaces/lpc2000_spi.o \
+./src/Tasks/SdCard/interfaces/nios2.o \
+./src/Tasks/SdCard/interfaces/sd.o 
+
+C_DEPS += \
+./src/Tasks/SdCard/interfaces/at91_spi.d \
+./src/Tasks/SdCard/interfaces/atmega128.d \
+./src/Tasks/SdCard/interfaces/dsp67xx.d \
+./src/Tasks/SdCard/interfaces/efsl_dbg_printf_arm.d \
+./src/Tasks/SdCard/interfaces/helper.d \
+./src/Tasks/SdCard/interfaces/linuxfile.d \
+./src/Tasks/SdCard/interfaces/lpc2000_spi.d \
+./src/Tasks/SdCard/interfaces/nios2.d \
+./src/Tasks/SdCard/interfaces/sd.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+src/Tasks/SdCard/interfaces/%.o: ../src/Tasks/SdCard/interfaces/%.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: MCU C Compiler'
+	arm-none-eabi-gcc -D__NEWLIB__ -DDEBUG -D__CODE_RED -DPACK_STRUCT_END=__attribute\(\(packed\)\) -DGCC_ARMCM3 -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/src/Tasks/SerialMemory" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/src/Tasks/Adc" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libDriversMcuPeripherals/inc/Lib_MCU" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libDriversMcuPeripherals/inc/Lib_EaBaseBoard" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/src" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/src/Tasks" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_portable" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o"$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

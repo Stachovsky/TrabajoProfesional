@@ -1,0 +1,35 @@
+/*
+ * API_Uart.h
+ *
+ *  Created on: 30/04/2012
+ *      Author: Facundo Nahuel Uriel Silva
+ */
+
+#ifndef API_UART_H_
+#define API_UART_H_
+
+#include "LPC17xx.h"
+
+#include "lpc17xx_pinsel.h"
+#include "lpc17xx_uart.h"
+
+typedef enum{
+	UART_PORT_0 = 0,
+	UART_PORT_1 = 1,
+	UART_PORT_2 = 2,
+	UART_PORT_3 = 3
+	} uart_port;
+
+typedef struct{
+		LPC_UART_TypeDef*	port;
+		PINSEL_CFG_Type		pin;
+		UART_CFG_Type		config;
+	} uart_port;
+
+
+void API_Uart_Config(uart_port);
+void API_UartSendString(char* str);
+void API_UartSendByte(uint8_t byte);
+
+
+#endif /* API_UART_H_ */

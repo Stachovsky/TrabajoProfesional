@@ -1,0 +1,6 @@
+1353874061851	Rename resource 'SMCD'
+1353874080366	Delete resource 'SMCED/src/Tasks/SdCard/mmc.c'
+1353874086286	Delete resource 'SMCED/src/Tasks/SdCard/lpc1xxx_spi_sd'
+1353874109961	Delete resource 'SMCED/src/Tasks/SdCard/lib_FatFS/src/ff.c'
+1353958440250	Delete resource 'SMCED/Debug'
+1353962745427	Delete resource 'SMCED/src/Tasks/WebServer/easyweb.h'

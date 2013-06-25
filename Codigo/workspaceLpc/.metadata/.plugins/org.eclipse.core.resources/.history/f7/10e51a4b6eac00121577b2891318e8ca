@@ -1,0 +1,243 @@
+/*
+ * taskAdc.c
+ *
+ *  Created on: Oct 27, 2012
+ *      Authorint16_t getAdcValue(ADC_type adc);: "Facundo Nahuel Uriel Silva"
+ */
+
+#include "taskAdc.h"
+
+SensorsValues medicion;
+xSemaphoreHandle mutexAdcReady;
+int8_t estado = 0;
+
+/////////////////////////////////////////////////////////////////////////////////
+
+void ADC_IRQHandler(void){
+
+	signed portBASE_TYPE pxHigherPriorityTaskWoken = pdFALSE;
+
+	if(estado == 0){
+		estado = 1;
+		ADC_ChannelCmd(LPC_ADC,ADC_CHANNEL_0,ENABLE);
+		ADC_ChannelCmd(LPC_ADC,ADC_CHANNEL_1,DISABLE);
+
+		medicion.Adc0Value =  ADC_ChannelGetData(LPC_ADC,ADC_CHANNEL_0);
+	}else{
+		estado = 0;
+		ADC_ChannelCmd(LPC_ADC,ADC_CHANNEL_0,DISABLE);
+		ADC_ChannelCmd(LPC_ADC,ADC_CHANNEL_1,ENABLE);
+
+		medicion.Adc0Value =  ADC_ChannelGetData(LPC_ADC,ADC_CHANNEL_1);
+	}
+
+	ADC_StartCmd(LPC_ADC,ADC_START_NOW);
+	NVIC_EnableIRQ(ADC_IRQn);
+}
+
+/////////////////////////////////////////////////////////////////////////////////
+
+void taskAdc(void *param){
+
+
+	uint32_t adval;
+	msgPcCom msgTXAdc0Value;
+	msgPcCom msgTXAdc1Value;
+	msgPcCom msgTXAdc2Value;
+	msgPcCom msgTXAdc3Value;
+	msgPcCom msgTXAdc4Value;
+
+	msgAdcSdCard msgAdcSD;
+
+	const portTickType xDelay = 100 / portTICK_RATE_MS;
+
+	// Se inicializa la cola de mensajes de transmision
+	queueAdcSdCard = xQueueCreate( MAX_SIZE_QUEUE_ADC_SDCARD, sizeof( msgAdcSdCard ) );
+
+	pcComInitMsg(&msgTXAdc0Value.cmd,CMD_PCCOM_READ_ADC_0);
+	msgTXAdc0Value.cmd.len = 2; // data size
+
+	pcComInitMsg(&msgTXAdc1Value.cmd,CMD_PCCOM_READ_ADC_1);
+	msgTXAdc1Value.cmd.len = 2; // data size
+
+	PINSEL_CFG_Type PinCfg;
+
+	mutexAdcReady = xSemaphoreCreateMutex();
+	xSemaphoreTake(mutexAdcReady, portMAX_DELAY);
+
+	PinCfg.Funcnum = 1;
+	PinCfg.OpenDrain = 0;
+	PinCfg.Pinmode = 0;
+	PinCfg.Pinnum = 23;
+	PinCfg.Portnum = 0;
+	PINSEL_ConfigPin(&PinCfg);
+
+	PinCfg.Pinnum = 24;
+	PINSEL_ConfigPin(&PinCfg);
+
+	ADC_Init(LPC_ADC, 5000);
+	ADC_IntConfig(LPC_ADC,ADC_ADINTEN0,ENABLE);
+	ADC_IntConfig(LPC_ADC,ADC_ADINTEN1,ENABLE);
+
+	NVIC_SetPriority(ADC_IRQn, ((0x01<<3)|0x01));
+
+	ADC_ChannelCmd(LPC_ADC,ADC_CHANNEL_0,ENABLE);
+
+	// Start conversion
+	ADC_StartCmd(LPC_ADC,ADC_START_NOW);
+
+	/* Enable ADC in NVIC */
+	NVIC_EnableIRQ(ADC_IRQn);
+
+
+	while(1){
+
+		xSemaphoreTake(mutexAdcReady, portMAX_DELAY);
+
+	}
+
+
+//
+//	msgTXAdc0Value.idMsg++;
+//	msgTXAdc0Value.cmd.data[0] = (uint8_t)(adval & 0x000000FF);
+//	msgTXAdc0Value.cmd.data[1] = (uint8_t)((adval & 0x0000FF00)>> 8);
+//
+//	xQueueSend(queuePcComTX,&msgTXAdc0Value,1000);
+
+
+
+
+
+	///////////////
+//
+//	sprintf((char*)bufferWrite, HEADER_CSV_FILE);
+//	sizeBufferWrite = strlen((char*)bufferWrite);
+//
+////	res = f_open(&fileMediciones, MEDICION_FILE, FA_CREATE_ALWAYS | FA_WRITE);
+//	while(f_open(&fileMediciones, MEDICION_FILE, FA_CREATE_ALWAYS | FA_WRITE) != FR_OK);
+//	res = f_write(&fileMediciones, bufferWrite, sizeBufferWrite, &written);
+//	res = f_close(&fileMediciones);
+//
+//	while(1){
+//
+
+//
+////		res = f_open(&fileSamples, LAST_SAMPLES_FILE, FA_CREATE_ALWAYS |FA_WRITE);
+//
+//		meanTension = 0;
+//		meanCorriente = 0;
+//		meanCosPhi = 0;
+//		meanFrecuencia = 0;
+//
+//		for(i=0; i < CANTIDAD_PERIODOS; i++){
+//
+//			tension = 0;
+//			corriente = 0;
+//			indexMaxV = 0;
+//			indexMaxI = 0;
+//			indexTensionCruzePorCero = 0;
+//
+//			for(j=0; j < MUESTRAS_POR_PERIODO; j++){
+//
+//				float valueAdc0 = (float)( adcCurrentBufferProcesing->values[i*MUESTRAS_POR_PERIODO + j].Adc0Value - OFFSET_VALOR_TENSION );
+//				float valueAdc1 = (float)( adcCurrentBufferProcesing->values[i*MUESTRAS_POR_PERIODO + j].Adc1Value - OFFSET_VALOR_CORRIENTE );
+//				valueAdc1 *= -1;
+//
+//				if(tension < valueAdc0){
+//					tension = valueAdc0;
+//					indexMaxV = j + 1;
+//				}
+//
+//				if((indexMaxV != 0) && (indexTensionCruzePorCero == 0) && (valueAdc0 <= 0)){
+//					indexTensionCruzePorCero = j + 1;
+//				}
+//
+//				if(corriente < valueAdc1){
+//					corriente = valueAdc1;
+//					indexMaxI = j + 1;
+//				}
+//
+////				sprintf(bufferWrite, "%.2f;%.2f;\n", valueAdc0, valueAdc1);
+////				sizeBufferWrite = strlen(bufferWrite);
+////				res = f_write(&fileSamples, bufferWrite, sizeBufferWrite, &written);
+//
+//			}
+//
+//			if(meanTension != 0)
+//				meanTension = (meanTension + tension*FACTOR_CONVERSION_TENSION)/2;
+//			else
+//				meanTension = tension*FACTOR_CONVERSION_TENSION;
+//
+//
+//			if(meanCorriente != 0)
+//				meanCorriente = (meanCorriente + corriente*FACTOR_CONVERSION_CORRIENTE)/2;
+//			else
+//				meanCorriente = corriente*FACTOR_CONVERSION_CORRIENTE;
+//
+//
+//			cosPhi = (float)indexMaxV;
+//			cosPhi -= (float)indexMaxI;
+//			cosPhi *= FACTOR_PHI;
+//
+//			if(meanCosPhi != 0)
+//				meanCosPhi = (meanCosPhi + cos(cosPhi) )/2;
+//			else
+//				meanCosPhi = cos(cosPhi);
+//
+//
+//			frecuencia = (float)indexTensionCruzePorCero;
+//			frecuencia -= (float)(indexMaxV - 4);
+//
+//			if(frecuencia > 0){
+//				if(meanFrecuencia != 0)
+//					meanFrecuencia = (meanFrecuencia + FACTOR_FRECUENCIA*frecuencia )/2;
+//				else
+//					meanFrecuencia = FACTOR_FRECUENCIA*frecuencia;
+//			}
+//
+//		}
+//
+////		res = f_close(&fileSamples);
+//
+//		if(meanCorriente <= 0.05){
+//			meanCorriente = 0;
+//			meanCosPhi = 0;
+//		}else{
+//			consumo += meanTension*meanCorriente*meanCosPhi*FACTOR_KILOWATT_HORA;
+//		}
+//
+//		counterCiclos++;
+//
+//		if(counterCiclos == CANTIDAD_CICLOS){
+//
+//
+//			RTC_GetFullTime(LPC_RTC,&tiempo);
+//
+//			sprintf(bufferWrite, "%d/%d/%d %d:%d:%d;%.2f;%.2f;%.2f;%.2f;%.2f;\n",	tiempo.DOM,
+//																					tiempo.MONTH,
+//																					tiempo.YEAR,
+//																					tiempo.HOUR,
+//																					tiempo.MIN,
+//																					tiempo.SEC,
+//																					meanTension,
+//																					meanCorriente,
+//																					meanCosPhi,
+//																					meanFrecuencia,
+//																					consumo
+//			);
+//
+//			sizeBufferWrite = strlen((char*)bufferWrite);
+//
+//			res = f_open(&fileMediciones, MEDICION_FILE, FA_WRITE);
+//			res = f_lseek(&fileMediciones,fileMediciones.fsize);
+//			res = f_write(&fileMediciones, bufferWrite, sizeBufferWrite, &written);
+//			res = f_close(&fileMediciones);
+//
+//
+//			counterCiclos = 0;
+//		}
+//
+//	}
+
+}
+

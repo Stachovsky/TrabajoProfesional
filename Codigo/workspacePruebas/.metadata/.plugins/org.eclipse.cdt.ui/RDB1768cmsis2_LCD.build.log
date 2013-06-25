@@ -1,0 +1,15 @@
+
+**** Build of configuration Debug for project RDB1768cmsis2_LCD ****
+
+make all 
+Building file: ../src/cr_startup_lpc176x.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__USE_CMSIS=CMSISv2p00_LPC17xx -D__CODE_RED -D__REDLIB__ -I"/home/fanaur/workspacePruebas/CMSISv2p00_LPC17xx/inc" -I../bitmaps -O0 -Os -g3 -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/cr_startup_lpc176x.d" -MT"src/cr_startup_lpc176x.d" -o"src/cr_startup_lpc176x.o" "../src/cr_startup_lpc176x.c"
+../src/lcddemo_graphics.c:29:17: fatal error: lcd.h: No such file or directory
+Finished building: ../src/cr_startup_lpc176x.c
+ 
+compilation terminated.
+make: *** [src/lcddemo_graphics.o] Error 1
+Building file: ../src/lcddemo_graphics.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__USE_CMSIS=CMSISv2p00_LPC17xx -D__CODE_RED -D__REDLIB__ -I"/home/fanaur/workspacePruebas/CMSISv2p00_LPC17xx/inc" -I../bitmaps -O0 -g3 -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/lcddemo_graphics.d" -MT"src/lcddemo_graphics.d" -o"src/lcddemo_graphics.o" "../src/lcddemo_graphics.c"

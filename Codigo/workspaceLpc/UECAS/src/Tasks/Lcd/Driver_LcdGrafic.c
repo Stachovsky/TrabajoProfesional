@@ -1,0 +1,453 @@
+/*
+ * LcdGrafic_Grafic.c
+ *
+ *  Created on: Oct 17, 2012
+ *      Author: "Facundo Nahuel Uriel Silva"
+ */
+
+#include "Driver_LcdGrafic.h"
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+LPC_GPIO_TypeDef* port[4];
+
+LCD_DB* dataLcd[8];
+LCD_DB* controlLcd[6];
+
+LCD_DB db0;
+LCD_DB db1;
+LCD_DB db2;
+LCD_DB db3;
+LCD_DB db4;
+LCD_DB db5;
+LCD_DB db6;
+LCD_DB db7;
+
+LCD_DB di;
+LCD_DB rw;
+LCD_DB e;
+LCD_DB cs1;
+LCD_DB cs2;
+LCD_DB rst;
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+void LcdGrafic_Init(){
+
+	int8_t i;
+	port[0] = LPC_GPIO0;
+	port[1] = LPC_GPIO1;
+	port[2] = LPC_GPIO2;
+	port[3] = LPC_GPIO3;
+
+	///////////////////////////////////
+	// Se configuran las salidas usadas
+	///////////////////////////////////
+
+	di.port = DEF_PORT_DI;
+	di.bit = DEF_PIN_DI;
+	controlLcd[PIN_DI] = &di;
+
+	rw.port = DEF_PORT_RW;
+	rw.bit = DEF_PIN_RW;
+	controlLcd[PIN_RW] = &rw;
+
+	e.port = DEF_PORT_E;
+	e.bit = DEF_PIN_E;
+	controlLcd[PIN_E] = &e;
+
+	cs1.port = DEF_PORT_CS1;
+	cs1.bit = DEF_PIN_CS1;
+	controlLcd[PIN_CS1] = &cs1;
+
+	cs2.port = DEF_PORT_CS2;
+	cs2.bit = DEF_PIN_CS2;
+	controlLcd[PIN_CS2] = &cs2;
+
+	rst.port = DEF_PORT_RST;
+	rst.bit = DEF_PIN_RST;
+	controlLcd[PIN_RST] = &rst;
+
+	db0.port = DEF_PORT_DATA_0;
+	db0.bit = DEF_PIN_DATA_0;
+	dataLcd[0] = &db0;
+
+	db1.port = DEF_PORT_DATA_1;
+	db1.bit = DEF_PIN_DATA_1;
+	dataLcd[1] = &db1;
+
+	db2.port = DEF_PORT_DATA_2;
+	db2.bit = DEF_PIN_DATA_2;
+	dataLcd[2] = &db2;
+
+	db3.port = DEF_PORT_DATA_3;
+	db3.bit = DEF_PIN_DATA_3;
+	dataLcd[3] = &db3;
+
+	db4.port = DEF_PORT_DATA_4;
+	db4.bit = DEF_PIN_DATA_4;
+	dataLcd[4] = &db4;
+
+	db5.port = DEF_PORT_DATA_5;
+	db5.bit = DEF_PIN_DATA_5;
+	dataLcd[5] = &db5;
+
+	db6.port = DEF_PORT_DATA_6;
+	db6.bit = DEF_PIN_DATA_6;
+	dataLcd[6] = &db6;
+
+	db7.port = DEF_PORT_DATA_7;
+	db7.bit = DEF_PIN_DATA_7;
+	dataLcd[7] = &db7;
+
+
+	// Configuracion de las GPIO
+
+	// Datos
+	for(i = 0; i < 8; i++){
+		port[dataLcd[i]->port]->FIODIR |= (1 << dataLcd[i]->bit);
+	}
+
+	// Control
+	for(i = 0; i < 5; i++){
+		port[controlLcd[i]->port]->FIODIR |= (1 << controlLcd[i]->bit);
+	}
+
+
+	port[controlLcd[PIN_CS1]->port]->FIOCLR = (1 << controlLcd[PIN_CS1]->bit);
+	port[controlLcd[PIN_CS2]->port]->FIOCLR = (1 << controlLcd[PIN_CS2]->bit);
+	port[controlLcd[PIN_E]->port]->FIOCLR = (1 << controlLcd[PIN_E]->bit);
+	port[controlLcd[PIN_RW]->port]->FIOCLR = (1 << controlLcd[PIN_RW]->bit);
+
+	///////////////////////////////////
+	//reset
+	///////////////////////////////////
+
+	port[controlLcd[PIN_RST]->port]->FIOCLR = (1 << controlLcd[PIN_RST]->bit);
+	for(i = 0; i < DELAY_LONG; i++);
+	port[controlLcd[PIN_RST]->port]->FIOCLR = (1 << controlLcd[PIN_RST]->bit);
+
+	///////////////////////////////////
+
+	LcdGrafic_DisplayON();
+	LcdGrafic_CleanScreen();
+
+	///////////////////////////////////
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+void LcdGrafic_Read(int8_t* data, int8_t command, uint8_t page){
+	int32_t i;
+	int32_t temp;
+	int8_t tempData;
+
+	// Se configuran como entradas los pines del BUS
+	for(i=0; i < 8; i++){
+		port[dataLcd[i]->port]->FIODIR &= ~(1 << dataLcd[i]->bit);
+	}
+
+	port[controlLcd[PIN_CS1]->port]->FIOCLR = (1 << controlLcd[PIN_CS1]->bit); // CS1
+	port[controlLcd[PIN_CS2]->port]->FIOCLR = (1 << controlLcd[PIN_CS2]->bit); // CS2
+
+	port[controlLcd[PIN_RW]->port]->FIOCLR = (1 << controlLcd[PIN_RW]->bit); // R/W
+	port[controlLcd[PIN_E]->port]->FIOSET = (1 << controlLcd[PIN_E]->bit); // E
+
+	for(i = 0; i < DELAY_LONG; i++);
+
+	port[controlLcd[PIN_E]->port]->FIOCLR = (1 << controlLcd[PIN_E]->bit); // E
+	for(i = 0; i < DELAY; i++);
+
+	port[controlLcd[PIN_RW]->port]->FIOSET= (1 << controlLcd[PIN_RW]->bit); // R/W
+
+	if(page == 1){// if(page == 2){
+		port[controlLcd[PIN_CS1]->port]->FIOSET = (1 << controlLcd[PIN_CS1]->bit); // CS2
+	}
+	else if(page == 2){// if(page == 2){
+		port[controlLcd[PIN_CS2]->port]->FIOSET = (1 << controlLcd[PIN_CS2]->bit); // CS2
+	}
+
+	if(command == 1)
+		port[controlLcd[PIN_DI]->port]->FIOCLR= (1 << controlLcd[PIN_DI]->bit); // D/I
+	else
+		port[controlLcd[PIN_DI]->port]->FIOSET= (1 << controlLcd[PIN_DI]->bit); // D/I
+
+	for(i = 0; i < DELAY; i++);
+
+
+	port[controlLcd[PIN_E]->port]->FIOSET = (1 << controlLcd[PIN_E]->bit); // E
+
+	for(i = 0; i < DELAY; i++);
+
+	port[controlLcd[PIN_E]->port]->FIOCLR = (1 << controlLcd[PIN_E]->bit); // E
+
+	for(i = 0; i < DELAY; i++);
+
+	port[controlLcd[PIN_E]->port]->FIOSET = (1 << controlLcd[PIN_E]->bit); // E
+
+	for(i = 0; i < DELAY; i++);
+
+	port[controlLcd[PIN_E]->port]->FIOCLR = (1 << controlLcd[PIN_E]->bit); // E
+
+	for(i = 0; i < DELAY; i++);
+
+	port[controlLcd[PIN_E]->port]->FIOSET = (1 << controlLcd[PIN_E]->bit); // E
+
+	for(i = 0; i < DELAY; i++);
+
+	tempData = 0;
+	for(i=0; i < 8; i++){
+		temp = port[dataLcd[i]->port]->FIOPIN & (1 << dataLcd[i]->bit);
+
+		if(temp != 0){
+			tempData |= (1 << i);
+		}
+	}
+
+	*data = tempData;
+
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+void LcdGrafic_Write(int8_t data, uint8_t command, uint8_t page){
+	int32_t i;
+	int8_t temp;
+	int8_t mask = 1;
+
+	// Se configuran como salidas los pines del BUS
+	for(i=0; i < 8; i++){
+		port[dataLcd[i]->port]->FIODIR |= (1 << dataLcd[i]->bit);
+	}
+
+	port[controlLcd[PIN_CS1]->port]->FIOCLR = (1 << controlLcd[PIN_CS1]->bit); // CS1
+	port[controlLcd[PIN_CS2]->port]->FIOCLR = (1 << controlLcd[PIN_CS2]->bit); // CS2
+
+	port[controlLcd[PIN_RW]->port]->FIOSET= (1 << controlLcd[PIN_RW]->bit); // R/W
+	port[controlLcd[PIN_E]->port]->FIOSET = (1 << controlLcd[PIN_E]->bit); // E
+
+	for(i = 0; i < DELAY_LONG; i++);
+
+	port[controlLcd[PIN_E]->port]->FIOCLR = (1 << controlLcd[PIN_E]->bit); // E
+	for(i = 0; i < DELAY; i++);
+
+	port[controlLcd[PIN_RW]->port]->FIOCLR = (1 << controlLcd[PIN_RW]->bit); // R/W
+
+	if(page == 0){
+		port[controlLcd[PIN_CS1]->port]->FIOSET = (1 << controlLcd[PIN_CS1]->bit); // CS1
+		port[controlLcd[PIN_CS2]->port]->FIOSET = (1 << controlLcd[PIN_CS2]->bit); // CS2
+	}
+	else if(page == 1){// if(page == 2){
+		port[controlLcd[PIN_CS1]->port]->FIOSET = (1 << controlLcd[PIN_CS1]->bit); // CS2
+	}
+	else if(page == 2){// if(page == 2){
+		port[controlLcd[PIN_CS2]->port]->FIOSET = (1 << controlLcd[PIN_CS2]->bit); // CS2
+	}
+
+
+	if(command == 1)
+		port[controlLcd[PIN_DI]->port]->FIOCLR= (1 << controlLcd[PIN_DI]->bit); // D/I
+	else
+		port[controlLcd[PIN_DI]->port]->FIOSET= (1 << controlLcd[PIN_DI]->bit); // D/I
+
+	for(i = 0; i < DELAY; i++);
+
+	port[controlLcd[PIN_E]->port]->FIOSET = (1 << controlLcd[PIN_E]->bit); // E
+
+	for(i=0; i < 8; i++){
+		temp = data & mask;
+		mask = (1 << (i + 1));
+
+		if(temp == 0){
+			port[dataLcd[i]->port]->FIOCLR = (1 << dataLcd[i]->bit);
+		}
+		else{
+			port[dataLcd[i]->port]->FIOSET = (1 << dataLcd[i]->bit);
+		}
+	}
+
+	for(i = 0; i < DELAY; i++);
+
+	port[controlLcd[PIN_E]->port]->FIOCLR = (1 << controlLcd[PIN_E]->bit); // E
+
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+
+void LcdGrafic_WriteData(int8_t data, uint8_t page){
+	LcdGrafic_Write(data, 0, page );
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+void LcdGrafic_WriteInstruction(int8_t data, uint8_t page){
+	LcdGrafic_Write(data, 1, page);
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+void LcdGrafic_WriteByte(int8_t data, uint8_t x, uint8_t y){
+
+	int8_t page;
+	// se calcula la pagina
+	if(y<64){
+		page = 1;
+	}else{
+		page = 2;
+		y -= 64;
+	}
+
+	LcdGrafic_WriteInstruction(0xb8 + x, page); // X
+	LcdGrafic_WriteInstruction(0x40 + y, page); // Y
+
+	LcdGrafic_Write(data, 0, page);
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+void LcdGrafic_ReadByte(int8_t* data, uint8_t x, uint8_t y){
+
+	int8_t page;
+	// se calcula la pagina
+	if(y<64){
+		page = 1;
+	}else{
+		page = 2;
+		y -= 64;
+	}
+
+	// Se resta 1 para que en la segunda lectura lea el valor correcto
+	y = (y == 0)?63:y-1;
+	LcdGrafic_WriteInstruction(0x40 + y, page); // Y
+	LcdGrafic_WriteInstruction(0xb8 + x, page); // X
+	LcdGrafic_Read(data, 0, page);
+
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+void LcdGrafic_GotoXY(int8_t x, int8_t y){
+	int8_t page;
+	page = (y<64)?1:2; // se calcula la pagina
+
+	LcdGrafic_WriteInstruction(0xb8 + x, page); // X
+	LcdGrafic_WriteInstruction(0x40 + y, page); // Y
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+// clean screen
+void LcdGrafic_CleanScreen(){
+
+	uint8_t x;
+	uint8_t y;
+
+	for(y=0; y < 128; y++){
+		for(x=0; x < 8; x++){
+			LcdGrafic_WriteByte(0x00, x, y);
+		}
+	}
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+void LcdGrafic_DisplayON(){
+	LcdGrafic_WriteInstruction(0x3e,1); // Display Off
+	LcdGrafic_WriteInstruction(0x3e,2); // Display Off
+	LcdGrafic_WriteInstruction(0x3f,1); // Display On
+	LcdGrafic_WriteInstruction(0x3f,2); // Display On
+	LcdGrafic_WriteInstruction(0xc0 + 0, 0); // Z: star line
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+void LcdGrafic_DisplayOFF(){
+	LcdGrafic_WriteInstruction(0x3e,1); // Display Off
+	LcdGrafic_WriteInstruction(0x3e,2); // Display Off
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+// x=[0:63] y=[0:127]
+void LcdGrafic_SetPixel(int8_t x, int8_t y){
+
+	int8_t dataRead;
+	int8_t temp;
+
+	LcdGrafic_ReadByte(&dataRead, x/8, y);
+	temp = x - (x/8)*8;
+	dataRead |= (1 << temp);
+
+	LcdGrafic_WriteByte(dataRead, x/8, y);
+
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+// x=[0:63] y=[0:127]
+void LcdGrafic_UnSetPixel(int8_t x, int8_t y){
+
+	int8_t dataRead;
+	int8_t temp;
+
+	LcdGrafic_ReadByte(&dataRead, x/8, y);
+	temp = x - (x/8)*8;
+	dataRead &= ~(1 << temp);
+
+	LcdGrafic_WriteByte(dataRead, x/8, y);
+
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+void LcdGrafic_WriteBlock(int8_t* block,int8_t x, int8_t y, int16_t width, int8_t height){
+
+	int8_t i;
+	int16_t j;
+
+	LcdGrafic_GotoXY(x,y);
+	for(i = x; i < (x + height); i++){
+		for(j = y; j < (y + width); j++){
+			LcdGrafic_WriteByte(block[x*128 + y], j, i);
+		}
+	}
+
+
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+
+void LcdGrafic_WriteBuffer(uint8_t* data){
+
+	uint8_t x;
+	uint8_t y;
+
+	LcdGrafic_GotoXY(0,0);
+	for(y=0; y < 128; y++){
+		for(x=0; x < 8; x++){
+			LcdGrafic_WriteByte(data[x*128 + y], x, y);
+		}
+	}
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+

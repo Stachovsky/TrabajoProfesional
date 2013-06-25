@@ -1,0 +1,20 @@
+Drill report for /home/estanux/Documentos/repo/trabajoprofesional/Pcbs/PcbsDefinitivos/Motherboard/MotherboardV2/MotherboardV2.kicad_pcb
+Created on Mon 10 Jun 2013 12:34:54 ART
+Drill report for plated through holes :
+T1  0,64mm  0,025"  (77 holes)
+T2  0,76mm  0,030"  (6 holes)  (with 6 slots)
+T3  0,81mm  0,032"  (23 holes)
+T4  0,91mm  0,036"  (30 holes)
+T5  1,00mm  0,039"  (54 holes)
+T6  1,02mm  0,040"  (12 holes)
+T7  1,52mm  0,060"  (7 holes)
+T8  3,05mm  0,120"  (4 holes)
+
+Total plated holes count 213
+
+
+Drill report for unplated through holes :
+
+Total unplated holes count 0
+
+

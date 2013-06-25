@@ -1,0 +1,20 @@
+
+**** Build of configuration Debug for project display7Seg ****
+
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fanaur/workspacePruebas/CMSISv2p00_LPC17xx/inc" -I"/home/fanaur/workspacePruebas/display7Seg/src/Lib_EaBaseBoard/inc" -I"/home/fanaur/workspacePruebas/display7Seg/src/Lib_MCU/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o"src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: display7Seg.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"/home/fanaur/workspacePruebas/CMSISv2p00_LPC17xx/Debug" -Xlinker -Map="display7Seg.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "display7Seg_Debug.ld" -o"display7Seg.axf"  ./src/cr_startup_lpc176x.o ./src/main.o  ./src/Lib_MCU/src/lpc17xx_adc.o ./src/Lib_MCU/src/lpc17xx_can.o ./src/Lib_MCU/src/lpc17xx_clkpwr.o ./src/Lib_MCU/src/lpc17xx_dac.o ./src/Lib_MCU/src/lpc17xx_emac.o ./src/Lib_MCU/src/lpc17xx_exti.o ./src/Lib_MCU/src/lpc17xx_gpdma.o ./src/Lib_MCU/src/lpc17xx_gpio.o ./src/Lib_MCU/src/lpc17xx_i2c.o ./src/Lib_MCU/src/lpc17xx_i2s.o ./src/Lib_MCU/src/lpc17xx_libcfg_default.o ./src/Lib_MCU/src/lpc17xx_mcpwm.o ./src/Lib_MCU/src/lpc17xx_nvic.o ./src/Lib_MCU/src/lpc17xx_pinsel.o ./src/Lib_MCU/src/lpc17xx_pwm.o ./src/Lib_MCU/src/lpc17xx_qei.o ./src/Lib_MCU/src/lpc17xx_rit.o ./src/Lib_MCU/src/lpc17xx_rtc.o ./src/Lib_MCU/src/lpc17xx_spi.o ./src/Lib_MCU/src/lpc17xx_ssp.o ./src/Lib_MCU/src/lpc17xx_systick.o ./src/Lib_MCU/src/lpc17xx_timer.o ./src/Lib_MCU/src/lpc17xx_uart.o ./src/Lib_MCU/src/lpc17xx_wdt.o  ./src/Lib_EaBaseBoard/src/acc.o ./src/Lib_EaBaseBoard/src/eeprom.o ./src/Lib_EaBaseBoard/src/flash.o ./src/Lib_EaBaseBoard/src/font5x7.o ./src/Lib_EaBaseBoard/src/joystick.o ./src/Lib_EaBaseBoard/src/led7seg.o ./src/Lib_EaBaseBoard/src/light.o ./src/Lib_EaBaseBoard/src/oled.o ./src/Lib_EaBaseBoard/src/pca9532.o ./src/Lib_EaBaseBoard/src/rgb.o ./src/Lib_EaBaseBoard/src/rotary.o ./src/Lib_EaBaseBoard/src/temp.o ./src/Lib_EaBaseBoard/src/uart2.o   -lCMSISv2p00_LPC17xx
+Finished building target: display7Seg.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "display7Seg.axf"; # arm-none-eabi-objcopy -O binary "display7Seg.axf" "display7Seg.bin" ; checksum -p LPC1769 -d "display7Seg.bin";
+   text	   data	    bss	    dec	    hex	filename
+   4680	     88	      8	   4776	   12a8	display7Seg.axf
+ 

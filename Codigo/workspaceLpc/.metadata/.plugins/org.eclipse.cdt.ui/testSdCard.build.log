@@ -1,0 +1,24 @@
+
+**** Build of configuration Debug for project testSdCard ****
+
+make all 
+Building target: testSdCard.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"/home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/Debug" -L"/home/fanaur/RepositoriosMercurial/trabajoprofesional/Codigo/workspaceLpc/libDriversMcuPeripherals/Debug" -Xlinker -Map="testSdCard.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "test-FatFS_Debug.ld" -o"testSdCard.axf"  ./src/FatFS_support.o ./src/cr_startup_lpc176x.o ./src/main.o  ./src/lib_FatFS/src/option/cc932.o ./src/lib_FatFS/src/option/syscall.o  ./src/lib_FatFS/src/lpc1xxx_spi_sd/lpc17xx_spi.o ./src/lib_FatFS/src/lpc1xxx_spi_sd/sd.o  ./src/lib_FatFS/src/clocking.o ./src/lib_FatFS/src/ff.o   -lCMSISv2p00_LPC17xx -lDriversMcuPeripherals
+/usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(_deferredlazyseek.o): In function `__flsbuf':
+_deferredlazyseek.c:(.text.(float, long, short, bool, float __restrict)+0x96): undefined reference to `__sys_istty'
+/usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(_writebuf.o): In function `_Cwritebuf':
+_writebuf.c:(.text._Cwritebuf+0x18): undefined reference to `__sys_flen'
+_writebuf.c:(.text._Cwritebuf+0x2e): undefined reference to `__sys_seek'
+_writebuf.c:(.text._Cwritebuf+0x56): undefined reference to `__sys_write'
+/usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(alloc.o): In function `malloc':
+alloc.c:(.text.malloc+0x78): undefined reference to `_sbrk'
+alloc.c:(.text.malloc+0x9c): undefined reference to `_sbrk'
+/usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(alloc.o): In function `_Csys_alloc':
+alloc.c:(.text._Csys_alloc+0xe): undefined reference to `__sys_write'
+alloc.c:(.text._Csys_alloc+0x12): undefined reference to `__sys_appexit'
+/usr/local/lpcxpresso_4.2.0_224/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(fseek.o): In function `fseek':
+fseek.c:(.text.fseek+0x1c): undefined reference to `__sys_istty'
+fseek.c:(.text.fseek+0x3e): undefined reference to `__sys_flen'
+collect2: ld returned 1 exit status
+make: *** [testSdCard.axf] Error 1

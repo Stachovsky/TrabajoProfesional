@@ -1,0 +1,60 @@
+
+**** Build of configuration Debug for project ComunicacionTest ****
+
+make all 
+Building file: ../src/cr_startup_lpc17.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DDEBUG -D__CODE_RED -DPACK_STRUCT_END=__attribute\(\(packed\)\) -DGCC_ARMCM3 -I../src -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_EaBaseBoard" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_MCU" -I../FreeRTOS_include -I../FreeRTOS_portable -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/cr_startup_lpc17.d" -MT"src/cr_startup_lpc17.d" -o"src/cr_startup_lpc17.o" "../src/cr_startup_lpc17.c"
+Finished building: ../src/cr_startup_lpc17.c
+ 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DDEBUG -D__CODE_RED -DPACK_STRUCT_END=__attribute\(\(packed\)\) -DGCC_ARMCM3 -I../src -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_EaBaseBoard" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_MCU" -I../FreeRTOS_include -I../FreeRTOS_portable -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o"src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../FreeRTOS_src/croutine.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DDEBUG -D__CODE_RED -DPACK_STRUCT_END=__attribute\(\(packed\)\) -DGCC_ARMCM3 -I../src -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_EaBaseBoard" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_MCU" -I../FreeRTOS_include -I../FreeRTOS_portable -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"FreeRTOS_src/croutine.d" -MT"FreeRTOS_src/croutine.d" -o"FreeRTOS_src/croutine.o" "../FreeRTOS_src/croutine.c"
+Finished building: ../FreeRTOS_src/croutine.c
+ 
+Building file: ../FreeRTOS_src/list.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DDEBUG -D__CODE_RED -DPACK_STRUCT_END=__attribute\(\(packed\)\) -DGCC_ARMCM3 -I../src -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_EaBaseBoard" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_MCU" -I../FreeRTOS_include -I../FreeRTOS_portable -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"FreeRTOS_src/list.d" -MT"FreeRTOS_src/list.d" -o"FreeRTOS_src/list.o" "../FreeRTOS_src/list.c"
+Finished building: ../FreeRTOS_src/list.c
+ 
+Building file: ../FreeRTOS_src/queue.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DDEBUG -D__CODE_RED -DPACK_STRUCT_END=__attribute\(\(packed\)\) -DGCC_ARMCM3 -I../src -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_EaBaseBoard" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_MCU" -I../FreeRTOS_include -I../FreeRTOS_portable -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"FreeRTOS_src/queue.d" -MT"FreeRTOS_src/queue.d" -o"FreeRTOS_src/queue.o" "../FreeRTOS_src/queue.c"
+Finished building: ../FreeRTOS_src/queue.c
+ 
+Building file: ../FreeRTOS_src/tasks.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DDEBUG -D__CODE_RED -DPACK_STRUCT_END=__attribute\(\(packed\)\) -DGCC_ARMCM3 -I../src -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_EaBaseBoard" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_MCU" -I../FreeRTOS_include -I../FreeRTOS_portable -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"FreeRTOS_src/tasks.d" -MT"FreeRTOS_src/tasks.d" -o"FreeRTOS_src/tasks.o" "../FreeRTOS_src/tasks.c"
+Finished building: ../FreeRTOS_src/tasks.c
+ 
+Building file: ../FreeRTOS_src/timers.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DDEBUG -D__CODE_RED -DPACK_STRUCT_END=__attribute\(\(packed\)\) -DGCC_ARMCM3 -I../src -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_EaBaseBoard" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_MCU" -I../FreeRTOS_include -I../FreeRTOS_portable -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"FreeRTOS_src/timers.d" -MT"FreeRTOS_src/timers.d" -o"FreeRTOS_src/timers.o" "../FreeRTOS_src/timers.c"
+Finished building: ../FreeRTOS_src/timers.c
+ 
+Building file: ../FreeRTOS_portable/port.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DDEBUG -D__CODE_RED -DPACK_STRUCT_END=__attribute\(\(packed\)\) -DGCC_ARMCM3 -I../src -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_EaBaseBoard" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_MCU" -I../FreeRTOS_include -I../FreeRTOS_portable -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"FreeRTOS_portable/port.d" -MT"FreeRTOS_portable/port.d" -o"FreeRTOS_portable/port.o" "../FreeRTOS_portable/port.c"
+Finished building: ../FreeRTOS_portable/port.c
+ 
+Building file: ../FreeRTOS_portable/MemMang/heap_2.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DDEBUG -D__CODE_RED -DPACK_STRUCT_END=__attribute\(\(packed\)\) -DGCC_ARMCM3 -I../src -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_EaBaseBoard" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_MCU" -I../FreeRTOS_include -I../FreeRTOS_portable -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"FreeRTOS_portable/MemMang/heap_2.d" -MT"FreeRTOS_portable/MemMang/heap_2.d" -o"FreeRTOS_portable/MemMang/heap_2.o" "../FreeRTOS_portable/MemMang/heap_2.c"
+Finished building: ../FreeRTOS_portable/MemMang/heap_2.c
+ 
+Building target: ComunicacionTest.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/Debug" -Xlinker -Map="ComunicacionTest.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "ComunicacionTest_Debug.ld" -o"ComunicacionTest.axf"  ./src/cr_startup_lpc17.o ./src/main.o  ./FreeRTOS_src/croutine.o ./FreeRTOS_src/list.o ./FreeRTOS_src/queue.o ./FreeRTOS_src/tasks.o ./FreeRTOS_src/timers.o  ./FreeRTOS_portable/port.o  ./FreeRTOS_portable/MemMang/heap_2.o   -lPerifericos
+Finished building target: ComunicacionTest.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "ComunicacionTest.axf"; # arm-none-eabi-objcopy -O binary "ComunicacionTest.axf" "ComunicacionTest.bin" ; checksum -p LPC1769 -d "ComunicacionTest.bin";
+   text	   data	    bss	    dec	    hex	filename
+   5084	     16	  19748	  24848	   6110	ComunicacionTest.axf
+ 

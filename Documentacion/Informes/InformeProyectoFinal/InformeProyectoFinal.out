@@ -1,0 +1,59 @@
+\BOOKMARK [1][-]{section.1}{Prefacio, agradecimientos}{}
+\BOOKMARK [1][-]{section.2}{Resumen}{}
+\BOOKMARK [1][-]{section.3}{Introducci\363n}{}
+\BOOKMARK [2][-]{subsection.3.1}{Historia y antecedentes}{section.3}
+\BOOKMARK [2][-]{subsection.3.2}{Definiciones y glosario de t\351rminos}{section.3}
+\BOOKMARK [2][-]{subsection.3.3}{Justificaci\363n del proyecto}{section.3}
+\BOOKMARK [1][-]{section.4}{Objetivos. \(Propuesta t\351cnica\)}{}
+\BOOKMARK [2][-]{subsection.4.1}{Finalidad del proyecto \(a quien ayuda, para que sirve\)}{section.4}
+\BOOKMARK [2][-]{subsection.4.2}{Planteamiento del problema a resolver}{section.4}
+\BOOKMARK [1][-]{section.5}{Definici\363n de Producto}{}
+\BOOKMARK [2][-]{subsection.5.1}{Requerimientos}{section.5}
+\BOOKMARK [2][-]{subsection.5.2}{Construcci\363n de la Casa de calidad \(an\341lisis de valor y competitividad\)}{section.5}
+\BOOKMARK [2][-]{subsection.5.3}{Especificaciones funcionales y de dise\361o}{section.5}
+\BOOKMARK [3][-]{subsubsection.5.3.1}{Especificaciones del hardware}{subsection.5.3}
+\BOOKMARK [3][-]{subsubsection.5.3.2}{Especificaci\363n del sof\341 \(interfaces y protocolos\)}{subsection.5.3}
+\BOOKMARK [1][-]{section.6}{An\341lisis de Factibilidad}{}
+\BOOKMARK [2][-]{subsection.6.1}{Factibilidad tecnol\363gica}{section.6}
+\BOOKMARK [3][-]{subsubsection.6.1.1}{Propuesta de alternativas de dise\361o}{subsection.6.1}
+\BOOKMARK [3][-]{subsubsection.6.1.2}{Elecci\363n de una soluci\363n}{subsection.6.1}
+\BOOKMARK [3][-]{subsubsection.6.1.3}{DFMEA}{subsection.6.1}
+\BOOKMARK [2][-]{subsection.6.2}{Factibilidad de tiempos. Planificaci\363n \(PERT y simulaci\363n de Montecarlo\) y programaci\363n \(Gant\). An\341lisis de Riesgos}{section.6}
+\BOOKMARK [2][-]{subsection.6.3}{Factibilidad econ\363mica. \(Mercado, costos, ciclo de vida, VAN, TIR\)}{section.6}
+\BOOKMARK [2][-]{subsection.6.4}{Factibilidad legal y responsabilidad civil \(regulaciones y licencias}{section.6}
+\BOOKMARK [1][-]{section.7}{Ingenier\355a de detalle}{}
+\BOOKMARK [2][-]{subsection.7.1}{Hardware}{section.7}
+\BOOKMARK [3][-]{subsubsection.7.1.1}{Diagrama de bloques \(hardware\)}{subsection.7.1}
+\BOOKMARK [3][-]{subsubsection.7.1.2}{Detalles de selecci\363n y calculo de los elementos circuitales de cada bloque}{subsection.7.1}
+\BOOKMARK [3][-]{subsubsection.7.1.3}{Plan de pruebas de cada modulo}{subsection.7.1}
+\BOOKMARK [2][-]{subsection.7.2}{Software}{section.7}
+\BOOKMARK [3][-]{subsubsection.7.2.1}{Diagrama de estados, procesos y flujogramas}{subsection.7.2}
+\BOOKMARK [3][-]{subsubsection.7.2.2}{An\341lisis de complejidad \(Mc.Cabe o Hasltead \)}{subsection.7.2}
+\BOOKMARK [3][-]{subsubsection.7.2.3}{Descripci\363n de subrutinas}{subsection.7.2}
+\BOOKMARK [3][-]{subsubsection.7.2.4}{Listados comentados del c\363digo }{subsection.7.2}
+\BOOKMARK [3][-]{subsubsection.7.2.5}{Plan de prueba de m\363dulos y de depuraci\363n de softwar}{subsection.7.2}
+\BOOKMARK [1][-]{section.8}{Construcci\363n del prototipo}{}
+\BOOKMARK [2][-]{subsection.8.1}{Definici\363n de los m\363dulos}{section.8}
+\BOOKMARK [2][-]{subsection.8.2}{Dise\361o de los circuitos impresos}{section.8}
+\BOOKMARK [2][-]{subsection.8.3}{Dise\361o mec\341nico}{section.8}
+\BOOKMARK [2][-]{subsection.8.4}{Detalles de construcci\363n y precauciones especiales de montaje}{section.8}
+\BOOKMARK [1][-]{section.9}{Validaci\363n del prototipo}{}
+\BOOKMARK [2][-]{subsection.9.1}{Validaci\363n de hardware}{section.9}
+\BOOKMARK [3][-]{subsubsection.9.1.1}{Plan y protocolos especiales de medici\363n}{subsection.9.1}
+\BOOKMARK [3][-]{subsubsection.9.1.2}{Medidas}{subsection.9.1}
+\BOOKMARK [3][-]{subsubsection.9.1.3}{Evaluaci\363n}{subsection.9.1}
+\BOOKMARK [3][-]{subsubsection.9.1.4}{Resultados}{subsection.9.1}
+\BOOKMARK [2][-]{subsection.9.2}{Validaci\363n de software}{section.9}
+\BOOKMARK [1][-]{section.10}{Estudios de confiabilidad de hardware y de software}{}
+\BOOKMARK [1][-]{section.11}{Conclusiones}{}
+\BOOKMARK [2][-]{subsection.11.1}{Excelencias. Objetivos alcanzados}{section.11}
+\BOOKMARK [2][-]{subsection.11.2}{Fallos. Recomendaciones para futuros dise\361os}{section.11}
+\BOOKMARK [1][-]{section.12}{Anexos: T\351cnicos. Justificativos. Descriptivos. Documentales}{}
+\BOOKMARK [2][-]{subsection.12.1}{Planos}{section.12}
+\BOOKMARK [2][-]{subsection.12.2}{Esquemas}{section.12}
+\BOOKMARK [2][-]{subsection.12.3}{Listado de partes}{section.12}
+\BOOKMARK [2][-]{subsection.12.4}{C\363digos de software}{section.12}
+\BOOKMARK [2][-]{subsection.12.5}{Experiencias accesorias}{section.12}
+\BOOKMARK [2][-]{subsection.12.6}{Hojas de datos de componentes}{section.12}
+\BOOKMARK [2][-]{subsection.12.7}{Hojas de aplicaci\363n, etc.}{section.12}
+\BOOKMARK [2][-]{subsection.12.8}{Manuales de operaci\363n, soporte e instalaci\363n}{section.12}

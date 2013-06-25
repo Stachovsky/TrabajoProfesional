@@ -1,0 +1,153 @@
+%--------------------------------------------------------------------------------------------------------------------  
+%--------------------------------------------------------------------------------------------------------------------
+
+  \subsection{Requerimientos}  
+
+  \newpage
+
+%--------------------------------------------------------------------------------------------------------------------  
+%--------------------------------------------------------------------------------------------------------------------
+
+  \subsection{Construcción de la Casa de calidad (análisis de valor y competitividad)}  
+
+  \newpage
+
+
+%--------------------------------------------------------------------------------------------------------------------  
+%--------------------------------------------------------------------------------------------------------------------
+
+  \subsection{Especificaciones funcionales y de diseño}  
+
+  \newpage
+
+%--------------------------------------------------------------------------------------------------------------------  
+%--------------------------------------------------------------------------------------------------------------------
+
+  \subsubsection{Especificaciones del hardware}  
+  
+   \textbf{Aspectos eléctricos}
+      \begin{itemize}
+	\item Tensión alimentación: 220VAC/50Hz.
+	\item Consumo máximo: 1A.$*^{1}$
+	\item Pico de corriente de sinterizado máximo: 1KA. $*^{2}$
+	\item Impedancia máxima de la muestra: 1$\Omega$. 
+	\end{itemize}
+     
+    \begin{tabbing}
+      \= ----- \= ----- \= --------------------- \= \kill
+      \> $*^{1}$:\>	El consumo máximo estará fijado por la fuente que se utilice y esta por el transformador. \\
+      \> $*^{2}$:\>	La corriente máxima de pico de sinterizado puede ser incrementada hasta 10 kA si se amplía\\
+         	\>\>	el banco de capacitores, se remplaza los contactores y el cableado correspondiente.\\
+     \end{tabbing}
+
+    \textbf{Almacenamientos de datos}
+      
+      \begin{itemize}
+	\item Memoria flash en soporte SD Card.
+	\item Memoria flash en soporte pendrive USB 2.0.
+      \end{itemize}
+
+    \textbf{Comunicación}
+      
+      \begin{itemize}
+	\item Comunicación USB 2.0 con la PC. $*^{3}$
+      \end{itemize}
+    
+      \begin{tabbing}
+	\= ----- \= ----- \= --------------------- \= \kill
+	\>$*^{3}$: \>Se utiliza un bridge RS232-USB interno. \\
+       \end{tabbing}
+	
+    \textbf{Periféricos del dispositivo}
+      \begin{itemize}
+	\item Display gráfico de 128x64 pixels.
+	\item Teclado de 4 teclas.
+	\item Sensor de corriente.
+	\item Sensores de tensión $\times$ 3.
+	\item Sensor de temperatura.
+      \end{itemize}
+
+    \textbf{Interfases del dispositivo}
+      \begin{itemize}
+	\item Entrada de 0-5V $\times$ 3.$*^{4}*^{5}$
+	\item Entrada de 5-20mA $\times$ 1.$*^{4}$
+	\item Puertos UART $\times$ 3.$*^{6}$
+	\item Bus $ I^{2}C $.$*^{6}$
+      \end{itemize}
+
+      \begin{tabbing}
+       \= ----- \= ----- \= --------------------- \= \kill
+	\> $*^{4}$: \>Interfases configurables desde el programa de PC. \\
+	\> $*^{5}$: \>Interfases usadas para los sensores de tensión y corriente \\
+	\> $*^{6}$: \>Interfases reservadas para usos futuros. \\
+      \end{tabbing}
+
+    \textbf{Seguridad}
+      \begin{itemize}
+	\item Descarga segura del banco de capacitores.
+	\item Sirena sonora.
+	\item Luces de señalización $\times$ 3.
+	\item Banco de capacitores ubicados dentro del gabinete del dispositivo .
+	\item Revestimiento eléctricamente aislante del gabinete del dispositivo.
+	\item Protección contra corto circuito.
+	\item Botón de parada de emergencia.
+      \end{itemize}
+
+    \textbf{Aspectos mecánicos}
+      \begin{itemize}
+	\item No se brinda la función de prensado de la muestra. $*^{7}$
+	\item Gabinete con 4 ruedas. 
+	\item No se brinda el recipiente contenedor de la muestra de polvo.
+      \end{itemize}
+
+      \begin{tabbing}
+       \= ----- \= ----- \= --------------------- \= \kill
+	\> $*^{7}$: \>  La muestra debe estar prensada previamente al momento de realizar el \\
+	    \>\>	proceso sinterizado.\\
+      \end{tabbing}
+
+    \textbf{Aspectos de operativos}
+      \begin{itemize}
+	\item Uso máximo mensual: 60 veces. $*^{8}$
+      \end{itemize}
+    
+      \begin{tabbing}
+	\= ----- \= ----- \= --------------------- \= \kill
+	\> $*^{8}$: \>Se estima un promedio de 2 usos diarios. \\
+      \end{tabbing}
+
+
+  \newpage
+
+%--------------------------------------------------------------------------------------------------------------------  
+%--------------------------------------------------------------------------------------------------------------------
+
+  \subsubsection{Especificación del software }  
+ El control, administración, monitoreo y recolección de datos del dispositivo de control del proceso de sinterizado se harán a través de 
+    un programa de PC con las siguiente características:
+    
+    \begin{itemize}
+      \item Plataforma Windows XP/7 y GNU Linux.
+      \item Formato de datos exportados CSV.
+      \item Control de acceso.
+      \item Base de datos.
+    \end{itemize}
+  
+    \textbf{Pantallas}
+      El programa contara con las siguientes pantallas: (FALTA AGREGAR LAS CAPTURAS DE LAS PANTALLAS)
+
+    \begin{itemize}
+      \item Login.      
+      \item ABM usuarios.
+      \item Monitoreo dispositivo.
+      \item Parametrización del experimento.
+      \item Control experimentación.
+      \item Descarga de datos del experimento.
+      \item Exportación de resultados de experimentación.
+      \item Ploteo de resultados del experimento.
+    \end{itemize}
+  
+  \newpage
+
+%--------------------------------------------------------------------------------------------------------------------  
+%--------------------------------------------------------------------------------------------------------------------

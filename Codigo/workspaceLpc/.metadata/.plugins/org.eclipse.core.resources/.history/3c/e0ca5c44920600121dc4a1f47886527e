@@ -1,0 +1,78 @@
+/**
+ * Name        : main.c
+ * Version     :
+ * Description : main definition for FreeRTOS application
+ */
+
+/*
+ * FreeRTOS includes
+ */
+#include "FreeRTOS.h"
+#include "task.h"
+#include "queue.h"
+#include "semphr.h"
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#include "API_Uart.h"
+
+#define USERTASK_STACK_SIZE configMINIMAL_STACK_SIZE
+
+void __error__(char *pcFilename, unsigned long ulLine) {
+}
+
+void interruptUart3(uint8_t c){
+
+	uint8_t temp[15];
+	sprintf((char*)temp, "llego %c\r\n", (char)c);
+
+}
+
+static void setupHardware(void) {
+
+	// Se configuran los perifericos por defecto
+	SystemInit();
+
+	// Se inicialziza la uart 3
+	API_UartConfig(UART_PORT_3, interruptUart3);
+}
+
+void vUserTask1(void *pvParameters) {
+
+	uint8_t nada[15];
+	int8_t i = 0;
+
+	API_EnableInterrupt(UART_PORT_3);
+	const portTickType xDelay = 100 / portTICK_RATE_MS;
+
+	while (1) {
+		sprintf((char*)nada, "tick %d\r\n", (int)i++);
+		API_UartSendString(UART_PORT_3,nada);
+		vTaskDelay( xDelay );
+	}
+}
+
+/**
+ * Program entry point 
+ */
+int main(void) {
+
+	setupHardware();
+
+	/*
+	 * Start the tasks defined within this file/specific to this demo. 
+	 */
+	xTaskCreate( vUserTask1, ( signed portCHAR * ) "Task1", 240, NULL, 10, NULL );
+
+	/* 
+	 * Start the scheduler. 
+	 */
+	vTaskStartScheduler();
+
+	/* 
+	 * Will only get here if there was insufficient memory to create the idle task. 
+	 */
+	return 1;
+}

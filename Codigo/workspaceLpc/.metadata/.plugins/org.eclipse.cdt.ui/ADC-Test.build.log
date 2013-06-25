@@ -1,0 +1,10 @@
+
+**** Build of configuration Debug for project ADC-Test ****
+
+make all 
+Building file: ../src/API_Uart.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libDriversMcuPeripherals/inc/Lib_MCU" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libDriversMcuPeripherals/inc/Lib_EaBaseBoard" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/API_Uart.d" -MT"src/API_Uart.d" -o"src/API_Uart.o" "../src/API_Uart.c"
+../src/API_Uart.c:46:6: error: conflicting types for 'API_UartSendString'
+../src/API_Uart.h:15:6: note: previous declaration of 'API_UartSendString' was here
+make: *** [src/API_Uart.o] Error 1

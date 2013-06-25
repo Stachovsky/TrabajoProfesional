@@ -1,0 +1,38 @@
+Cmp-Mod V01 Created by CvPcb (2011-nov-30)-testing date = Fri 12 Oct 2012 11:03:55 AM ART
+
+BeginCmp
+TimeStamp = /507814C4;
+Reference = K1;
+ValeurCmp = CONN_3;
+IdModule  = PotenciometroAxial;
+EndCmp
+
+BeginCmp
+TimeStamp = /507815A6;
+Reference = P1;
+ValeurCmp = CONN_20;
+IdModule  = Conn20x1;
+EndCmp
+
+BeginCmp
+TimeStamp = /50781998;
+Reference = P2;
+ValeurCmp = CONN_25;
+IdModule  = Conn25x1;
+EndCmp
+
+BeginCmp
+TimeStamp = /507819B2;
+Reference = R1;
+ValeurCmp = R;
+IdModule  = R4;
+EndCmp
+
+BeginCmp
+TimeStamp = /507819BF;
+Reference = R2;
+ValeurCmp = R;
+IdModule  = R4;
+EndCmp
+
+EndListe

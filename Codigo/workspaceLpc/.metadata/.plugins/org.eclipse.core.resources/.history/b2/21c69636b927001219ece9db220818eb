@@ -1,0 +1,26 @@
+FreeRTOS_portable/port.d FreeRTOS_portable/port.o: \
+ ../FreeRTOS_portable/port.c \
+ /home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/FreeRTOS.h \
+ /home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/projdefs.h \
+ /home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/src/FreeRTOSConfig.h \
+ /home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/portable.h \
+ /home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_portable/portmacro.h \
+ /home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/mpu_wrappers.h \
+ /home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/task.h \
+ /home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/list.h
+
+/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/FreeRTOS.h:
+
+/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/projdefs.h:
+
+/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/src/FreeRTOSConfig.h:
+
+/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/portable.h:
+
+/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_portable/portmacro.h:
+
+/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/mpu_wrappers.h:
+
+/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/task.h:
+
+/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/list.h:

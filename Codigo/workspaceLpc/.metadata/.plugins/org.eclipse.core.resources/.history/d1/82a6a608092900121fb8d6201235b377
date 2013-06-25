@@ -1,0 +1,667 @@
+Archive member included because of file (symbol)
+
+/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+                              ./src/cr_startup_lpc176x.o (SystemInit)
+/usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(__weak__main.o)
+                              ./src/cr_startup_lpc176x.o (__main)
+/usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(strlen.o)
+                              ./src/main.o (strlen)
+/usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(division.o)
+                              /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o) (__aeabi_uldivmod)
+
+Allocating common symbols
+Common symbol       size              file
+
+args                0x8               ./src/main.o
+CardType            0x1               ./src/sd.o
+fs                  0x230             ./src/main.o
+CardConfig          0x70              ./src/sd.o
+line                0xff              ./src/main.o
+Buffer              0x200             ./src/main.o
+str                 0xff              ./src/main.o
+
+Discarded input sections
+
+ .text          0x00000000        0x0 ./src/clocking.o
+ .data          0x00000000        0x0 ./src/clocking.o
+ .bss           0x00000000        0x0 ./src/clocking.o
+ .text.LPC_EnablePLL1
+                0x00000000       0xf4 ./src/clocking.o
+ .text.LPC_DisablePLL1
+                0x00000000       0x7c ./src/clocking.o
+ .text          0x00000000        0x0 ./src/cr_startup_lpc176x.o
+ .data          0x00000000        0x0 ./src/cr_startup_lpc176x.o
+ .bss           0x00000000        0x0 ./src/cr_startup_lpc176x.o
+ .text          0x00000000        0x0 ./src/ff.o
+ .data          0x00000000        0x0 ./src/ff.o
+ .bss           0x00000000        0x0 ./src/ff.o
+ .text.dir_read
+                0x00000000       0xa4 ./src/ff.o
+ .text.dir_remove
+                0x00000000       0x58 ./src/ff.o
+ .text.get_fileinfo
+                0x00000000      0x15c ./src/ff.o
+ .text.f_lseek  0x00000000      0x2e4 ./src/ff.o
+ .text.f_opendir
+                0x00000000       0xe8 ./src/ff.o
+ .text.f_readdir
+                0x00000000       0x9c ./src/ff.o
+ .text.f_stat   0x00000000       0x78 ./src/ff.o
+ .text.f_getfree
+                0x00000000      0x1dc ./src/ff.o
+ .text.f_truncate
+                0x00000000      0x128 ./src/ff.o
+ .text.f_unlink
+                0x00000000      0x1ac ./src/ff.o
+ .text.f_mkdir  0x00000000      0x364 ./src/ff.o
+ .text.f_chmod  0x00000000       0xc4 ./src/ff.o
+ .text.f_utime  0x00000000       0xcc ./src/ff.o
+ .text.f_rename
+                0x00000000      0x25c ./src/ff.o
+ .text          0x00000000        0x0 ./src/lpc17xx_spi.o
+ .data          0x00000000        0x0 ./src/lpc17xx_spi.o
+ .bss           0x00000000        0x0 ./src/lpc17xx_spi.o
+ .text.SPI_Init
+                0x00000000      0x11c ./src/lpc17xx_spi.o
+ .text.SPI_ConfigClockRate
+                0x00000000       0x24 ./src/lpc17xx_spi.o
+ .text          0x00000000        0x0 ./src/main.o
+ .data          0x00000000        0x0 ./src/main.o
+ .bss           0x00000000        0x0 ./src/main.o
+ .text.TimerRead
+                0x00000000       0x18 ./src/main.o
+ .text.set_timeout
+                0x00000000       0x60 ./src/main.o
+ .text.show_dir
+                0x00000000       0x5c ./src/main.o
+ .text.write_log
+                0x00000000      0x108 ./src/main.o
+ .text.type_file
+                0x00000000       0x8c ./src/main.o
+ .text.delete_file
+                0x00000000       0x1c ./src/main.o
+ .text          0x00000000        0x0 ./src/sd.o
+ .data          0x00000000        0x0 ./src/sd.o
+ .bss           0x00000000        0x0 ./src/sd.o
+ .text.disk_timerproc
+                0x00000000       0x5c ./src/sd.o
+ .text          0x00000000        0x0 ./src/option/cc932.o
+ .data          0x00000000        0x0 ./src/option/cc932.o
+ .bss           0x00000000        0x0 ./src/option/cc932.o
+ .rodata.uni2sjis
+                0x00000000     0x7378 ./src/option/cc932.o
+ .rodata.sjis2uni
+                0x00000000     0x7378 ./src/option/cc932.o
+ .text.ff_convert
+                0x00000000       0xd4 ./src/option/cc932.o
+ .text.ff_wtoupper
+                0x00000000       0x70 ./src/option/cc932.o
+ .rodata.tbl_lower.1007
+                0x00000000      0x1e0 ./src/option/cc932.o
+ .rodata.tbl_upper.1008
+                0x00000000      0x1e0 ./src/option/cc932.o
+ .text          0x00000000        0x0 ./src/option/syscall.o
+ .data          0x00000000        0x0 ./src/option/syscall.o
+ .bss           0x00000000        0x0 ./src/option/syscall.o
+ .text          0x00000000        0x0 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .data          0x00000000        0x0 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .bss           0x00000000        0x0 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .text.SystemCoreClockUpdate
+                0x00000000       0xf0 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .text          0x00000000        0x0 /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(__weak__main.o)
+ .data          0x00000000        0x0 /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(__weak__main.o)
+ .bss           0x00000000        0x0 /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(__weak__main.o)
+ .text          0x00000000        0x0 /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(strlen.o)
+ .data          0x00000000        0x0 /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(strlen.o)
+ .bss           0x00000000        0x0 /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(strlen.o)
+ .text.strlen   0x00000000       0x4e /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(strlen.o)
+ .text          0x00000000        0x0 /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(division.o)
+ .data          0x00000000        0x0 /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(division.o)
+ .bss           0x00000000        0x0 /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_idiv
+                0x00000000       0x10 /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_idivmod
+                0x00000000       0x16 /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_uidiv
+                0x00000000       0x10 /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_uidivmod
+                0x00000000       0x16 /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_ldivmod
+                0x00000000       0x26 /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_uldivmod
+                0x00000000      0x174 /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_idiv0
+                0x00000000        0x2 /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(division.o)
+ .text.__aeabi_division_ldiv0
+                0x00000000        0x2 /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(division.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+MFlash512        0x00000000         0x00080000         xr
+RamLoc32         0x10000000         0x00008000         xrw
+RamAHB32         0x2007c000         0x00008000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ./src/clocking.o
+LOAD ./src/cr_startup_lpc176x.o
+LOAD ./src/ff.o
+LOAD ./src/lpc17xx_spi.o
+LOAD ./src/main.o
+LOAD ./src/sd.o
+LOAD ./src/option/cc932.o
+LOAD ./src/option/syscall.o
+LOAD /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a
+LOAD /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libDriversMcuPeripherals/Debug/libDriversMcuPeripherals.a
+START GROUP
+LOAD /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a
+LOAD /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a
+END GROUP
+                0x00080000                __top_MFlash512 = 0x80000
+                0x10008000                __top_RamLoc32 = 0x10008000
+                0x20084000                __top_RamAHB32 = 0x20084000
+
+.text           0x00000000     0x3fd8
+ FILL mask 0xff
+ *(.isr_vector)
+ .isr_vector    0x00000000       0xcc ./src/cr_startup_lpc176x.o
+                0x00000000                g_pfnVectors
+                0x000000cc                . = ALIGN (0x4)
+                0x000000cc                __section_table_start = .
+                0x000000cc                __data_section_table = .
+                0x000000cc        0x4 LONG 0x3fd8 LOADADDR (.data)
+                0x000000d0        0x4 LONG 0x10000000 ADDR (.data)
+                0x000000d4        0x4 LONG 0x168 SIZEOF (.data)
+                0x000000d8        0x4 LONG 0x3fd8 LOADADDR (.data_RAM2)
+                0x000000dc        0x4 LONG 0x2007c000 ADDR (.data_RAM2)
+                0x000000e0        0x4 LONG 0x0 SIZEOF (.data_RAM2)
+                0x000000e4                __data_section_table_end = .
+                0x000000e4                __bss_section_table = .
+                0x000000e4        0x4 LONG 0x10000168 ADDR (.bss)
+                0x000000e8        0x4 LONG 0x6b8 SIZEOF (.bss)
+                0x000000ec        0x4 LONG 0x2007c000 ADDR (.bss_RAM2)
+                0x000000f0        0x4 LONG 0x0 SIZEOF (.bss_RAM2)
+                0x000000f4                __bss_section_table_end = .
+                0x000000f4                __section_table_end = .
+ *(.after_vectors*)
+ .after_vectors
+                0x000000f4       0x78 ./src/cr_startup_lpc176x.o
+                0x000000f4                NMI_Handler
+                0x000000f6                HardFault_Handler
+                0x000000f8                MemManage_Handler
+                0x000000fa                BusFault_Handler
+                0x000000fc                UsageFault_Handler
+                0x000000fe                SVCall_Handler
+                0x00000100                DebugMon_Handler
+                0x00000102                PendSV_Handler
+                0x00000104                SysTick_Handler
+                0x00000106                data_init
+                0x00000118                bss_init
+                0x00000128                ResetISR
+                0x00000168                TIMER2_IRQHandler
+                0x00000168                RIT_IRQHandler
+                0x00000168                I2C0_IRQHandler
+                0x00000168                USBActivity_IRQHandler
+                0x00000168                PWM1_IRQHandler
+                0x00000168                I2C1_IRQHandler
+                0x00000168                EINT2_IRQHandler
+                0x00000168                UART1_IRQHandler
+                0x00000168                EINT3_IRQHandler
+                0x00000168                CANActivity_IRQHandler
+                0x00000168                TIMER3_IRQHandler
+                0x00000168                UART0_IRQHandler
+                0x00000168                IntDefaultHandler
+                0x00000168                PLL0_IRQHandler
+                0x00000168                CAN_IRQHandler
+                0x00000168                PLL1_IRQHandler
+                0x00000168                SSP0_IRQHandler
+                0x00000168                I2S_IRQHandler
+                0x00000168                I2C2_IRQHandler
+                0x00000168                RTC_IRQHandler
+                0x00000168                TIMER0_IRQHandler
+                0x00000168                SPI_IRQHandler
+                0x00000168                EINT1_IRQHandler
+                0x00000168                TIMER1_IRQHandler
+                0x00000168                UART2_IRQHandler
+                0x00000168                ADC_IRQHandler
+                0x00000168                SSP1_IRQHandler
+                0x00000168                USB_IRQHandler
+                0x00000168                BOD_IRQHandler
+                0x00000168                WDT_IRQHandler
+                0x00000168                QEI_IRQHandler
+                0x00000168                EINT0_IRQHandler
+                0x00000168                DMA_IRQHandler
+                0x00000168                UART3_IRQHandler
+                0x00000168                MCPWM_IRQHandler
+                0x00000168                ENET_IRQHandler
+ *(.text*)
+ .text.LPC_UseOscillator
+                0x0000016c      0x1f8 ./src/clocking.o
+                0x0000016c                LPC_UseOscillator
+ .text.LPC_SetPLL0
+                0x00000364      0x430 ./src/clocking.o
+                0x00000364                LPC_SetPLL0
+ .text.mem_cpy  0x00000794       0x50 ./src/ff.o
+ .text.mem_set  0x000007e4       0x44 ./src/ff.o
+ .text.mem_cmp  0x00000828       0x70 ./src/ff.o
+ .text.chk_chr  0x00000898       0x38 ./src/ff.o
+ .text.move_window
+                0x000008d0       0xd4 ./src/ff.o
+ .text.sync     0x000009a4      0x1d0 ./src/ff.o
+ .text.clust2sect
+                0x00000b74       0x44 ./src/ff.o
+                0x00000b74                clust2sect
+ .text.get_fat  0x00000bb8      0x1a4 ./src/ff.o
+                0x00000bb8                get_fat
+ .text.put_fat  0x00000d5c      0x264 ./src/ff.o
+                0x00000d5c                put_fat
+ .text.remove_chain
+                0x00000fc0       0xb0 ./src/ff.o
+ .text.create_chain
+                0x00001070      0x12c ./src/ff.o
+ .text.dir_sdi  0x0000119c      0x118 ./src/ff.o
+ .text.dir_next
+                0x000012b4      0x1dc ./src/ff.o
+ .text.dir_find
+                0x00001490       0xa4 ./src/ff.o
+ .text.dir_register
+                0x00001534       0xbc ./src/ff.o
+ .text.create_name
+                0x000015f0      0x1b8 ./src/ff.o
+ .text.follow_path
+                0x000017a8      0x11c ./src/ff.o
+ .text.check_fs
+                0x000018c4      0x108 ./src/ff.o
+ .text.chk_mounted
+                0x000019cc      0x66c ./src/ff.o
+ .text.validate
+                0x00002038       0x54 ./src/ff.o
+ .text.f_mount  0x0000208c       0x64 ./src/ff.o
+                0x0000208c                f_mount
+ .text.f_open   0x000020f0      0x35c ./src/ff.o
+                0x000020f0                f_open
+ .text.f_read   0x0000244c      0x2f0 ./src/ff.o
+                0x0000244c                f_read
+ .text.f_write  0x0000273c      0x354 ./src/ff.o
+                0x0000273c                f_write
+ .text.f_sync   0x00002a90      0x1c0 ./src/ff.o
+                0x00002a90                f_sync
+ .text.f_close  0x00002c50       0x2c ./src/ff.o
+                0x00002c50                f_close
+ .text.SPI_CS_Low
+                0x00002c7c       0x24 ./src/lpc17xx_spi.o
+                0x00002c7c                SPI_CS_Low
+ .text.SPI_CS_High
+                0x00002ca0       0x24 ./src/lpc17xx_spi.o
+                0x00002ca0                SPI_CS_High
+ .text.SPI_SendByte
+                0x00002cc4       0x44 ./src/lpc17xx_spi.o
+                0x00002cc4                SPI_SendByte
+ .text.SPI_RecvByte
+                0x00002d08       0x14 ./src/lpc17xx_spi.o
+                0x00002d08                SPI_RecvByte
+ .text.SPI_SendBlock_FIFO
+                0x00002d1c       0xdc ./src/lpc17xx_spi.o
+                0x00002d1c                SPI_SendBlock_FIFO
+ .text.SPI_RecvBlock_FIFO
+                0x00002df8       0xf4 ./src/lpc17xx_spi.o
+                0x00002df8                SPI_RecvBlock_FIFO
+ .text.SetSPIClocks
+                0x00002eec       0xb0 ./src/main.o
+ .text.TimerReset
+                0x00002f9c       0x58 ./src/main.o
+                0x00002f9c                TimerReset
+ .text.TimerStart
+                0x00002ff4       0x18 ./src/main.o
+                0x00002ff4                TimerStart
+ .text.TimerStop
+                0x0000300c       0x18 ./src/main.o
+                0x0000300c                TimerStop
+ .text.write_file
+                0x00003024      0x128 ./src/main.o
+ .text.read_file
+                0x0000314c      0x174 ./src/main.o
+ .text.main     0x000032c0       0xfc ./src/main.o
+                0x000032c0                main
+ .text.disk_initialize
+                0x000033bc       0x5c ./src/sd.o
+                0x000033bc                disk_initialize
+ .text.disk_ioctl
+                0x00003418      0x1f0 ./src/sd.o
+                0x00003418                disk_ioctl
+ .text.disk_read
+                0x00003608       0x64 ./src/sd.o
+                0x00003608                disk_read
+ .text.disk_status
+                0x0000366c       0x30 ./src/sd.o
+                0x0000366c                disk_status
+ .text.disk_write
+                0x0000369c       0x64 ./src/sd.o
+                0x0000369c                disk_write
+ .text.SD_Init  0x00003700        0xc ./src/sd.o
+                0x00003700                SD_Init
+ .text.SD_WaitForReady
+                0x0000370c       0x40 ./src/sd.o
+                0x0000370c                SD_WaitForReady
+ .text.SD_SendCommand
+                0x0000374c      0x100 ./src/sd.o
+                0x0000374c                SD_SendCommand
+ .text.SD_SendACommand
+                0x0000384c       0x4c ./src/sd.o
+                0x0000384c                SD_SendACommand
+ .text.SD_ReadSector
+                0x00003898       0xe0 ./src/sd.o
+                0x00003898                SD_ReadSector
+ .text.SD_WriteSector
+                0x00003978       0xdc ./src/sd.o
+                0x00003978                SD_WriteSector
+ .text.SD_ReadConfiguration
+                0x00003a54      0x30c ./src/sd.o
+                0x00003a54                SD_ReadConfiguration
+ .text.SD_RecvDataBlock
+                0x00003d60       0x64 ./src/sd.o
+                0x00003d60                SD_RecvDataBlock
+ .text.SD_SendDataBlock
+                0x00003dc4       0x8c ./src/sd.o
+                0x00003dc4                SD_SendDataBlock
+ .text.SystemInit
+                0x00003e50       0xe4 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+                0x00003e50                SystemInit
+ .text.__weak_main
+                0x00003f34        0x4 /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(__weak__main.o)
+                0x00003f34                __main
+                0x00003f34                __weak_main
+ *(.rodata .rodata.*)
+ .rodata        0x00003f38       0x10 ./src/ff.o
+ .rodata.excvt.1171
+                0x00003f48       0x80 ./src/ff.o
+ .rodata        0x00003fc8       0x10 ./src/main.o
+                0x00003fd8                . = ALIGN (0x4)
+
+.glue_7         0x00003fd8        0x0
+ .glue_7        0x00000000        0x0 linker stubs
+
+.glue_7t        0x00003fd8        0x0
+ .glue_7t       0x00000000        0x0 linker stubs
+
+.vfp11_veneer   0x00003fd8        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x00003fd8        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x00003fd8                __exidx_start = .
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x00003fd8                __exidx_end = .
+                0x00003fd8                _etext = .
+
+.data_RAM2      0x2007c000        0x0 load address 0x00003fd8
+ FILL mask 0xff
+ *(.data.$RAM2*)
+ *(.data.$RamAHB32*)
+                0x2007c000                . = ALIGN (0x4)
+
+.uninit_RESERVED
+ *(.bss.$RESERVED*)
+
+.data           0x10000000      0x168 load address 0x00003fd8
+ FILL mask 0xff
+                0x10000000                _data = .
+ *(vtable)
+ *(.data*)
+ .data.MainOscPLL0conf
+                0x10000000       0xb0 ./src/clocking.o
+ .data.IntRCOscPLL0conf
+                0x100000b0       0xb0 ./src/clocking.o
+ .data.spi_div_low
+                0x10000160        0x1 ./src/main.o
+                0x10000160                spi_div_low
+ .data.spi_div_high
+                0x10000161        0x1 ./src/main.o
+                0x10000161                spi_div_high
+ .data.Stat     0x10000162        0x1 ./src/sd.o
+ *fill*         0x10000163        0x1 00
+ .data.SystemCoreClock
+                0x10000164        0x4 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+                0x10000164                SystemCoreClock
+                0x10000168                . = ALIGN (0x4)
+                0x10000168                _edata = .
+
+.bss_RAM2       0x2007c000        0x0
+ *(.bss.$RAM2*)
+ *(.bss.$RamAHB32*)
+                0x2007c000                . = ALIGN (0x4)
+
+.bss            0x10000168      0x6b8
+                0x10000168                _bss = .
+ *(.bss*)
+ .bss.FatFs     0x10000168        0x4 ./src/ff.o
+ .bss.Fsid      0x1000016c        0x2 ./src/ff.o
+ .bss.Timer1    0x1000016e        0x2 ./src/sd.o
+ .bss.Timer2    0x10000170        0x2 ./src/sd.o
+ *(COMMON)
+ *fill*         0x10000172        0x2 00
+ COMMON         0x10000174      0x637 ./src/main.o
+                0x10000174                args
+                0x1000017c                fs
+                0x100003ac                line
+                0x100004ac                Buffer
+                0x100006ac                str
+ *fill*         0x100007ab        0x1 00
+ COMMON         0x100007ac       0x74 ./src/sd.o
+                0x100007ac                CardType
+                0x100007b0                CardConfig
+                0x10000820                . = ALIGN (0x4)
+                0x10000820                _ebss = .
+                0x10000820                PROVIDE (end, .)
+                0x10000820                PROVIDE (_pvHeapStart, .)
+                0x10008000                PROVIDE (_vStackTop, (__top_RamLoc32 - 0x0))
+OUTPUT(test-FatFS.axf elf32-littlearm)
+
+.debug_abbrev   0x00000000      0xbe5
+ .debug_abbrev  0x00000000      0x14a ./src/clocking.o
+ .debug_abbrev  0x0000014a      0x10f ./src/cr_startup_lpc176x.o
+ .debug_abbrev  0x00000259      0x164 ./src/ff.o
+ .debug_abbrev  0x000003bd      0x1fc ./src/lpc17xx_spi.o
+ .debug_abbrev  0x000005b9      0x285 ./src/main.o
+ .debug_abbrev  0x0000083e      0x1dd ./src/sd.o
+ .debug_abbrev  0x00000a1b       0xbb ./src/option/cc932.o
+ .debug_abbrev  0x00000ad6       0x2c ./src/option/syscall.o
+ .debug_abbrev  0x00000b02       0xe3 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+
+.debug_info     0x00000000     0x4607
+ .debug_info    0x00000000      0x53a ./src/clocking.o
+ .debug_info    0x0000053a      0x2e3 ./src/cr_startup_lpc176x.o
+ .debug_info    0x0000081d     0x16c8 ./src/ff.o
+ .debug_info    0x00001ee5      0xa44 ./src/lpc17xx_spi.o
+ .debug_info    0x00002929      0xfff ./src/main.o
+ .debug_info    0x00003928      0x715 ./src/sd.o
+ .debug_info    0x0000403d      0x1cb ./src/option/cc932.o
+ .debug_info    0x00004208       0x70 ./src/option/syscall.o
+ .debug_info    0x00004278      0x38f /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+
+.debug_line     0x00000000     0x2d8e
+ .debug_line    0x00000000      0x4e9 ./src/clocking.o
+ .debug_line    0x000004e9      0x3fc ./src/cr_startup_lpc176x.o
+ .debug_line    0x000008e5      0xba3 ./src/ff.o
+ .debug_line    0x00001488      0x4c7 ./src/lpc17xx_spi.o
+ .debug_line    0x0000194f      0x5bf ./src/main.o
+ .debug_line    0x00001f0e      0x6e7 ./src/sd.o
+ .debug_line    0x000025f5       0xd6 ./src/option/cc932.o
+ .debug_line    0x000026cb      0x2dc ./src/option/syscall.o
+ .debug_line    0x000029a7      0x3e7 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+
+.debug_macinfo  0x00000000    0x2fba6
+ .debug_macinfo
+                0x00000000     0x7a75 ./src/clocking.o
+ .debug_macinfo
+                0x00007a75     0x313f ./src/cr_startup_lpc176x.o
+ .debug_macinfo
+                0x0000abb4     0x26fc ./src/ff.o
+ .debug_macinfo
+                0x0000d2b0     0x77f5 ./src/lpc17xx_spi.o
+ .debug_macinfo
+                0x00014aa5     0x7c98 ./src/main.o
+ .debug_macinfo
+                0x0001c73d     0x7b9f ./src/sd.o
+ .debug_macinfo
+                0x000242dc     0x1c70 ./src/option/cc932.o
+ .debug_macinfo
+                0x00025f4c     0x232f ./src/option/syscall.o
+ .debug_macinfo
+                0x0002827b     0x792b /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+
+.debug_loc      0x00000000     0x1352
+ .debug_loc     0x00000000       0xc8 ./src/clocking.o
+ .debug_loc     0x000000c8      0x1b8 ./src/cr_startup_lpc176x.o
+ .debug_loc     0x00000280      0x8d0 ./src/ff.o
+ .debug_loc     0x00000b50      0x190 ./src/lpc17xx_spi.o
+ .debug_loc     0x00000ce0      0x2b2 ./src/main.o
+ .debug_loc     0x00000f92      0x330 ./src/sd.o
+ .debug_loc     0x000012c2       0x70 ./src/option/cc932.o
+ .debug_loc     0x00001332       0x20 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+
+.debug_pubnames
+                0x00000000      0x58b
+ .debug_pubnames
+                0x00000000       0x5f ./src/clocking.o
+ .debug_pubnames
+                0x0000005f      0x118 ./src/cr_startup_lpc176x.o
+ .debug_pubnames
+                0x00000177      0x10c ./src/ff.o
+ .debug_pubnames
+                0x00000283       0xa6 ./src/lpc17xx_spi.o
+ .debug_pubnames
+                0x00000329       0xa2 ./src/main.o
+ .debug_pubnames
+                0x000003cb      0x140 ./src/sd.o
+ .debug_pubnames
+                0x0000050b       0x31 ./src/option/cc932.o
+ .debug_pubnames
+                0x0000053c       0x4f /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+
+.debug_pubtypes
+                0x00000000      0x39b
+ .debug_pubtypes
+                0x00000000       0x67 ./src/clocking.o
+ .debug_pubtypes
+                0x00000067       0x12 ./src/cr_startup_lpc176x.o
+ .debug_pubtypes
+                0x00000079       0x7f ./src/ff.o
+ .debug_pubtypes
+                0x000000f8       0x97 ./src/lpc17xx_spi.o
+ .debug_pubtypes
+                0x0000018f       0xf2 ./src/main.o
+ .debug_pubtypes
+                0x00000281       0xa5 ./src/sd.o
+ .debug_pubtypes
+                0x00000326       0x25 ./src/option/cc932.o
+ .debug_pubtypes
+                0x0000034b       0x12 ./src/option/syscall.o
+ .debug_pubtypes
+                0x0000035d       0x3e /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+
+.debug_aranges  0x00000000      0x3c8
+ .debug_aranges
+                0x00000000       0x38 ./src/clocking.o
+ .debug_aranges
+                0x00000038       0x80 ./src/cr_startup_lpc176x.o
+ .debug_aranges
+                0x000000b8      0x158 ./src/ff.o
+ .debug_aranges
+                0x00000210       0x58 ./src/lpc17xx_spi.o
+ .debug_aranges
+                0x00000268       0x80 ./src/main.o
+ .debug_aranges
+                0x000002e8       0x90 ./src/sd.o
+ .debug_aranges
+                0x00000378       0x28 ./src/option/cc932.o
+ .debug_aranges
+                0x000003a0       0x28 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+
+.debug_ranges   0x00000000      0x360
+ .debug_ranges  0x00000000       0x28 ./src/clocking.o
+ .debug_ranges  0x00000028       0x70 ./src/cr_startup_lpc176x.o
+ .debug_ranges  0x00000098      0x148 ./src/ff.o
+ .debug_ranges  0x000001e0       0x48 ./src/lpc17xx_spi.o
+ .debug_ranges  0x00000228       0x88 ./src/main.o
+ .debug_ranges  0x000002b0       0x80 ./src/sd.o
+ .debug_ranges  0x00000330       0x18 ./src/option/cc932.o
+ .debug_ranges  0x00000348       0x18 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+
+.debug_str      0x00000000      0xf8e
+ .debug_str     0x00000000      0x311 ./src/clocking.o
+                                0x33b (size before relaxing)
+ .debug_str     0x00000311      0x17a ./src/cr_startup_lpc176x.o
+                                0x26f (size before relaxing)
+ .debug_str     0x0000048b      0x447 ./src/ff.o
+                                0x560 (size before relaxing)
+ .debug_str     0x000008d2      0x316 ./src/lpc17xx_spi.o
+                                0x575 (size before relaxing)
+ .debug_str     0x00000be8      0x113 ./src/main.o
+                                0x732 (size before relaxing)
+ .debug_str     0x00000cfb      0x187 ./src/sd.o
+                                0x32e (size before relaxing)
+ .debug_str     0x00000e82       0x59 ./src/option/cc932.o
+                                0x12c (size before relaxing)
+ .debug_str     0x00000edb       0x18 ./src/option/syscall.o
+                                 0xfb (size before relaxing)
+ .debug_str     0x00000ef3       0x9b /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+                                0x298 (size before relaxing)
+
+.comment        0x00000000       0x2a
+ .comment       0x00000000       0x2a ./src/clocking.o
+                                 0x2b (size before relaxing)
+ .comment       0x00000000       0x2b ./src/cr_startup_lpc176x.o
+ .comment       0x00000000       0x2b ./src/ff.o
+ .comment       0x00000000       0x2b ./src/lpc17xx_spi.o
+ .comment       0x00000000       0x2b ./src/main.o
+ .comment       0x00000000       0x2b ./src/sd.o
+ .comment       0x00000000       0x2b ./src/option/cc932.o
+ .comment       0x00000000       0x2b ./src/option/syscall.o
+ .comment       0x00000000       0x2b /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .comment       0x00000000       0x2b /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(__weak__main.o)
+ .comment       0x00000000       0x2b /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(strlen.o)
+
+.ARM.attributes
+                0x00000000       0x2f
+ .ARM.attributes
+                0x00000000       0x31 ./src/clocking.o
+ .ARM.attributes
+                0x00000031       0x31 ./src/cr_startup_lpc176x.o
+ .ARM.attributes
+                0x00000062       0x31 ./src/ff.o
+ .ARM.attributes
+                0x00000093       0x31 ./src/lpc17xx_spi.o
+ .ARM.attributes
+                0x000000c4       0x31 ./src/main.o
+ .ARM.attributes
+                0x000000f5       0x31 ./src/sd.o
+ .ARM.attributes
+                0x00000126       0x31 ./src/option/cc932.o
+ .ARM.attributes
+                0x00000157       0x31 ./src/option/syscall.o
+ .ARM.attributes
+                0x00000188       0x31 /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)
+ .ARM.attributes
+                0x000001b9       0x31 /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(__weak__main.o)
+ .ARM.attributes
+                0x000001ea       0x31 /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb2/libcr_c.a(strlen.o)
+ .ARM.attributes
+                0x0000021b       0x21 /usr/local/lpcxpresso_4.1.0_164/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb2/libcr_eabihelpers.a(division.o)
+
+.debug_frame    0x00000000      0xb2c
+ .debug_frame   0x00000000       0x78 ./src/clocking.o
+ .debug_frame   0x00000078       0xf0 ./src/cr_startup_lpc176x.o
+ .debug_frame   0x00000168      0x4f4 ./src/ff.o
+ .debug_frame   0x0000065c       0xe8 ./src/lpc17xx_spi.o
+ .debug_frame   0x00000744      0x188 ./src/main.o
+ .debug_frame   0x000008cc      0x1dc ./src/sd.o
+ .debug_frame   0x00000aa8       0x48 ./src/option/cc932.o
+ .debug_frame   0x00000af0       0x3c /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/Debug/libCMSISv2p00_LPC17xx.a(system_LPC17xx.o)

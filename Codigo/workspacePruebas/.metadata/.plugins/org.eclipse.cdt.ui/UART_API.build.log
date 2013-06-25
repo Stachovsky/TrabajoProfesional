@@ -1,0 +1,11 @@
+
+**** Build of configuration Debug for project UART_API ****
+
+make all 
+Building target: UART_API.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"/home/fanaur/workspacePruebas/CMSISv2p00_LPC17xx/Debug" -Xlinker -Map="UART_API.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "UART_API_Debug.ld" -o"UART_API.axf"  ./src/cr_startup_lpc176x.o ./src/led7seg.o ./src/lpc17xx_gpio.o ./src/lpc17xx_libcfg_default.o ./src/lpc17xx_pinsel.o ./src/main.o   -lCMSISv2p00_LPC17xx
+./src/led7seg.o: In function `led7seg_setChar':
+/home/fanaur/workspacePruebas/UART_API/Debug/../src/led7seg.c:127: undefined reference to `SSP_ReadWrite'
+collect2: ld returned 1 exit status
+make: *** [UART_API.axf] Error 1

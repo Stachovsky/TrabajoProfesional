@@ -1,0 +1,82 @@
+/*
+ * Core.c
+ *
+ *  Created on: Sep 26, 2012
+ *      Author: "Facundo Nahuel Uriel Silva"
+ */
+
+#include "taskCore.h"
+
+void taskCore(void *paramametro){
+
+	const portTickType xDelay = 2000 / portTICK_RATE_MS;
+
+	msgPcCom msgTX;
+	msgPcCom msgRX;
+	msgPcCom msgTXAck;
+
+
+	// Se inicializa el mensaje
+	pcComInitMsg(&msgTX.cmd,CMD_PCCOM_READ_ADC_1);
+	pcComInitMsg(&msgTXAck.cmd,CMD_PCCOM_ACK);
+
+	msgTX.cmd.data[0] = 0x00;
+	msgTX.cmd.len = 1;
+
+	// Turn on power to ADC block
+	LPC_SC->PCONP |=  ADC_POWERON;
+
+	// Turn on ADC peripheral clock
+	LPC_SC->PCLKSEL0 &= ~(PCLK_ADC_MASK);
+	LPC_SC->PCLKSEL0 |=  (3 << PCLK_ADC);
+
+	// Set P0.23 to AD0.0 in PINSEL1
+	LPC_PINCON->PINSEL1	|= SELECT_ADC0;
+
+	while(1){
+
+		xQueueSend(queuePcComTX,&msgTX,1000);
+
+		// se intenta leer un mensaje de la cola. El numero de elementos en la cola se decrementa en 1
+		if(xQueueReceive(queuePcComRX,&msgRX,1000)){
+
+			xQueueSend(queuePcComTX,&msgTXAck,1000);
+
+			switch(msgRX.cmd.cmdId){
+
+				case CMD_PCCOM_LED_RED_ON:
+					LPC_GPIO2->FIOSET = (1<<0); // red
+					break;
+
+				case CMD_PCCOM_LED_RED_OFF:
+					LPC_GPIO2->FIOCLR = (1<<0); // red
+					break;
+
+				case CMD_PCCOM_LED_BLUE_ON:
+					LPC_GPIO0->FIOSET = (1<<26); // blue
+					break;
+
+				case CMD_PCCOM_LED_BLUE_OFF:
+					LPC_GPIO0->FIOCLR = (1<<26); // blue
+					break;
+
+				case CMD_PCCOM_LED_GREEN_ON:
+					LPC_GPIO2->FIOSET = (1<<1); // green
+					break;
+
+				case CMD_PCCOM_LED_GREEN_OFF:
+					LPC_GPIO2->FIOCLR = (1<<1); // green
+					break;
+			}
+
+
+		}
+
+		vTaskDelay( xDelay );
+
+		msgTX.idMsg++;
+		msgTX.cmd.data[0]++;
+
+		taskYIELD();
+	}
+}

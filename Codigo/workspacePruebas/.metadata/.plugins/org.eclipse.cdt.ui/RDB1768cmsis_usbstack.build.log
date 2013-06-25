@@ -1,0 +1,10 @@
+
+**** Build of configuration Debug for project RDB1768cmsis_usbstack ****
+
+make all 
+Building file: ../src/consoleprint.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__USE_CMSIS=CMSISv1p30_LPC17xx -D__CODE_RED -D__REDLIB__ -I"/home/fanaur/workspaceLpc/USB_workspace/Lib_CMSIS/Debug" -I"/home/fanaur/workspaceLpc/USB_workspace/Lib_CMSIS/Drivers/include" -I"/home/fanaur/workspaceLpc/USB_workspace/Lib_CMSIS/Core/CM3/CoreSupport" -I"/home/fanaur/workspaceLpc/USB_workspace/Lib_CMSIS/Core/CM3/DeviceSupport/NXP/LPC17xx" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/consoleprint.d" -MT"src/consoleprint.d" -o"src/consoleprint.o" "../src/consoleprint.c"
+../src/consoleprint.c:32:26: fatal error: consoleprint.h: No such file or directory
+compilation terminated.
+make: *** [src/consoleprint.o] Error 1

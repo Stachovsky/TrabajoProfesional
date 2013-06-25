@@ -1,0 +1,29 @@
+* Definir:
+	+ Fuente de 1000v: Ver estado en el laboratorio
+	+ Sensor de tension de 1000v: Se usara el IL300
+	+ Proteccion contra corto circuito: Fusible para 1000v
+	+ Luces de señalizacion: Averiguar donde comprarlas
+	+ Lista de compra DigiKey:
+	+ Pantallas programa de PC: Hacer prototipo para mostrar
+
+* Diseñar:	
+	+ Fuente de 1000v: En base a lo medido en el laboratorio se va a resolver
+	+ Sensor de tension de 1000v		(Estani y Facundo, discutir)
+	+ Proteccion contra corto circuito
+	+ Interface display y teclado
+	+ Gabinete 				(Estani)	
+	+ Banco de resistencias			(Estani)
+	+ Definir contactores secundarios	(Estani)
+	+ Motherboard
+	+ Sirena				(Estani)	
+
+* Comprar:
+	+ Lista de compra DigiKey
+	+ Contactores 				(Estani)
+	+ Luces de señalizacion			(Estani)
+	+ Sensor corriente			
+
+* Informe:
+	+ Diagramas de flujo
+	+ DFMEA					(Estani)	
+	+ Analisis economico			(Estani)

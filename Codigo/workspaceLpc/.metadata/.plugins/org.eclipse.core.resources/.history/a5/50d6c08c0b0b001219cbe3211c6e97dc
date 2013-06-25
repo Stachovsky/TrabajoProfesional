@@ -1,0 +1,27 @@
+/*
+ * Core.c
+ *
+ *  Created on: Sep 26, 2012
+ *      Author: "Facundo Nahuel Uriel Silva"
+ */
+
+#include "taskCore.h"
+
+void taskCore(void *paramametro){
+
+	const portTickType xDelay = 1000 / portTICK_RATE_MS;
+	msgPcCom msgTX;
+
+	msgTX.idMsg = 0;
+	msgTX.cmd.cmdId 	= (uint8_t)0x00;
+	msgTX.cmd.len		= (uint8_t)0x01;
+	msgTX.cmd.data[0]	= (uint8_t)0x01;
+	msgTX.cmd.crc		= (uint16_t)0x00;
+
+	while(1){
+		xQueueSend(queuePcComTX,&msgTX,1000);
+		vTaskDelay( xDelay );
+		msgTX.idMsg++;
+
+	}
+}

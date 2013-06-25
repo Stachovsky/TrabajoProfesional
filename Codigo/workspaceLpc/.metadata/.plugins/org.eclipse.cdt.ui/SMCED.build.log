@@ -1,0 +1,32 @@
+
+**** Build of configuration Debug for project SMCED ****
+
+make all 
+Building file: ../src/cmdPcCom.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DPACK_STRUCT_END=__attribute\(\(packed\)\) -DGCC_ARMCM3 -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/SMCED/src/Tasks/WebServer" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/SMCED/src/Tasks/SdCard/lib_FatFS/inc" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/SMCED/src/Tasks/SdCard" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/SMCED/src/Tasks/SerialMemory" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/SMCED/src/Tasks/Adc" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libDriversMcuPeripherals/inc/Lib_MCU" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libDriversMcuPeripherals/inc/Lib_EaBaseBoard" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/SMCED/src" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/SMCED/src/Tasks" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/SMCED/FreeRTOS_include" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/SMCED/FreeRTOS_portable" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/cmdPcCom.d" -MT"src/cmdPcCom.d" -o"src/cmdPcCom.o" "../src/cmdPcCom.c"
+Finished building: ../src/cmdPcCom.c
+ 
+Building file: ../src/cr_startup_lpc17.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DPACK_STRUCT_END=__attribute\(\(packed\)\) -DGCC_ARMCM3 -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/SMCED/src/Tasks/WebServer" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/SMCED/src/Tasks/SdCard/lib_FatFS/inc" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/SMCED/src/Tasks/SdCard" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/SMCED/src/Tasks/SerialMemory" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/SMCED/src/Tasks/Adc" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libDriversMcuPeripherals/inc/Lib_MCU" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libDriversMcuPeripherals/inc/Lib_EaBaseBoard" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/SMCED/src" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/SMCED/src/Tasks" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/SMCED/FreeRTOS_include" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/SMCED/FreeRTOS_portable" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/cr_startup_lpc17.d" -MT"src/cr_startup_lpc17.d" -o"src/cr_startup_lpc17.o" "../src/cr_startup_lpc17.c"
+Finished building: ../src/cr_startup_lpc17.c
+ 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DPACK_STRUCT_END=__attribute\(\(packed\)\) -DGCC_ARMCM3 -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/SMCED/src/Tasks/WebServer" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/SMCED/src/Tasks/SdCard/lib_FatFS/inc" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/SMCED/src/Tasks/SdCard" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/SMCED/src/Tasks/SerialMemory" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/SMCED/src/Tasks/Adc" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libDriversMcuPeripherals/inc/Lib_MCU" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libDriversMcuPeripherals/inc/Lib_EaBaseBoard" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/SMCED/src" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/SMCED/src/Tasks" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/SMCED/FreeRTOS_include" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/SMCED/FreeRTOS_portable" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o"src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:59:2: warning: implicit declaration of function 'RTC_Init'
+../src/main.c:60:2: warning: implicit declaration of function 'RTC_SetTime'
+../src/main.c:60:24: error: 'RTC_TIMETYPE_SECOND' undeclared (first use in this function)
+../src/main.c:60:24: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c: At top level:
+../src/Tasks/SdCard/taskSdCard.h:25:13: warning: 'SetSPIClocks' declared 'static' but never defined
+../src/Tasks/SdCard/taskSdCard.h:40:13: warning: 'set_timeout' declared 'static' but never defined
+../src/Tasks/SdCard/taskSdCard.h:48:13: warning: 'show_dir' declared 'static' but never defined
+../src/Tasks/SdCard/taskSdCard.h:56:13: warning: 'write_file' declared 'static' but never defined
+../src/Tasks/SdCard/taskSdCard.h:64:13: warning: 'read_file' declared 'static' but never defined
+../src/Tasks/SdCard/taskSdCard.h:66:13: warning: 'write_log' declared 'static' but never defined
+../src/Tasks/SdCard/taskSdCard.h:68:13: warning: 'type_file' declared 'static' but never defined
+../src/Tasks/SdCard/taskSdCard.h:70:13: warning: 'delete_file' declared 'static' but never defined
+make: *** [src/main.o] Error 1

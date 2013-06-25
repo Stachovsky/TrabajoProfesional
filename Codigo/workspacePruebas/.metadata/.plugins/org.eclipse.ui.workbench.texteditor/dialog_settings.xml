@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="312" key="DIALOG_WIDTH"/>
+		<item value="282" key="DIALOG_Y_ORIGIN"/>
+		<item value="438" key="DIALOG_HEIGHT"/>
+		<item value="1031" key="DIALOG_X_ORIGIN"/>
+		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="true" key="wrap"/>
+		<item value="false" key="isRegEx"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wholeword"/>
+		<item value="SPI" key="selection"/>
+		<list key="findhistory">
+			<item value="spi"/>
+			<item value="MAIN"/>
+			<item value="DELAY_LONG"/>
+			<item value="j"/>
+			<item value="i"/>
+			<item value="CS2"/>
+			<item value="API_LcdWriteData"/>
+			<item value="// D/I"/>
+		</list>
+		<list key="replacehistory">
+			<item value="y"/>
+			<item value="x"/>
+			<item value="for(i = 0; i &lt; DELAY; i++);"/>
+			<item value="//for(i = 0; i &lt; DELAY; i++);"/>
+			<item value="DELAY"/>
+			<item value="dataLcd"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item value="217" key="DIALOG_Y_ORIGIN"/>
+		<item value="416" key="DIALOG_X_ORIGIN"/>
+	</section>
+</section>

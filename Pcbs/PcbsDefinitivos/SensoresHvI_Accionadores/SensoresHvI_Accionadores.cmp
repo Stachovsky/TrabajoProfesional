@@ -1,0 +1,409 @@
+Cmp-Mod V01 Created by CvPcb (2013-mar-13)-testing date = Wed 12 Jun 2013 14:30:30 ART
+
+BeginCmp
+TimeStamp = /51239DC7;
+Reference = C1;
+ValeurCmp = 2200uF;
+IdModule  = SMDSVP10;
+EndCmp
+
+BeginCmp
+TimeStamp = /51662810;
+Reference = C2;
+ValeurCmp = 0.33uF;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /516629DF;
+Reference = C3;
+ValeurCmp = 0.01uF;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /5165C777;
+Reference = C4;
+ValeurCmp = 2200uF;
+IdModule  = SMDSVP10;
+EndCmp
+
+BeginCmp
+TimeStamp = /51662A07;
+Reference = C5;
+ValeurCmp = 0.33uF;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /516629E5;
+Reference = C6;
+ValeurCmp = 0.1uF;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /516DF889;
+Reference = C7;
+ValeurCmp = 2200uF;
+IdModule  = SMDSVP10;
+EndCmp
+
+BeginCmp
+TimeStamp = /516DF896;
+Reference = C8;
+ValeurCmp = 2200uF;
+IdModule  = SMDSVP10;
+EndCmp
+
+BeginCmp
+TimeStamp = /51B8B1E1;
+Reference = C9;
+ValeurCmp = 47uf;
+IdModule  = SMDSVP10;
+EndCmp
+
+BeginCmp
+TimeStamp = /51B8B1F0;
+Reference = C10;
+ValeurCmp = 47uf;
+IdModule  = SMDSVP10;
+EndCmp
+
+BeginCmp
+TimeStamp = /51239696;
+Reference = D2;
+ValeurCmp = LMB2S;
+IdModule  = bridge_1A;
+EndCmp
+
+BeginCmp
+TimeStamp = /5166268F;
+Reference = D3;
+ValeurCmp = LED;
+IdModule  = LED-5MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /51369BD4;
+Reference = D4;
+ValeurCmp = LED;
+IdModule  = LED-5MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /51B61138;
+Reference = K1;
+ValeurCmp = Sensor I;
+IdModule  = SIL-4;
+EndCmp
+
+BeginCmp
+TimeStamp = /5165895C;
+Reference = K2;
+ValeurCmp = 9VAC;
+IdModule  = bornier3;
+EndCmp
+
+BeginCmp
+TimeStamp = /516D98E9;
+Reference = K3;
+ValeurCmp = Sensores_LV;
+IdModule  = bornier3;
+EndCmp
+
+BeginCmp
+TimeStamp = /518A79E1;
+Reference = K4;
+ValeurCmp = Sensor_AUX;
+IdModule  = bornier3;
+EndCmp
+
+BeginCmp
+TimeStamp = /518A7B27;
+Reference = K5;
+ValeurCmp = Sensor_AUX;
+IdModule  = bornier3;
+EndCmp
+
+BeginCmp
+TimeStamp = /518A7F36;
+Reference = P1;
+ValeurCmp = CONN_10;
+IdModule  = PIN_ARRAY_5x2;
+EndCmp
+
+BeginCmp
+TimeStamp = /5122685A;
+Reference = P3;
+ValeurCmp = 220VAC;
+IdModule  = bornier2;
+EndCmp
+
+BeginCmp
+TimeStamp = /51226860;
+Reference = P4;
+ValeurCmp = 220V_HV_SOURCE;
+IdModule  = bornier2;
+EndCmp
+
+BeginCmp
+TimeStamp = /5169D4BA;
+Reference = P5;
+ValeurCmp = 220V_9VAC;
+IdModule  = bornier2;
+EndCmp
+
+BeginCmp
+TimeStamp = /51326D67;
+Reference = P7;
+ValeurCmp = Sirena;
+IdModule  = bornier2;
+EndCmp
+
+BeginCmp
+TimeStamp = /51B60E8D;
+Reference = P8;
+ValeurCmp = CON_Ali_SensorI;
+IdModule  = bornier2;
+EndCmp
+
+BeginCmp
+TimeStamp = /51662689;
+Reference = R1;
+ValeurCmp = 560;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /51201EB5;
+Reference = R2;
+ValeurCmp = 100;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /5166421A;
+Reference = R3;
+ValeurCmp = 22K;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /5120288E;
+Reference = R4;
+ValeurCmp = 100;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /51663CFD;
+Reference = R5;
+ValeurCmp = 22K;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /516645F9;
+Reference = R6;
+ValeurCmp = 22K;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /518A79FA;
+Reference = R7;
+ValeurCmp = 5.6k;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /51228251;
+Reference = R8;
+ValeurCmp = 560;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /51326D29;
+Reference = R9;
+ValeurCmp = 560;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /518A79F4;
+Reference = R10;
+ValeurCmp = 3.3k;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /518A7B40;
+Reference = R11;
+ValeurCmp = 5.6k;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /518A7B3A;
+Reference = R12;
+ValeurCmp = 3.3k;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /51369A7B;
+Reference = R14;
+ValeurCmp = 560;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /513688AB;
+Reference = R15;
+ValeurCmp = 5.6k;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /513688A5;
+Reference = R17;
+ValeurCmp = 3.3k;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /516645F3;
+Reference = R18;
+ValeurCmp = 22K;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /51663A78;
+Reference = R19;
+ValeurCmp = 22K;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /51663F7B;
+Reference = R20;
+ValeurCmp = 22K;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /51664956;
+Reference = R21;
+ValeurCmp = 22K;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /51664950;
+Reference = R22;
+ValeurCmp = 22K;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /5169DDE9;
+Reference = R23;
+ValeurCmp = 0;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /5169DE03;
+Reference = R24;
+ValeurCmp = 0;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /51239037;
+Reference = Rele1;
+ValeurCmp = ReleFuenteHV;
+IdModule  = relay_gq-smd-s;
+EndCmp
+
+BeginCmp
+TimeStamp = /5133B132;
+Reference = Rele2;
+ValeurCmp = ReleSirena;
+IdModule  = relay_gq-smd-s;
+EndCmp
+
+BeginCmp
+TimeStamp = /5122351C;
+Reference = U1;
+ValeurCmp = TL082;
+IdModule  = SO8E;
+EndCmp
+
+BeginCmp
+TimeStamp = /51201E11;
+Reference = U2;
+ValeurCmp = IL300;
+IdModule  = DIP-8__300;
+EndCmp
+
+BeginCmp
+TimeStamp = /51223574;
+Reference = U3;
+ValeurCmp = TL082;
+IdModule  = SO8E;
+EndCmp
+
+BeginCmp
+TimeStamp = /5120288F;
+Reference = U4;
+ValeurCmp = IL300;
+IdModule  = DIP-8__300;
+EndCmp
+
+BeginCmp
+TimeStamp = /5166F40F;
+Reference = U5;
+ValeurCmp = 4N25;
+IdModule  = DIP-6__300_ELL;
+EndCmp
+
+BeginCmp
+TimeStamp = /5165BF33;
+Reference = U6;
+ValeurCmp = LM78L05;
+IdModule  = TO92;
+EndCmp
+
+BeginCmp
+TimeStamp = /51326D16;
+Reference = U7;
+ValeurCmp = DIODE;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /5166F5A5;
+Reference = U8;
+ValeurCmp = 4N25;
+IdModule  = DIP-6__300_ELL;
+EndCmp
+
+BeginCmp
+TimeStamp = /5165BF42;
+Reference = U9;
+ValeurCmp = LM79L05;
+IdModule  = TO92;
+EndCmp
+
+BeginCmp
+TimeStamp = /5168CCD1;
+Reference = U10;
+ValeurCmp = DIODE;
+IdModule  = SM0805;
+EndCmp
+
+EndListe

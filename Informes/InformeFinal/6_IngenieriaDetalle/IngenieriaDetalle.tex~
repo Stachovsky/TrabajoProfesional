@@ -1,0 +1,211 @@
+%\documentclass[12pt]{article}
+
+%\usepackage{graphicx}
+%\usepackage{caption}
+
+%\begin{document}
+
+%--------------------------------------------------------------------------------------------------------------------  
+%--------------------------------------------------------------------------------------------------------------------
+
+  \subsection{Hardware}  
+
+  \subsection{Especificaciones de hardware}
+
+    \subsubsection{Aspectos eléctricos}
+      \begin{itemize}
+	\item Tensión alimentación: 220VAC/50Hz.
+	\item Consumo máximo: 1A.$*^{1}$
+	\item Pico de corriente de sinterizado máximo: 1KA. $*^{2}$
+	\item Impedancia máxima de la muestra: 1$\Omega$. 
+	\end{itemize}
+     
+    \begin{tabbing}
+      \= ----- \= ----- \= --------------------- \= \kill
+      \> $*^{1}$:\>	El consumo máximo estará fijado por la fuente que se utilice y esta por el transformador. \\
+      \> $*^{2}$:\>	La corriente máxima de pico de sinterizado puede ser incrementada hasta 10 kA si se amplía\\
+         	\>\>	el banco de capacitores, se remplaza los contactores y el cableado correspondiente.\\
+     \end{tabbing}
+
+    \subsubsection{Almacenamientos de datos}
+      
+      \begin{itemize}
+	\item Memoria flash en soporte SD Card.
+	\item Memoria flash en soporte pendrive USB 2.0.
+      \end{itemize}
+
+    \subsubsection{Comunicación}
+      
+      \begin{itemize}
+	\item Comunicación USB 2.0 con la PC. $*^{3}$
+      \end{itemize}
+    
+      \begin{tabbing}
+	\= ----- \= ----- \= --------------------- \= \kill
+	\>$*^{3}$: \>Se utiliza un bridge RS232-USB interno. \\
+       \end{tabbing}
+	
+    \subsubsection{Periféricos del dispositivo}
+      \begin{itemize}
+	\item Display gráfico de 128x64 pixels.
+	\item Teclado de 4 teclas.
+	\item Sensor de corriente.
+	\item Sensores de tensión $\times$ 3.
+	\item Sensor de temperatura.
+      \end{itemize}
+
+    \subsubsection{Interfases del dispositivo}
+      \begin{itemize}
+	\item Entrada de 0-5V $\times$ 3.$*^{4}*^{5}$
+	\item Entrada de 5-20mA $\times$ 1.$*^{4}$
+	\item Puertos UART $\times$ 3.$*^{6}$
+	\item Bus $ I^{2}C $.$*^{6}$
+      \end{itemize}
+
+      \begin{tabbing}
+       \= ----- \= ----- \= --------------------- \= \kill
+	\> $*^{4}$: \>Interfases configurables desde el programa de PC. \\
+	\> $*^{5}$: \>Interfases usadas para los sensores de tensión y corriente \\
+	\> $*^{6}$: \>Interfases reservadas para usos futuros. \\
+      \end{tabbing}
+
+    \subsubsection{Seguridad}
+      \begin{itemize}
+	\item Descarga segura del banco de capacitores.
+	\item Sirena sonora.
+	\item Luces de señalización $\times$ 3.
+	\item Banco de capacitores ubicados dentro del gabinete del dispositivo .
+	\item Revestimiento eléctricamente aislante del gabinete del dispositivo.
+	\item Protección contra corto circuito.
+	\item Botón de parada de emergencia.
+      \end{itemize}
+
+    \subsubsection{Aspectos mecánicos}
+      \begin{itemize}
+	\item No se brinda la función de prensado de la muestra. $*^{7}$
+	\item Gabinete con 4 ruedas. 
+	\item No se brinda el recipiente contenedor de la muestra de polvo.
+      \end{itemize}
+
+      \begin{tabbing}
+       \= ----- \= ----- \= --------------------- \= \kill
+	\> $*^{7}$: \>  La muestra debe estar prensada previamente al momento de realizar el \\
+	    \>\>	proceso sinterizado.\\
+      \end{tabbing}
+
+    \subsubsection{Aspectos de operativos}
+      \begin{itemize}
+	\item Uso máximo mensual: 60 veces. $*^{8}$
+      \end{itemize}
+    
+      \begin{tabbing}
+	\= ----- \= ----- \= --------------------- \= \kill
+	\> $*^{8}$: \>Se estima un promedio de 2 usos diarios. \\
+      \end{tabbing}
+
+  \newpage
+
+    \subsubsection{ Croquis }
+
+    \begin{figure}[h!]
+    \centering
+    \includegraphics[width=500px]{../../Documentacion/Diagramas/diagramaBloquesDetalle.png}
+    % diagramaBloquesEspecificaciones.png: 1170x708 pixel, 96dpi, 30.95x18.73 cm, bb=0 0 877 531
+    \caption{Interconeccion entre los bloques del sistema}
+    \end{figure}
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  \newpage
+
+%--------------------------------------------------------------------------------------------------------------------  
+%--------------------------------------------------------------------------------------------------------------------
+
+  \subsubsection{Diagrama de bloques (hardware)}
+
+\begin{figure}[h!]
+ \centering
+ \includegraphics[height=330px, angle=90]{../../Documentacion/Diagramas/diagramaBloquesMacro.png}
+ \caption{Diagrama en bloques general de la solución propuesta}
+\end{figure}
+
+%Otra versión del diagrama en bloques
+% \begin{figure}[h!]
+%  \includegraphics[width=500px]{../../../Documentacion/Diagramas/diagramaBloquesEspecificaciones.png}
+%  % diagramaBloquesEspecificaciones.png: 1183x705 pixel, 96dpi, 31.30x18.65 cm, bb=0 0 887 529
+%  \caption{Diagrama en bloques del proceso de sinterizado}
+%  \label{fig:2}
+% \end{figure}
+
+
+  \newpage
+
+%--------------------------------------------------------------------------------------------------------------------  
+%--------------------------------------------------------------------------------------------------------------------
+
+  \subsubsection{Detalles de selección y calculo de los elementos circuitales de cada bloque}  
+
+  \newpage
+
+
+%--------------------------------------------------------------------------------------------------------------------  
+%--------------------------------------------------------------------------------------------------------------------
+
+  \subsubsection{Plan de pruebas de cada modulo}  
+
+  \newpage
+
+
+%--------------------------------------------------------------------------------------------------------------------  
+%--------------------------------------------------------------------------------------------------------------------
+
+  \subsection{Software}  
+
+  \newpage
+
+
+%--------------------------------------------------------------------------------------------------------------------  
+%--------------------------------------------------------------------------------------------------------------------
+
+  \subsubsection{Diagrama de estados, procesos y flujogramas}  
+
+  \newpage
+
+
+
+%--------------------------------------------------------------------------------------------------------------------  
+%--------------------------------------------------------------------------------------------------------------------
+
+  \subsubsection{Análisis de complejidad (Mc.Cabe o Hasltead )}  
+
+  \newpage
+
+
+
+%--------------------------------------------------------------------------------------------------------------------  
+%--------------------------------------------------------------------------------------------------------------------
+
+  \subsubsection{Descripción de subrutinas}  
+
+  \newpage
+
+
+
+%--------------------------------------------------------------------------------------------------------------------  
+%--------------------------------------------------------------------------------------------------------------------
+
+  \subsubsection{Listados comentados del código }  
+
+  \newpage
+
+
+%--------------------------------------------------------------------------------------------------------------------  
+%--------------------------------------------------------------------------------------------------------------------
+
+  \subsubsection{Plan de prueba de módulos y de depuración de software}  
+
+  \newpage
+
+%--------------------------------------------------------------------------------------------------------------------  
+%--------------------------------------------------------------------------------------------------------------------
+%\end{document}

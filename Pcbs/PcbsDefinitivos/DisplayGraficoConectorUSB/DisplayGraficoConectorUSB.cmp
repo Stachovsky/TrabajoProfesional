@@ -1,0 +1,45 @@
+Cmp-Mod V01 Created by CvPcb (2013-mar-13)-testing date = Tue 11 Jun 2013 11:23:30 PM ART
+
+BeginCmp
+TimeStamp = /513674D7;
+Reference = D1;
+ValeurCmp = STATUS_LED;
+IdModule  = LEDV;
+EndCmp
+
+BeginCmp
+TimeStamp = /51278B20;
+Reference = J1;
+ValeurCmp = USB;
+IdModule  = conn_usb_B;
+EndCmp
+
+BeginCmp
+TimeStamp = /507814C4;
+Reference = K1;
+ValeurCmp = ContrastControl_10k;
+IdModule  = trimmer_piher_pt6xv;
+EndCmp
+
+BeginCmp
+TimeStamp = /5132692E;
+Reference = P1;
+ValeurCmp = CONN_10X2;
+IdModule  = vasch_strip_10x2;
+EndCmp
+
+BeginCmp
+TimeStamp = /5136741C;
+Reference = R1;
+ValeurCmp = 270;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /512AA6CB;
+Reference = U1;
+ValeurCmp = NHD-12864WG-CTFH-VN;
+IdModule  = lcd_g-128x64;
+EndCmp
+
+EndListe

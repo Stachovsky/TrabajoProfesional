@@ -1,0 +1,9 @@
+src/Tasks/SdCard/ccsbcs.d src/Tasks/SdCard/ccsbcs.o: \
+ ../src/Tasks/SdCard/ccsbcs.c ../src/Tasks/SdCard/ff.h \
+ ../src/Tasks/SdCard/integer.h ../src/Tasks/SdCard/ffconf.h
+
+../src/Tasks/SdCard/ff.h:
+
+../src/Tasks/SdCard/integer.h:
+
+../src/Tasks/SdCard/ffconf.h:

@@ -1,0 +1,29 @@
+
+**** Build of configuration Debug for project lib_FatFS ****
+
+make all 
+Building file: ../src/lpc1xxx_spi_sd/sd.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/lpc1xxx_spi_sd/sd.d" -MT"src/lpc1xxx_spi_sd/sd.d" -o"src/lpc1xxx_spi_sd/sd.o" "../src/lpc1xxx_spi_sd/sd.c"
+Finished building: ../src/lpc1xxx_spi_sd/sd.c
+ 
+Building file: ../src/ff.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -I"/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/FatFS_Test_v0.3/lib_FatFS/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/ff.d" -MT"src/ff.d" -o"src/ff.o" "../src/ff.c"
+arm-none-eabi-ar: creating liblib_FatFS.a
+Finished building: ../src/ff.c
+ 
+Building target: liblib_FatFS.a
+Invoking: MCU Archiver
+arm-none-eabi-ar -r "liblib_FatFS.a"  ./src/option/syscall.o  ./src/lpc1xxx_spi_sd/lpc17xx_spi.o ./src/lpc1xxx_spi_sd/sd.o  ./src/ff.o   
+Finished building target: liblib_FatFS.a
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size liblib_FatFS.a ; # arm-none-eabi-objdump -h -S liblib_FatFS.a >liblib_FatFS.lss
+   text	   data	    bss	    dec	    hex	filename
+      0	      0	      0	      0	      0	syscall.o (ex liblib_FatFS.a)
+    944	      0	      0	    944	    3b0	lpc17xx_spi.o (ex liblib_FatFS.a)
+   3432	      1	      4	   3437	    d6d	sd.o (ex liblib_FatFS.a)
+  14576	      0	      6	  14582	   38f6	ff.o (ex liblib_FatFS.a)
+ 

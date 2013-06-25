@@ -1,0 +1,237 @@
+
+**** Build of configuration Debug for project libPerifericos ****
+
+make all 
+Building file: ../src/Lib_MCU/lpc17xx_adc.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_MCU" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_EaBaseBoard" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/Lib_MCU/lpc17xx_adc.d" -MT"src/Lib_MCU/lpc17xx_adc.d" -o"src/Lib_MCU/lpc17xx_adc.o" "../src/Lib_MCU/lpc17xx_adc.c"
+Finished building: ../src/Lib_MCU/lpc17xx_adc.c
+ 
+Building file: ../src/Lib_MCU/lpc17xx_can.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_MCU" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_EaBaseBoard" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/Lib_MCU/lpc17xx_can.d" -MT"src/Lib_MCU/lpc17xx_can.d" -o"src/Lib_MCU/lpc17xx_can.o" "../src/Lib_MCU/lpc17xx_can.c"
+Finished building: ../src/Lib_MCU/lpc17xx_can.c
+ 
+Building file: ../src/Lib_MCU/lpc17xx_clkpwr.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_MCU" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_EaBaseBoard" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/Lib_MCU/lpc17xx_clkpwr.d" -MT"src/Lib_MCU/lpc17xx_clkpwr.d" -o"src/Lib_MCU/lpc17xx_clkpwr.o" "../src/Lib_MCU/lpc17xx_clkpwr.c"
+Finished building: ../src/Lib_MCU/lpc17xx_clkpwr.c
+ 
+Building file: ../src/Lib_MCU/lpc17xx_dac.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_MCU" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_EaBaseBoard" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/Lib_MCU/lpc17xx_dac.d" -MT"src/Lib_MCU/lpc17xx_dac.d" -o"src/Lib_MCU/lpc17xx_dac.o" "../src/Lib_MCU/lpc17xx_dac.c"
+Finished building: ../src/Lib_MCU/lpc17xx_dac.c
+ 
+Building file: ../src/Lib_MCU/lpc17xx_emac.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_MCU" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_EaBaseBoard" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/Lib_MCU/lpc17xx_emac.d" -MT"src/Lib_MCU/lpc17xx_emac.d" -o"src/Lib_MCU/lpc17xx_emac.o" "../src/Lib_MCU/lpc17xx_emac.c"
+Finished building: ../src/Lib_MCU/lpc17xx_emac.c
+ 
+arm-none-eabi-ar: creating libPerifericos.a
+Building file: ../src/Lib_MCU/lpc17xx_exti.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_MCU" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_EaBaseBoard" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/Lib_MCU/lpc17xx_exti.d" -MT"src/Lib_MCU/lpc17xx_exti.d" -o"src/Lib_MCU/lpc17xx_exti.o" "../src/Lib_MCU/lpc17xx_exti.c"
+Finished building: ../src/Lib_MCU/lpc17xx_exti.c
+ 
+Building file: ../src/Lib_MCU/lpc17xx_gpdma.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_MCU" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_EaBaseBoard" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/Lib_MCU/lpc17xx_gpdma.d" -MT"src/Lib_MCU/lpc17xx_gpdma.d" -o"src/Lib_MCU/lpc17xx_gpdma.o" "../src/Lib_MCU/lpc17xx_gpdma.c"
+Finished building: ../src/Lib_MCU/lpc17xx_gpdma.c
+ 
+Building file: ../src/Lib_MCU/lpc17xx_gpio.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_MCU" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_EaBaseBoard" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/Lib_MCU/lpc17xx_gpio.d" -MT"src/Lib_MCU/lpc17xx_gpio.d" -o"src/Lib_MCU/lpc17xx_gpio.o" "../src/Lib_MCU/lpc17xx_gpio.c"
+Finished building: ../src/Lib_MCU/lpc17xx_gpio.c
+ 
+Building file: ../src/Lib_MCU/lpc17xx_i2c.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_MCU" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_EaBaseBoard" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/Lib_MCU/lpc17xx_i2c.d" -MT"src/Lib_MCU/lpc17xx_i2c.d" -o"src/Lib_MCU/lpc17xx_i2c.o" "../src/Lib_MCU/lpc17xx_i2c.c"
+Finished building: ../src/Lib_MCU/lpc17xx_i2c.c
+ 
+Building file: ../src/Lib_MCU/lpc17xx_i2s.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_MCU" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_EaBaseBoard" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/Lib_MCU/lpc17xx_i2s.d" -MT"src/Lib_MCU/lpc17xx_i2s.d" -o"src/Lib_MCU/lpc17xx_i2s.o" "../src/Lib_MCU/lpc17xx_i2s.c"
+Finished building: ../src/Lib_MCU/lpc17xx_i2s.c
+ 
+Building file: ../src/Lib_MCU/lpc17xx_libcfg_default.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_MCU" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_EaBaseBoard" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/Lib_MCU/lpc17xx_libcfg_default.d" -MT"src/Lib_MCU/lpc17xx_libcfg_default.d" -o"src/Lib_MCU/lpc17xx_libcfg_default.o" "../src/Lib_MCU/lpc17xx_libcfg_default.c"
+Finished building: ../src/Lib_MCU/lpc17xx_libcfg_default.c
+ 
+Building file: ../src/Lib_MCU/lpc17xx_mcpwm.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_MCU" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_EaBaseBoard" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/Lib_MCU/lpc17xx_mcpwm.d" -MT"src/Lib_MCU/lpc17xx_mcpwm.d" -o"src/Lib_MCU/lpc17xx_mcpwm.o" "../src/Lib_MCU/lpc17xx_mcpwm.c"
+Finished building: ../src/Lib_MCU/lpc17xx_mcpwm.c
+ 
+Building file: ../src/Lib_MCU/lpc17xx_nvic.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_MCU" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_EaBaseBoard" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/Lib_MCU/lpc17xx_nvic.d" -MT"src/Lib_MCU/lpc17xx_nvic.d" -o"src/Lib_MCU/lpc17xx_nvic.o" "../src/Lib_MCU/lpc17xx_nvic.c"
+Finished building: ../src/Lib_MCU/lpc17xx_nvic.c
+ 
+Building file: ../src/Lib_MCU/lpc17xx_pinsel.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_MCU" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_EaBaseBoard" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/Lib_MCU/lpc17xx_pinsel.d" -MT"src/Lib_MCU/lpc17xx_pinsel.d" -o"src/Lib_MCU/lpc17xx_pinsel.o" "../src/Lib_MCU/lpc17xx_pinsel.c"
+Finished building: ../src/Lib_MCU/lpc17xx_pinsel.c
+ 
+Building file: ../src/Lib_MCU/lpc17xx_pwm.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_MCU" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_EaBaseBoard" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/Lib_MCU/lpc17xx_pwm.d" -MT"src/Lib_MCU/lpc17xx_pwm.d" -o"src/Lib_MCU/lpc17xx_pwm.o" "../src/Lib_MCU/lpc17xx_pwm.c"
+Finished building: ../src/Lib_MCU/lpc17xx_pwm.c
+ 
+Building file: ../src/Lib_MCU/lpc17xx_qei.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_MCU" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_EaBaseBoard" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/Lib_MCU/lpc17xx_qei.d" -MT"src/Lib_MCU/lpc17xx_qei.d" -o"src/Lib_MCU/lpc17xx_qei.o" "../src/Lib_MCU/lpc17xx_qei.c"
+Finished building: ../src/Lib_MCU/lpc17xx_qei.c
+ 
+Building file: ../src/Lib_MCU/lpc17xx_rit.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_MCU" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_EaBaseBoard" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/Lib_MCU/lpc17xx_rit.d" -MT"src/Lib_MCU/lpc17xx_rit.d" -o"src/Lib_MCU/lpc17xx_rit.o" "../src/Lib_MCU/lpc17xx_rit.c"
+Finished building: ../src/Lib_MCU/lpc17xx_rit.c
+ 
+Building file: ../src/Lib_MCU/lpc17xx_rtc.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_MCU" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_EaBaseBoard" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/Lib_MCU/lpc17xx_rtc.d" -MT"src/Lib_MCU/lpc17xx_rtc.d" -o"src/Lib_MCU/lpc17xx_rtc.o" "../src/Lib_MCU/lpc17xx_rtc.c"
+Finished building: ../src/Lib_MCU/lpc17xx_rtc.c
+ 
+Building file: ../src/Lib_MCU/lpc17xx_spi.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_MCU" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_EaBaseBoard" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/Lib_MCU/lpc17xx_spi.d" -MT"src/Lib_MCU/lpc17xx_spi.d" -o"src/Lib_MCU/lpc17xx_spi.o" "../src/Lib_MCU/lpc17xx_spi.c"
+Finished building: ../src/Lib_MCU/lpc17xx_spi.c
+ 
+Building file: ../src/Lib_MCU/lpc17xx_ssp.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_MCU" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_EaBaseBoard" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/Lib_MCU/lpc17xx_ssp.d" -MT"src/Lib_MCU/lpc17xx_ssp.d" -o"src/Lib_MCU/lpc17xx_ssp.o" "../src/Lib_MCU/lpc17xx_ssp.c"
+Finished building: ../src/Lib_MCU/lpc17xx_ssp.c
+ 
+Building file: ../src/Lib_MCU/lpc17xx_systick.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_MCU" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_EaBaseBoard" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/Lib_MCU/lpc17xx_systick.d" -MT"src/Lib_MCU/lpc17xx_systick.d" -o"src/Lib_MCU/lpc17xx_systick.o" "../src/Lib_MCU/lpc17xx_systick.c"
+Finished building: ../src/Lib_MCU/lpc17xx_systick.c
+ 
+Building file: ../src/Lib_MCU/lpc17xx_timer.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_MCU" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_EaBaseBoard" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/Lib_MCU/lpc17xx_timer.d" -MT"src/Lib_MCU/lpc17xx_timer.d" -o"src/Lib_MCU/lpc17xx_timer.o" "../src/Lib_MCU/lpc17xx_timer.c"
+Finished building: ../src/Lib_MCU/lpc17xx_timer.c
+ 
+Building file: ../src/Lib_MCU/lpc17xx_uart.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_MCU" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_EaBaseBoard" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/Lib_MCU/lpc17xx_uart.d" -MT"src/Lib_MCU/lpc17xx_uart.d" -o"src/Lib_MCU/lpc17xx_uart.o" "../src/Lib_MCU/lpc17xx_uart.c"
+Finished building: ../src/Lib_MCU/lpc17xx_uart.c
+ 
+Building file: ../src/Lib_MCU/lpc17xx_wdt.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_MCU" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_EaBaseBoard" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/Lib_MCU/lpc17xx_wdt.d" -MT"src/Lib_MCU/lpc17xx_wdt.d" -o"src/Lib_MCU/lpc17xx_wdt.o" "../src/Lib_MCU/lpc17xx_wdt.c"
+Finished building: ../src/Lib_MCU/lpc17xx_wdt.c
+ 
+Building file: ../src/Lib_EaBaseBoard/acc.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_MCU" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_EaBaseBoard" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/Lib_EaBaseBoard/acc.d" -MT"src/Lib_EaBaseBoard/acc.d" -o"src/Lib_EaBaseBoard/acc.o" "../src/Lib_EaBaseBoard/acc.c"
+Finished building: ../src/Lib_EaBaseBoard/acc.c
+ 
+Building file: ../src/Lib_EaBaseBoard/eeprom.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_MCU" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_EaBaseBoard" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/Lib_EaBaseBoard/eeprom.d" -MT"src/Lib_EaBaseBoard/eeprom.d" -o"src/Lib_EaBaseBoard/eeprom.o" "../src/Lib_EaBaseBoard/eeprom.c"
+Finished building: ../src/Lib_EaBaseBoard/eeprom.c
+ 
+Building file: ../src/Lib_EaBaseBoard/flash.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_MCU" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_EaBaseBoard" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/Lib_EaBaseBoard/flash.d" -MT"src/Lib_EaBaseBoard/flash.d" -o"src/Lib_EaBaseBoard/flash.o" "../src/Lib_EaBaseBoard/flash.c"
+Finished building: ../src/Lib_EaBaseBoard/flash.c
+ 
+Building file: ../src/Lib_EaBaseBoard/font5x7.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_MCU" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_EaBaseBoard" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/Lib_EaBaseBoard/font5x7.d" -MT"src/Lib_EaBaseBoard/font5x7.d" -o"src/Lib_EaBaseBoard/font5x7.o" "../src/Lib_EaBaseBoard/font5x7.c"
+Finished building: ../src/Lib_EaBaseBoard/font5x7.c
+ 
+Building file: ../src/Lib_EaBaseBoard/joystick.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_MCU" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_EaBaseBoard" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/Lib_EaBaseBoard/joystick.d" -MT"src/Lib_EaBaseBoard/joystick.d" -o"src/Lib_EaBaseBoard/joystick.o" "../src/Lib_EaBaseBoard/joystick.c"
+Finished building: ../src/Lib_EaBaseBoard/joystick.c
+ 
+Building file: ../src/Lib_EaBaseBoard/led7seg.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_MCU" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_EaBaseBoard" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/Lib_EaBaseBoard/led7seg.d" -MT"src/Lib_EaBaseBoard/led7seg.d" -o"src/Lib_EaBaseBoard/led7seg.o" "../src/Lib_EaBaseBoard/led7seg.c"
+Finished building: ../src/Lib_EaBaseBoard/led7seg.c
+ 
+Building file: ../src/Lib_EaBaseBoard/light.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_MCU" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_EaBaseBoard" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/Lib_EaBaseBoard/light.d" -MT"src/Lib_EaBaseBoard/light.d" -o"src/Lib_EaBaseBoard/light.o" "../src/Lib_EaBaseBoard/light.c"
+Finished building: ../src/Lib_EaBaseBoard/light.c
+ 
+Building file: ../src/Lib_EaBaseBoard/oled.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_MCU" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_EaBaseBoard" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/Lib_EaBaseBoard/oled.d" -MT"src/Lib_EaBaseBoard/oled.d" -o"src/Lib_EaBaseBoard/oled.o" "../src/Lib_EaBaseBoard/oled.c"
+Finished building: ../src/Lib_EaBaseBoard/oled.c
+ 
+Building file: ../src/Lib_EaBaseBoard/pca9532.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_MCU" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_EaBaseBoard" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/Lib_EaBaseBoard/pca9532.d" -MT"src/Lib_EaBaseBoard/pca9532.d" -o"src/Lib_EaBaseBoard/pca9532.o" "../src/Lib_EaBaseBoard/pca9532.c"
+Finished building: ../src/Lib_EaBaseBoard/pca9532.c
+ 
+Building file: ../src/Lib_EaBaseBoard/rgb.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_MCU" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_EaBaseBoard" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/Lib_EaBaseBoard/rgb.d" -MT"src/Lib_EaBaseBoard/rgb.d" -o"src/Lib_EaBaseBoard/rgb.o" "../src/Lib_EaBaseBoard/rgb.c"
+Finished building: ../src/Lib_EaBaseBoard/rgb.c
+ 
+Building file: ../src/Lib_EaBaseBoard/rotary.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_MCU" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_EaBaseBoard" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/Lib_EaBaseBoard/rotary.d" -MT"src/Lib_EaBaseBoard/rotary.d" -o"src/Lib_EaBaseBoard/rotary.o" "../src/Lib_EaBaseBoard/rotary.c"
+Finished building: ../src/Lib_EaBaseBoard/rotary.c
+ 
+Building file: ../src/Lib_EaBaseBoard/temp.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_MCU" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_EaBaseBoard" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/Lib_EaBaseBoard/temp.d" -MT"src/Lib_EaBaseBoard/temp.d" -o"src/Lib_EaBaseBoard/temp.o" "../src/Lib_EaBaseBoard/temp.c"
+Finished building: ../src/Lib_EaBaseBoard/temp.c
+ 
+Building file: ../src/Lib_EaBaseBoard/uart2.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_MCU" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/libPerifericos/inc/Lib_EaBaseBoard" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/Lib_EaBaseBoard/uart2.d" -MT"src/Lib_EaBaseBoard/uart2.d" -o"src/Lib_EaBaseBoard/uart2.o" "../src/Lib_EaBaseBoard/uart2.c"
+Finished building: ../src/Lib_EaBaseBoard/uart2.c
+ 
+Building target: libPerifericos.a
+Invoking: MCU Archiver
+arm-none-eabi-ar -r "libPerifericos.a"  ./src/Lib_MCU/lpc17xx_adc.o ./src/Lib_MCU/lpc17xx_can.o ./src/Lib_MCU/lpc17xx_clkpwr.o ./src/Lib_MCU/lpc17xx_dac.o ./src/Lib_MCU/lpc17xx_emac.o ./src/Lib_MCU/lpc17xx_exti.o ./src/Lib_MCU/lpc17xx_gpdma.o ./src/Lib_MCU/lpc17xx_gpio.o ./src/Lib_MCU/lpc17xx_i2c.o ./src/Lib_MCU/lpc17xx_i2s.o ./src/Lib_MCU/lpc17xx_libcfg_default.o ./src/Lib_MCU/lpc17xx_mcpwm.o ./src/Lib_MCU/lpc17xx_nvic.o ./src/Lib_MCU/lpc17xx_pinsel.o ./src/Lib_MCU/lpc17xx_pwm.o ./src/Lib_MCU/lpc17xx_qei.o ./src/Lib_MCU/lpc17xx_rit.o ./src/Lib_MCU/lpc17xx_rtc.o ./src/Lib_MCU/lpc17xx_spi.o ./src/Lib_MCU/lpc17xx_ssp.o ./src/Lib_MCU/lpc17xx_systick.o ./src/Lib_MCU/lpc17xx_timer.o ./src/Lib_MCU/lpc17xx_uart.o ./src/Lib_MCU/lpc17xx_wdt.o  ./src/Lib_EaBaseBoard/acc.o ./src/Lib_EaBaseBoard/eeprom.o ./src/Lib_EaBaseBoard/flash.o ./src/Lib_EaBaseBoard/font5x7.o ./src/Lib_EaBaseBoard/joystick.o ./src/Lib_EaBaseBoard/led7seg.o ./src/Lib_EaBaseBoard/light.o ./src/Lib_EaBaseBoard/oled.o ./src/Lib_EaBaseBoard/pca9532.o ./src/Lib_EaBaseBoard/rgb.o ./src/Lib_EaBaseBoard/rotary.o ./src/Lib_EaBaseBoard/temp.o ./src/Lib_EaBaseBoard/uart2.o   
+Finished building target: libPerifericos.a
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "libPerifericos.a" ; # arm-none-eabi-objdump -h -S "libPerifericos.a" >"libPerifericos.lss"
+   text	   data	    bss	    dec	    hex	filename
+   1448	      0	      0	   1448	    5a8	lpc17xx_adc.o (ex libPerifericos.a)
+  15112	      0	     10	  15122	   3b12	lpc17xx_can.o (ex libPerifericos.a)
+    696	      0	      0	    696	    2b8	lpc17xx_clkpwr.o (ex libPerifericos.a)
+    436	      0	      0	    436	    1b4	lpc17xx_dac.o (ex libPerifericos.a)
+   3112	      0	  10852	  13964	   368c	lpc17xx_emac.o (ex libPerifericos.a)
+    444	      0	      0	    444	    1bc	lpc17xx_exti.o (ex libPerifericos.a)
+   2016	     32	      0	   2048	    800	lpc17xx_gpdma.o (ex libPerifericos.a)
+   2232	      0	      0	   2232	    8b8	lpc17xx_gpio.o (ex libPerifericos.a)
+   5240	      0	     52	   5292	   14ac	lpc17xx_i2c.o (ex libPerifericos.a)
+   3196	      0	      0	   3196	    c7c	lpc17xx_i2s.o (ex libPerifericos.a)
+     12	      0	      0	     12	      c	lpc17xx_libcfg_default.o (ex libPerifericos.a)
+   2016	      0	      0	   2016	    7e0	lpc17xx_mcpwm.o (ex libPerifericos.a)
+    344	      0	      0	    344	    158	lpc17xx_nvic.o (ex libPerifericos.a)
+    676	      0	      0	    676	    2a4	lpc17xx_pinsel.o (ex libPerifericos.a)
+   3248	      0	      0	   3248	    cb0	lpc17xx_pwm.o (ex libPerifericos.a)
+   2404	      0	      0	   2404	    964	lpc17xx_qei.o (ex libPerifericos.a)
+    660	      0	      0	    660	    294	lpc17xx_rit.o (ex libPerifericos.a)
+   4332	      0	      0	   4332	   10ec	lpc17xx_rtc.o (ex libPerifericos.a)
+   1520	      0	      0	   1520	    5f0	lpc17xx_spi.o (ex libPerifericos.a)
+   2988	      0	      0	   2988	    bac	lpc17xx_ssp.o (ex libPerifericos.a)
+    676	      0	      0	    676	    2a4	lpc17xx_systick.o (ex libPerifericos.a)
+   3384	      0	      0	   3384	    d38	lpc17xx_timer.o (ex libPerifericos.a)
+   6380	      0	      0	   6380	   18ec	lpc17xx_uart.o (ex libPerifericos.a)
+    848	      0	      0	    848	    350	lpc17xx_wdt.o (ex libPerifericos.a)
+    684	      0	      0	    684	    2ac	acc.o (ex libPerifericos.a)
+    680	      0	      0	    680	    2a8	eeprom.o (ex libPerifericos.a)
+   1780	     80	     10	   1870	    74e	flash.o (ex libPerifericos.a)
+    768	      0	      0	    768	    300	font5x7.o (ex libPerifericos.a)
+    188	      0	      0	    188	     bc	joystick.o (ex libPerifericos.a)
+    172	     80	      0	    252	     fc	led7seg.o (ex libPerifericos.a)
+   1396	      8	      0	   1404	    57c	light.o (ex libPerifericos.a)
+   3260	      0	    768	   4028	    fbc	oled.o (ex libPerifericos.a)
+   1296	      0	      6	   1302	    516	pca9532.o (ex libPerifericos.a)
+    184	      0	      0	    184	     b8	rgb.o (ex libPerifericos.a)
+    268	      0	      0	    268	    10c	rotary.o (ex libPerifericos.a)
+    308	      0	      4	    312	    138	temp.o (ex libPerifericos.a)
+    988	      0	      1	    989	    3dd	uart2.o (ex libPerifericos.a)
+ 

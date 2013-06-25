@@ -1,0 +1,159 @@
+\documentclass[12pt]{article}
+
+\usepackage{graphicx}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenx}
+\usepackage{anysize} 
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{listings}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks,%
+    citecolor=black,%
+    filecolor=black,%
+    linkcolor=black,%
+    urlcolor=black
+}
+\marginsize{2cm}{2cm}{1cm}{2cm} %izq der arriva abajo
+
+\title{}
+\author{Facundo Nahuel Uriel Silva}
+
+\begin{document}
+
+  %Caratula
+  \newpage
+  \thispagestyle{empty}
+  
+  \begin{center}
+    \includegraphics[width=250px]{../../logo_fiuba_alta.jpg} 
+
+  \vspace{100px}
+
+  {\bf \huge{Trabajo Profesional de Ingeniería Electrónica} }
+  
+  \vspace{30px}
+
+  \Large{Sistema de control para proceso de sinterizado de nano estructuras }
+  
+  \vspace{30px}
+  
+  \large{\textit{Situacion inicial}} % ver que poner aca.....
+
+  \end{center}
+
+  \vspace{100px}
+
+   \begin{bf}
+    \begin{Large}
+      \begin{tabbing}
+	\= ----- \= ----- \= --------------------- \= \kill
+	\> Integrantes:\\
+	\\
+	  \>\> Estanislao López Morgan \\
+	  \>\>\>  Padrón:	\> 84546 \\
+	  \>\>\>  Mail:	\>\url{estanux@gmail.com} \\
+	\\
+	  \>\> Facundo Nahuel Uriel Silva\\
+	  \>\>\>  Padrón:	\> 86881 \\
+	  \>\>\>  Mail:	\> \url{fanaur@gmail.com}\\
+      \end{tabbing}
+    \end{Large}
+  \end{bf}
+
+
+
+  %Indice de contenidos
+  \newpage
+  
+  
+  \thispagestyle{empty} \tableofcontents \thispagestyle{empty} %asi se sace el numero de pagina
+
+  %Comienzo
+  \newpage
+  \setcounter{page}{1}
+  
+  \section{Introducción}
+
+  \newpage
+
+  \section{Descripción situacion existente}
+
+  \newpage
+
+  \section{Diagrama en bloques}    
+  
+    \begin{figure}[h!]
+      \centering
+      \includegraphics[height=315px,angle=90,keepaspectratio=true]{../../Diagramas/diagramaBloquesMacro.png}
+      % diagramaBloquesMacro.png: 1546x783 pixel, 72dpi, 54.54x27.62 cm, bb=0 0 1546 783
+      \caption{Diagrama en bloque general del sistema}
+      \label{fig:DiagramaBloqueGeneral}
+    \end{figure}
+
+  \newpage
+
+  \section{Descripción en bloques}    
+
+  \begin{itemize}
+    \item Linea 220/50Hz:    
+    \item Fuente Alimentación:
+
+    \begin{itemize}
+      \item Elevador:
+      \item Rectificador:
+    \end{itemize}
+
+  \item Luz indicadora:
+  \item Contactor 1:
+  \item Protección corto circuito:
+  \item Limitador corriente:
+  \item Driver limitador corriente:
+  \item Contactor 3:
+  \item Banco de resistencias:
+  \item Banco de capacitores:
+  \item Drivers contactores:
+  \item Contactor 2:
+  \item Sensor tensión:
+  \item Sensor de corriente:
+  \item Muestra:
+  \item Sensor temperatura:
+  \item Sensor presión:
+  \item Sensor de vacío:  
+  \item Com A/D:
+  \item Touchscreen/ Teclado:
+  \item Sirena:
+  \item Driver luces de seguridad:
+  \item Driver bomba de vacío:
+  \item Bomba de vacío:
+  \item Driver prensa:
+  \item Prensa:
+  \item Display:
+  \item Controlador:
+
+  \end{itemize}
+
+
+  \section{Conectividad}    
+
+    \begin{figure}[h!]
+      \centering
+      \includegraphics[width=400px,keepaspectratio=true]{../../Diagramas/microEsquema.png}
+      % diagramaBloquesMacro.png: 1546x783 pixel, 72dpi, 54.54x27.62 cm, bb=0 0 1546 783
+      \caption{Diagrama en bloque de la logica}
+      \label{fig:DiagramaBloqueLogica}
+    \end{figure}
+
+
+  %Bibliografia
+  \newpage
+
+  \begin{thebibliography}{1}
+    \bibitem{} 
+
+  \end{thebibliography}
+    
+
+\end{document}

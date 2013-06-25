@@ -1,0 +1,21 @@
+/*
+ * DefProtocoloPCComunication.h
+ *
+ *  Created on: Oct 7, 2012
+ *      Author: "Facundo Nahuel Uriel Silva"
+ */
+
+#ifndef DEFPROTOCOLOPCCOMUNICATION_H_
+#define DEFPROTOCOLOPCCOMUNICATION_H_
+
+#define START	0x55
+#define STOP	0xaa
+
+// Codigo de comandos
+
+#define		CMD_READ_ADC_1		0x01
+
+
+unsigned short crc16(char *data_p, unsigned short length);
+
+#endif /* DEFPROTOCOLOPCCOMUNICATION_H_ */

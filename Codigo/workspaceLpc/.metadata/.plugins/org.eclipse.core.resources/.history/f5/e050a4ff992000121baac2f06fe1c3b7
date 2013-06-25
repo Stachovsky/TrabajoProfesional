@@ -1,0 +1,21 @@
+/*
+ * taskSerialMemory.h
+ *
+ *  Created on: Oct 27, 2012
+ *      Author: "Facundo Nahuel Uriel Silva"
+ */
+
+#ifndef TASKSERIALMEMORY_H_
+#define TASKSERIALMEMORY_H_
+
+#include "LPC17xx.h"
+
+//Drivers
+#include "lpc17xx_pinsel.h"
+#include "lpc17xx_gpio.h"
+#include "lpc17xx_i2c.h"
+
+
+void taskSerialMemory(void *param);
+
+#endif /* TASKSERIALMEMORY_H_ */

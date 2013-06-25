@@ -1,0 +1,98 @@
+/*
+ * Core.c
+ *
+ *  Created on: Sep 26, 2012
+ *      Author: "Facundo Nahuel Uriel Silva"
+ */
+
+#include "taskCore.h"
+#include "lpc17xx_ssp.h"
+
+void taskCore(void *paramametro){
+
+	const portTickType xDelay = 2000 / portTICK_RATE_MS;
+
+//	msgPcCom msgTX;
+	msgPcCom msgRX;
+	msgPcCom msgTXAck;
+
+	// Se inicializa el mensaje
+//	pcComInitMsg(&msgTX.cmd,CMD_PCCOM_READ_ADC_1);
+	pcComInitMsg(&msgTXAck.cmd,CMD_PCCOM_ACK);
+
+//	msgTX.cmd.data[0] = 0x00;
+//	msgTX.cmd.len = 1;
+
+	while(1){
+
+
+//
+//		// Start A/D conversion for on AD0.0
+//		LPC_ADC->ADCR = START_ADC | OPERATIONAL_ADC | SEL_AD0 ;
+//
+//		do {
+//			adval = LPC_ADC->ADGDR;            // Read A/D Data Register
+//		} while ((adval & ADC_DONE_BIT) == 0); // Wait for end of A/D Conversion
+//
+//		// Stop A/D Conversion
+//		LPC_ADC->ADCR &= ~(START_ADC | OPERATIONAL_ADC | SEL_AD0) ;
+//
+//		// Extract AD0.0 value - 12 bit result in bits [15:4]
+////		adval = (adval >> 4) & 0x0FFF ;
+//		adc0val = (uint8_t)(adval & 0x000000FF);
+//
+//		msgTX.idMsg++;
+//		msgTX.cmd.data[0] = adc0val;
+//
+//
+//		xQueueSend(queuePcComTX,&msgTX,1000);
+
+		// se intenta leer un mensaje de la cola. El numero de elementos en la cola se decrementa en 1
+		if(xQueueReceive(queuePcComRX,&msgRX,1000)){
+
+			xQueueSend(queuePcComTX,&msgTXAck,1000);
+
+			switch(msgRX.cmd.cmdId){
+
+				case CMD_PCCOM_ACTUADOR_0_ON:
+					LPC_GPIO2->FIOSET = (1<<8);
+					break;
+
+				case CMD_PCCOM_ACTUADOR_0_OFF:
+					LPC_GPIO2->FIOCLR = (1<<8);
+					break;
+
+				case CMD_PCCOM_ACTUADOR_1_ON:
+					LPC_GPIO2->FIOSET = (1<<10);
+					break;
+
+				case CMD_PCCOM_ACTUADOR_1_OFF:
+					LPC_GPIO2->FIOCLR = (1<<10);
+					break;
+
+				case CMD_PCCOM_ACTUADOR_2_ON:
+					LPC_GPIO2->FIOSET = (1<<7);
+					break;
+
+				case CMD_PCCOM_ACTUADOR_2_OFF:
+					LPC_GPIO2->FIOCLR = (1<<7);
+					break;
+
+				case CMD_PCCOM_ACTUADOR_3_ON:
+					LPC_GPIO2->FIOSET = (1<<12);
+					break;
+
+				case CMD_PCCOM_ACTUADOR_3_OFF:
+					LPC_GPIO2->FIOCLR = (1<<12);
+					break;
+			}
+		}
+
+//		vTaskDelay( xDelay );
+
+//		msgTX.idMsg++;
+//		msgTX.cmd.data[0]++;
+
+		taskYIELD();
+	}
+}

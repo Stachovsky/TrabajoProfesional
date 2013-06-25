@@ -1,0 +1,29 @@
+/*
+ * taskAdc.c
+ *
+ *  Created on: Oct 27, 2012
+ *      Author: "Facundo Nahuel Uriel Silva"
+ */
+
+// Buffer to contain string version of value read from ADC
+// 4 character, plus zero terminator
+char strbuf [5];
+
+void taskAdc(void *param){
+
+	// ************
+	// * Set up ADC
+	// ************
+
+	// Turn on power to ADC block
+	LPC_SC->PCONP |=  ADC_POWERON;
+
+	// Turn on ADC peripheral clock
+	LPC_SC->PCLKSEL0 &= ~(PCLK_ADC_MASK);
+	LPC_SC->PCLKSEL0 |=  (3 << PCLK_ADC);
+
+	// Set P0.23 to AD0.0 in PINSEL1
+	LPC_PINCON->PINSEL1	|= SELECT_ADC0;
+
+
+}

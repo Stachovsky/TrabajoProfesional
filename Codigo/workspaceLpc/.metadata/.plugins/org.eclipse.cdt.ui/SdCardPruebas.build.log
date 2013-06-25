@@ -1,0 +1,34 @@
+
+**** Build of configuration Debug for project SdCardPruebas ****
+
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2p00_LPC17xx -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/inc" -I"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/SdCardPruebas/src/lib_FatFS/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o"src/main.o" "../src/main.c"
+../src/main.c: In function 'write_file':
+Finished building: ../src/main.c
+../src/main.c:195:2: warning: implicit declaration of function 'sprintf'
+../src/main.c:196:2: warning: implicit declaration of function 'strlen'
+../src/main.c:188:14: warning: unused variable 'idx'
+ 
+../src/main.c:188:11: warning: unused variable 'i'
+../src/main.c: In function 'type_file':
+../src/main.c:363:4: warning: implicit declaration of function 'UARTSend'
+Building target: SdCardPruebas.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"/home/fanaur/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/CMSISv2p00_LPC17xx/Debug" -Xlinker -Map="SdCardPruebas.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "SdCardPruebas_Debug.ld" -o"SdCardPruebas.axf"  ./src/FatFS_support.o ./src/cr_startup_lpc176x.o ./src/main.o  ./src/lib_FatFS/src/option/cc932.o ./src/lib_FatFS/src/option/syscall.o  ./src/lib_FatFS/src/lpc1xxx_spi_sd/lpc17xx_spi.o ./src/lib_FatFS/src/lpc1xxx_spi_sd/sd.o  ./src/lib_FatFS/src/clocking.o ./src/lib_FatFS/src/ff.o   -lCMSISv2p00_LPC17xx
+Finished building target: SdCardPruebas.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "SdCardPruebas.axf"; # arm-none-eabi-objcopy -O binary "SdCardPruebas.axf" "SdCardPruebas.bin" ; checksum -p LPC1769 -d "SdCardPruebas.bin";
+   text	   data	    bss	    dec	    hex	filename
+../src/main.c: At top level:
+../src/main.c:119:13: warning: 'set_timeout' defined but not used
+../src/main.c:146:13: warning: 'show_dir' defined but not used
+../src/main.c:215:13: warning: 'read_file' defined but not used
+../src/main.c:283:13: warning: 'write_log' defined but not used
+  27056	    360	   2056	  29472	   7320	SdCardPruebas.axf
+ 
+../src/main.c:339:13: warning: 'type_file' defined but not used
+../src/main.c:372:13: warning: 'delete_file' defined but not used

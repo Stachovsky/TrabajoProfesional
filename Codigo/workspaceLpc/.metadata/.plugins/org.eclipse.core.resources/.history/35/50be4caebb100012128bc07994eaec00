@@ -1,0 +1,47 @@
+/*
+ * Core.c
+ *
+ *  Created on: Sep 26, 2012
+ *      Author: "Facundo Nahuel Uriel Silva"
+ */
+
+#include "taskCore.h"
+
+void taskCore(void *paramametro){
+
+	const portTickType xDelay = 1000 / portTICK_RATE_MS;
+
+	msgPcCom msgTX;
+
+	// Se inicializa el mensaje
+	pcComInitMsg(&msgTX.cmd,CMD_PCCOM_READ_ADC_1);
+
+	msgTX.cmd.data[0] = 0xa0;
+	msgTX.cmd.data[1] = 0xb0;
+	msgTX.cmd.data[2] = 0xc0;
+	msgTX.cmd.data[3] = 0xd0;
+	msgTX.cmd.data[4] = 0xe0;
+	msgTX.cmd.data[5] = 0xf0;
+	msgTX.cmd.data[6] = 0x01;
+	msgTX.cmd.data[7] = 0x08;
+
+	msgTX.cmd.len = 8;
+
+	while(1){
+
+		xQueueSend(queuePcComTX,&msgTX,1000);
+
+		// se intenta leer un mensaje de la cola. El numero de elementos en la cola se decrementa en 1
+		if(xQueueReceive(queuePcComRX,&currentMsgTx,5000)){
+
+			// Se carga buffer con el mensaje a enviar
+			sizeBufferSend = pcComPackMsg(&currentMsgTx.cmd,bufferSend, MAX_CMDPCCOM_SIZE_DATA + MIN_CMDPCCOM_SIZE_PACKED);
+
+			API_UartSendBytes(UART_PORT_3,bufferSend, sizeBufferSend);
+		}
+
+		vTaskDelay( xDelay );
+		msgTX.idMsg++;
+		taskYIELD();
+	}
+}

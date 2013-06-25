@@ -1,0 +1,186 @@
+# EESchema Netlist Version 1.1 created  Mon 18 Feb 2013 12:17:04 PM ART
+(
+ ( /5120288F $noname  U4 IL300 {Lib=IL300}
+  (    1 N-000002 )
+  (    2 N-000001 )
+  (    3 N-000003 )
+  (    4 GNDA )
+  (    5 GND )
+  (    6 N-000004 )
+  (    7 ? )
+  (    8 ? )
+ )
+ ( /5120288E $noname  R4 1k {Lib=R}
+  (    1 VAA )
+  (    2 N-000001 )
+ )
+ ( /5120288D $noname  R6 10k {Lib=R}
+  (    1 /MONITOR_V_CAPACITORS )
+  (    2 N-000004 )
+ )
+ ( /5120288C $noname  R5 10k {Lib=R}
+  (    1 N-000003 )
+  (    2 ? )
+ )
+ ( /51201F96 $noname  R1 10k {Lib=R}
+  (    1 N-000005 )
+  (    2 ? )
+ )
+ ( /51201EC6 $noname  R3 10k {Lib=R}
+  (    1 /MONITOR_V_HV_SOURCE )
+  (    2 N-000012 )
+ )
+ ( /51201EB5 $noname  R2 1k {Lib=R}
+  (    1 VAA )
+  (    2 N-000014 )
+ )
+ ( /51201E11 $noname  U2 IL300 {Lib=IL300}
+  (    1 N-000013 )
+  (    2 N-000014 )
+  (    3 N-000005 )
+  (    4 GNDA )
+  (    5 GND )
+  (    6 N-000012 )
+  (    7 ? )
+  (    8 ? )
+ )
+ ( /5122351C $noname  U1 TL082 {Lib=TL082}
+  (    1 N-000013 )
+  (    2 N-000005 )
+  (    3 GNDA )
+  (    4 GNDA )
+  (    5 GNDA )
+  (    6 N-000003 )
+  (    7 N-000002 )
+  (    8 VAA )
+ )
+ ( /51223574 $noname  U3 TL082 {Lib=TL082}
+  (    1 /MONITOR_V_HV_SOURCE )
+  (    2 N-000012 )
+  (    3 GND )
+  (    4 GND )
+  (    5 GND )
+  (    6 N-000004 )
+  (    7 /MONITOR_V_CAPACITORS )
+  (    8 +5V )
+ )
+ ( /5122420E $noname  P1 CONN_2 {Lib=CONN_2}
+  (    1 VAA )
+  (    2 GNDA )
+ )
+ ( /5122421B $noname  P2 CONN_2 {Lib=CONN_2}
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /512247A1 $noname  P3 CONN_2 {Lib=CONN_2}
+  (    1 /MONITOR_V_HV_SOURCE )
+  (    2 /MONITOR_V_CAPACITORS )
+ )
+)
+*
+{ Allowed footprints by component:
+$component R4
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R6
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R5
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R3
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R2
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$endfootprintlist
+}
+{ Pin List by Nets
+Net 1 "" ""
+ U4 2
+ R4 2
+Net 2 "" ""
+ U1 7
+ U4 1
+Net 3 "" ""
+ U1 6
+ R5 1
+ U4 3
+Net 4 "" ""
+ R6 2
+ U3 6
+ U4 6
+Net 5 "" ""
+ U1 2
+ U2 3
+ R1 1
+Net 6 "+5V" "+5V"
+ U3 8
+ P2 1
+Net 7 "GND" "GND"
+ U2 5
+ P2 2
+ U3 5
+ U3 4
+ U4 5
+ U3 3
+Net 8 "GNDA" "GNDA"
+ P1 2
+ U4 4
+ U2 4
+ U1 3
+ U1 4
+ U1 5
+Net 9 "VAA" "VAA"
+ R4 1
+ P1 1
+ U1 8
+ R2 1
+Net 10 "/MONITOR_V_HV_SOURCE" "MONITOR_V_HV_SOURCE"
+ R3 1
+ U3 1
+ P3 1
+Net 11 "/MONITOR_V_CAPACITORS" "MONITOR_V_CAPACITORS"
+ U3 7
+ P3 2
+ R6 1
+Net 12 "" ""
+ U2 6
+ R3 2
+ U3 2
+Net 13 "" ""
+ U2 1
+ U1 1
+Net 14 "" ""
+ R2 2
+ U2 2
+}
+#End

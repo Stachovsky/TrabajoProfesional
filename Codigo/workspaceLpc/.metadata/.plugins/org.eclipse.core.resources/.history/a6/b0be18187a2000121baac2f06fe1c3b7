@@ -1,0 +1,16 @@
+/*
+ * taskAdc.h
+ *
+ *  Created on: Oct 27, 2012
+ *      Author: "Facundo Nahuel Uriel Silva"
+ */
+
+#ifndef TASKADC_H_
+#define TASKADC_H_
+
+/** \brief
+ *
+ */
+void taskAdc(void *param);
+
+#endif /* TASKADC_H_ */

@@ -1,0 +1,9 @@
+src/Tasks/SdCard/cc950.d src/Tasks/SdCard/cc950.o: \
+ ../src/Tasks/SdCard/cc950.c ../src/Tasks/SdCard/ff.h \
+ ../src/Tasks/SdCard/integer.h ../src/Tasks/SdCard/ffconf.h
+
+../src/Tasks/SdCard/ff.h:
+
+../src/Tasks/SdCard/integer.h:
+
+../src/Tasks/SdCard/ffconf.h:

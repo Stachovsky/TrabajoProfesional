@@ -1,0 +1,20 @@
+
+**** Build of configuration Debug for project RDB1768cmsis_usb_serial ****
+
+make all 
+Building file: ../src/cr_startup_lpc176x.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__USE_CMSIS=CMSISv1p30_LPC17xx -D__CODE_RED -D__REDLIB__ -I"/home/fanaur/workspaceLpc/USB_workspace/Lib_CMSIS/Core/CM3/CoreSupport" -I"/home/fanaur/workspaceLpc/USB_workspace/Lib_CMSIS/Core/CM3/DeviceSupport/NXP/LPC17xx" -O0 -Os -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/cr_startup_lpc176x.d" -MT"src/cr_startup_lpc176x.d" -o"src/cr_startup_lpc176x.o" "../src/cr_startup_lpc176x.c"
+../src/main_serial.c:68:20: fatal error: usbapi.h: No such file or directory
+Finished building: ../src/cr_startup_lpc176x.c
+compilation terminated.
+make: *** [src/main_serial.o] Error 1
+ 
+Building file: ../src/intenable.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__USE_CMSIS=CMSISv1p30_LPC17xx -D__CODE_RED -D__REDLIB__ -I"/home/fanaur/workspaceLpc/USB_workspace/Lib_CMSIS/Core/CM3/CoreSupport" -I"/home/fanaur/workspaceLpc/USB_workspace/Lib_CMSIS/Core/CM3/DeviceSupport/NXP/LPC17xx" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/intenable.d" -MT"src/intenable.d" -o"src/intenable.o" "../src/intenable.c"
+Finished building: ../src/intenable.c
+ 
+Building file: ../src/main_serial.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__USE_CMSIS=CMSISv1p30_LPC17xx -D__CODE_RED -D__REDLIB__ -I"/home/fanaur/workspaceLpc/USB_workspace/Lib_CMSIS/Core/CM3/CoreSupport" -I"/home/fanaur/workspaceLpc/USB_workspace/Lib_CMSIS/Core/CM3/DeviceSupport/NXP/LPC17xx" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/main_serial.d" -MT"src/main_serial.d" -o"src/main_serial.o" "../src/main_serial.c"

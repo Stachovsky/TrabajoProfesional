@@ -1,0 +1,28 @@
+FreeRTOS_src/queue.d FreeRTOS_src/queue.o: ../FreeRTOS_src/queue.c \
+ /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/FreeRTOS.h \
+ /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/projdefs.h \
+ /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/src/FreeRTOSConfig.h \
+ /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/portable.h \
+ /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_portable/portmacro.h \
+ /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/mpu_wrappers.h \
+ /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/task.h \
+ /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/list.h \
+ /home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/croutine.h
+
+/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/FreeRTOS.h:
+
+/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/projdefs.h:
+
+/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/src/FreeRTOSConfig.h:
+
+/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/portable.h:
+
+/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_portable/portmacro.h:
+
+/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/mpu_wrappers.h:
+
+/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/task.h:
+
+/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/list.h:
+
+/home/fsilva/RepositorioMercurial/trabajoprofesional/Codigo/workspaceLpc/testRTOS/FreeRTOS_include/croutine.h:
